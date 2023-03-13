@@ -176,7 +176,6 @@ return [
         App\Providers\RouteServiceProvider::class,
         Maatwebsite\Excel\ExcelServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
-        Mews\Captcha\CaptchaServiceProvider::class,
 
     ],
 

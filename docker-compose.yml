@@ -59,3 +59,29 @@ services:
       - "9000:9000"
     networks:
       - laravel
+    
+  composer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: detox_composer
+    volumes:
+      - ./src:/var/www/html
+    depends_on:
+      - php
+    entrypoint: [ 'composer', '--ignore-platform-reqs' ]
+    networks:
+      - laravel
+
+  artisan:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: detox_artisan
+    volumes:
+      - ./src:/var/www/html
+    depends_on:
+      - mysql
+    entrypoint: [ 'php', '/var/www/html/artisan' ]
+    networks:
+      - laravel

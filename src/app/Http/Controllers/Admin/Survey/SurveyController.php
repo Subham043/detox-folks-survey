@@ -53,13 +53,17 @@ class SurveyController extends Controller
         );
 
         $req->validate($rules, $messages);
-
+        foreach ($req->all() as $key => $value) {
+            # code...
+            if(empty($value)){
+                $req[$key] = 0;
+            }
+        }
         try {
             //code...
             Survey::create($req->all());
             return redirect()->intended(route('image_create'))->with('success_status', 'Survey Completed Successfully.');
         } catch (\Throwable $th) {
-            // throw $th;
             return redirect(route('image_create'))->with('error_status', 'Oops! something went wrong. Please try again');
         }
     }

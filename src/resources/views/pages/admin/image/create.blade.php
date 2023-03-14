@@ -231,7 +231,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="pp_price_100" id="pp_price_100" value="{{old('pp_price_100')}}">
+                                                                                        <input class="form-control" type="number" name="pp_price_100" id="pp_price_100" value="{{old('pp_price_100')}}">
                                                                                         @error('pp_price_100')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -268,7 +268,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="pp_price_250" id="pp_price_250" value="{{old('pp_price_250')}}">
+                                                                                        <input class="form-control" type="number" name="pp_price_250" id="pp_price_250" value="{{old('pp_price_250')}}">
                                                                                         @error('pp_price_250')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -305,7 +305,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="pp_price_300" id="pp_price_300" value="{{old('pp_price_300')}}">
+                                                                                        <input class="form-control" type="number" name="pp_price_300" id="pp_price_300" value="{{old('pp_price_300')}}">
                                                                                         @error('pp_price_300')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -342,7 +342,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="pp_price_500" id="pp_price_500" value="{{old('pp_price_500')}}">
+                                                                                        <input class="form-control" type="number" name="pp_price_500" id="pp_price_500" value="{{old('pp_price_500')}}">
                                                                                         @error('pp_price_500')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -379,7 +379,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="pp_price_750" id="pp_price_750" value="{{old('pp_price_750')}}">
+                                                                                        <input class="form-control" type="number" name="pp_price_750" id="pp_price_750" value="{{old('pp_price_750')}}">
                                                                                         @error('pp_price_750')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -416,7 +416,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="pp_price_1000" id="pp_price_1000" value="{{old('pp_price_1000')}}">
+                                                                                        <input class="form-control" type="number" name="pp_price_1000" id="pp_price_1000" value="{{old('pp_price_1000')}}">
                                                                                         @error('pp_price_1000')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -484,7 +484,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="compartment_price_2cp" id="compartment_price_2cp" value="{{old('compartment_price_2cp')}}">
+                                                                                        <input class="form-control" type="number" name="compartment_price_2cp" id="compartment_price_2cp" value="{{old('compartment_price_2cp')}}">
                                                                                         @error('compartment_price_2cp')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -521,7 +521,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="compartment_price_3cp" id="compartment_price_3cp" value="{{old('compartment_price_3cp')}}">
+                                                                                        <input class="form-control" type="number" name="compartment_price_3cp" id="compartment_price_3cp" value="{{old('compartment_price_3cp')}}">
                                                                                         @error('compartment_price_3cp')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -558,7 +558,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="compartment_price_4cp" id="compartment_price_4cp" value="{{old('compartment_price_4cp')}}">
+                                                                                        <input class="form-control" type="number" name="compartment_price_4cp" id="compartment_price_4cp" value="{{old('compartment_price_4cp')}}">
                                                                                         @error('compartment_price_4cp')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -595,7 +595,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="compartment_price_5cp" id="compartment_price_5cp" value="{{old('compartment_price_5cp')}}">
+                                                                                        <input class="form-control" type="number" name="compartment_price_5cp" id="compartment_price_5cp" value="{{old('compartment_price_5cp')}}">
                                                                                         @error('compartment_price_5cp')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -632,7 +632,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="compartment_price_6cp" id="compartment_price_6cp" value="{{old('compartment_price_6cp')}}">
+                                                                                        <input class="form-control" type="number" name="compartment_price_6cp" id="compartment_price_6cp" value="{{old('compartment_price_6cp')}}">
                                                                                         @error('compartment_price_6cp')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -669,7 +669,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="compartment_price_8cp" id="compartment_price_8cp" value="{{old('compartment_price_8cp')}}">
+                                                                                        <input class="form-control" type="number" name="compartment_price_8cp" id="compartment_price_8cp" value="{{old('compartment_price_8cp')}}">
                                                                                         @error('compartment_price_8cp')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -739,7 +739,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="al_container_without_lid_price_250" id="al_container_without_lid_price_250" value="{{old('al_container_without_lid_price_250')}}">
+                                                                                        <input class="form-control" type="number" name="al_container_without_lid_price_250" id="al_container_without_lid_price_250" value="{{old('al_container_without_lid_price_250')}}">
                                                                                         @error('al_container_without_lid_price_250')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -776,7 +776,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="al_container_without_lid_price_450" id="al_container_without_lid_price_450" value="{{old('al_container_without_lid_price_450')}}">
+                                                                                        <input class="form-control" type="number" name="al_container_without_lid_price_450" id="al_container_without_lid_price_450" value="{{old('al_container_without_lid_price_450')}}">
                                                                                         @error('al_container_without_lid_price_450')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -813,7 +813,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="al_container_without_lid_price_600" id="al_container_without_lid_price_600" value="{{old('al_container_without_lid_price_600')}}">
+                                                                                        <input class="form-control" type="number" name="al_container_without_lid_price_600" id="al_container_without_lid_price_600" value="{{old('al_container_without_lid_price_600')}}">
                                                                                         @error('al_container_without_lid_price_600')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -850,7 +850,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="al_container_without_lid_price_660" id="al_container_without_lid_price_660" value="{{old('al_container_without_lid_price_660')}}">
+                                                                                        <input class="form-control" type="number" name="al_container_without_lid_price_660" id="al_container_without_lid_price_660" value="{{old('al_container_without_lid_price_660')}}">
                                                                                         @error('al_container_without_lid_price_660')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -887,7 +887,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="al_container_without_lid_price_750" id="al_container_without_lid_price_750" value="{{old('al_container_without_lid_price_750')}}">
+                                                                                        <input class="form-control" type="number" name="al_container_without_lid_price_750" id="al_container_without_lid_price_750" value="{{old('al_container_without_lid_price_750')}}">
                                                                                         @error('al_container_without_lid_price_750')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -924,7 +924,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="al_container_without_lid_price_900" id="al_container_without_lid_price_900" value="{{old('al_container_without_lid_price_900')}}">
+                                                                                        <input class="form-control" type="number" name="al_container_without_lid_price_900" id="al_container_without_lid_price_900" value="{{old('al_container_without_lid_price_900')}}">
                                                                                         @error('al_container_without_lid_price_900')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -961,7 +961,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="al_container_without_lid_price_3cp" id="al_container_without_lid_price_3cp" value="{{old('al_container_without_lid_price_3cp')}}">
+                                                                                        <input class="form-control" type="number" name="al_container_without_lid_price_3cp" id="al_container_without_lid_price_3cp" value="{{old('al_container_without_lid_price_3cp')}}">
                                                                                         @error('al_container_without_lid_price_3cp')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -998,7 +998,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="al_container_without_lid_price_100" id="al_container_without_lid_price_100" value="{{old('al_container_without_lid_price_100')}}">
+                                                                                        <input class="form-control" type="number" name="al_container_without_lid_price_100" id="al_container_without_lid_price_100" value="{{old('al_container_without_lid_price_100')}}">
                                                                                         @error('al_container_without_lid_price_100')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -1035,7 +1035,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="al_container_without_lid_price_120" id="al_container_without_lid_price_120" value="{{old('al_container_without_lid_price_120')}}">
+                                                                                        <input class="form-control" type="number" name="al_container_without_lid_price_120" id="al_container_without_lid_price_120" value="{{old('al_container_without_lid_price_120')}}">
                                                                                         @error('al_container_without_lid_price_120')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -1072,7 +1072,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="al_container_without_lid_price_muffin" id="al_container_without_lid_price_muffin" value="{{old('al_container_without_lid_price_muffin')}}">
+                                                                                        <input class="form-control" type="number" name="al_container_without_lid_price_muffin" id="al_container_without_lid_price_muffin" value="{{old('al_container_without_lid_price_muffin')}}">
                                                                                         @error('al_container_without_lid_price_muffin')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -1140,7 +1140,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="aluminium_price_9mtr" id="aluminium_price_9mtr" value="{{old('aluminium_price_9mtr')}}">
+                                                                                        <input class="form-control" type="number" name="aluminium_price_9mtr" id="aluminium_price_9mtr" value="{{old('aluminium_price_9mtr')}}">
                                                                                         @error('aluminium_price_9mtr')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -1177,7 +1177,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="aluminium_price_18mtr" id="aluminium_price_18mtr" value="{{old('aluminium_price_18mtr')}}">
+                                                                                        <input class="form-control" type="number" name="aluminium_price_18mtr" id="aluminium_price_18mtr" value="{{old('aluminium_price_18mtr')}}">
                                                                                         @error('aluminium_price_18mtr')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -1214,7 +1214,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="aluminium_price_72mtr" id="aluminium_price_72mtr" value="{{old('aluminium_price_72mtr')}}">
+                                                                                        <input class="form-control" type="number" name="aluminium_price_72mtr" id="aluminium_price_72mtr" value="{{old('aluminium_price_72mtr')}}">
                                                                                         @error('aluminium_price_72mtr')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -1251,7 +1251,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="aluminium_price_72nbr" id="aluminium_price_72nbr" value="{{old('aluminium_price_72nbr')}}">
+                                                                                        <input class="form-control" type="number" name="aluminium_price_72nbr" id="aluminium_price_72nbr" value="{{old('aluminium_price_72nbr')}}">
                                                                                         @error('aluminium_price_72nbr')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -1288,7 +1288,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="aluminium_price_72spc" id="aluminium_price_72spc" value="{{old('aluminium_price_72spc')}}">
+                                                                                        <input class="form-control" type="number" name="aluminium_price_72spc" id="aluminium_price_72spc" value="{{old('aluminium_price_72spc')}}">
                                                                                         @error('aluminium_price_72spc')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -1325,7 +1325,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="aluminium_price_25g" id="aluminium_price_25g" value="{{old('aluminium_price_25g')}}">
+                                                                                        <input class="form-control" type="number" name="aluminium_price_25g" id="aluminium_price_25g" value="{{old('aluminium_price_25g')}}">
                                                                                         @error('aluminium_price_25g')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -1362,7 +1362,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="aluminium_price_50g" id="aluminium_price_50g" value="{{old('aluminium_price_50g')}}">
+                                                                                        <input class="form-control" type="number" name="aluminium_price_50g" id="aluminium_price_50g" value="{{old('aluminium_price_50g')}}">
                                                                                         @error('aluminium_price_50g')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -1399,7 +1399,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="aluminium_price_1kg_gross" id="aluminium_price_1kg_gross" value="{{old('aluminium_price_1kg_gross')}}">
+                                                                                        <input class="form-control" type="number" name="aluminium_price_1kg_gross" id="aluminium_price_1kg_gross" value="{{old('aluminium_price_1kg_gross')}}">
                                                                                         @error('aluminium_price_1kg_gross')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -1436,7 +1436,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="aluminium_price_1kg_net" id="aluminium_price_1kg_net" value="{{old('aluminium_price_1kg_net')}}">
+                                                                                        <input class="form-control" type="number" name="aluminium_price_1kg_net" id="aluminium_price_1kg_net" value="{{old('aluminium_price_1kg_net')}}">
                                                                                         @error('aluminium_price_1kg_net')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -1473,7 +1473,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="aluminium_price_120g" id="aluminium_price_120g" value="{{old('aluminium_price_120g')}}">
+                                                                                        <input class="form-control" type="number" name="aluminium_price_120g" id="aluminium_price_120g" value="{{old('aluminium_price_120g')}}">
                                                                                         @error('aluminium_price_120g')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -1544,7 +1544,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="al_container_with_lid_price_250" id="al_container_with_lid_price_250" value="{{old('al_container_with_lid_price_250')}}">
+                                                                                        <input class="form-control" type="number" name="al_container_with_lid_price_250" id="al_container_with_lid_price_250" value="{{old('al_container_with_lid_price_250')}}">
                                                                                         @error('al_container_with_lid_price_250')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -1581,7 +1581,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="al_container_with_lid_price_450" id="al_container_with_lid_price_450" value="{{old('al_container_with_lid_price_450')}}">
+                                                                                        <input class="form-control" type="number" name="al_container_with_lid_price_450" id="al_container_with_lid_price_450" value="{{old('al_container_with_lid_price_450')}}">
                                                                                         @error('al_container_with_lid_price_450')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -1618,7 +1618,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="al_container_with_lid_price_600" id="al_container_with_lid_price_600" value="{{old('al_container_with_lid_price_600')}}">
+                                                                                        <input class="form-control" type="number" name="al_container_with_lid_price_600" id="al_container_with_lid_price_600" value="{{old('al_container_with_lid_price_600')}}">
                                                                                         @error('al_container_with_lid_price_600')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -1655,7 +1655,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="al_container_with_lid_price_750" id="al_container_with_lid_price_750" value="{{old('al_container_with_lid_price_750')}}">
+                                                                                        <input class="form-control" type="number" name="al_container_with_lid_price_750" id="al_container_with_lid_price_750" value="{{old('al_container_with_lid_price_750')}}">
                                                                                         @error('al_container_with_lid_price_750')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -1723,7 +1723,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="p_box_price_cake" id="p_box_price_cake" value="{{old('p_box_price_cake')}}">
+                                                                                        <input class="form-control" type="number" name="p_box_price_cake" id="p_box_price_cake" value="{{old('p_box_price_cake')}}">
                                                                                         @error('p_box_price_cake')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -1760,7 +1760,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="p_box_price_dosa" id="p_box_price_dosa" value="{{old('p_box_price_dosa')}}">
+                                                                                        <input class="form-control" type="number" name="p_box_price_dosa" id="p_box_price_dosa" value="{{old('p_box_price_dosa')}}">
                                                                                         @error('p_box_price_dosa')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -1797,7 +1797,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="p_box_price_sandwich" id="p_box_price_sandwich" value="{{old('p_box_price_sandwich')}}">
+                                                                                        <input class="form-control" type="number" name="p_box_price_sandwich" id="p_box_price_sandwich" value="{{old('p_box_price_sandwich')}}">
                                                                                         @error('p_box_price_sandwich')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -1865,7 +1865,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="p_bag_price_small" id="p_bag_price_small" value="{{old('p_bag_price_small')}}">
+                                                                                        <input class="form-control" type="number" name="p_bag_price_small" id="p_bag_price_small" value="{{old('p_bag_price_small')}}">
                                                                                         @error('p_bag_price_small')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -1902,7 +1902,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="p_bag_price_medium" id="p_bag_price_medium" value="{{old('p_bag_price_medium')}}">
+                                                                                        <input class="form-control" type="number" name="p_bag_price_medium" id="p_bag_price_medium" value="{{old('p_bag_price_medium')}}">
                                                                                         @error('p_bag_price_medium')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -1939,7 +1939,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="p_bag_price_large" id="p_bag_price_large" value="{{old('p_bag_price_large')}}">
+                                                                                        <input class="form-control" type="number" name="p_bag_price_large" id="p_bag_price_large" value="{{old('p_bag_price_large')}}">
                                                                                         @error('p_bag_price_large')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -1976,7 +1976,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="p_bag_price_x_large" id="p_bag_price_x_large" value="{{old('p_bag_price_x_large')}}">
+                                                                                        <input class="form-control" type="number" name="p_bag_price_x_large" id="p_bag_price_x_large" value="{{old('p_bag_price_x_large')}}">
                                                                                         @error('p_bag_price_x_large')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -2044,7 +2044,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="garbage_bag_price_small" id="garbage_bag_price_small" value="{{old('garbage_bag_price_small')}}">
+                                                                                        <input class="form-control" type="number" name="garbage_bag_price_small" id="garbage_bag_price_small" value="{{old('garbage_bag_price_small')}}">
                                                                                         @error('garbage_bag_price_small')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -2081,7 +2081,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="garbage_bag_price_medium" id="garbage_bag_price_medium" value="{{old('garbage_bag_price_medium')}}">
+                                                                                        <input class="form-control" type="number" name="garbage_bag_price_medium" id="garbage_bag_price_medium" value="{{old('garbage_bag_price_medium')}}">
                                                                                         @error('garbage_bag_price_medium')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -2118,7 +2118,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="garbage_bag_price_large" id="garbage_bag_price_large" value="{{old('garbage_bag_price_large')}}">
+                                                                                        <input class="form-control" type="number" name="garbage_bag_price_large" id="garbage_bag_price_large" value="{{old('garbage_bag_price_large')}}">
                                                                                         @error('garbage_bag_price_large')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -2155,7 +2155,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="garbage_bag_price_x_large" id="garbage_bag_price_x_large" value="{{old('garbage_bag_price_x_large')}}">
+                                                                                        <input class="form-control" type="number" name="garbage_bag_price_x_large" id="garbage_bag_price_x_large" value="{{old('garbage_bag_price_x_large')}}">
                                                                                         @error('garbage_bag_price_x_large')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -2223,7 +2223,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="tissue_price_22_22" id="tissue_price_22_22" value="{{old('tissue_price_22_22')}}">
+                                                                                        <input class="form-control" type="number" name="tissue_price_22_22" id="tissue_price_22_22" value="{{old('tissue_price_22_22')}}">
                                                                                         @error('tissue_price_22_22')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -2260,7 +2260,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="tissue_price_27_30" id="tissue_price_27_30" value="{{old('tissue_price_27_30')}}">
+                                                                                        <input class="form-control" type="number" name="tissue_price_27_30" id="tissue_price_27_30" value="{{old('tissue_price_27_30')}}">
                                                                                         @error('tissue_price_27_30')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -2297,7 +2297,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="tissue_price_30_30" id="tissue_price_30_30" value="{{old('tissue_price_30_30')}}">
+                                                                                        <input class="form-control" type="number" name="tissue_price_30_30" id="tissue_price_30_30" value="{{old('tissue_price_30_30')}}">
                                                                                         @error('tissue_price_30_30')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -2334,7 +2334,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="tissue_price_32_32" id="tissue_price_32_32" value="{{old('tissue_price_32_32')}}">
+                                                                                        <input class="form-control" type="number" name="tissue_price_32_32" id="tissue_price_32_32" value="{{old('tissue_price_32_32')}}">
                                                                                         @error('tissue_price_32_32')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -2371,7 +2371,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="tissue_price_40_40" id="tissue_price_40_40" value="{{old('tissue_price_40_40')}}">
+                                                                                        <input class="form-control" type="number" name="tissue_price_40_40" id="tissue_price_40_40" value="{{old('tissue_price_40_40')}}">
                                                                                         @error('tissue_price_40_40')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -2439,7 +2439,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="cuttlery_price_110_spoon" id="cuttlery_price_110_spoon" value="{{old('cuttlery_price_110_spoon')}}">
+                                                                                        <input class="form-control" type="number" name="cuttlery_price_110_spoon" id="cuttlery_price_110_spoon" value="{{old('cuttlery_price_110_spoon')}}">
                                                                                         @error('cuttlery_price_110_spoon')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -2476,7 +2476,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="cuttlery_price_140_spoon" id="cuttlery_price_140_spoon" value="{{old('cuttlery_price_140_spoon')}}">
+                                                                                        <input class="form-control" type="number" name="cuttlery_price_140_spoon" id="cuttlery_price_140_spoon" value="{{old('cuttlery_price_140_spoon')}}">
                                                                                         @error('cuttlery_price_140_spoon')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -2513,7 +2513,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="cuttlery_price_160_spoon" id="cuttlery_price_160_spoon" value="{{old('cuttlery_price_160_spoon')}}">
+                                                                                        <input class="form-control" type="number" name="cuttlery_price_160_spoon" id="cuttlery_price_160_spoon" value="{{old('cuttlery_price_160_spoon')}}">
                                                                                         @error('cuttlery_price_160_spoon')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -2550,7 +2550,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="cuttlery_price_140_fork" id="cuttlery_price_140_fork" value="{{old('cuttlery_price_140_fork')}}">
+                                                                                        <input class="form-control" type="number" name="cuttlery_price_140_fork" id="cuttlery_price_140_fork" value="{{old('cuttlery_price_140_fork')}}">
                                                                                         @error('cuttlery_price_140_fork')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -2587,7 +2587,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="cuttlery_price_160_fork" id="cuttlery_price_160_fork" value="{{old('cuttlery_price_160_fork')}}">
+                                                                                        <input class="form-control" type="number" name="cuttlery_price_160_fork" id="cuttlery_price_160_fork" value="{{old('cuttlery_price_160_fork')}}">
                                                                                         @error('cuttlery_price_160_fork')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -2656,7 +2656,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="groccery_bag_price_50" id="groccery_bag_price_50" value="{{old('groccery_bag_price_50')}}">
+                                                                                        <input class="form-control" type="number" name="groccery_bag_price_50" id="groccery_bag_price_50" value="{{old('groccery_bag_price_50')}}">
                                                                                         @error('groccery_bag_price_50')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -2693,7 +2693,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="groccery_bag_price_100" id="groccery_bag_price_100" value="{{old('groccery_bag_price_100')}}">
+                                                                                        <input class="form-control" type="number" name="groccery_bag_price_100" id="groccery_bag_price_100" value="{{old('groccery_bag_price_100')}}">
                                                                                         @error('groccery_bag_price_100')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -2730,7 +2730,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="groccery_bag_price_150" id="groccery_bag_price_150" value="{{old('groccery_bag_price_150')}}">
+                                                                                        <input class="form-control" type="number" name="groccery_bag_price_150" id="groccery_bag_price_150" value="{{old('groccery_bag_price_150')}}">
                                                                                         @error('groccery_bag_price_150')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -2767,7 +2767,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="groccery_bag_price_200" id="groccery_bag_price_200" value="{{old('groccery_bag_price_200')}}">
+                                                                                        <input class="form-control" type="number" name="groccery_bag_price_200" id="groccery_bag_price_200" value="{{old('groccery_bag_price_200')}}">
                                                                                         @error('groccery_bag_price_200')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -2804,7 +2804,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="groccery_bag_price_250" id="groccery_bag_price_250" value="{{old('groccery_bag_price_250')}}">
+                                                                                        <input class="form-control" type="number" name="groccery_bag_price_250" id="groccery_bag_price_250" value="{{old('groccery_bag_price_250')}}">
                                                                                         @error('groccery_bag_price_250')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -2841,7 +2841,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="groccery_bag_price_300" id="groccery_bag_price_300" value="{{old('groccery_bag_price_300')}}">
+                                                                                        <input class="form-control" type="number" name="groccery_bag_price_300" id="groccery_bag_price_300" value="{{old('groccery_bag_price_300')}}">
                                                                                         @error('groccery_bag_price_300')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -2878,7 +2878,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="groccery_bag_price_500" id="groccery_bag_price_500" value="{{old('groccery_bag_price_500')}}">
+                                                                                        <input class="form-control" type="number" name="groccery_bag_price_500" id="groccery_bag_price_500" value="{{old('groccery_bag_price_500')}}">
                                                                                         @error('groccery_bag_price_500')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -2915,7 +2915,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="groccery_bag_price_1" id="groccery_bag_price_1" value="{{old('groccery_bag_price_1')}}">
+                                                                                        <input class="form-control" type="number" name="groccery_bag_price_1" id="groccery_bag_price_1" value="{{old('groccery_bag_price_1')}}">
                                                                                         @error('groccery_bag_price_1')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -2952,7 +2952,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="groccery_bag_price_1_5" id="groccery_bag_price_1_5" value="{{old('groccery_bag_price_1_5')}}">
+                                                                                        <input class="form-control" type="number" name="groccery_bag_price_1_5" id="groccery_bag_price_1_5" value="{{old('groccery_bag_price_1_5')}}">
                                                                                         @error('groccery_bag_price_1_5')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -2988,7 +2988,7 @@
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
                                                                                     </td><td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="groccery_bag_price_2" id="groccery_bag_price_2" value="{{old('groccery_bag_price_2')}}">
+                                                                                        <input class="form-control" type="number" name="groccery_bag_price_2" id="groccery_bag_price_2" value="{{old('groccery_bag_price_2')}}">
                                                                                         @error('groccery_bag_price_2')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -3025,7 +3025,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="groccery_bag_price_3" id="groccery_bag_price_3" value="{{old('groccery_bag_price_3')}}">
+                                                                                        <input class="form-control" type="number" name="groccery_bag_price_3" id="groccery_bag_price_3" value="{{old('groccery_bag_price_3')}}">
                                                                                         @error('groccery_bag_price_3')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -3062,7 +3062,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="groccery_bag_price_4" id="groccery_bag_price_4" value="{{old('groccery_bag_price_4')}}">
+                                                                                        <input class="form-control" type="number" name="groccery_bag_price_4" id="groccery_bag_price_4" value="{{old('groccery_bag_price_4')}}">
                                                                                         @error('groccery_bag_price_4')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -3099,7 +3099,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="groccery_bag_price_5" id="groccery_bag_price_5" value="{{old('groccery_bag_price_5')}}">
+                                                                                        <input class="form-control" type="number" name="groccery_bag_price_5" id="groccery_bag_price_5" value="{{old('groccery_bag_price_5')}}">
                                                                                         @error('groccery_bag_price_5')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -3169,7 +3169,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="al_pouch_price_3_5" id="al_pouch_price_3_5" value="{{old('al_pouch_price_3_5')}}">
+                                                                                        <input class="form-control" type="number" name="al_pouch_price_3_5" id="al_pouch_price_3_5" value="{{old('al_pouch_price_3_5')}}">
                                                                                         @error('al_pouch_price_3_5')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -3206,7 +3206,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="al_pouch_price_4_6" id="al_pouch_price_4_6" value="{{old('al_pouch_price_4_6')}}">
+                                                                                        <input class="form-control" type="number" name="al_pouch_price_4_6" id="al_pouch_price_4_6" value="{{old('al_pouch_price_4_6')}}">
                                                                                         @error('al_pouch_price_4_6')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -3243,7 +3243,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="al_pouch_price_5_7" id="al_pouch_price_5_7" value="{{old('al_pouch_price_5_7')}}">
+                                                                                        <input class="form-control" type="number" name="al_pouch_price_5_7" id="al_pouch_price_5_7" value="{{old('al_pouch_price_5_7')}}">
                                                                                         @error('al_pouch_price_5_7')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -3280,7 +3280,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="al_pouch_price_6_8" id="al_pouch_price_6_8" value="{{old('al_pouch_price_6_8')}}">
+                                                                                        <input class="form-control" type="number" name="al_pouch_price_6_8" id="al_pouch_price_6_8" value="{{old('al_pouch_price_6_8')}}">
                                                                                         @error('al_pouch_price_6_8')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -3317,7 +3317,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="al_pouch_price_6_9" id="al_pouch_price_6_9" value="{{old('al_pouch_price_6_9')}}">
+                                                                                        <input class="form-control" type="number" name="al_pouch_price_6_9" id="al_pouch_price_6_9" value="{{old('al_pouch_price_6_9')}}">
                                                                                         @error('al_pouch_price_6_9')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -3354,7 +3354,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="al_pouch_price_7_9" id="al_pouch_price_7_9" value="{{old('al_pouch_price_7_9')}}">
+                                                                                        <input class="form-control" type="number" name="al_pouch_price_7_9" id="al_pouch_price_7_9" value="{{old('al_pouch_price_7_9')}}">
                                                                                         @error('al_pouch_price_7_9')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -3391,7 +3391,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="al_pouch_price_7_10" id="al_pouch_price_7_10" value="{{old('al_pouch_price_7_10')}}">
+                                                                                        <input class="form-control" type="number" name="al_pouch_price_7_10" id="al_pouch_price_7_10" value="{{old('al_pouch_price_7_10')}}">
                                                                                         @error('al_pouch_price_7_10')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -3428,7 +3428,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="al_pouch_price_8_10" id="al_pouch_price_8_10" value="{{old('al_pouch_price_8_10')}}">
+                                                                                        <input class="form-control" type="number" name="al_pouch_price_8_10" id="al_pouch_price_8_10" value="{{old('al_pouch_price_8_10')}}">
                                                                                         @error('al_pouch_price_8_10')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -3465,7 +3465,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="al_pouch_price_9_12" id="al_pouch_price_9_12" value="{{old('al_pouch_price_9_12')}}">
+                                                                                        <input class="form-control" type="number" name="al_pouch_price_9_12" id="al_pouch_price_9_12" value="{{old('al_pouch_price_9_12')}}">
                                                                                         @error('al_pouch_price_9_12')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -3502,7 +3502,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="al_pouch_price_10_12" id="al_pouch_price_10_12" value="{{old('al_pouch_price_10_12')}}">
+                                                                                        <input class="form-control" type="number" name="al_pouch_price_10_12" id="al_pouch_price_10_12" value="{{old('al_pouch_price_10_12')}}">
                                                                                         @error('al_pouch_price_10_12')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror
@@ -3539,7 +3539,7 @@
                                                                                         @enderror
                                                                                     </td>
                                                                                     <td style="width: 33%">
-                                                                                        <input class="form-control" type="text" name="al_pouch_price_10_14" id="al_pouch_price_10_14" value="{{old('al_pouch_price_10_14')}}">
+                                                                                        <input class="form-control" type="number" name="al_pouch_price_10_14" id="al_pouch_price_10_14" value="{{old('al_pouch_price_10_14')}}">
                                                                                         @error('al_pouch_price_10_14')
                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                         @enderror

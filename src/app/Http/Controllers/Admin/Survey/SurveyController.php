@@ -53,7 +53,7 @@ class SurveyController extends Controller
         );
 
         $req->validate($rules, $messages);
-        foreach ($req->all() as $key => $value) {
+        foreach ($req->except('address') as $key => $value) {
             # code...
             if(empty($value)){
                 $req[$key] = 0;
@@ -61,6 +61,7 @@ class SurveyController extends Controller
         }
         try {
             //code...
+            // dd($req->all());
             Survey::create($req->all());
             return redirect()->intended(route('image_create'))->with('success_status', 'Survey Completed Successfully.');
         } catch (\Throwable $th) {

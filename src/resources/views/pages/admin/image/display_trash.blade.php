@@ -202,7 +202,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="pp_week_100" id="pp_week_100">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->pp_week_100==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -212,7 +212,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="pp_month_100" id="pp_month_100">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->pp_month_100==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -239,7 +239,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="pp_week_250" id="pp_week_250">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->pp_week_250==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -249,7 +249,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="pp_month_250" id="pp_month_250">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->pp_month_250==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -276,7 +276,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="pp_week_300" id="pp_week_300">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->pp_week_300==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -286,7 +286,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="pp_month_300" id="pp_month_300">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->pp_month_300==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -313,7 +313,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="pp_week_500" id="pp_week_500">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->pp_week_500==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -323,7 +323,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="pp_month_500" id="pp_month_500">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->pp_month_500==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -350,7 +350,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="pp_week_750" id="pp_week_750">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->pp_week_750==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -360,7 +360,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="pp_month_750" id="pp_month_750">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->pp_month_750==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -387,7 +387,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="pp_week_1000" id="pp_week_1000">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->pp_week_1000==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -397,7 +397,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="pp_month_1000" id="pp_month_1000">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->pp_month_1000==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -455,7 +455,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="compartment_week_2cp" id="compartment_week_2cp">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->compartment_week_2cp==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -465,7 +465,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="compartment_month_2cp" id="compartment_month_2cp">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->compartment_month_2cp==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -492,7 +492,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="compartment_week_3cp" id="compartment_week_3cp">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->compartment_week_3cp==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -502,7 +502,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="compartment_month_3cp" id="compartment_month_3cp">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->compartment_month_3cp==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -529,7 +529,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="compartment_week_4cp" id="compartment_week_4cp">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->compartment_week_4cp==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -539,7 +539,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="compartment_month_4cp" id="compartment_month_4cp">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->compartment_month_4cp==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -566,7 +566,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="compartment_week_5cp" id="compartment_week_5cp">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->compartment_week_5cp==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -576,7 +576,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="compartment_month_5cp" id="compartment_month_5cp">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->compartment_month_5cp==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -603,7 +603,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="compartment_week_6cp" id="compartment_week_6cp">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->compartment_week_6cp==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -613,7 +613,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="compartment_month_6cp" id="compartment_month_6cp">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->compartment_month_6cp==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -640,7 +640,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="compartment_week_8cp" id="compartment_week_8cp">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->compartment_week_8cp==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -650,7 +650,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="compartment_month_8cp" id="compartment_month_8cp">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->compartment_month_8cp==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -710,7 +710,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="al_container_without_lid_week_250" id="al_container_without_lid_week_250">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->al_container_without_lid_week_250==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -720,7 +720,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="al_container_without_lid_month_250" id="al_container_without_lid_month_250">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->al_container_without_lid_month_250==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -747,7 +747,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="al_container_without_lid_week_450" id="al_container_without_lid_week_450">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->al_container_without_lid_week_450==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -757,7 +757,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="al_container_without_lid_month_450" id="al_container_without_lid_month_450">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->al_container_without_lid_month_450==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -784,7 +784,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="al_container_without_lid_week_600" id="al_container_without_lid_week_600">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->al_container_without_lid_week_600==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -794,7 +794,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="al_container_without_lid_month_600" id="al_container_without_lid_month_600">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->al_container_without_lid_month_600==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -821,7 +821,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="al_container_without_lid_week_660" id="al_container_without_lid_week_660">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->al_container_without_lid_week_660==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -831,7 +831,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="al_container_without_lid_month_660" id="al_container_without_lid_month_660">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->al_container_without_lid_month_660==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -858,7 +858,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="al_container_without_lid_week_750" id="al_container_without_lid_week_750">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->al_container_without_lid_week_750==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -868,7 +868,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="al_container_without_lid_month_750" id="al_container_without_lid_month_750">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->al_container_without_lid_month_750==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -895,7 +895,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="al_container_without_lid_week_900" id="al_container_without_lid_week_900">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->al_container_without_lid_week_900==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -905,7 +905,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="al_container_without_lid_month_900" id="al_container_without_lid_month_900">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->al_container_without_lid_month_900==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -932,7 +932,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="al_container_without_lid_week_3cp" id="al_container_without_lid_week_3cp">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->al_container_without_lid_week_3cp==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -942,7 +942,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="al_container_without_lid_month_3cp" id="al_container_without_lid_month_3cp">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->al_container_without_lid_month_3cp==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -969,7 +969,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="al_container_without_lid_week_100" id="al_container_without_lid_week_100">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->al_container_without_lid_week_100==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -979,7 +979,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="al_container_without_lid_month_100" id="al_container_without_lid_month_100">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->al_container_without_lid_month_100==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -1006,7 +1006,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="al_container_without_lid_week_120" id="al_container_without_lid_week_120">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->al_container_without_lid_week_120==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -1016,7 +1016,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="al_container_without_lid_month_120" id="al_container_without_lid_month_120">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->al_container_without_lid_month_120==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -1043,7 +1043,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="al_container_without_lid_week_muffin" id="al_container_without_lid_week_muffin">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->al_container_without_lid_week_muffin==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -1053,7 +1053,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="al_container_without_lid_month_muffin" id="al_container_without_lid_month_muffin">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->al_container_without_lid_month_muffin==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -1111,7 +1111,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="aluminium_week_9mtr" id="aluminium_week_9mtr">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->aluminium_week_9mtr==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -1121,7 +1121,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="aluminium_month_9mtr" id="aluminium_month_9mtr">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->aluminium_month_9mtr==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -1148,7 +1148,7 @@
                                                                                 <tr>
                                                                                    <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="aluminium_week_18mtr" id="aluminium_week_18mtr">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->aluminium_week_18mtr==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -1158,7 +1158,7 @@
                                                                                     </td>
                                                                                    <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="aluminium_month_18mtr" id="aluminium_month_18mtr">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->aluminium_month_18mtr==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -1185,7 +1185,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="aluminium_week_72mtr" id="aluminium_week_72mtr">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->aluminium_week_72mtr==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -1195,7 +1195,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="aluminium_month_72mtr" id="aluminium_month_72mtr">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->aluminium_month_72mtr==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -1222,7 +1222,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="aluminium_week_72nbr" id="aluminium_week_72nbr">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->aluminium_week_72nbr==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -1232,7 +1232,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="aluminium_month_72nbr" id="aluminium_month_72nbr">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->aluminium_month_72nbr==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -1259,7 +1259,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="aluminium_week_72spc" id="aluminium_week_72spc">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->aluminium_week_72spc==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -1269,7 +1269,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="aluminium_month_72spc" id="aluminium_month_72spc">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->aluminium_month_72spc==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -1296,7 +1296,7 @@
                                                                                 <tr>
                                                                                    <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="aluminium_week_25g" id="aluminium_week_25g">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->aluminium_week_25g==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -1306,7 +1306,7 @@
                                                                                     </td>
                                                                                    <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="aluminium_month_25g" id="aluminium_month_25g">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->aluminium_month_25g==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -1333,7 +1333,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="aluminium_week_50g" id="aluminium_week_50g">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->aluminium_week_50g==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -1343,7 +1343,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="aluminium_month_50g" id="aluminium_month_50g">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->aluminium_month_50g==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -1370,7 +1370,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="aluminium_week_1kg_gross" id="aluminium_week_1kg_gross">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->aluminium_week_1kg_gross==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -1380,7 +1380,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="aluminium_month_1kg_gross" id="aluminium_month_1kg_gross">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->aluminium_month_1kg_gross==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -1407,7 +1407,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="aluminium_week_1kg_net" id="aluminium_week_1kg_net">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->aluminium_week_1kg_net==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -1417,7 +1417,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="aluminium_month_1kg_net" id="aluminium_month_1kg_net">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->aluminium_month_1kg_net==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -1444,7 +1444,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="aluminium_week_120g" id="aluminium_week_120g">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->aluminium_week_120g==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -1454,7 +1454,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="aluminium_month_120g" id="aluminium_month_120g">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->aluminium_month_120g==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -1515,7 +1515,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="al_container_with_lid_week_250" id="al_container_with_lid_week_250">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->al_container_with_lid_week_250==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -1525,7 +1525,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="al_container_with_lid_month_250" id="al_container_with_lid_month_250">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->al_container_with_lid_month_250==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -1552,7 +1552,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="al_container_with_lid_week_450" id="al_container_with_lid_week_450">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->al_container_with_lid_week_450==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -1562,7 +1562,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="al_container_with_lid_month_450" id="al_container_with_lid_month_450">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->al_container_with_lid_month_450==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -1589,7 +1589,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="al_container_with_lid_week_600" id="al_container_with_lid_week_600">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->al_container_with_lid_week_600==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -1599,7 +1599,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="al_container_with_lid_month_600" id="al_container_with_lid_month_600">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->al_container_with_lid_month_600==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -1626,7 +1626,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="al_container_with_lid_week_750" id="al_container_with_lid_week_750">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->al_container_with_lid_week_750==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -1636,7 +1636,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="al_container_with_lid_month_750" id="al_container_with_lid_month_750">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->al_container_with_lid_month_750==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -1694,7 +1694,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="p_box_week_cake" id="p_box_week_cake">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->p_box_week_cake==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -1704,7 +1704,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="p_box_month_cake" id="p_box_month_cake">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->p_box_month_cake==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -1731,7 +1731,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="p_box_week_dosa" id="p_box_week_dosa">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->p_box_week_dosa==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -1741,7 +1741,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="p_box_month_dosa" id="p_box_month_dosa">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->p_box_month_dosa==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -1768,7 +1768,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="p_box_week_sandwich" id="p_box_week_sandwich">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->p_box_week_sandwich==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -1778,7 +1778,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="p_box_month_sandwich" id="p_box_month_sandwich">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->p_box_month_sandwich==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -1836,7 +1836,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="p_bag_week_small" id="p_bag_week_small">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->p_bag_week_small==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -1846,7 +1846,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="p_bag_month_small" id="p_bag_month_small">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->p_bag_month_small==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -1873,7 +1873,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="p_bag_week_medium" id="p_bag_week_medium">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->p_bag_week_medium==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -1883,7 +1883,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="p_bag_month_medium" id="p_bag_month_medium">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->p_bag_month_medium==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -1910,7 +1910,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="p_bag_week_large" id="p_bag_week_large">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->p_bag_week_large==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -1920,7 +1920,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="p_bag_month_large" id="p_bag_month_large">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->p_bag_month_large==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -1947,7 +1947,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="p_bag_week_x_large" id="p_bag_week_x_large">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->p_bag_week_x_large==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -1957,7 +1957,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="p_bag_month_x_large" id="p_bag_month_x_large">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->p_bag_month_x_large==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -2015,7 +2015,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="garbage_bag_week_small" id="garbage_bag_week_small">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->garbage_bag_week_small==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -2025,7 +2025,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="garbage_bag_month_small" id="garbage_bag_month_small">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->garbage_bag_month_small==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -2052,7 +2052,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="garbage_bag_week_medium" id="garbage_bag_week_medium">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->garbage_bag_week_medium==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -2062,7 +2062,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="garbage_bag_month_medium" id="garbage_bag_month_medium">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->garbage_bag_month_medium==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -2089,7 +2089,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="garbage_bag_week_large" id="garbage_bag_week_large">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->garbage_bag_week_large==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -2099,7 +2099,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="garbage_bag_month_large" id="garbage_bag_month_large">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->garbage_bag_month_large==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -2126,7 +2126,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="garbage_bag_week_x_large" id="garbage_bag_week_x_large">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->garbage_bag_week_x_large==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -2136,7 +2136,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="garbage_bag_month_x_large" id="garbage_bag_month_x_large">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->garbage_bag_month_x_large==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -2194,7 +2194,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="tissue_week_22_22" id="tissue_week_22_22">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->tissue_week_22_22==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -2204,7 +2204,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="tissue_month_22_22" id="tissue_month_22_22">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->tissue_month_22_22==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -2231,7 +2231,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="tissue_week_27_30" id="tissue_week_27_30">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->tissue_week_27_30==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -2241,7 +2241,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="tissue_month_27_30" id="tissue_month_27_30">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->tissue_month_27_30==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -2268,7 +2268,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="tissue_week_30_30" id="tissue_week_30_30">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->tissue_week_30_30==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -2278,7 +2278,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="tissue_month_30_30" id="tissue_month_30_30">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->tissue_month_30_30==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -2305,7 +2305,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="tissue_week_32_32" id="tissue_week_32_32">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->tissue_week_32_32==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -2315,7 +2315,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="tissue_month_32_32" id="tissue_month_32_32">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->tissue_month_32_32==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -2342,7 +2342,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="tissue_week_40_40" id="tissue_week_40_40">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->tissue_week_40_40==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -2352,7 +2352,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="tissue_month_40_40" id="tissue_month_40_40">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->tissue_month_40_40==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -2410,7 +2410,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="cuttlery_week_110_spoon" id="cuttlery_week_110_spoon">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->cuttlery_week_110_spoon==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -2420,7 +2420,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="cuttlery_month_110_spoon" id="cuttlery_month_110_spoon">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->cuttlery_month_110_spoon==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -2447,7 +2447,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="cuttlery_week_140_spoon" id="cuttlery_week_140_spoon">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->cuttlery_week_140_spoon==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -2457,7 +2457,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="cuttlery_month_140_spoon" id="cuttlery_month_140_spoon">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->cuttlery_month_140_spoon==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -2484,7 +2484,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="cuttlery_week_160_spoon" id="cuttlery_week_160_spoon">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->cuttlery_week_160_spoon==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -2494,7 +2494,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="cuttlery_month_160_spoon" id="cuttlery_month_160_spoon">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->cuttlery_month_160_spoon==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -2521,7 +2521,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="cuttlery_week_140_fork" id="cuttlery_week_140_fork">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->cuttlery_week_140_fork==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -2531,7 +2531,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="cuttlery_month_140_fork" id="cuttlery_month_140_fork">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->cuttlery_month_140_fork==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -2558,7 +2558,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="cuttlery_week_160_fork" id="cuttlery_week_160_fork">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->cuttlery_week_160_fork==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -2568,7 +2568,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="cuttlery_month_160_fork" id="cuttlery_month_160_fork">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->cuttlery_month_160_fork==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -2627,7 +2627,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="groccery_bag_week_50" id="groccery_bag_week_50">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->groccery_bag_week_50==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -2637,7 +2637,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="groccery_bag_month_50" id="groccery_bag_month_50">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->groccery_bag_month_50==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -2664,7 +2664,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="groccery_bag_week_100" id="groccery_bag_week_100">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->groccery_bag_week_100==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -2674,7 +2674,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="groccery_bag_month_100" id="groccery_bag_month_100">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->groccery_bag_month_100==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -2701,7 +2701,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="groccery_bag_week_150" id="groccery_bag_week_150">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->groccery_bag_week_150==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -2711,7 +2711,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="groccery_bag_month_150" id="groccery_bag_month_150">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->groccery_bag_month_150==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -2738,7 +2738,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="groccery_bag_week_200" id="groccery_bag_week_200">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->groccery_bag_week_200==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -2748,7 +2748,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="groccery_bag_month_200" id="groccery_bag_month_200">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->groccery_bag_month_200==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -2775,7 +2775,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="groccery_bag_week_250" id="groccery_bag_week_250">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->groccery_bag_week_250==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -2785,7 +2785,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="groccery_bag_month_250" id="groccery_bag_month_250">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->groccery_bag_month_250==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -2812,7 +2812,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="groccery_bag_week_300" id="groccery_bag_week_300">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->groccery_bag_week_300==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -2822,7 +2822,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="groccery_bag_month_300" id="groccery_bag_month_300">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->groccery_bag_month_300==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -2849,7 +2849,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="groccery_bag_week_500" id="groccery_bag_week_500">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->groccery_bag_week_500==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -2859,7 +2859,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="groccery_bag_month_500" id="groccery_bag_month_500">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->groccery_bag_month_500==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -2886,7 +2886,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="groccery_bag_week_1" id="groccery_bag_week_1">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->groccery_bag_week_1==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -2896,7 +2896,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="groccery_bag_month_1" id="groccery_bag_month_1">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->groccery_bag_month_1==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -2923,7 +2923,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="groccery_bag_week_1_5" id="groccery_bag_week_1_5">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->groccery_bag_week_1_5==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -2933,7 +2933,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="groccery_bag_month_1_5" id="groccery_bag_month_1_5">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->groccery_bag_month_1_5==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -2960,7 +2960,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="groccery_bag_week_2" id="groccery_bag_week_2">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->groccery_bag_week_2==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -2970,7 +2970,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="groccery_bag_month_2" id="groccery_bag_month_2">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->groccery_bag_month_2==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -2996,7 +2996,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="groccery_bag_week_3" id="groccery_bag_week_3">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->groccery_bag_week_3==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -3006,7 +3006,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="groccery_bag_month_3" id="groccery_bag_month_3">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->groccery_bag_month_3==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -3033,7 +3033,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="groccery_bag_week_4" id="groccery_bag_week_4">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->groccery_bag_week_4==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -3043,7 +3043,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="groccery_bag_month_4" id="groccery_bag_month_4">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->groccery_bag_month_4==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -3070,7 +3070,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="groccery_bag_week_5" id="groccery_bag_week_5">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->groccery_bag_week_5==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -3080,7 +3080,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="groccery_bag_month_5" id="groccery_bag_month_5">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->groccery_bag_month_5==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -3140,7 +3140,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="al_pouch_week_3_5" id="al_pouch_week_3_5">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->al_pouch_week_3_5==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -3150,7 +3150,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="al_pouch_month_3_5" id="al_pouch_month_3_5">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->al_pouch_month_3_5==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -3177,7 +3177,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="al_pouch_week_4_6" id="al_pouch_week_4_6">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->al_pouch_week_4_6==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -3187,7 +3187,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="al_pouch_month_4_6" id="al_pouch_month_4_6">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->al_pouch_month_4_6==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -3214,7 +3214,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="al_pouch_week_5_7" id="al_pouch_week_5_7">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->al_pouch_week_5_7==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -3224,7 +3224,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="al_pouch_month_5_7" id="al_pouch_month_5_7">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->al_pouch_month_5_7==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -3251,7 +3251,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="al_pouch_week_6_8" id="al_pouch_week_6_8">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->al_pouch_week_6_8==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -3261,7 +3261,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="al_pouch_month_6_8" id="al_pouch_month_6_8">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->al_pouch_month_6_8==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -3288,7 +3288,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="al_pouch_week_6_9" id="al_pouch_week_6_9">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->al_pouch_week_6_9==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -3298,7 +3298,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="al_pouch_month_6_9" id="al_pouch_month_6_9">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->al_pouch_month_6_9==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -3325,7 +3325,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="al_pouch_week_7_9" id="al_pouch_week_7_9">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->al_pouch_week_7_9==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -3335,7 +3335,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="al_pouch_month_7_9" id="al_pouch_month_7_9">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->al_pouch_month_7_9==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -3362,7 +3362,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="al_pouch_week_7_10" id="al_pouch_week_7_10">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->al_pouch_week_7_10==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -3372,7 +3372,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="al_pouch_month_7_10" id="al_pouch_month_7_10">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->al_pouch_month_7_10==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -3399,7 +3399,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="al_pouch_week_8_10" id="al_pouch_week_8_10">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->al_pouch_week_8_10==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -3409,7 +3409,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="al_pouch_month_8_10" id="al_pouch_month_8_10">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->al_pouch_month_8_10==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -3436,7 +3436,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="al_pouch_week_9_12" id="al_pouch_week_9_12">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->al_pouch_week_9_12==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -3446,7 +3446,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="al_pouch_month_9_12" id="al_pouch_month_9_12">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->al_pouch_month_9_12==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -3473,7 +3473,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="al_pouch_week_10_12" id="al_pouch_week_10_12">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->al_pouch_week_10_12==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -3483,7 +3483,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="al_pouch_month_10_12" id="al_pouch_month_10_12">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->al_pouch_month_10_12==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -3510,7 +3510,7 @@
                                                                                 <tr>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="al_pouch_week_10_14" id="al_pouch_week_10_14">
-                                                                                            @for($i = 0; $i <= 1000; $i+=100)
+                                                                                            @for($i = 0; $i <= 10000; $i+=500)
                                                                                             <option value="{{$i}}" {{ $data->al_pouch_week_10_14==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>
@@ -3520,7 +3520,7 @@
                                                                                     </td>
                                                                                     <td style="width: 33%">
                                                                                         <select class="form-control" disabled readonly name="al_pouch_month_10_14" id="al_pouch_month_10_14">
-                                                                                            @for($i = 0; $i <= 4000; $i+=200)
+                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
                                                                                             <option value="{{$i}}" {{ $data->al_pouch_month_10_14==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                             @endfor
                                                                                         </select>

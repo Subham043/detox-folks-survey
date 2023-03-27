@@ -44,6 +44,9 @@
         .page-title-box{
             margin: 0
         }
+        .profile-setting-img2{
+            height: 120px;
+        }
     </style>
 
 
@@ -59,14 +62,14 @@
                 <div class="container-fluid">
 
                     <div class="position-relative">
-                        <div class="profile-wid-bg profile-setting-img">
+                        <div class="profile-wid-bg profile-setting-img profile-setting-img2">
                             <img src="{{ asset('admin/images/logo.png') }}" class="profile-wid-img"
                                 alt="">
                         </div>
                     </div>
 
                     <!-- start page title -->
-                    <div class="row mb-4">
+                    {{-- <div class="row mb-4">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
                                 <h4 class="mb-sm-0">Detox Folks</h4>
@@ -79,7 +82,7 @@
 
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                     <!-- end page title -->
 
                     <div class="row">
@@ -91,7 +94,7 @@
                                     <div class="card-body">
                                         <div class="live-preview">
                                             <div class="row gy-4">
-                                                <div class="col-xxl-4 col-md-4 col-sm-12">
+                                                <div class="col-xxl-3 col-md-6 col-sm-12">
                                                     <div>
                                                         <label for="name" class="form-label">Name</label>
                                                         <input type="text" class="form-control" disabled readonly name="name"
@@ -101,17 +104,7 @@
                                                         @enderror
                                                     </div>
                                                 </div>
-                                                <div class="col-xxl-4 col-md-4 col-sm-12">
-                                                    <div>
-                                                        <label for="email" class="form-label">Email</label>
-                                                        <input type="email" class="form-control" disabled readonly name="email"
-                                                            id="email" value="{{ $data->email }}">
-                                                        @error('email')
-                                                            <div class="invalid-message">{{ $message }}</div>
-                                                        @enderror
-                                                    </div>
-                                                </div>
-                                                <div class="col-xxl-4 col-md-4 col-sm-12">
+                                                <div class="col-xxl-3 col-md-6 col-sm-12">
                                                     <div>
                                                         <label for="phone" class="form-label">Phone</label>
                                                         <input type="text" class="form-control" disabled readonly name="phone"
@@ -121,7 +114,7 @@
                                                         @enderror
                                                     </div>
                                                 </div>
-                                                <div class="col-xxl-6 col-md-6 col-sm-12">
+                                                <div class="col-xxl-3 col-md-6 col-sm-12">
                                                     <div>
                                                         <label for="designation"
                                                             class="form-label">Designation</label>
@@ -132,7 +125,7 @@
                                                         @enderror
                                                     </div>
                                                 </div>
-                                                <div class="col-xxl-6 col-md-6 col-sm-12">
+                                                <div class="col-xxl-3 col-md-6 col-sm-12">
                                                     <div>
                                                         <label for="user_id"
                                                             class="form-label">Staff Associated</label>

@@ -59,7 +59,6 @@
                                     <thead class="table-light">
                                         <tr>
                                             <th class="sort" data-sort="customer_name">Name</th>
-                                            <th class="sort" data-sort="customer_name">Email</th>
                                             <th class="sort" data-sort="customer_name">Phone</th>
                                             <th class="sort" data-sort="customer_name">Designation</th>
                                             <th class="sort" data-sort="customer_name">Staff</th>
@@ -72,7 +71,6 @@
                                         @foreach ($country->items() as $item)
                                         <tr>
                                             <td class="customer_name">{{$item->name}}</td>
-                                            <td class="customer_name">{{$item->email}}</td>
                                             <td class="customer_name">{{$item->phone}}</td>
                                             <td class="customer_name">{{$item->designation}}</td>
                                             <td class="customer_name">{{$item->staff->name}}</td>

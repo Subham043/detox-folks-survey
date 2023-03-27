@@ -30,7 +30,7 @@ class SurveyController extends Controller
     public function store(Request $req) {
         $rules = array(
             'name' => ['required','string','regex:/^[a-zA-Z\s]*$/'],
-            'email' => ['required','email'],
+            'email' => ['nullable','email'],
             'phone' => ['required','regex:/^[0-9]*$/'],
             'user_id' => ['required','regex:/^[0-9]*$/'],
             'designation' => ['required','regex:/^[a-z 0-9~%.:_\@\-\/\(\)\\\#\;\[\]\{\}\$\!\&\<\>\'\r\n+=,]+$/i'],

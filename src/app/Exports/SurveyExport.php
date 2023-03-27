@@ -18,7 +18,6 @@ class SurveyExport implements FromCollection,WithHeadings,WithMapping
         return[
             'id',
             'name',
-            'email',
             'phone',
             'designation',
             'address',
@@ -274,7 +273,6 @@ class SurveyExport implements FromCollection,WithHeadings,WithMapping
          return[
             $data->id,
             $data->name,
-            $data->email,
             $data->phone,
             $data->designation,
             $data->address,

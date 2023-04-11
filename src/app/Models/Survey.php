@@ -261,6 +261,8 @@ class Survey extends Model
         'al_pouch_price_9_12',
         'al_pouch_price_10_12',
         'al_pouch_price_10_14',
+        'payment_duration',
+        'cash_payment',
     ];
 
     public function Staff()

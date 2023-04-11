@@ -3657,6 +3657,72 @@
 
                                                 </div>
 
+                                                <div class="col-xxl-12 col-md-12 col-sm-12">
+                                                    <div>
+                                                        <label for="payment_duration"
+                                                            class="form-label">Advance Payment To Be Made Within :</label>
+                                                        <div class="d-flex align-item-center gap-5">
+                                                            <div class="col-auto">
+                                                                <label for="payment_duration1">
+                                                                    <input type="radio" name="payment_duration" value="7 days" {{old('payment_duration')=='7 days' ? 'checked' : ''}}
+                                                                        id="payment_duration1">
+                                                                    7 days
+                                                                </label>
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <label for="payment_duration2">
+                                                                    <input type="radio" name="payment_duration" value="20 days" {{old('payment_duration')=='20 days' ? 'checked' : ''}}
+                                                                        id="payment_duration2">
+                                                                    20 days
+                                                                </label>
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <label for="payment_duration3">
+                                                                    <input type="radio" name="payment_duration" value="1 month" {{old('payment_duration')=='1 month' ? 'checked' : ''}}
+                                                                        id="payment_duration3">
+                                                                    1 month
+                                                                </label>
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <label for="payment_duration4">
+                                                                    <input type="radio" name="payment_duration" value="2 months" {{old('payment_duration')=='2 months' ? 'checked' : ''}}
+                                                                        id="payment_duration4">
+                                                                    2 months
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        @error('payment_duration')
+                                                            <div class="invalid-message">{{ $message }}</div>
+                                                        @enderror
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xxl-12 col-md-12 col-sm-12">
+                                                    <div>
+                                                        <label for="cash_payment"
+                                                            class="form-label">If given the offer of 20% discount, will you make the advance payment in cash within 7 days? :</label>
+                                                        <div class="d-flex align-item-center gap-5">
+                                                            <div class="col-auto">
+                                                                <label for="cash_payment1">
+                                                                    <input type="radio" name="cash_payment" value="Yes" {{old('cash_payment')=='Yes' ? 'checked' : ''}}
+                                                                        id="cash_payment1">
+                                                                    Yes
+                                                                </label>
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <label for="cash_payment2">
+                                                                    <input type="radio" name="cash_payment" value="No" {{old('cash_payment')=='No' ? 'checked' : ''}}
+                                                                        id="cash_payment2">
+                                                                    No
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        @error('cash_payment')
+                                                            <div class="invalid-message">{{ $message }}</div>
+                                                        @enderror
+                                                    </div>
+                                                </div>
+
 
                                                 <div class="col-xxl-12 col-md-12">
                                                     <button type="submit"

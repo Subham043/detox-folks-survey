@@ -264,6 +264,8 @@ class SurveyExport implements FromCollection,WithHeadings,WithMapping
             '6 layer aluminium coated pouch price 9x12',
             '6 layer aluminium coated pouch price 10x12',
             '6 layer aluminium coated pouch price 10x14',
+            'Advance payment to be done within',
+            'Advance payment to be done in cash',
             'staff',
             'created_at',
         ];
@@ -519,6 +521,8 @@ class SurveyExport implements FromCollection,WithHeadings,WithMapping
             $data->al_pouch_price_9_12,
             $data->al_pouch_price_10_12,
             $data->al_pouch_price_10_14,
+            $data->payment_duration,
+            $data->cash_payment,
             $data->staff->name,
             $data->created_at,
          ];

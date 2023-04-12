@@ -3558,9 +3558,9 @@
                                                             </div>
                                                             <div class="col-auto">
                                                                 <label for="payment_duration2">
-                                                                    <input type="radio" name="payment_duration" value="20 days" {{$data->payment_duration=='20 days' ? 'checked' : 'disabled'}}
+                                                                    <input type="radio" name="payment_duration" value="15 days" {{$data->payment_duration=='15 days' ? 'checked' : 'disabled'}}
                                                                         id="payment_duration2">
-                                                                    20 days
+                                                                    15 days
                                                                 </label>
                                                             </div>
                                                             <div class="col-auto">
@@ -3568,13 +3568,6 @@
                                                                     <input type="radio" name="payment_duration" value="1 month" {{$data->payment_duration=='1 month' ? 'checked' : 'disabled'}}
                                                                         id="payment_duration3">
                                                                     1 month
-                                                                </label>
-                                                            </div>
-                                                            <div class="col-auto">
-                                                                <label for="payment_duration4">
-                                                                    <input type="radio" name="payment_duration" value="2 months" {{$data->payment_duration=='2 months' ? 'checked' : 'disabled'}}
-                                                                        id="payment_duration4">
-                                                                    2 months
                                                                 </label>
                                                             </div>
                                                         </div>
@@ -3587,7 +3580,7 @@
                                                 <div class="col-xxl-12 col-md-12 col-sm-12">
                                                     <div>
                                                         <label for="cash_payment"
-                                                            class="form-label">If given the offer of 20% discount, will you make the advance payment in cash within 7 days? :</label>
+                                                            class="form-label">If given the offer of 10% discount, will you make the advance payment in cash? :</label>
                                                         <div class="d-flex align-item-center gap-5">
                                                             <div class="col-auto">
                                                                 <label for="cash_payment1">

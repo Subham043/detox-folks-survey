@@ -65,6 +65,7 @@ class SurveyController extends Controller
             Survey::create($req->all());
             return redirect()->intended(route('image_create'))->with('success_status', 'Survey Completed Successfully.');
         } catch (\Throwable $th) {
+            throw $th;
             return redirect(route('image_create'))->with('error_status', 'Oops! something went wrong. Please try again');
         }
     }

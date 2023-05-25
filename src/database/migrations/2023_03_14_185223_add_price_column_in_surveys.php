@@ -14,33 +14,28 @@ class AddPriceColumnInSurveys extends Migration
     public function up()
     {
         Schema::table('surveys', function (Blueprint $table) {
+            $table->bigInteger('pp_price_25')->default(0);
+            $table->bigInteger('pp_price_50')->default(0);
             $table->bigInteger('pp_price_100')->default(0);
             $table->bigInteger('pp_price_250')->default(0);
             $table->bigInteger('pp_price_300')->default(0);
             $table->bigInteger('pp_price_500')->default(0);
             $table->bigInteger('pp_price_750')->default(0);
             $table->bigInteger('pp_price_1000')->default(0);
+            $table->bigInteger('pp_price_2500')->default(0);
+            $table->bigInteger('pp_price_3200')->default(0);
+            $table->bigInteger('pp_price_4500')->default(0);
             $table->bigInteger('compartment_price_2cp')->default(0);
             $table->bigInteger('compartment_price_3cp')->default(0);
             $table->bigInteger('compartment_price_4cp')->default(0);
             $table->bigInteger('compartment_price_5cp')->default(0);
             $table->bigInteger('compartment_price_6cp')->default(0);
             $table->bigInteger('compartment_price_8cp')->default(0);
-            $table->bigInteger('al_container_without_lid_price_250')->default(0);
-            $table->bigInteger('al_container_without_lid_price_450')->default(0);
-            $table->bigInteger('al_container_without_lid_price_600')->default(0);
-            $table->bigInteger('al_container_without_lid_price_660')->default(0);
-            $table->bigInteger('al_container_without_lid_price_750')->default(0);
-            $table->bigInteger('al_container_without_lid_price_900')->default(0);
-            $table->bigInteger('al_container_without_lid_price_3cp')->default(0);
-            $table->bigInteger('al_container_without_lid_price_100')->default(0);
-            $table->bigInteger('al_container_without_lid_price_120')->default(0);
-            $table->bigInteger('al_container_without_lid_price_muffin')->default(0);
             $table->bigInteger('al_container_with_lid_price_250')->default(0);
             $table->bigInteger('al_container_with_lid_price_450')->default(0);
             $table->bigInteger('al_container_with_lid_price_600')->default(0);
             $table->bigInteger('al_container_with_lid_price_750')->default(0);
-            $table->bigInteger('p_box_price_cake')->default(0);
+            $table->bigInteger('p_box_price_idly')->default(0);
             $table->bigInteger('p_box_price_dosa')->default(0);
             $table->bigInteger('p_box_price_sandwich')->default(0);
             $table->bigInteger('p_bag_price_small')->default(0);
@@ -74,14 +69,6 @@ class AddPriceColumnInSurveys extends Migration
             $table->bigInteger('cuttlery_price_160_spoon')->default(0);
             $table->bigInteger('cuttlery_price_140_fork')->default(0);
             $table->bigInteger('cuttlery_price_160_fork')->default(0);
-            $table->bigInteger('aluminium_price_9mtr')->default(0);
-            $table->bigInteger('aluminium_price_18mtr')->default(0);
-            $table->bigInteger('aluminium_price_72mtr')->default(0);
-            $table->bigInteger('aluminium_price_72nbr')->default(0);
-            $table->bigInteger('aluminium_price_72spc')->default(0);
-            $table->bigInteger('aluminium_price_25g')->default(0);
-            $table->bigInteger('aluminium_price_50g')->default(0);
-            $table->bigInteger('aluminium_price_120g')->default(0);
             $table->bigInteger('aluminium_price_1kg_gross')->default(0);
             $table->bigInteger('aluminium_price_1kg_net')->default(0);
             $table->bigInteger('al_pouch_price_3_5')->default(0);
@@ -95,6 +82,10 @@ class AddPriceColumnInSurveys extends Migration
             $table->bigInteger('al_pouch_price_9_12')->default(0);
             $table->bigInteger('al_pouch_price_10_12')->default(0);
             $table->bigInteger('al_pouch_price_10_14')->default(0);
+            $table->bigInteger('billing_roll_price_3')->default(0);
+            $table->bigInteger('billing_roll_price_2')->default(0);
+            $table->bigInteger('bopp_tape_price_1')->default(0);
+            $table->bigInteger('bopp_tape_price_2')->default(0);
         });
     }
 

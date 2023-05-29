@@ -1381,265 +1381,6 @@
                                                                             </thead>
                                                                             <tbody>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">50 GMS</a></td>
-                                                                                    <td>
-                                                                                        <table class="table align-middle table-nowrap mb-0">
-                                                                                            <tbody>
-                                                                                                <tr>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select onchange="week_change_handler(event)" class="form-control" name="groccery_bag_week_50" id="groccery_bag_week_50">
-                                                                                                            @for($i = 0; $i <= 10000; $i+=500)
-                                                                                                            <option value="{{$i}}" {{ old('groccery_bag_week_50')==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('groccery_bag_week_50')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select onchange="month_change_handler(event)" class="form-control" name="groccery_bag_month_50" id="groccery_bag_month_50">
-                                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
-                                                                                                            <option value="{{$i}}" {{ old('groccery_bag_month_50')==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('groccery_bag_month_50')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <input class="form-control" type="number" name="groccery_bag_price_50" id="groccery_bag_price_50" value="{{old('groccery_bag_price_50')}}">
-                                                                                                        @error('groccery_bag_price_50')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                            </tbody>
-                                                                                        </table>
-                                                                                    </td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">100GMS</a></td>
-                                                                                    <td>
-                                                                                        <table class="table align-middle table-nowrap mb-0">
-                                                                                            <tbody>
-                                                                                                <tr>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select onchange="week_change_handler(event)" class="form-control" name="groccery_bag_week_100" id="groccery_bag_week_100">
-                                                                                                            @for($i = 0; $i <= 10000; $i+=500)
-                                                                                                            <option value="{{$i}}" {{ old('groccery_bag_week_100')==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('groccery_bag_week_100')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select onchange="month_change_handler(event)" class="form-control" name="groccery_bag_month_100" id="groccery_bag_month_100">
-                                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
-                                                                                                            <option value="{{$i}}" {{ old('groccery_bag_month_100')==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('groccery_bag_month_100')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <input class="form-control" type="number" name="groccery_bag_price_100" id="groccery_bag_price_100" value="{{old('groccery_bag_price_100')}}">
-                                                                                                        @error('groccery_bag_price_100')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                            </tbody>
-                                                                                        </table>
-                                                                                    </td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">150GMS</a></td>
-                                                                                    <td>
-                                                                                        <table class="table align-middle table-nowrap mb-0">
-                                                                                            <tbody>
-                                                                                                <tr>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select onchange="week_change_handler(event)" class="form-control" name="groccery_bag_week_150" id="groccery_bag_week_150">
-                                                                                                            @for($i = 0; $i <= 10000; $i+=500)
-                                                                                                            <option value="{{$i}}" {{ old('groccery_bag_week_150')==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('groccery_bag_week_150')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select onchange="month_change_handler(event)" class="form-control" name="groccery_bag_month_150" id="groccery_bag_month_150">
-                                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
-                                                                                                            <option value="{{$i}}" {{ old('groccery_bag_month_150')==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('groccery_bag_month_150')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <input class="form-control" type="number" name="groccery_bag_price_150" id="groccery_bag_price_150" value="{{old('groccery_bag_price_150')}}">
-                                                                                                        @error('groccery_bag_price_150')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                            </tbody>
-                                                                                        </table>
-                                                                                    </td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">200GMS</a></td>
-                                                                                    <td>
-                                                                                        <table class="table align-middle table-nowrap mb-0">
-                                                                                            <tbody>
-                                                                                                <tr>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select onchange="week_change_handler(event)" class="form-control" name="groccery_bag_week_200" id="groccery_bag_week_200">
-                                                                                                            @for($i = 0; $i <= 10000; $i+=500)
-                                                                                                            <option value="{{$i}}" {{ old('groccery_bag_week_200')==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('groccery_bag_week_200')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select onchange="month_change_handler(event)" class="form-control" name="groccery_bag_month_200" id="groccery_bag_month_200">
-                                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
-                                                                                                            <option value="{{$i}}" {{ old('groccery_bag_month_200')==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('groccery_bag_month_200')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <input class="form-control" type="number" name="groccery_bag_price_200" id="groccery_bag_price_200" value="{{old('groccery_bag_price_200')}}">
-                                                                                                        @error('groccery_bag_price_200')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                            </tbody>
-                                                                                        </table>
-                                                                                    </td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">250GMS</a></td>
-                                                                                    <td>
-                                                                                        <table class="table align-middle table-nowrap mb-0">
-                                                                                            <tbody>
-                                                                                                <tr>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select onchange="week_change_handler(event)" class="form-control" name="groccery_bag_week_250" id="groccery_bag_week_250">
-                                                                                                            @for($i = 0; $i <= 10000; $i+=500)
-                                                                                                            <option value="{{$i}}" {{ old('groccery_bag_week_250')==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('groccery_bag_week_250')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select onchange="month_change_handler(event)" class="form-control" name="groccery_bag_month_250" id="groccery_bag_month_250">
-                                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
-                                                                                                            <option value="{{$i}}" {{ old('groccery_bag_month_250')==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('groccery_bag_month_250')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <input class="form-control" type="number" name="groccery_bag_price_250" id="groccery_bag_price_250" value="{{old('groccery_bag_price_250')}}">
-                                                                                                        @error('groccery_bag_price_250')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                            </tbody>
-                                                                                        </table>
-                                                                                    </td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">300GMS</a></td>
-                                                                                    <td>
-                                                                                        <table class="table align-middle table-nowrap mb-0">
-                                                                                            <tbody>
-                                                                                                <tr>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select onchange="week_change_handler(event)" class="form-control" name="groccery_bag_week_300" id="groccery_bag_week_300">
-                                                                                                            @for($i = 0; $i <= 10000; $i+=500)
-                                                                                                            <option value="{{$i}}" {{ old('groccery_bag_week_300')==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('groccery_bag_week_300')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select onchange="month_change_handler(event)" class="form-control" name="groccery_bag_month_300" id="groccery_bag_month_300">
-                                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
-                                                                                                            <option value="{{$i}}" {{ old('groccery_bag_month_300')==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('groccery_bag_month_300')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <input class="form-control" type="number" name="groccery_bag_price_300" id="groccery_bag_price_300" value="{{old('groccery_bag_price_300')}}">
-                                                                                                        @error('groccery_bag_price_300')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                            </tbody>
-                                                                                        </table>
-                                                                                    </td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">500GMS</a></td>
-                                                                                    <td>
-                                                                                        <table class="table align-middle table-nowrap mb-0">
-                                                                                            <tbody>
-                                                                                                <tr>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select onchange="week_change_handler(event)" class="form-control" name="groccery_bag_week_500" id="groccery_bag_week_500">
-                                                                                                            @for($i = 0; $i <= 10000; $i+=500)
-                                                                                                            <option value="{{$i}}" {{ old('groccery_bag_week_500')==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('groccery_bag_week_500')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select onchange="month_change_handler(event)" class="form-control" name="groccery_bag_month_500" id="groccery_bag_month_500">
-                                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
-                                                                                                            <option value="{{$i}}" {{ old('groccery_bag_month_500')==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('groccery_bag_month_500')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <input class="form-control" type="number" name="groccery_bag_price_500" id="groccery_bag_price_500" value="{{old('groccery_bag_price_500')}}">
-                                                                                                        @error('groccery_bag_price_500')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                            </tbody>
-                                                                                        </table>
-                                                                                    </td>
-                                                                                </tr>
-                                                                                <tr>
                                                                                     <td><a href="#" class="fw-medium text-center">1KG</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
@@ -1647,7 +1388,7 @@
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
                                                                                                         <select onchange="week_change_handler(event)" class="form-control" name="groccery_bag_week_1" id="groccery_bag_week_1">
-                                                                                                            @for($i = 0; $i <= 10000; $i+=500)
+                                                                                                            @for($i = 0; $i <= 30; $i+=5)
                                                                                                             <option value="{{$i}}" {{ old('groccery_bag_week_1')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
                                                                                                         </select>
@@ -1657,7 +1398,7 @@
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select onchange="month_change_handler(event)" class="form-control" name="groccery_bag_month_1" id="groccery_bag_month_1">
-                                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
+                                                                                                            @for($i = 0; $i <= 120; $i+=(5*4))
                                                                                                             <option value="{{$i}}" {{ old('groccery_bag_month_1')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
                                                                                                         </select>
@@ -1677,43 +1418,6 @@
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">1.5KG</a></td>
-                                                                                    <td>
-                                                                                        <table class="table align-middle table-nowrap mb-0">
-                                                                                            <tbody>
-                                                                                                <tr>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select onchange="week_change_handler(event)" class="form-control" name="groccery_bag_week_1_5" id="groccery_bag_week_1_5">
-                                                                                                            @for($i = 0; $i <= 10000; $i+=500)
-                                                                                                            <option value="{{$i}}" {{ old('groccery_bag_week_1_5')==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('groccery_bag_week_1_5')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select onchange="month_change_handler(event)" class="form-control" name="groccery_bag_month_1_5" id="groccery_bag_month_1_5">
-                                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
-                                                                                                            <option value="{{$i}}" {{ old('groccery_bag_month_1_5')==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('groccery_bag_month_1_5')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <input class="form-control" type="number" name="groccery_bag_price_1_5" id="groccery_bag_price_1_5" value="{{old('groccery_bag_price_1_5')}}">
-                                                                                                        @error('groccery_bag_price_1_5')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                            </tbody>
-                                                                                        </table>
-                                                                                    </td>
-                                                                                </tr>
-                                                                                <tr>
                                                                                     <td><a href="#" class="fw-medium text-center">2KG</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
@@ -1721,7 +1425,7 @@
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
                                                                                                         <select onchange="week_change_handler(event)" class="form-control" name="groccery_bag_week_2" id="groccery_bag_week_2">
-                                                                                                            @for($i = 0; $i <= 10000; $i+=500)
+                                                                                                            @for($i = 0; $i <= 30; $i+=5)
                                                                                                             <option value="{{$i}}" {{ old('groccery_bag_week_2')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
                                                                                                         </select>
@@ -1731,7 +1435,7 @@
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select onchange="month_change_handler(event)" class="form-control" name="groccery_bag_month_2" id="groccery_bag_month_2">
-                                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
+                                                                                                            @for($i = 0; $i <= 120; $i+=(5*4))
                                                                                                             <option value="{{$i}}" {{ old('groccery_bag_month_2')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
                                                                                                         </select>
@@ -1757,7 +1461,7 @@
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
                                                                                                         <select onchange="week_change_handler(event)" class="form-control" name="groccery_bag_week_3" id="groccery_bag_week_3">
-                                                                                                            @for($i = 0; $i <= 10000; $i+=500)
+                                                                                                            @for($i = 0; $i <= 30; $i+=5)
                                                                                                             <option value="{{$i}}" {{ old('groccery_bag_week_3')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
                                                                                                         </select>
@@ -1767,7 +1471,7 @@
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select onchange="month_change_handler(event)" class="form-control" name="groccery_bag_month_3" id="groccery_bag_month_3">
-                                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
+                                                                                                            @for($i = 0; $i <= 120; $i+=(5*4))
                                                                                                             <option value="{{$i}}" {{ old('groccery_bag_month_3')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
                                                                                                         </select>
@@ -1787,43 +1491,6 @@
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">4KG</a></td>
-                                                                                    <td>
-                                                                                        <table class="table align-middle table-nowrap mb-0">
-                                                                                            <tbody>
-                                                                                                <tr>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select onchange="week_change_handler(event)" class="form-control" name="groccery_bag_week_4" id="groccery_bag_week_4">
-                                                                                                            @for($i = 0; $i <= 10000; $i+=500)
-                                                                                                            <option value="{{$i}}" {{ old('groccery_bag_week_4')==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('groccery_bag_week_4')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select onchange="month_change_handler(event)" class="form-control" name="groccery_bag_month_4" id="groccery_bag_month_4">
-                                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
-                                                                                                            <option value="{{$i}}" {{ old('groccery_bag_month_4')==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('groccery_bag_month_4')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <input class="form-control" type="number" name="groccery_bag_price_4" id="groccery_bag_price_4" value="{{old('groccery_bag_price_4')}}">
-                                                                                                        @error('groccery_bag_price_4')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                            </tbody>
-                                                                                        </table>
-                                                                                    </td>
-                                                                                </tr>
-                                                                                <tr>
                                                                                     <td><a href="#" class="fw-medium text-center">5KG</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
@@ -1831,7 +1498,7 @@
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
                                                                                                         <select onchange="week_change_handler(event)" class="form-control" name="groccery_bag_week_5" id="groccery_bag_week_5">
-                                                                                                            @for($i = 0; $i <= 10000; $i+=500)
+                                                                                                            @for($i = 0; $i <= 30; $i+=5)
                                                                                                             <option value="{{$i}}" {{ old('groccery_bag_week_5')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
                                                                                                         </select>
@@ -1841,7 +1508,7 @@
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select onchange="month_change_handler(event)" class="form-control" name="groccery_bag_month_5" id="groccery_bag_month_5">
-                                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
+                                                                                                            @for($i = 0; $i <= 120; $i+=(5*4))
                                                                                                             <option value="{{$i}}" {{ old('groccery_bag_month_5')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
                                                                                                         </select>
@@ -1867,6 +1534,193 @@
                                                             </div>
                                                         </div>
                                                         <div class="accordion-item">
+                                                            <h2 class="accordion-header" id="headingSeven2">
+                                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven2" aria-expanded="false" aria-controls="collapseSeven2">
+                                                                    <img
+                                                                    src="http://atlas-content-cdn.pixelsquid.com/stock-images/paper-bag-aqOAYV4-600.jpg"
+                                                                    alt=""
+                                                                    style="height:80px;object-fit:contain;margin-right:20px"
+                                                                    >
+                                                                    <br/>
+                                                                    CARRY BAG
+                                                                </button>
+                                                            </h2>
+                                                            <div id="collapseSeven2" class="accordion-collapse collapse" aria-labelledby="headingSeven2" data-bs-parent="#accordionExample">
+                                                                <div class="accordion-body">
+                                                                    <div class="table-responsive">
+                                                                        <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
+                                                                            <thead class="table-primary">
+                                                                                <tr>
+                                                                                    <th scope="col">APPROX <br/>REQUIREMENT</th>
+                                                                                    <th scope="col">
+                                                                                        <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
+                                                                                            <thead class="table-light">
+                                                                                                <tr>
+                                                                                                    <th scope="col" class="text-center" style="width: 33%">PER WEEK</th>
+                                                                                                    <th scope="col" class="text-center" style="width: 33%">PER MONTH</th>
+                                                                                                    <th scope="col" class="text-center" style="width: 33%">PRICE</th>
+                                                                                                </tr>
+                                                                                            </thead>
+                                                                                        </table>
+                                                                                    </th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td><a href="#" class="fw-medium text-center">1 kg</a></td>
+                                                                                    <td>
+                                                                                        <table class="table align-middle table-nowrap mb-0">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select onchange="week_change_handler(event)" class="form-control" name="carry_bag_bag_week_small" id="carry_bag_bag_week_small">
+                                                                                                            @for($i = 0; $i <= 30; $i+=5)
+                                                                                                            <option value="{{$i}}" {{ old('carry_bag_bag_week_small')==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            @endfor
+                                                                                                        </select>
+                                                                                                        @error('carry_bag_bag_week_small')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select onchange="month_change_handler(event)" class="form-control" name="carry_bag_bag_month_small" id="carry_bag_bag_month_small">
+                                                                                                            @for($i = 0; $i <= 120; $i+=(5*4))
+                                                                                                            <option value="{{$i}}" {{ old('carry_bag_bag_month_small')==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            @endfor
+                                                                                                        </select>
+                                                                                                        @error('carry_bag_bag_month_small')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <input class="form-control" type="number" name="carry_bag_bag_price_small" id="carry_bag_bag_price_small" value="{{old('carry_bag_bag_price_small')}}">
+                                                                                                        @error('carry_bag_bag_price_small')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td><a href="#" class="fw-medium text-center">2 kg</a></td>
+                                                                                    <td>
+                                                                                        <table class="table align-middle table-nowrap mb-0">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select onchange="week_change_handler(event)" class="form-control" name="carry_bag_bag_week_medium" id="carry_bag_bag_week_medium">
+                                                                                                            @for($i = 0; $i <= 30; $i+=5)
+                                                                                                            <option value="{{$i}}" {{ old('carry_bag_bag_week_medium')==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            @endfor
+                                                                                                        </select>
+                                                                                                        @error('carry_bag_bag_week_medium')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select onchange="month_change_handler(event)" class="form-control" name="carry_bag_bag_month_medium" id="carry_bag_bag_month_medium">
+                                                                                                            @for($i = 0; $i <= 120; $i+=(5*4))
+                                                                                                            <option value="{{$i}}" {{ old('carry_bag_bag_month_medium')==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            @endfor
+                                                                                                        </select>
+                                                                                                        @error('carry_bag_bag_month_medium')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <input class="form-control" type="number" name="carry_bag_bag_price_medium" id="carry_bag_bag_price_medium" value="{{old('carry_bag_bag_price_medium')}}">
+                                                                                                        @error('carry_bag_bag_price_medium')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td><a href="#" class="fw-medium text-center">3 kg</a></td>
+                                                                                    <td>
+                                                                                        <table class="table align-middle table-nowrap mb-0">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select onchange="week_change_handler(event)" class="form-control" name="carry_bag_bag_week_large" id="carry_bag_bag_week_large">
+                                                                                                            @for($i = 0; $i <= 30; $i+=5)
+                                                                                                            <option value="{{$i}}" {{ old('carry_bag_bag_week_large')==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            @endfor
+                                                                                                        </select>
+                                                                                                        @error('carry_bag_bag_week_large')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select onchange="month_change_handler(event)" class="form-control" name="carry_bag_bag_month_large" id="carry_bag_bag_month_large">
+                                                                                                            @for($i = 0; $i <= 120; $i+=(5*4))
+                                                                                                            <option value="{{$i}}" {{ old('carry_bag_bag_month_large')==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            @endfor
+                                                                                                        </select>
+                                                                                                        @error('carry_bag_bag_month_large')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <input class="form-control" type="number" name="carry_bag_bag_price_large" id="carry_bag_bag_price_large" value="{{old('carry_bag_bag_price_large')}}">
+                                                                                                        @error('carry_bag_bag_price_large')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td><a href="#" class="fw-medium text-center">5 kg</a></td>
+                                                                                    <td>
+                                                                                        <table class="table align-middle table-nowrap mb-0">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select onchange="week_change_handler(event)" class="form-control" name="carry_bag_bag_week_x_large" id="carry_bag_bag_week_x_large">
+                                                                                                            @for($i = 0; $i <= 30; $i+=5)
+                                                                                                            <option value="{{$i}}" {{ old('carry_bag_bag_week_x_large')==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            @endfor
+                                                                                                        </select>
+                                                                                                        @error('carry_bag_bag_week_x_large')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select onchange="month_change_handler(event)" class="form-control" name="carry_bag_bag_month_x_large" id="carry_bag_bag_month_x_large">
+                                                                                                            @for($i = 0; $i <= 120; $i+=(5*4))
+                                                                                                            <option value="{{$i}}" {{ old('carry_bag_bag_month_x_large')==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            @endfor
+                                                                                                        </select>
+                                                                                                        @error('carry_bag_bag_month_x_large')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <input class="form-control" type="number" name="carry_bag_bag_price_x_large" id="carry_bag_bag_price_x_large" value="{{old('carry_bag_bag_price_x_large')}}">
+                                                                                                        @error('carry_bag_bag_price_x_large')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="accordion-item">
                                                             <h2 class="accordion-header" id="headingFour">
                                                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                                                                     <img
@@ -1875,7 +1729,7 @@
                                                                     style="height:80px;object-fit:contain;margin-right:20px"
                                                                     >
                                                                     <br/>
-                                                                    PAPER BAG
+                                                                    V BOTTOM PAPER BAG
                                                                 </button>
                                                             </h2>
                                                             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
@@ -1900,7 +1754,7 @@
                                                                             </thead>
                                                                             <tbody>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">1 size</a></td>
+                                                                                    <td><a href="#" class="fw-medium text-center">1 kg</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
@@ -1937,7 +1791,7 @@
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">2 size</a></td>
+                                                                                    <td><a href="#" class="fw-medium text-center">2 kg</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
@@ -1974,7 +1828,7 @@
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">3 size</a></td>
+                                                                                    <td><a href="#" class="fw-medium text-center">3 kg</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
@@ -2011,7 +1865,7 @@
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">5 size</a></td>
+                                                                                    <td><a href="#" class="fw-medium text-center">5 kg</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
@@ -3358,6 +3212,274 @@
                                                                                                   <td style="width: 33%">
                                                                                                       <input class="form-control" type="number" name="billing_roll_price_3" id="billing_roll_price_3" value="{{old('billing_roll_price_3')}}">
                                                                                                       @error('billing_roll_price_3')
+                                                                                                          <div class="invalid-message">{{ $message }}</div>
+                                                                                                      @enderror
+                                                                                                  </td>
+                                                                                              </tr>
+                                                                                          </tbody>
+                                                                                      </table>
+                                                                                  </td>
+                                                                              </tr>
+                                                                          </tbody>
+                                                                      </table>
+                                                                  </div>
+                                                              </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header" id="headingThree2">
+                                                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree2" aria-expanded="false" aria-controls="collapseThree2">
+                                                                  <img
+                                                                  src="data:image/jpeg;base64,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"
+                                                                  alt=""
+                                                                  style="height:80px;object-fit:contain;margin-right:20px"
+                                                                  >
+                                                                  <br/>
+                                                                  RUBBER BAND
+                                                              </button>
+                                                            </h2>
+                                                            <div id="collapseThree2" class="accordion-collapse collapse" aria-labelledby="headingThree2" data-bs-parent="#accordionExample">
+                                                              <div class="accordion-body">
+                                                                  <div class="table-responsive">
+                                                                      <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
+                                                                          <thead class="table-primary">
+                                                                              <tr>
+                                                                                  <th scope="col">APPROX <br/>REQUIREMENT</th>
+                                                                                  <th scope="col">
+                                                                                      <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
+                                                                                          <thead class="table-light">
+                                                                                              <tr>
+                                                                                                  <th scope="col" class="text-center" style="width: 33%">PER WEEK <br>(200 rolls / box)</th>
+                                                                                                  <th scope="col" class="text-center" style="width: 33%">PER MONTH <br>(200 rolls / box)</th>
+                                                                                                  <th scope="col" class="text-center" style="width: 33%">PRICE <br>(200 rolls / box)</th>
+                                                                                              </tr>
+                                                                                          </thead>
+                                                                                      </table>
+                                                                                  </th>
+                                                                              </tr>
+                                                                          </thead>
+                                                                          <tbody>
+                                                                              <tr>
+                                                                                  <td><a href="#" class="fw-medium text-center">1KG</a></td>
+                                                                                  <td>
+                                                                                      <table class="table align-middle table-nowrap mb-0">
+                                                                                          <tbody>
+                                                                                              <tr>
+                                                                                                  <td style="width: 33%">
+                                                                                                      <select onchange="week_change_handler(event)" class="form-control" name="rubber_band_week_1" id="rubber_band_week_1">
+                                                                                                          @for($i = 0; $i <= 5; $i+=1)
+                                                                                                          <option value="{{$i}}" {{ old('rubber_band_week_1')==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                          @endfor
+                                                                                                      </select>
+                                                                                                      @error('rubber_band_week_1')
+                                                                                                          <div class="invalid-message">{{ $message }}</div>
+                                                                                                      @enderror
+                                                                                                  </td>
+                                                                                                  <td style="width: 33%">
+                                                                                                      <select onchange="month_change_handler(event)" class="form-control" name="rubber_band_month_1" id="rubber_band_month_1">
+                                                                                                          @for($i = 0; $i <= 20; $i+=(1*4))
+                                                                                                          <option value="{{$i}}" {{ old('rubber_band_month_1')==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                          @endfor
+                                                                                                      </select>
+                                                                                                      @error('rubber_band_month_1')
+                                                                                                          <div class="invalid-message">{{ $message }}</div>
+                                                                                                      @enderror
+                                                                                                  </td>
+                                                                                                  <td style="width: 33%">
+                                                                                                      <input class="form-control" type="number" name="rubber_band_price_1" id="rubber_band_price_1" value="{{old('rubber_band_price_1')}}">
+                                                                                                      @error('rubber_band_price_1')
+                                                                                                          <div class="invalid-message">{{ $message }}</div>
+                                                                                                      @enderror
+                                                                                                  </td>
+                                                                                              </tr>
+                                                                                          </tbody>
+                                                                                      </table>
+                                                                                  </td>
+                                                                              </tr>
+                                                                          </tbody>
+                                                                      </table>
+                                                                  </div>
+                                                              </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header" id="headingFour2">
+                                                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour2" aria-expanded="false" aria-controls="collapseFour2">
+                                                                  <img
+                                                                  src="data:image/jpeg;base64,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"
+                                                                  alt=""
+                                                                  style="height:80px;object-fit:contain;margin-right:20px"
+                                                                  >
+                                                                  <br/>
+                                                                  BUTTER PAPER SHEET
+                                                              </button>
+                                                            </h2>
+                                                            <div id="collapseFour2" class="accordion-collapse collapse" aria-labelledby="headingFour2" data-bs-parent="#accordionExample">
+                                                              <div class="accordion-body">
+                                                                  <div class="table-responsive">
+                                                                      <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
+                                                                          <thead class="table-primary">
+                                                                              <tr>
+                                                                                  <th scope="col">APPROX <br/>REQUIREMENT</th>
+                                                                                  <th scope="col">
+                                                                                      <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
+                                                                                          <thead class="table-light">
+                                                                                              <tr>
+                                                                                                  <th scope="col" class="text-center" style="width: 33%">PER WEEK</th>
+                                                                                                  <th scope="col" class="text-center" style="width: 33%">PER MONTH</th>
+                                                                                                  <th scope="col" class="text-center" style="width: 33%">PRICE</th>
+                                                                                              </tr>
+                                                                                          </thead>
+                                                                                      </table>
+                                                                                  </th>
+                                                                              </tr>
+                                                                          </thead>
+                                                                          <tbody>
+                                                                              <tr>
+                                                                                  <td><a href="#" class="fw-medium text-center">12 x 12</a></td>
+                                                                                  <td>
+                                                                                      <table class="table align-middle table-nowrap mb-0">
+                                                                                          <tbody>
+                                                                                              <tr>
+                                                                                                  <td style="width: 33%">
+                                                                                                      <select onchange="week_change_handler(event)" class="form-control" name="butter_paper_week_12" id="butter_paper_week_12">
+                                                                                                          @for($i = 0; $i <= 50; $i+=5)
+                                                                                                          <option value="{{$i}}" {{ old('butter_paper_week_12')==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                          @endfor
+                                                                                                      </select>
+                                                                                                      @error('butter_paper_week_12')
+                                                                                                          <div class="invalid-message">{{ $message }}</div>
+                                                                                                      @enderror
+                                                                                                  </td>
+                                                                                                  <td style="width: 33%">
+                                                                                                      <select onchange="month_change_handler(event)" class="form-control" name="butter_paper_month_12" id="butter_paper_month_12">
+                                                                                                          @for($i = 0; $i <= 200; $i+=(5*4))
+                                                                                                          <option value="{{$i}}" {{ old('butter_paper_month_12')==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                          @endfor
+                                                                                                      </select>
+                                                                                                      @error('butter_paper_month_12')
+                                                                                                          <div class="invalid-message">{{ $message }}</div>
+                                                                                                      @enderror
+                                                                                                  </td>
+                                                                                                  <td style="width: 33%">
+                                                                                                      <input class="form-control" type="number" name="butter_paper_price_12" id="butter_paper_price_12" value="{{old('butter_paper_price_12')}}">
+                                                                                                      @error('butter_paper_price_12')
+                                                                                                          <div class="invalid-message">{{ $message }}</div>
+                                                                                                      @enderror
+                                                                                                  </td>
+                                                                                              </tr>
+                                                                                          </tbody>
+                                                                                      </table>
+                                                                                  </td>
+                                                                              </tr>
+                                                                          </tbody>
+                                                                      </table>
+                                                                  </div>
+                                                              </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header" id="headingFive2">
+                                                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive2" aria-expanded="false" aria-controls="collapseFive2">
+                                                                  <img
+                                                                  src="data:image/jpeg;base64,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"
+                                                                  alt=""
+                                                                  style="height:80px;object-fit:contain;margin-right:20px"
+                                                                  >
+                                                                  <br/>
+                                                                  PARCEL PAPER SHEET
+                                                              </button>
+                                                            </h2>
+                                                            <div id="collapseFive2" class="accordion-collapse collapse" aria-labelledby="headingFive2" data-bs-parent="#accordionExample">
+                                                              <div class="accordion-body">
+                                                                  <div class="table-responsive">
+                                                                      <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
+                                                                          <thead class="table-primary">
+                                                                              <tr>
+                                                                                  <th scope="col">APPROX <br/>REQUIREMENT</th>
+                                                                                  <th scope="col">
+                                                                                      <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
+                                                                                          <thead class="table-light">
+                                                                                              <tr>
+                                                                                                  <th scope="col" class="text-center" style="width: 33%">PER WEEK</th>
+                                                                                                  <th scope="col" class="text-center" style="width: 33%">PER MONTH</th>
+                                                                                                  <th scope="col" class="text-center" style="width: 33%">PRICE</th>
+                                                                                              </tr>
+                                                                                          </thead>
+                                                                                      </table>
+                                                                                  </th>
+                                                                              </tr>
+                                                                          </thead>
+                                                                          <tbody>
+                                                                              <tr>
+                                                                                  <td><a href="#" class="fw-medium text-center">12 x 12</a></td>
+                                                                                  <td>
+                                                                                      <table class="table align-middle table-nowrap mb-0">
+                                                                                          <tbody>
+                                                                                              <tr>
+                                                                                                  <td style="width: 33%">
+                                                                                                      <select onchange="week_change_handler(event)" class="form-control" name="parcel_paper_week_12" id="parcel_paper_week_12">
+                                                                                                          @for($i = 0; $i <= 50; $i+=5)
+                                                                                                          <option value="{{$i}}" {{ old('parcel_paper_week_12')==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                          @endfor
+                                                                                                      </select>
+                                                                                                      @error('parcel_paper_week_12')
+                                                                                                          <div class="invalid-message">{{ $message }}</div>
+                                                                                                      @enderror
+                                                                                                  </td>
+                                                                                                  <td style="width: 33%">
+                                                                                                      <select onchange="month_change_handler(event)" class="form-control" name="parcel_paper_month_12" id="parcel_paper_month_12">
+                                                                                                          @for($i = 0; $i <= 200; $i+=(5*4))
+                                                                                                          <option value="{{$i}}" {{ old('parcel_paper_month_12')==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                          @endfor
+                                                                                                      </select>
+                                                                                                      @error('parcel_paper_month_12')
+                                                                                                          <div class="invalid-message">{{ $message }}</div>
+                                                                                                      @enderror
+                                                                                                  </td>
+                                                                                                  <td style="width: 33%">
+                                                                                                      <input class="form-control" type="number" name="parcel_paper_price_12" id="parcel_paper_price_12" value="{{old('parcel_paper_price_12')}}">
+                                                                                                      @error('parcel_paper_price_12')
+                                                                                                          <div class="invalid-message">{{ $message }}</div>
+                                                                                                      @enderror
+                                                                                                  </td>
+                                                                                              </tr>
+                                                                                          </tbody>
+                                                                                      </table>
+                                                                                  </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td><a href="#" class="fw-medium text-center">14 x 14</a></td>
+                                                                                  <td>
+                                                                                      <table class="table align-middle table-nowrap mb-0">
+                                                                                          <tbody>
+                                                                                              <tr>
+                                                                                                  <td style="width: 33%">
+                                                                                                      <select onchange="week_change_handler(event)" class="form-control" name="parcel_paper_week_14" id="parcel_paper_week_14">
+                                                                                                          @for($i = 0; $i <= 50; $i+=5)
+                                                                                                          <option value="{{$i}}" {{ old('parcel_paper_week_14')==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                          @endfor
+                                                                                                      </select>
+                                                                                                      @error('parcel_paper_week_14')
+                                                                                                          <div class="invalid-message">{{ $message }}</div>
+                                                                                                      @enderror
+                                                                                                  </td>
+                                                                                                  <td style="width: 33%">
+                                                                                                      <select onchange="month_change_handler(event)" class="form-control" name="parcel_paper_month_14" id="parcel_paper_month_14">
+                                                                                                          @for($i = 0; $i <= 200; $i+=(5*4))
+                                                                                                          <option value="{{$i}}" {{ old('parcel_paper_month_14')==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                          @endfor
+                                                                                                      </select>
+                                                                                                      @error('parcel_paper_month_14')
+                                                                                                          <div class="invalid-message">{{ $message }}</div>
+                                                                                                      @enderror
+                                                                                                  </td>
+                                                                                                  <td style="width: 33%">
+                                                                                                      <input class="form-control" type="number" name="parcel_paper_price_14" id="parcel_paper_price_14" value="{{old('parcel_paper_price_14')}}">
+                                                                                                      @error('parcel_paper_price_14')
                                                                                                           <div class="invalid-message">{{ $message }}</div>
                                                                                                       @enderror
                                                                                                   </td>

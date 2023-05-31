@@ -1969,7 +1969,7 @@
                                                             <h2 class="accordion-header" id="headingTwelve2">
                                                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve2" aria-expanded="false" aria-controls="collapseTwelve2">
                                                                     <img
-                                                                    src="https://m.media-amazon.com/images/I/31quZokr3kL._SX300_SY300_QL70_ML2_.jpg"
+                                                                    src="https://m.media-amazon.com/images/I/51NfoHE61QL.jpg"
                                                                     alt=""
                                                                     style="height:80px;object-fit:contain;margin-right:20px"
                                                                     >
@@ -2119,7 +2119,7 @@
                                                             <h2 class="accordion-header" id="headingThirteen2">
                                                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen2" aria-expanded="false" aria-controls="collapseThirteen2">
                                                                     <img
-                                                                    src="https://m.media-amazon.com/images/I/31quZokr3kL._SX300_SY300_QL70_ML2_.jpg"
+                                                                    src="https://m.media-amazon.com/images/I/717ILnnHiZL.jpg"
                                                                     alt=""
                                                                     style="height:80px;object-fit:contain;margin-right:20px"
                                                                     >

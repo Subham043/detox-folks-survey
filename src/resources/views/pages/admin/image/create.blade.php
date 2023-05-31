@@ -330,6 +330,43 @@
                                                                                 </td>
                                                                             </tr>
                                                                             <tr>
+                                                                                <td><a href="#" class="fw-medium text-center">200gm</a></td>
+                                                                                <td>
+                                                                                    <table class="table align-middle table-nowrap mb-0">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td style="width: 33%">
+                                                                                                    <select onchange="week_change_handler(event)" class="form-control" name="pp_week_200_g" id="pp_week_200_g">
+                                                                                                        @for($i = 0; $i <= 10000; $i+=500)
+                                                                                                        <option value="{{$i}}" {{ old('pp_week_200_g')==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                        @endfor
+                                                                                                    </select>
+                                                                                                    @error('pp_week_200_g')
+                                                                                                        <div class="invalid-message">{{ $message }}</div>
+                                                                                                    @enderror
+                                                                                                </td>
+                                                                                                <td style="width: 33%">
+                                                                                                    <select onchange="month_change_handler(event)" class="form-control" name="pp_month_200_g" id="pp_month_200_g">
+                                                                                                        @for($i = 0; $i <= 40000; $i+=(500*4))
+                                                                                                        <option value="{{$i}}" {{ old('pp_month_200_g')==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                        @endfor
+                                                                                                    </select>
+                                                                                                    @error('pp_month_200_g')
+                                                                                                        <div class="invalid-message">{{ $message }}</div>
+                                                                                                    @enderror
+                                                                                                </td>
+                                                                                                <td style="width: 33%">
+                                                                                                    <input class="form-control" type="number" name="pp_price_200_g" id="pp_price_200_g" value="{{old('pp_price_200_g')}}">
+                                                                                                    @error('pp_price_200_g')
+                                                                                                        <div class="invalid-message">{{ $message }}</div>
+                                                                                                    @enderror
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
                                                                                 <td><a href="#" class="fw-medium text-center">250ml</a></td>
                                                                                 <td>
                                                                                     <table class="table align-middle table-nowrap mb-0">
@@ -358,6 +395,43 @@
                                                                                                 <td style="width: 33%">
                                                                                                     <input class="form-control" type="number" name="pp_price_250" id="pp_price_250" value="{{old('pp_price_250')}}">
                                                                                                     @error('pp_price_250')
+                                                                                                        <div class="invalid-message">{{ $message }}</div>
+                                                                                                    @enderror
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td><a href="#" class="fw-medium text-center">300gm</a></td>
+                                                                                <td>
+                                                                                    <table class="table align-middle table-nowrap mb-0">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td style="width: 33%">
+                                                                                                    <select onchange="week_change_handler(event)" class="form-control" name="pp_week_300_g" id="pp_week_300_g">
+                                                                                                        @for($i = 0; $i <= 10000; $i+=500)
+                                                                                                        <option value="{{$i}}" {{ old('pp_week_300_g')==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                        @endfor
+                                                                                                    </select>
+                                                                                                    @error('pp_week_300_g')
+                                                                                                        <div class="invalid-message">{{ $message }}</div>
+                                                                                                    @enderror
+                                                                                                </td>
+                                                                                                <td style="width: 33%">
+                                                                                                    <select onchange="month_change_handler(event)" class="form-control" name="pp_month_300_g" id="pp_month_300_g">
+                                                                                                        @for($i = 0; $i <= 40000; $i+=(500*4))
+                                                                                                        <option value="{{$i}}" {{ old('pp_month_300_g')==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                        @endfor
+                                                                                                    </select>
+                                                                                                    @error('pp_month_300_g')
+                                                                                                        <div class="invalid-message">{{ $message }}</div>
+                                                                                                    @enderror
+                                                                                                </td>
+                                                                                                <td style="width: 33%">
+                                                                                                    <input class="form-control" type="number" name="pp_price_300_g" id="pp_price_300_g" value="{{old('pp_price_300_g')}}">
+                                                                                                    @error('pp_price_300_g')
                                                                                                         <div class="invalid-message">{{ $message }}</div>
                                                                                                     @enderror
                                                                                                 </td>
@@ -1893,6 +1967,269 @@
                                                                                                     <td style="width: 33%">
                                                                                                         <input class="form-control" type="number" name="p_bag_price_x_large" id="p_bag_price_x_large" value="{{old('p_bag_price_x_large')}}">
                                                                                                         @error('p_bag_price_x_large')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header" id="headingTwelve2">
+                                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve2" aria-expanded="false" aria-controls="collapseTwelve2">
+                                                                    <img
+                                                                    src="https://m.media-amazon.com/images/I/31quZokr3kL._SX300_SY300_QL70_ML2_.jpg"
+                                                                    alt=""
+                                                                    style="height:80px;object-fit:contain;margin-right:20px"
+                                                                    >
+                                                                    <br/>
+                                                                    CLOTH BAG
+                                                                </button>
+                                                            </h2>
+                                                            <div id="collapseTwelve2" class="accordion-collapse collapse" aria-labelledby="headingTwelve2" data-bs-parent="#accordionExample">
+                                                                <div class="accordion-body">
+                                                                    <div class="table-responsive">
+                                                                        <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
+                                                                            <thead class="table-primary">
+                                                                                <tr>
+                                                                                    <th scope="col">APPROX <br/>REQUIREMENT</th>
+                                                                                    <th scope="col">
+                                                                                        <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
+                                                                                            <thead class="table-light">
+                                                                                                <tr>
+                                                                                                    <th scope="col" class="text-center" style="width: 33%">PER WEEK <br> (Per pack 50)</th>
+                                                                                                    <th scope="col" class="text-center" style="width: 33%">PER MONTH <br> (Per pack 50)</th>
+                                                                                                    <th scope="col" class="text-center" style="width: 33%">PRICE <br> (Per pack 50)</th>
+                                                                                                </tr>
+                                                                                            </thead>
+                                                                                        </table>
+                                                                                    </th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td><a href="#" class="fw-medium text-center">Small</a></td>
+                                                                                    <td>
+                                                                                        <table class="table align-middle table-nowrap mb-0">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select onchange="week_change_handler(event)" class="form-control" name="cloth_bag_week_small" id="cloth_bag_week_small">
+                                                                                                            @for($i = 0; $i <= 1000; $i+=5)
+                                                                                                            <option value="{{$i}}" {{ old('cloth_bag_week_small')==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            @endfor
+                                                                                                        </select>
+                                                                                                        @error('cloth_bag_week_small')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select onchange="month_change_handler(event)" class="form-control" name="cloth_bag_month_small" id="cloth_bag_month_small">
+                                                                                                            @for($i = 0; $i <= 4000; $i+=(5*4))
+                                                                                                            <option value="{{$i}}" {{ old('cloth_bag_month_small')==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            @endfor
+                                                                                                        </select>
+                                                                                                        @error('cloth_bag_month_small')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <input class="form-control" type="number" name="cloth_bag_price_small" id="cloth_bag_price_small" value="{{old('cloth_bag_price_small')}}">
+                                                                                                        @error('cloth_bag_price_small')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td><a href="#" class="fw-medium text-center">Medium</a></td>
+                                                                                    <td>
+                                                                                        <table class="table align-middle table-nowrap mb-0">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select onchange="week_change_handler(event)" class="form-control" name="cloth_bag_week_medium" id="cloth_bag_week_medium">
+                                                                                                            @for($i = 0; $i <= 1000; $i+=5)
+                                                                                                            <option value="{{$i}}" {{ old('cloth_bag_week_medium')==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            @endfor
+                                                                                                        </select>
+                                                                                                        @error('cloth_bag_week_medium')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select onchange="month_change_handler(event)" class="form-control" name="cloth_bag_month_medium" id="cloth_bag_month_medium">
+                                                                                                            @for($i = 0; $i <= 4000; $i+=(5*4))
+                                                                                                            <option value="{{$i}}" {{ old('cloth_bag_month_medium')==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            @endfor
+                                                                                                        </select>
+                                                                                                        @error('cloth_bag_month_medium')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <input class="form-control" type="number" name="cloth_bag_price_medium" id="cloth_bag_price_medium" value="{{old('cloth_bag_price_medium')}}">
+                                                                                                        @error('cloth_bag_price_medium')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td><a href="#" class="fw-medium text-center">Large</a></td>
+                                                                                    <td>
+                                                                                        <table class="table align-middle table-nowrap mb-0">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select onchange="week_change_handler(event)" class="form-control" name="cloth_bag_week_large" id="cloth_bag_week_large">
+                                                                                                            @for($i = 0; $i <= 1000; $i+=5)
+                                                                                                            <option value="{{$i}}" {{ old('cloth_bag_week_large')==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            @endfor
+                                                                                                        </select>
+                                                                                                        @error('cloth_bag_week_large')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select onchange="month_change_handler(event)" class="form-control" name="cloth_bag_month_large" id="cloth_bag_month_large">
+                                                                                                            @for($i = 0; $i <= 4000; $i+=(5*4))
+                                                                                                            <option value="{{$i}}" {{ old('cloth_bag_month_large')==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            @endfor
+                                                                                                        </select>
+                                                                                                        @error('cloth_bag_month_large')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <input class="form-control" type="number" name="cloth_bag_price_large" id="cloth_bag_price_large" value="{{old('cloth_bag_price_large')}}">
+                                                                                                        @error('cloth_bag_price_large')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header" id="headingThirteen2">
+                                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen2" aria-expanded="false" aria-controls="collapseThirteen2">
+                                                                    <img
+                                                                    src="https://m.media-amazon.com/images/I/31quZokr3kL._SX300_SY300_QL70_ML2_.jpg"
+                                                                    alt=""
+                                                                    style="height:80px;object-fit:contain;margin-right:20px"
+                                                                    >
+                                                                    <br/>
+                                                                    PAPER STRAW
+                                                                </button>
+                                                            </h2>
+                                                            <div id="collapseThirteen2" class="accordion-collapse collapse" aria-labelledby="headingThirteen2" data-bs-parent="#accordionExample">
+                                                                <div class="accordion-body">
+                                                                    <div class="table-responsive">
+                                                                        <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
+                                                                            <thead class="table-primary">
+                                                                                <tr>
+                                                                                    <th scope="col">APPROX <br/>REQUIREMENT</th>
+                                                                                    <th scope="col">
+                                                                                        <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
+                                                                                            <thead class="table-light">
+                                                                                                <tr>
+                                                                                                    <th scope="col" class="text-center" style="width: 33%">PER WEEK <br>(Per pack 100)</th>
+                                                                                                    <th scope="col" class="text-center" style="width: 33%">PER MONTH <br>(Per pack 100)</th>
+                                                                                                    <th scope="col" class="text-center" style="width: 33%">PRICE <br>(Per pack 100)</th>
+                                                                                                </tr>
+                                                                                            </thead>
+                                                                                        </table>
+                                                                                    </th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td><a href="#" class="fw-medium text-center">6mm</a></td>
+                                                                                    <td>
+                                                                                        <table class="table align-middle table-nowrap mb-0">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select onchange="week_change_handler(event)" class="form-control" name="paper_straw_week_6mm" id="paper_straw_week_6mm">
+                                                                                                            @for($i = 0; $i <= 30; $i+=5)
+                                                                                                            <option value="{{$i}}" {{ old('paper_straw_week_6mm')==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            @endfor
+                                                                                                        </select>
+                                                                                                        @error('paper_straw_week_6mm')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select onchange="month_change_handler(event)" class="form-control" name="paper_straw_month_6mm" id="paper_straw_month_6mm">
+                                                                                                            @for($i = 0; $i <= 120; $i+=(5*4))
+                                                                                                            <option value="{{$i}}" {{ old('paper_straw_month_6mm')==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            @endfor
+                                                                                                        </select>
+                                                                                                        @error('paper_straw_month_6mm')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <input class="form-control" type="number" name="paper_straw_price_6mm" id="paper_straw_price_6mm" value="{{old('paper_straw_price_6mm')}}">
+                                                                                                        @error('paper_straw_price_6mm')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td><a href="#" class="fw-medium text-center">8mm</a></td>
+                                                                                    <td>
+                                                                                        <table class="table align-middle table-nowrap mb-0">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select onchange="week_change_handler(event)" class="form-control" name="paper_straw_week_8mm" id="paper_straw_week_8mm">
+                                                                                                            @for($i = 0; $i <= 30; $i+=5)
+                                                                                                            <option value="{{$i}}" {{ old('paper_straw_week_8mm')==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            @endfor
+                                                                                                        </select>
+                                                                                                        @error('paper_straw_week_8mm')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select onchange="month_change_handler(event)" class="form-control" name="paper_straw_month_8mm" id="paper_straw_month_8mm">
+                                                                                                            @for($i = 0; $i <= 120; $i+=(5*4))
+                                                                                                            <option value="{{$i}}" {{ old('paper_straw_month_8mm')==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            @endfor
+                                                                                                        </select>
+                                                                                                        @error('paper_straw_month_8mm')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <input class="form-control" type="number" name="paper_straw_price_8mm" id="paper_straw_price_8mm" value="{{old('paper_straw_price_8mm')}}">
+                                                                                                        @error('paper_straw_price_8mm')
                                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                                         @enderror
                                                                                                     </td>

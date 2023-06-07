@@ -210,7 +210,7 @@
                                                                                             <tr>
                                                                                                 <td style="width: 33%">
                                                                                                     <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="pp_week_25" id="pp_week_25">
-                                                                                                        @for($i = 0; $i <= 10000; $i+=500)
+                                                                                                        @for($i = 0; $i <= 10000; $i+=200)
                                                                                                         <option value="{{$i}}" {{ $data->pp_week_25==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
                                                                                                     </select>
@@ -220,7 +220,7 @@
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
                                                                                                     <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="pp_month_25" id="pp_month_25">
-                                                                                                        @for($i = 0; $i <= 40000; $i+=(500*4))
+                                                                                                        @for($i = 0; $i <= 40000; $i+=(200*4))
                                                                                                         <option value="{{$i}}" {{ $data->pp_month_25==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
                                                                                                     </select>
@@ -247,7 +247,7 @@
                                                                                             <tr>
                                                                                                 <td style="width: 33%">
                                                                                                     <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="pp_week_50" id="pp_week_50">
-                                                                                                        @for($i = 0; $i <= 10000; $i+=500)
+                                                                                                        @for($i = 0; $i <= 10000; $i+=200)
                                                                                                         <option value="{{$i}}" {{ $data->pp_week_50==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
                                                                                                     </select>
@@ -257,7 +257,7 @@
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
                                                                                                     <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="pp_month_50" id="pp_month_50">
-                                                                                                        @for($i = 0; $i <= 40000; $i+=(500*4))
+                                                                                                        @for($i = 0; $i <= 40000; $i+=(200*4))
                                                                                                         <option value="{{$i}}" {{ $data->pp_month_50==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
                                                                                                     </select>
@@ -284,7 +284,7 @@
                                                                                             <tr>
                                                                                                 <td style="width: 33%">
                                                                                                     <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="pp_week_100" id="pp_week_100">
-                                                                                                        @for($i = 0; $i <= 10000; $i+=500)
+                                                                                                        @for($i = 0; $i <= 10000; $i+=200)
                                                                                                         <option value="{{$i}}" {{ $data->pp_week_100==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
                                                                                                     </select>
@@ -294,7 +294,7 @@
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
                                                                                                     <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="pp_month_100" id="pp_month_100">
-                                                                                                        @for($i = 0; $i <= 40000; $i+=(500*4))
+                                                                                                        @for($i = 0; $i <= 40000; $i+=(200*4))
                                                                                                         <option value="{{$i}}" {{ $data->pp_month_100==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
                                                                                                     </select>
@@ -321,7 +321,7 @@
                                                                                             <tr>
                                                                                                 <td style="width: 33%">
                                                                                                     <select disabled readonly onchange="week_change_handler(event)" class="form-control" name="pp_week_200_g" id="pp_week_200_g">
-                                                                                                        @for($i = 0; $i <= 10000; $i+=500)
+                                                                                                        @for($i = 0; $i <= 10000; $i+=200)
                                                                                                         <option value="{{$i}}" {{ $data->pp_week_200_g==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
                                                                                                     </select>
@@ -331,7 +331,7 @@
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
                                                                                                     <select disabled readonly onchange="month_change_handler(event)" class="form-control" name="pp_month_200_g" id="pp_month_200_g">
-                                                                                                        @for($i = 0; $i <= 40000; $i+=(500*4))
+                                                                                                        @for($i = 0; $i <= 40000; $i+=(200*4))
                                                                                                         <option value="{{$i}}" {{ $data->pp_month_200_g==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
                                                                                                     </select>
@@ -358,7 +358,7 @@
                                                                                             <tr>
                                                                                                 <td style="width: 33%">
                                                                                                     <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="pp_week_250" id="pp_week_250">
-                                                                                                        @for($i = 0; $i <= 10000; $i+=500)
+                                                                                                        @for($i = 0; $i <= 10000; $i+=200)
                                                                                                         <option value="{{$i}}" {{ $data->pp_week_250==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
                                                                                                     </select>
@@ -368,7 +368,7 @@
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
                                                                                                     <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="pp_month_250" id="pp_month_250">
-                                                                                                        @for($i = 0; $i <= 40000; $i+=(500*4))
+                                                                                                        @for($i = 0; $i <= 40000; $i+=(200*4))
                                                                                                         <option value="{{$i}}" {{ $data->pp_month_250==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
                                                                                                     </select>
@@ -395,7 +395,7 @@
                                                                                             <tr>
                                                                                                 <td style="width: 33%">
                                                                                                     <select disabled readonly onchange="week_change_handler(event)" class="form-control" name="pp_week_300_g" id="pp_week_300_g">
-                                                                                                        @for($i = 0; $i <= 10000; $i+=500)
+                                                                                                        @for($i = 0; $i <= 10000; $i+=200)
                                                                                                         <option value="{{$i}}" {{ $data->pp_week_300_g==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
                                                                                                     </select>
@@ -405,7 +405,7 @@
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
                                                                                                     <select disabled readonly onchange="month_change_handler(event)" class="form-control" name="pp_month_300_g" id="pp_month_300_g">
-                                                                                                        @for($i = 0; $i <= 40000; $i+=(500*4))
+                                                                                                        @for($i = 0; $i <= 40000; $i+=(200*4))
                                                                                                         <option value="{{$i}}" {{ $data->pp_month_300_g==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
                                                                                                     </select>
@@ -432,7 +432,7 @@
                                                                                             <tr>
                                                                                                 <td style="width: 33%">
                                                                                                     <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="pp_week_300" id="pp_week_300">
-                                                                                                        @for($i = 0; $i <= 10000; $i+=500)
+                                                                                                        @for($i = 0; $i <= 10000; $i+=200)
                                                                                                         <option value="{{$i}}" {{ $data->pp_week_300==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
                                                                                                     </select>
@@ -442,7 +442,7 @@
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
                                                                                                     <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="pp_month_300" id="pp_month_300">
-                                                                                                        @for($i = 0; $i <= 40000; $i+=(500*4))
+                                                                                                        @for($i = 0; $i <= 40000; $i+=(200*4))
                                                                                                         <option value="{{$i}}" {{ $data->pp_month_300==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
                                                                                                     </select>
@@ -462,6 +462,43 @@
                                                                                 </td>
                                                                             </tr>
                                                                             <tr>
+                                                                                <td><a href="#" class="fw-medium text-center">500gm</a></td>
+                                                                                <td>
+                                                                                    <table class="table align-middle table-nowrap mb-0">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td style="width: 33%">
+                                                                                                    <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="pp_week_500_g" id="pp_week_500_g">
+                                                                                                        @for($i = 0; $i <= 10000; $i+=200)
+                                                                                                        <option value="{{$i}}" {{ $data->pp_week_500_g==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                        @endfor
+                                                                                                    </select>
+                                                                                                    @error('pp_week_500_g')
+                                                                                                        <div class="invalid-message">{{ $message }}</div>
+                                                                                                    @enderror
+                                                                                                </td>
+                                                                                                <td style="width: 33%">
+                                                                                                    <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="pp_month_500_g" id="pp_month_500_g">
+                                                                                                        @for($i = 0; $i <= 40000; $i+=(200*4))
+                                                                                                        <option value="{{$i}}" {{ $data->pp_month_500_g==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                        @endfor
+                                                                                                    </select>
+                                                                                                    @error('pp_month_500_g')
+                                                                                                        <div class="invalid-message">{{ $message }}</div>
+                                                                                                    @enderror
+                                                                                                </td>
+                                                                                                <td style="width: 33%">
+                                                                                                    <input class="form-control" type="number" name="pp_price_500_g" id="pp_price_500_g" disabled readonly="true" value="{{$data->pp_price_500_g}}">
+                                                                                                    @error('pp_price_500_g')
+                                                                                                        <div class="invalid-message">{{ $message }}</div>
+                                                                                                    @enderror
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
                                                                                 <td><a href="#" class="fw-medium text-center">500ml</a></td>
                                                                                 <td>
                                                                                     <table class="table align-middle table-nowrap mb-0">
@@ -469,7 +506,7 @@
                                                                                             <tr>
                                                                                                 <td style="width: 33%">
                                                                                                     <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="pp_week_500" id="pp_week_500">
-                                                                                                        @for($i = 0; $i <= 10000; $i+=500)
+                                                                                                        @for($i = 0; $i <= 10000; $i+=200)
                                                                                                         <option value="{{$i}}" {{ $data->pp_week_500==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
                                                                                                     </select>
@@ -479,7 +516,7 @@
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
                                                                                                     <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="pp_month_500" id="pp_month_500">
-                                                                                                        @for($i = 0; $i <= 40000; $i+=(500*4))
+                                                                                                        @for($i = 0; $i <= 40000; $i+=(200*4))
                                                                                                         <option value="{{$i}}" {{ $data->pp_month_500==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
                                                                                                     </select>
@@ -499,14 +536,14 @@
                                                                                 </td>
                                                                             </tr>
                                                                             <tr>
-                                                                                <td><a href="#" class="fw-medium text-center">750ml</a></td>
+                                                                                <td><a href="#" class="fw-medium text-center">750ml Tall</a></td>
                                                                                 <td>
                                                                                     <table class="table align-middle table-nowrap mb-0">
                                                                                         <tbody>
                                                                                             <tr>
                                                                                                 <td style="width: 33%">
                                                                                                     <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="pp_week_750" id="pp_week_750">
-                                                                                                        @for($i = 0; $i <= 10000; $i+=500)
+                                                                                                        @for($i = 0; $i <= 10000; $i+=200)
                                                                                                         <option value="{{$i}}" {{ $data->pp_week_750==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
                                                                                                     </select>
@@ -516,7 +553,7 @@
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
                                                                                                     <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="pp_month_750" id="pp_month_750">
-                                                                                                        @for($i = 0; $i <= 40000; $i+=(500*4))
+                                                                                                        @for($i = 0; $i <= 40000; $i+=(200*4))
                                                                                                         <option value="{{$i}}" {{ $data->pp_month_750==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
                                                                                                     </select>
@@ -536,6 +573,43 @@
                                                                                 </td>
                                                                             </tr>
                                                                             <tr>
+                                                                                <td><a href="#" class="fw-medium text-center">750ml Flat</a></td>
+                                                                                <td>
+                                                                                    <table class="table align-middle table-nowrap mb-0">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td style="width: 33%">
+                                                                                                    <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="pp_week_750_flat" id="pp_week_750_flat">
+                                                                                                        @for($i = 0; $i <= 10000; $i+=200)
+                                                                                                        <option value="{{$i}}" {{ $data->pp_week_750_flat==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                        @endfor
+                                                                                                    </select>
+                                                                                                    @error('pp_week_750_flat')
+                                                                                                        <div class="invalid-message">{{ $message }}</div>
+                                                                                                    @enderror
+                                                                                                </td>
+                                                                                                <td style="width: 33%">
+                                                                                                    <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="pp_month_750_flat" id="pp_month_750_flat">
+                                                                                                        @for($i = 0; $i <= 40000; $i+=(200*4))
+                                                                                                        <option value="{{$i}}" {{ $data->pp_month_750_flat==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                        @endfor
+                                                                                                    </select>
+                                                                                                    @error('pp_month_750_flat')
+                                                                                                        <div class="invalid-message">{{ $message }}</div>
+                                                                                                    @enderror
+                                                                                                </td>
+                                                                                                <td style="width: 33%">
+                                                                                                    <input class="form-control" type="number" name="pp_price_750_flat" id="pp_price_750_flat" disabled readonly="true" value="{{$data->pp_price_750_flat}}">
+                                                                                                    @error('pp_price_750_flat')
+                                                                                                        <div class="invalid-message">{{ $message }}</div>
+                                                                                                    @enderror
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
                                                                                 <td><a href="#" class="fw-medium text-center">1000ml</a></td>
                                                                                 <td>
                                                                                     <table class="table align-middle table-nowrap mb-0">
@@ -543,7 +617,7 @@
                                                                                             <tr>
                                                                                                 <td style="width: 33%">
                                                                                                     <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="pp_week_1000" id="pp_week_1000">
-                                                                                                        @for($i = 0; $i <= 10000; $i+=500)
+                                                                                                        @for($i = 0; $i <= 10000; $i+=200)
                                                                                                         <option value="{{$i}}" {{ $data->pp_week_1000==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
                                                                                                     </select>
@@ -553,7 +627,7 @@
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
                                                                                                     <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="pp_month_1000" id="pp_month_1000">
-                                                                                                        @for($i = 0; $i <= 40000; $i+=(500*4))
+                                                                                                        @for($i = 0; $i <= 40000; $i+=(200*4))
                                                                                                         <option value="{{$i}}" {{ $data->pp_month_1000==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
                                                                                                     </select>
@@ -580,7 +654,7 @@
                                                                                             <tr>
                                                                                                 <td style="width: 33%">
                                                                                                     <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="pp_week_2500" id="pp_week_2500">
-                                                                                                        @for($i = 0; $i <= 10000; $i+=500)
+                                                                                                        @for($i = 0; $i <= 10000; $i+=200)
                                                                                                         <option value="{{$i}}" {{ $data->pp_week_2500==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
                                                                                                     </select>
@@ -590,7 +664,7 @@
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
                                                                                                     <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="pp_month_2500" id="pp_month_2500">
-                                                                                                        @for($i = 0; $i <= 40000; $i+=(500*4))
+                                                                                                        @for($i = 0; $i <= 40000; $i+=(200*4))
                                                                                                         <option value="{{$i}}" {{ $data->pp_month_2500==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
                                                                                                     </select>
@@ -617,7 +691,7 @@
                                                                                             <tr>
                                                                                                 <td style="width: 33%">
                                                                                                     <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="pp_week_3200" id="pp_week_3200">
-                                                                                                        @for($i = 0; $i <= 10000; $i+=500)
+                                                                                                        @for($i = 0; $i <= 10000; $i+=200)
                                                                                                         <option value="{{$i}}" {{ $data->pp_week_3200==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
                                                                                                     </select>
@@ -627,7 +701,7 @@
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
                                                                                                     <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="pp_month_3200" id="pp_month_3200">
-                                                                                                        @for($i = 0; $i <= 40000; $i+=(500*4))
+                                                                                                        @for($i = 0; $i <= 40000; $i+=(200*4))
                                                                                                         <option value="{{$i}}" {{ $data->pp_month_3200==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
                                                                                                     </select>
@@ -654,7 +728,7 @@
                                                                                             <tr>
                                                                                                 <td style="width: 33%">
                                                                                                     <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="pp_week_4500" id="pp_week_4500">
-                                                                                                        @for($i = 0; $i <= 10000; $i+=500)
+                                                                                                        @for($i = 0; $i <= 10000; $i+=200)
                                                                                                         <option value="{{$i}}" {{ $data->pp_week_4500==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
                                                                                                     </select>
@@ -664,7 +738,7 @@
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
                                                                                                     <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="pp_month_4500" id="pp_month_4500">
-                                                                                                        @for($i = 0; $i <= 40000; $i+=(500*4))
+                                                                                                        @for($i = 0; $i <= 40000; $i+=(200*4))
                                                                                                         <option value="{{$i}}" {{ $data->pp_month_4500==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
                                                                                                     </select>
@@ -730,7 +804,7 @@
                                                                                               <tr>
                                                                                                   <td style="width: 33%">
                                                                                                       <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="al_container_with_lid_week_250" id="al_container_with_lid_week_250">
-                                                                                                          @for($i = 0; $i <= 10000; $i+=500)
+                                                                                                          @for($i = 0; $i <= 10000; $i+=200)
                                                                                                           <option value="{{$i}}" {{ $data->al_container_with_lid_week_250==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
                                                                                                       </select>
@@ -740,7 +814,7 @@
                                                                                                   </td>
                                                                                                   <td style="width: 33%">
                                                                                                       <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="al_container_with_lid_month_250" id="al_container_with_lid_month_250">
-                                                                                                          @for($i = 0; $i <= 40000; $i+=(500*4))
+                                                                                                          @for($i = 0; $i <= 40000; $i+=(200*4))
                                                                                                           <option value="{{$i}}" {{ $data->al_container_with_lid_month_250==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
                                                                                                       </select>
@@ -767,7 +841,7 @@
                                                                                               <tr>
                                                                                                   <td style="width: 33%">
                                                                                                       <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="al_container_with_lid_week_450" id="al_container_with_lid_week_450">
-                                                                                                          @for($i = 0; $i <= 10000; $i+=500)
+                                                                                                          @for($i = 0; $i <= 10000; $i+=200)
                                                                                                           <option value="{{$i}}" {{ $data->al_container_with_lid_week_450==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
                                                                                                       </select>
@@ -777,7 +851,7 @@
                                                                                                   </td>
                                                                                                   <td style="width: 33%">
                                                                                                       <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="al_container_with_lid_month_450" id="al_container_with_lid_month_450">
-                                                                                                          @for($i = 0; $i <= 40000; $i+=(500*4))
+                                                                                                          @for($i = 0; $i <= 40000; $i+=(200*4))
                                                                                                           <option value="{{$i}}" {{ $data->al_container_with_lid_month_450==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
                                                                                                       </select>
@@ -804,7 +878,7 @@
                                                                                               <tr>
                                                                                                   <td style="width: 33%">
                                                                                                       <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="al_container_with_lid_week_600" id="al_container_with_lid_week_600">
-                                                                                                          @for($i = 0; $i <= 10000; $i+=500)
+                                                                                                          @for($i = 0; $i <= 10000; $i+=200)
                                                                                                           <option value="{{$i}}" {{ $data->al_container_with_lid_week_600==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
                                                                                                       </select>
@@ -814,7 +888,7 @@
                                                                                                   </td>
                                                                                                   <td style="width: 33%">
                                                                                                       <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="al_container_with_lid_month_600" id="al_container_with_lid_month_600">
-                                                                                                          @for($i = 0; $i <= 40000; $i+=(500*4))
+                                                                                                          @for($i = 0; $i <= 40000; $i+=(200*4))
                                                                                                           <option value="{{$i}}" {{ $data->al_container_with_lid_month_600==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
                                                                                                       </select>
@@ -841,7 +915,7 @@
                                                                                               <tr>
                                                                                                   <td style="width: 33%">
                                                                                                       <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="al_container_with_lid_week_750" id="al_container_with_lid_week_750">
-                                                                                                          @for($i = 0; $i <= 10000; $i+=500)
+                                                                                                          @for($i = 0; $i <= 10000; $i+=200)
                                                                                                           <option value="{{$i}}" {{ $data->al_container_with_lid_week_750==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
                                                                                                       </select>
@@ -851,7 +925,7 @@
                                                                                                   </td>
                                                                                                   <td style="width: 33%">
                                                                                                       <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="al_container_with_lid_month_750" id="al_container_with_lid_month_750">
-                                                                                                          @for($i = 0; $i <= 40000; $i+=(500*4))
+                                                                                                          @for($i = 0; $i <= 40000; $i+=(200*4))
                                                                                                           <option value="{{$i}}" {{ $data->al_container_with_lid_month_750==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
                                                                                                       </select>
@@ -1625,7 +1699,7 @@
                                                                             </thead>
                                                                             <tbody>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">1 kg</a></td>
+                                                                                    <td><a href="#" class="fw-medium text-center">small <br> W = 22.5cm,<br> H = 23.5cm,<br> G = 14cm</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
@@ -1662,7 +1736,7 @@
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">2 kg</a></td>
+                                                                                    <td><a href="#" class="fw-medium text-center">medium <br> W = 29cm,<br> H = 21cm,<br> G = 19cm</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
@@ -1699,7 +1773,7 @@
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">3 kg</a></td>
+                                                                                    <td><a href="#" class="fw-medium text-center">large <br> W = 32cm,<br> H = 23.5cm,<br> G = 21cm</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
@@ -1736,7 +1810,7 @@
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">5 kg</a></td>
+                                                                                    <td><a href="#" class="fw-medium text-center">extra large <br> W = 38cm,<br> H = 27cm,<br> G = 25cm</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
@@ -1951,6 +2025,43 @@
                                                                                                     <td style="width: 33%">
                                                                                                         <input class="form-control" type="number" name="p_bag_price_x_large" id="p_bag_price_x_large" disabled readonly="true" value="{{$data->p_bag_price_x_large}}">
                                                                                                         @error('p_bag_price_x_large')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td><a href="#" class="fw-medium text-center">7 kg</a></td>
+                                                                                    <td>
+                                                                                        <table class="table align-middle table-nowrap mb-0">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="p_bag_week_xx_large" id="p_bag_week_xx_large">
+                                                                                                            @for($i = 0; $i <= 30; $i+=5)
+                                                                                                            <option value="{{$i}}" {{ $data->p_bag_week_xx_large==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            @endfor
+                                                                                                        </select>
+                                                                                                        @error('p_bag_week_xx_large')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="p_bag_month_xx_large" id="p_bag_month_xx_large">
+                                                                                                            @for($i = 0; $i <= 120; $i+=(5*4))
+                                                                                                            <option value="{{$i}}" {{ $data->p_bag_month_xx_large==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            @endfor
+                                                                                                        </select>
+                                                                                                        @error('p_bag_month_xx_large')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <input class="form-control" type="number" name="p_bag_price_xx_large" id="p_bag_price_xx_large" disabled readonly="true" value="{{$data->p_bag_price_xx_large}}">
+                                                                                                        @error('p_bag_price_xx_large')
                                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                                         @enderror
                                                                                                     </td>
@@ -3801,6 +3912,120 @@
                                                                                                   <td style="width: 33%">
                                                                                                       <input disabled readonly class="form-control" type="number" name="parcel_paper_price_14" id="parcel_paper_price_14" value="{{$data->parcel_paper_price_14}}">
                                                                                                       @error('parcel_paper_price_14')
+                                                                                                          <div class="invalid-message">{{ $message }}</div>
+                                                                                                      @enderror
+                                                                                                  </td>
+                                                                                              </tr>
+                                                                                          </tbody>
+                                                                                      </table>
+                                                                                  </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td><a href="#" class="fw-medium text-center">15 x 15</a></td>
+                                                                                  <td>
+                                                                                      <table class="table align-middle table-nowrap mb-0">
+                                                                                          <tbody>
+                                                                                              <tr>
+                                                                                                  <td style="width: 33%">
+                                                                                                      <select disabled readonly onchange="week_change_handler(event)" class="form-control" name="parcel_paper_week_15" id="parcel_paper_week_15">
+                                                                                                          @for($i = 0; $i <= 50; $i+=5)
+                                                                                                          <option value="{{$i}}" {{ $data->parcel_paper_week_15==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                          @endfor
+                                                                                                      </select>
+                                                                                                      @error('parcel_paper_week_15')
+                                                                                                          <div class="invalid-message">{{ $message }}</div>
+                                                                                                      @enderror
+                                                                                                  </td>
+                                                                                                  <td style="width: 33%">
+                                                                                                      <select disabled readonly onchange="month_change_handler(event)" class="form-control" name="parcel_paper_month_15" id="parcel_paper_month_15">
+                                                                                                          @for($i = 0; $i <= 200; $i+=(5*4))
+                                                                                                          <option value="{{$i}}" {{ $data->parcel_paper_month_15==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                          @endfor
+                                                                                                      </select>
+                                                                                                      @error('parcel_paper_month_15')
+                                                                                                          <div class="invalid-message">{{ $message }}</div>
+                                                                                                      @enderror
+                                                                                                  </td>
+                                                                                                  <td style="width: 33%">
+                                                                                                      <input disabled readonly class="form-control" type="number" name="parcel_paper_price_15" id="parcel_paper_price_15" value="{{$data->parcel_paper_price_15}}">
+                                                                                                      @error('parcel_paper_price_15')
+                                                                                                          <div class="invalid-message">{{ $message }}</div>
+                                                                                                      @enderror
+                                                                                                  </td>
+                                                                                              </tr>
+                                                                                          </tbody>
+                                                                                      </table>
+                                                                                  </td>
+                                                                              </tr>
+                                                                          </tbody>
+                                                                      </table>
+                                                                  </div>
+                                                              </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header" id="headingSix2">
+                                                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix2" aria-expanded="false" aria-controls="collapseSix2">
+                                                                  <img
+                                                                  src="https://img.freepik.com/premium-photo/toothpicks-box-isolated-white_179068-1760.jpg?w=2000"
+                                                                  alt=""
+                                                                  style="height:80px;object-fit:contain;margin-right:20px"
+                                                                  >
+                                                                  <br/>
+                                                                  TOOTHPICK
+                                                              </button>
+                                                            </h2>
+                                                            <div id="collapseSix2" class="accordion-collapse collapse" aria-labelledby="headingSix2" data-bs-parent="#accordionExample">
+                                                              <div class="accordion-body">
+                                                                  <div class="table-responsive">
+                                                                      <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
+                                                                          <thead class="table-primary">
+                                                                              <tr>
+                                                                                  <th scope="col">APPROX <br/>REQUIREMENT</th>
+                                                                                  <th scope="col">
+                                                                                      <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
+                                                                                          <thead class="table-light">
+                                                                                              <tr>
+                                                                                                  <th scope="col" class="text-center" style="width: 33%">PER WEEK</th>
+                                                                                                  <th scope="col" class="text-center" style="width: 33%">PER MONTH</th>
+                                                                                                  <th scope="col" class="text-center" style="width: 33%">PRICE</th>
+                                                                                              </tr>
+                                                                                          </thead>
+                                                                                      </table>
+                                                                                  </th>
+                                                                              </tr>
+                                                                          </thead>
+                                                                          <tbody>
+                                                                              <tr>
+                                                                                  <td><a href="#" class="fw-medium text-center">12 x 12</a></td>
+                                                                                  <td>
+                                                                                      <table class="table align-middle table-nowrap mb-0">
+                                                                                          <tbody>
+                                                                                              <tr>
+                                                                                                  <td style="width: 33%">
+                                                                                                      <select disabled readonly onchange="week_change_handler(event)" class="form-control" name="toothpick_week_12" id="toothpick_week_12">
+                                                                                                          @for($i = 0; $i <= 5; $i+=1)
+                                                                                                          <option value="{{$i}}" {{ $data->toothpick_week_12==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                          @endfor
+                                                                                                      </select>
+                                                                                                      @error('toothpick_week_12')
+                                                                                                          <div class="invalid-message">{{ $message }}</div>
+                                                                                                      @enderror
+                                                                                                  </td>
+                                                                                                  <td style="width: 33%">
+                                                                                                      <select disabled readonly onchange="month_change_handler(event)" class="form-control" name="toothpick_month_12" id="toothpick_month_12">
+                                                                                                          @for($i = 0; $i <= 20; $i+=(1*4))
+                                                                                                          <option value="{{$i}}" {{ $data->toothpick_month_12==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                          @endfor
+                                                                                                      </select>
+                                                                                                      @error('toothpick_month_12')
+                                                                                                          <div class="invalid-message">{{ $message }}</div>
+                                                                                                      @enderror
+                                                                                                  </td>
+                                                                                                  <td style="width: 33%">
+                                                                                                      <input disabled readonly class="form-control" type="number" name="toothpick_price_12" id="toothpick_price_12" value="{{$data->toothpick_price_12}}">
+                                                                                                      @error('toothpick_price_12')
                                                                                                           <div class="invalid-message">{{ $message }}</div>
                                                                                                       @enderror
                                                                                                   </td>

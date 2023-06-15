@@ -6,6 +6,7 @@ use App\Http\Controllers\Admin\Dashboard\DashboardController;
 use App\Http\Controllers\Admin\Auth\ForgotPasswordController;
 use App\Http\Controllers\Admin\Auth\ResetPasswordController;
 use App\Http\Controllers\Admin\Auth\LogoutController;
+use App\Http\Controllers\Admin\OrderForm\OrderFormController;
 use App\Http\Controllers\Admin\Profile\ProfileController;
 use App\Http\Controllers\Admin\User\UserController;
 use App\Http\Controllers\Admin\Survey\SurveyController;
@@ -24,6 +25,8 @@ use App\Http\Controllers\Admin\Survey\SurveyController;
 
 Route::get('/', [SurveyController::class, 'create', 'as' => 'admin.image.create'])->name('image_create');
 Route::post('/', [SurveyController::class, 'store', 'as' => 'admin.image.store'])->name('image_store');
+Route::get('/order-form', [OrderFormController::class, 'create', 'as' => 'admin.order_form.create'])->name('order_form_create');
+Route::post('/order-form', [OrderFormController::class, 'store', 'as' => 'admin.order_form.store'])->name('order_form_store');
 
 Route::middleware(['guest'])->group(function () {
 
@@ -72,6 +75,25 @@ Route::prefix('/admin')->middleware(['auth'])->group(function () {
             Route::get('/restore-all', [SurveyController::class, 'restoreAllTrash', 'as' => 'admin.image.restoreAllTrash'])->name('image_restore_all_trash');
             Route::get('/view/{id}', [SurveyController::class, 'displayTrash', 'as' => 'admin.image.displayTrash'])->name('image_display_trash');
             Route::get('/delete/{id}', [SurveyController::class, 'deleteTrash', 'as' => 'admin.image.deleteTrash'])->name('image_delete_trash');
+        });
+
+    });
+
+    Route::prefix('/order-form')->group(function () {
+        Route::get('/', [OrderFormController::class, 'view', 'as' => 'admin.order_form.view'])->name('order_form_view');
+        Route::get('/view/{id}', [OrderFormController::class, 'display', 'as' => 'admin.order_form.display'])->name('order_form_display');
+        Route::get('/excel', [OrderFormController::class, 'excel', 'as' => 'admin.order_form.excel'])->name('order_form_excel');
+        Route::get('/edit/{id}', [OrderFormController::class, 'edit', 'as' => 'admin.order_form.edit'])->name('order_form_edit');
+        Route::post('/edit/{id}', [OrderFormController::class, 'update', 'as' => 'admin.order_form.update'])->name('order_form_update');
+        Route::get('/delete/{id}', [OrderFormController::class, 'delete', 'as' => 'admin.order_form.delete'])->name('order_form_delete');
+        Route::get('/bulk-upload', [OrderFormController::class, 'bulk_upload', 'as' => 'admin.order_form.bulk_upload'])->name('order_form_bulk_upload');
+        Route::post('/bulk-upload', [OrderFormController::class, 'bulk_upload_store', 'as' => 'admin.order_form.bulk_upload_store'])->name('order_form_bulk_upload_store');
+        Route::prefix('/trash')->group(function () {
+            Route::get('/', [OrderFormController::class, 'viewTrash', 'as' => 'admin.order_form.viewTrash'])->name('order_form_view_trash');
+            Route::get('/restore/{id}', [OrderFormController::class, 'restoreTrash', 'as' => 'admin.order_form.restoreTrash'])->name('order_form_restore_trash');
+            Route::get('/restore-all', [OrderFormController::class, 'restoreAllTrash', 'as' => 'admin.order_form.restoreAllTrash'])->name('order_form_restore_all_trash');
+            Route::get('/view/{id}', [OrderFormController::class, 'displayTrash', 'as' => 'admin.order_form.displayTrash'])->name('order_form_display_trash');
+            Route::get('/delete/{id}', [OrderFormController::class, 'deleteTrash', 'as' => 'admin.order_form.deleteTrash'])->name('order_form_delete_trash');
         });
 
     });

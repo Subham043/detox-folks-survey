@@ -45,6 +45,11 @@
                                     <i class="ri-survey-fill"></i> <span data-key="t-widgets">Surveys</span>
                                 </a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link menu-link {{strpos(url()->current(),'order-form') !== false ? 'active' : ''}}" href="{{route('order_form_view')}}">
+                                    <i class="ri-shopping-cart-fill"></i> <span data-key="t-widgets">Order Form</span>
+                                </a>
+                            </li>
 
                         </ul>
                     </div>

@@ -5,7 +5,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Detox Folks- Survey</title>
+    <title>Detox Folks - Order Form</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesbrand" name="author" />
@@ -76,7 +76,7 @@
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
-                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Survey</a></li>
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Order Form</a></li>
                                     </ol>
                                 </div>
 
@@ -129,7 +129,7 @@
                                                     <div>
                                                         <label for="user_id"
                                                             class="form-label">Staff Associated</label>
-                                                        <select class="form-control" disabled readonly name="user_id" id="user_id">
+                                                        <select class="form-control" disabled readonly disabled readonly name="user_id" id="user_id">
                                                             <option value="">Select Staff</option>
                                                             @foreach($staff as $staff)
                                                             <option value="{{$staff->id}}" {{ $data->user_id==$staff->id ? 'selected' : '' }}>{{$staff->name}}</option>
@@ -161,7 +161,7 @@
                             <div class="col-lg-12">
                                 <div class="card">
                                     <div class="card-header align-items-center d-flex">
-                                        <h4 class="card-title mb-0 flex-grow-1">Survey</h4>
+                                        <h4 class="card-title mb-0 flex-grow-1">Order Form</h4>
                                     </div><!-- end card header -->
                                     <div class="card-body">
 
@@ -187,14 +187,13 @@
                                                                     <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
                                                                         <thead class="table-primary">
                                                                             <tr>
-                                                                                <th scope="col">APPROX <br/>REQUIREMENT</th>
+                                                                                <th scope="col">SIZE</th>
                                                                                 <th scope="col">
                                                                                     <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
                                                                                         <thead class="table-light">
                                                                                             <tr>
-                                                                                                <th scope="col" class="text-center" style="width: 33%">PER WEEK</th>
-                                                                                                <th scope="col" class="text-center" style="width: 33%">PER MONTH</th>
                                                                                                 <th scope="col" class="text-center" style="width: 33%">PRICE</th>
+                                                                                                <th scope="col" class="text-center" style="width: 33%">QUANTITY</th>
                                                                                             </tr>
                                                                                         </thead>
                                                                                     </table>
@@ -203,74 +202,25 @@
                                                                         </thead>
                                                                         <tbody>
                                                                             <tr>
-                                                                                <td><a href="#" class="fw-medium text-center">25ml</a></td>
-                                                                                <td>
-                                                                                    <table class="table align-middle table-nowrap mb-0">
-                                                                                        <tbody>
-                                                                                            <tr>
-                                                                                                <td style="width: 33%">
-                                                                                                    <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="pp_week_25" id="pp_week_25">
-                                                                                                        @for($i = 0; $i <= 10000; $i+=200)
-                                                                                                        <option value="{{$i}}" {{ $data->pp_week_25==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                        @endfor
-                                                                                                    </select>
-                                                                                                    @error('pp_week_25')
-                                                                                                        <div class="invalid-message">{{ $message }}</div>
-                                                                                                    @enderror
-                                                                                                </td>
-                                                                                                <td style="width: 33%">
-                                                                                                    <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="pp_month_25" id="pp_month_25">
-                                                                                                        @for($i = 0; $i <= 40000; $i+=(200*4))
-                                                                                                        <option value="{{$i}}" {{ $data->pp_month_25==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                        @endfor
-                                                                                                    </select>
-                                                                                                    @error('pp_month_25')
-                                                                                                        <div class="invalid-message">{{ $message }}</div>
-                                                                                                    @enderror
-                                                                                                </td>
-                                                                                                <td style="width: 33%">
-                                                                                                    <input class="form-control" type="number" name="pp_price_25" id="pp_price_25" disabled readonly="true" value="{{$data->pp_price_25}}">
-                                                                                                    @error('pp_price_25')
-                                                                                                        <div class="invalid-message">{{ $message }}</div>
-                                                                                                    @enderror
-                                                                                                </td>
-                                                                                            </tr>
-                                                                                        </tbody>
-                                                                                    </table>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
                                                                                 <td><a href="#" class="fw-medium text-center">50ml</a></td>
                                                                                 <td>
                                                                                     <table class="table align-middle table-nowrap mb-0">
                                                                                         <tbody>
                                                                                             <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="pp_week_50" id="pp_week_50">
+                                                                                                    <input class="form-control" disabled readonly value="Rs. 1.31">
+                                                                                                </td>
+                                                                                                <td style="width: 33%">
+                                                                                                    <select class="form-control" disabled readonly name="pp_50" id="pp_50">
                                                                                                         @for($i = 0; $i <= 10000; $i+=200)
-                                                                                                        <option value="{{$i}}" {{ $data->pp_week_50==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                        <option value="{{$i}}" {{ $data->pp_50==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
                                                                                                     </select>
-                                                                                                    @error('pp_week_50')
+                                                                                                    @error('pp_50')
                                                                                                         <div class="invalid-message">{{ $message }}</div>
                                                                                                     @enderror
                                                                                                 </td>
-                                                                                                <td style="width: 33%">
-                                                                                                    <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="pp_month_50" id="pp_month_50">
-                                                                                                        @for($i = 0; $i <= 40000; $i+=(200*4))
-                                                                                                        <option value="{{$i}}" {{ $data->pp_month_50==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                        @endfor
-                                                                                                    </select>
-                                                                                                    @error('pp_month_50')
-                                                                                                        <div class="invalid-message">{{ $message }}</div>
-                                                                                                    @enderror
-                                                                                                </td>
-                                                                                                <td style="width: 33%">
-                                                                                                    <input class="form-control" type="number" name="pp_price_50" id="pp_price_50" disabled readonly="true" value="{{$data->pp_price_50}}">
-                                                                                                    @error('pp_price_50')
-                                                                                                        <div class="invalid-message">{{ $message }}</div>
-                                                                                                    @enderror
-                                                                                                </td>
+
                                                                                             </tr>
                                                                                         </tbody>
                                                                                     </table>
@@ -283,28 +233,15 @@
                                                                                         <tbody>
                                                                                             <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="pp_week_100" id="pp_week_100">
+                                                                                                    <input class="form-control" disabled readonly value="Rs. 1.73">
+                                                                                                </td>
+                                                                                                <td style="width: 33%">
+                                                                                                    <select class="form-control" disabled readonly name="pp_100" id="pp_100">
                                                                                                         @for($i = 0; $i <= 10000; $i+=200)
-                                                                                                        <option value="{{$i}}" {{ $data->pp_week_100==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                        <option value="{{$i}}" {{ $data->pp_100==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
                                                                                                     </select>
-                                                                                                    @error('pp_week_100')
-                                                                                                        <div class="invalid-message">{{ $message }}</div>
-                                                                                                    @enderror
-                                                                                                </td>
-                                                                                                <td style="width: 33%">
-                                                                                                    <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="pp_month_100" id="pp_month_100">
-                                                                                                        @for($i = 0; $i <= 40000; $i+=(200*4))
-                                                                                                        <option value="{{$i}}" {{ $data->pp_month_100==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                        @endfor
-                                                                                                    </select>
-                                                                                                    @error('pp_month_100')
-                                                                                                        <div class="invalid-message">{{ $message }}</div>
-                                                                                                    @enderror
-                                                                                                </td>
-                                                                                                <td style="width: 33%">
-                                                                                                    <input class="form-control" type="number" name="pp_price_100" id="pp_price_100" disabled readonly="true" value="{{$data->pp_price_100}}">
-                                                                                                    @error('pp_price_100')
+                                                                                                    @error('pp_100')
                                                                                                         <div class="invalid-message">{{ $message }}</div>
                                                                                                     @enderror
                                                                                                 </td>
@@ -314,34 +251,45 @@
                                                                                 </td>
                                                                             </tr>
                                                                             <tr>
-                                                                                <td><a href="#" class="fw-medium text-center">200gm</a></td>
+                                                                                <td><a href="#" class="fw-medium text-center">150ml</a></td>
                                                                                 <td>
                                                                                     <table class="table align-middle table-nowrap mb-0">
                                                                                         <tbody>
                                                                                             <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <select disabled readonly onchange="week_change_handler(event)" class="form-control" name="pp_week_200_g" id="pp_week_200_g">
+                                                                                                    <input class="form-control" disabled readonly value="Rs. 2.21">
+                                                                                                </td>
+                                                                                                <td style="width: 33%">
+                                                                                                    <select class="form-control" disabled readonly name="pp_150" id="pp_150">
                                                                                                         @for($i = 0; $i <= 10000; $i+=200)
-                                                                                                        <option value="{{$i}}" {{ $data->pp_week_200_g==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                        <option value="{{$i}}" {{ $data->pp_150==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
                                                                                                     </select>
-                                                                                                    @error('pp_week_200_g')
+                                                                                                    @error('pp_150')
                                                                                                         <div class="invalid-message">{{ $message }}</div>
                                                                                                     @enderror
                                                                                                 </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td><a href="#" class="fw-medium text-center">200ml</a></td>
+                                                                                <td>
+                                                                                    <table class="table align-middle table-nowrap mb-0">
+                                                                                        <tbody>
+                                                                                            <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <select disabled readonly onchange="month_change_handler(event)" class="form-control" name="pp_month_200_g" id="pp_month_200_g">
-                                                                                                        @for($i = 0; $i <= 40000; $i+=(200*4))
-                                                                                                        <option value="{{$i}}" {{ $data->pp_month_200_g==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                        @endfor
-                                                                                                    </select>
-                                                                                                    @error('pp_month_200_g')
-                                                                                                        <div class="invalid-message">{{ $message }}</div>
-                                                                                                    @enderror
+                                                                                                    <input class="form-control" disabled readonly value="Rs. 2.78">
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
-                                                                                                    <input disabled readonly class="form-control" type="number" name="pp_price_200_g" id="pp_price_200_g" value="{{$data->pp_price_200_g}}">
-                                                                                                    @error('pp_price_200_g')
+                                                                                                    <select class="form-control" disabled readonly name="pp_200_g" id="pp_200_g">
+                                                                                                        @for($i = 0; $i <= 10000; $i+=200)
+                                                                                                        <option value="{{$i}}" {{ $data->pp_200_g==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                        @endfor
+                                                                                                    </select>
+                                                                                                    @error('pp_200_g')
                                                                                                         <div class="invalid-message">{{ $message }}</div>
                                                                                                     @enderror
                                                                                                 </td>
@@ -357,68 +305,19 @@
                                                                                         <tbody>
                                                                                             <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="pp_week_250" id="pp_week_250">
+                                                                                                    <input class="form-control" disabled readonly value="Rs. 2.89">
+                                                                                                </td>
+                                                                                                <td style="width: 33%">
+                                                                                                    <select class="form-control" disabled readonly name="pp_250" id="pp_250">
                                                                                                         @for($i = 0; $i <= 10000; $i+=200)
-                                                                                                        <option value="{{$i}}" {{ $data->pp_week_250==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                        <option value="{{$i}}" {{ $data->pp_250==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
                                                                                                     </select>
-                                                                                                    @error('pp_week_250')
+                                                                                                    @error('pp_250')
                                                                                                         <div class="invalid-message">{{ $message }}</div>
                                                                                                     @enderror
                                                                                                 </td>
-                                                                                                <td style="width: 33%">
-                                                                                                    <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="pp_month_250" id="pp_month_250">
-                                                                                                        @for($i = 0; $i <= 40000; $i+=(200*4))
-                                                                                                        <option value="{{$i}}" {{ $data->pp_month_250==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                        @endfor
-                                                                                                    </select>
-                                                                                                    @error('pp_month_250')
-                                                                                                        <div class="invalid-message">{{ $message }}</div>
-                                                                                                    @enderror
-                                                                                                </td>
-                                                                                                <td style="width: 33%">
-                                                                                                    <input class="form-control" type="number" name="pp_price_250" id="pp_price_250" disabled readonly="true" value="{{$data->pp_price_250}}">
-                                                                                                    @error('pp_price_250')
-                                                                                                        <div class="invalid-message">{{ $message }}</div>
-                                                                                                    @enderror
-                                                                                                </td>
-                                                                                            </tr>
-                                                                                        </tbody>
-                                                                                    </table>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td><a href="#" class="fw-medium text-center">300gm</a></td>
-                                                                                <td>
-                                                                                    <table class="table align-middle table-nowrap mb-0">
-                                                                                        <tbody>
-                                                                                            <tr>
-                                                                                                <td style="width: 33%">
-                                                                                                    <select disabled readonly onchange="week_change_handler(event)" class="form-control" name="pp_week_300_g" id="pp_week_300_g">
-                                                                                                        @for($i = 0; $i <= 10000; $i+=200)
-                                                                                                        <option value="{{$i}}" {{ $data->pp_week_300_g==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                        @endfor
-                                                                                                    </select>
-                                                                                                    @error('pp_week_300_g')
-                                                                                                        <div class="invalid-message">{{ $message }}</div>
-                                                                                                    @enderror
-                                                                                                </td>
-                                                                                                <td style="width: 33%">
-                                                                                                    <select disabled readonly onchange="month_change_handler(event)" class="form-control" name="pp_month_300_g" id="pp_month_300_g">
-                                                                                                        @for($i = 0; $i <= 40000; $i+=(200*4))
-                                                                                                        <option value="{{$i}}" {{ $data->pp_month_300_g==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                        @endfor
-                                                                                                    </select>
-                                                                                                    @error('pp_month_300_g')
-                                                                                                        <div class="invalid-message">{{ $message }}</div>
-                                                                                                    @enderror
-                                                                                                </td>
-                                                                                                <td style="width: 33%">
-                                                                                                    <input disabled readonly class="form-control" type="number" name="pp_price_300_g" id="pp_price_300_g" value="{{$data->pp_price_300_g}}">
-                                                                                                    @error('pp_price_300_g')
-                                                                                                        <div class="invalid-message">{{ $message }}</div>
-                                                                                                    @enderror
-                                                                                                </td>
+
                                                                                             </tr>
                                                                                         </tbody>
                                                                                     </table>
@@ -431,31 +330,19 @@
                                                                                         <tbody>
                                                                                             <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="pp_week_300" id="pp_week_300">
+                                                                                                    <input class="form-control" disabled readonly value="Rs. 4.04">
+                                                                                                </td>
+                                                                                                <td style="width: 33%">
+                                                                                                    <select class="form-control" disabled readonly name="pp_300" id="pp_300">
                                                                                                         @for($i = 0; $i <= 10000; $i+=200)
-                                                                                                        <option value="{{$i}}" {{ $data->pp_week_300==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                        <option value="{{$i}}" {{ $data->pp_300==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
                                                                                                     </select>
-                                                                                                    @error('pp_week_300')
+                                                                                                    @error('pp_300')
                                                                                                         <div class="invalid-message">{{ $message }}</div>
                                                                                                     @enderror
                                                                                                 </td>
-                                                                                                <td style="width: 33%">
-                                                                                                    <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="pp_month_300" id="pp_month_300">
-                                                                                                        @for($i = 0; $i <= 40000; $i+=(200*4))
-                                                                                                        <option value="{{$i}}" {{ $data->pp_month_300==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                        @endfor
-                                                                                                    </select>
-                                                                                                    @error('pp_month_300')
-                                                                                                        <div class="invalid-message">{{ $message }}</div>
-                                                                                                    @enderror
-                                                                                                </td>
-                                                                                                <td style="width: 33%">
-                                                                                                    <input class="form-control" type="number" name="pp_price_300" id="pp_price_300" disabled readonly="true" value="{{$data->pp_price_300}}">
-                                                                                                    @error('pp_price_300')
-                                                                                                        <div class="invalid-message">{{ $message }}</div>
-                                                                                                    @enderror
-                                                                                                </td>
+
                                                                                             </tr>
                                                                                         </tbody>
                                                                                     </table>
@@ -468,31 +355,19 @@
                                                                                         <tbody>
                                                                                             <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="pp_week_500_g" id="pp_week_500_g">
+                                                                                                    <input class="form-control" disabled readonly value="Rs. 3.62">
+                                                                                                </td>
+                                                                                                <td style="width: 33%">
+                                                                                                    <select class="form-control" disabled readonly name="pp_500_g" id="pp_500_g">
                                                                                                         @for($i = 0; $i <= 10000; $i+=200)
-                                                                                                        <option value="{{$i}}" {{ $data->pp_week_500_g==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                        <option value="{{$i}}" {{ $data->pp_500_g==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
                                                                                                     </select>
-                                                                                                    @error('pp_week_500_g')
+                                                                                                    @error('pp_500_g')
                                                                                                         <div class="invalid-message">{{ $message }}</div>
                                                                                                     @enderror
                                                                                                 </td>
-                                                                                                <td style="width: 33%">
-                                                                                                    <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="pp_month_500_g" id="pp_month_500_g">
-                                                                                                        @for($i = 0; $i <= 40000; $i+=(200*4))
-                                                                                                        <option value="{{$i}}" {{ $data->pp_month_500_g==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                        @endfor
-                                                                                                    </select>
-                                                                                                    @error('pp_month_500_g')
-                                                                                                        <div class="invalid-message">{{ $message }}</div>
-                                                                                                    @enderror
-                                                                                                </td>
-                                                                                                <td style="width: 33%">
-                                                                                                    <input class="form-control" type="number" name="pp_price_500_g" id="pp_price_500_g" disabled readonly="true" value="{{$data->pp_price_500_g}}">
-                                                                                                    @error('pp_price_500_g')
-                                                                                                        <div class="invalid-message">{{ $message }}</div>
-                                                                                                    @enderror
-                                                                                                </td>
+
                                                                                             </tr>
                                                                                         </tbody>
                                                                                     </table>
@@ -505,31 +380,19 @@
                                                                                         <tbody>
                                                                                             <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="pp_week_500" id="pp_week_500">
+                                                                                                    <input class="form-control" disabled readonly value="Rs. 3.83">
+                                                                                                </td>
+                                                                                                <td style="width: 33%">
+                                                                                                    <select class="form-control" disabled readonly name="pp_500" id="pp_500">
                                                                                                         @for($i = 0; $i <= 10000; $i+=200)
-                                                                                                        <option value="{{$i}}" {{ $data->pp_week_500==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                        <option value="{{$i}}" {{ $data->pp_500==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
                                                                                                     </select>
-                                                                                                    @error('pp_week_500')
+                                                                                                    @error('pp_500')
                                                                                                         <div class="invalid-message">{{ $message }}</div>
                                                                                                     @enderror
                                                                                                 </td>
-                                                                                                <td style="width: 33%">
-                                                                                                    <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="pp_month_500" id="pp_month_500">
-                                                                                                        @for($i = 0; $i <= 40000; $i+=(200*4))
-                                                                                                        <option value="{{$i}}" {{ $data->pp_month_500==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                        @endfor
-                                                                                                    </select>
-                                                                                                    @error('pp_month_500')
-                                                                                                        <div class="invalid-message">{{ $message }}</div>
-                                                                                                    @enderror
-                                                                                                </td>
-                                                                                                <td style="width: 33%">
-                                                                                                    <input class="form-control" type="number" name="pp_price_500" id="pp_price_500" disabled readonly="true" value="{{$data->pp_price_500}}">
-                                                                                                    @error('pp_price_500')
-                                                                                                        <div class="invalid-message">{{ $message }}</div>
-                                                                                                    @enderror
-                                                                                                </td>
+
                                                                                             </tr>
                                                                                         </tbody>
                                                                                     </table>
@@ -542,31 +405,19 @@
                                                                                         <tbody>
                                                                                             <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="pp_week_750" id="pp_week_750">
+                                                                                                    <input class="form-control" disabled readonly value="Rs. 5.51">
+                                                                                                </td>
+                                                                                                <td style="width: 33%">
+                                                                                                    <select class="form-control" disabled readonly name="pp_750" id="pp_750">
                                                                                                         @for($i = 0; $i <= 10000; $i+=200)
-                                                                                                        <option value="{{$i}}" {{ $data->pp_week_750==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                        <option value="{{$i}}" {{ $data->pp_750==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
                                                                                                     </select>
-                                                                                                    @error('pp_week_750')
+                                                                                                    @error('pp_750')
                                                                                                         <div class="invalid-message">{{ $message }}</div>
                                                                                                     @enderror
                                                                                                 </td>
-                                                                                                <td style="width: 33%">
-                                                                                                    <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="pp_month_750" id="pp_month_750">
-                                                                                                        @for($i = 0; $i <= 40000; $i+=(200*4))
-                                                                                                        <option value="{{$i}}" {{ $data->pp_month_750==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                        @endfor
-                                                                                                    </select>
-                                                                                                    @error('pp_month_750')
-                                                                                                        <div class="invalid-message">{{ $message }}</div>
-                                                                                                    @enderror
-                                                                                                </td>
-                                                                                                <td style="width: 33%">
-                                                                                                    <input class="form-control" type="number" name="pp_price_750" id="pp_price_750" disabled readonly="true" value="{{$data->pp_price_750}}">
-                                                                                                    @error('pp_price_750')
-                                                                                                        <div class="invalid-message">{{ $message }}</div>
-                                                                                                    @enderror
-                                                                                                </td>
+
                                                                                             </tr>
                                                                                         </tbody>
                                                                                     </table>
@@ -579,179 +430,169 @@
                                                                                         <tbody>
                                                                                             <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="pp_week_750_flat" id="pp_week_750_flat">
+                                                                                                    <input class="form-control" disabled readonly value="Rs. 5.62">
+                                                                                                </td>
+                                                                                                <td style="width: 33%">
+                                                                                                    <select class="form-control" disabled readonly name="pp_750_flat" id="pp_750_flat">
                                                                                                         @for($i = 0; $i <= 10000; $i+=200)
-                                                                                                        <option value="{{$i}}" {{ $data->pp_week_750_flat==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                        <option value="{{$i}}" {{ $data->pp_750_flat==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
                                                                                                     </select>
-                                                                                                    @error('pp_week_750_flat')
+                                                                                                    @error('pp_750_flat')
                                                                                                         <div class="invalid-message">{{ $message }}</div>
                                                                                                     @enderror
                                                                                                 </td>
-                                                                                                <td style="width: 33%">
-                                                                                                    <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="pp_month_750_flat" id="pp_month_750_flat">
-                                                                                                        @for($i = 0; $i <= 40000; $i+=(200*4))
-                                                                                                        <option value="{{$i}}" {{ $data->pp_month_750_flat==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                        @endfor
-                                                                                                    </select>
-                                                                                                    @error('pp_month_750_flat')
-                                                                                                        <div class="invalid-message">{{ $message }}</div>
-                                                                                                    @enderror
-                                                                                                </td>
-                                                                                                <td style="width: 33%">
-                                                                                                    <input class="form-control" type="number" name="pp_price_750_flat" id="pp_price_750_flat" disabled readonly="true" value="{{$data->pp_price_750_flat}}">
-                                                                                                    @error('pp_price_750_flat')
-                                                                                                        <div class="invalid-message">{{ $message }}</div>
-                                                                                                    @enderror
-                                                                                                </td>
+
                                                                                             </tr>
                                                                                         </tbody>
                                                                                     </table>
                                                                                 </td>
                                                                             </tr>
                                                                             <tr>
-                                                                                <td><a href="#" class="fw-medium text-center">1000ml</a></td>
+                                                                                <td><a href="#" class="fw-medium text-center">1000ml flat</a></td>
                                                                                 <td>
                                                                                     <table class="table align-middle table-nowrap mb-0">
                                                                                         <tbody>
                                                                                             <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="pp_week_1000" id="pp_week_1000">
+                                                                                                    <input class="form-control" disabled readonly value="Rs. 7.04">
+                                                                                                </td>
+                                                                                                <td style="width: 33%">
+                                                                                                    <select class="form-control" disabled readonly name="pp_1000" id="pp_1000">
                                                                                                         @for($i = 0; $i <= 10000; $i+=200)
-                                                                                                        <option value="{{$i}}" {{ $data->pp_week_1000==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                        <option value="{{$i}}" {{ $data->pp_1000==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
                                                                                                     </select>
-                                                                                                    @error('pp_week_1000')
+                                                                                                    @error('pp_1000')
                                                                                                         <div class="invalid-message">{{ $message }}</div>
                                                                                                     @enderror
                                                                                                 </td>
-                                                                                                <td style="width: 33%">
-                                                                                                    <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="pp_month_1000" id="pp_month_1000">
-                                                                                                        @for($i = 0; $i <= 40000; $i+=(200*4))
-                                                                                                        <option value="{{$i}}" {{ $data->pp_month_1000==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                        @endfor
-                                                                                                    </select>
-                                                                                                    @error('pp_month_1000')
-                                                                                                        <div class="invalid-message">{{ $message }}</div>
-                                                                                                    @enderror
-                                                                                                </td>
-                                                                                                <td style="width: 33%">
-                                                                                                    <input class="form-control" type="number" name="pp_price_1000" id="pp_price_1000" disabled readonly="true" value="{{$data->pp_price_1000}}">
-                                                                                                    @error('pp_price_1000')
-                                                                                                        <div class="invalid-message">{{ $message }}</div>
-                                                                                                    @enderror
-                                                                                                </td>
+
                                                                                             </tr>
                                                                                         </tbody>
                                                                                     </table>
                                                                                 </td>
                                                                             </tr>
                                                                             <tr>
-                                                                                <td><a href="#" class="fw-medium text-center">2500ml</a></td>
+                                                                                <td><a href="#" class="fw-medium text-center">500 rec</a></td>
                                                                                 <td>
                                                                                     <table class="table align-middle table-nowrap mb-0">
                                                                                         <tbody>
                                                                                             <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="pp_week_2500" id="pp_week_2500">
+                                                                                                    <input class="form-control" disabled readonly value="Rs. 5.99">
+                                                                                                </td>
+                                                                                                <td style="width: 33%">
+                                                                                                    <select class="form-control" disabled readonly name="pp_500_rec" id="pp_500_rec">
                                                                                                         @for($i = 0; $i <= 10000; $i+=200)
-                                                                                                        <option value="{{$i}}" {{ $data->pp_week_2500==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                        <option value="{{$i}}" {{ $data->pp_500_rec==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
                                                                                                     </select>
-                                                                                                    @error('pp_week_2500')
+                                                                                                    @error('pp_500_rec')
                                                                                                         <div class="invalid-message">{{ $message }}</div>
                                                                                                     @enderror
                                                                                                 </td>
-                                                                                                <td style="width: 33%">
-                                                                                                    <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="pp_month_2500" id="pp_month_2500">
-                                                                                                        @for($i = 0; $i <= 40000; $i+=(200*4))
-                                                                                                        <option value="{{$i}}" {{ $data->pp_month_2500==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                        @endfor
-                                                                                                    </select>
-                                                                                                    @error('pp_month_2500')
-                                                                                                        <div class="invalid-message">{{ $message }}</div>
-                                                                                                    @enderror
-                                                                                                </td>
-                                                                                                <td style="width: 33%">
-                                                                                                    <input class="form-control" type="number" name="pp_price_2500" id="pp_price_2500" disabled readonly="true" value="{{$data->pp_price_2500}}">
-                                                                                                    @error('pp_price_2500')
-                                                                                                        <div class="invalid-message">{{ $message }}</div>
-                                                                                                    @enderror
-                                                                                                </td>
+
                                                                                             </tr>
                                                                                         </tbody>
                                                                                     </table>
                                                                                 </td>
                                                                             </tr>
                                                                             <tr>
-                                                                                <td><a href="#" class="fw-medium text-center">3500ml</a></td>
+                                                                                <td><a href="#" class="fw-medium text-center">650 rec</a></td>
                                                                                 <td>
                                                                                     <table class="table align-middle table-nowrap mb-0">
                                                                                         <tbody>
                                                                                             <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="pp_week_3200" id="pp_week_3200">
+                                                                                                    <input class="form-control" disabled readonly value="Rs. 6.20">
+                                                                                                </td>
+                                                                                                <td style="width: 33%">
+                                                                                                    <select class="form-control" disabled readonly name="pp_650_rec" id="pp_650_rec">
                                                                                                         @for($i = 0; $i <= 10000; $i+=200)
-                                                                                                        <option value="{{$i}}" {{ $data->pp_week_3200==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                        <option value="{{$i}}" {{ $data->pp_650_rec==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
                                                                                                     </select>
-                                                                                                    @error('pp_week_3200')
+                                                                                                    @error('pp_650_rec')
                                                                                                         <div class="invalid-message">{{ $message }}</div>
                                                                                                     @enderror
                                                                                                 </td>
-                                                                                                <td style="width: 33%">
-                                                                                                    <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="pp_month_3200" id="pp_month_3200">
-                                                                                                        @for($i = 0; $i <= 40000; $i+=(200*4))
-                                                                                                        <option value="{{$i}}" {{ $data->pp_month_3200==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                        @endfor
-                                                                                                    </select>
-                                                                                                    @error('pp_month_3200')
-                                                                                                        <div class="invalid-message">{{ $message }}</div>
-                                                                                                    @enderror
-                                                                                                </td>
-                                                                                                <td style="width: 33%">
-                                                                                                    <input class="form-control" type="number" name="pp_price_3200" id="pp_price_3200" disabled readonly="true" value="{{$data->pp_price_3200}}">
-                                                                                                    @error('pp_price_3200')
-                                                                                                        <div class="invalid-message">{{ $message }}</div>
-                                                                                                    @enderror
-                                                                                                </td>
+
                                                                                             </tr>
                                                                                         </tbody>
                                                                                     </table>
                                                                                 </td>
                                                                             </tr>
                                                                             <tr>
-                                                                                <td><a href="#" class="fw-medium text-center">4500ml</a></td>
+                                                                                <td><a href="#" class="fw-medium text-center">750 rec</a></td>
                                                                                 <td>
                                                                                     <table class="table align-middle table-nowrap mb-0">
                                                                                         <tbody>
                                                                                             <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="pp_week_4500" id="pp_week_4500">
+                                                                                                    <input class="form-control" disabled readonly value="Rs. 6.51">
+                                                                                                </td>
+                                                                                                <td style="width: 33%">
+                                                                                                    <select class="form-control" disabled readonly name="pp_750_rec" id="pp_750_rec">
                                                                                                         @for($i = 0; $i <= 10000; $i+=200)
-                                                                                                        <option value="{{$i}}" {{ $data->pp_week_4500==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                        <option value="{{$i}}" {{ $data->pp_750_rec==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
                                                                                                     </select>
-                                                                                                    @error('pp_week_4500')
+                                                                                                    @error('pp_750_rec')
                                                                                                         <div class="invalid-message">{{ $message }}</div>
                                                                                                     @enderror
                                                                                                 </td>
+
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td><a href="#" class="fw-medium text-center">1000 rec</a></td>
+                                                                                <td>
+                                                                                    <table class="table align-middle table-nowrap mb-0">
+                                                                                        <tbody>
+                                                                                            <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="pp_month_4500" id="pp_month_4500">
-                                                                                                        @for($i = 0; $i <= 40000; $i+=(200*4))
-                                                                                                        <option value="{{$i}}" {{ $data->pp_month_4500==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                    <input class="form-control" disabled readonly value="Rs. 6.83">
+                                                                                                </td>
+                                                                                                <td style="width: 33%">
+                                                                                                    <select class="form-control" disabled readonly name="pp_1000_rec" id="pp_1000_rec">
+                                                                                                        @for($i = 0; $i <= 10000; $i+=200)
+                                                                                                        <option value="{{$i}}" {{ $data->pp_1000_rec==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
                                                                                                     </select>
-                                                                                                    @error('pp_month_4500')
+                                                                                                    @error('pp_1000_rec')
                                                                                                         <div class="invalid-message">{{ $message }}</div>
                                                                                                     @enderror
+                                                                                                </td>
+
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td><a href="#" class="fw-medium text-center">650 bowl</a></td>
+                                                                                <td>
+                                                                                    <table class="table align-middle table-nowrap mb-0">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td style="width: 33%">
+                                                                                                    <input class="form-control" disabled readonly value="Rs. 5.78">
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
-                                                                                                    <input class="form-control" type="number" name="pp_price_4500" id="pp_price_4500" disabled readonly="true" value="{{$data->pp_price_4500}}">
-                                                                                                    @error('pp_price_4500')
+                                                                                                    <select class="form-control" disabled readonly name="pp_650_bowl" id="pp_650_bowl">
+                                                                                                        @for($i = 0; $i <= 10000; $i+=200)
+                                                                                                        <option value="{{$i}}" {{ $data->pp_650_bowl==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                        @endfor
+                                                                                                    </select>
+                                                                                                    @error('pp_650_bowl')
                                                                                                         <div class="invalid-message">{{ $message }}</div>
                                                                                                     @enderror
                                                                                                 </td>
+
                                                                                             </tr>
                                                                                         </tbody>
                                                                                     </table>
@@ -781,14 +622,13 @@
                                                                       <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
                                                                           <thead class="table-primary">
                                                                               <tr>
-                                                                                  <th scope="col">APPROX REQUIREMENT</th>
+                                                                                  <th scope="col">SIZE</th>
                                                                                   <th scope="col">
                                                                                       <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
                                                                                           <thead class="table-light">
                                                                                               <tr>
-                                                                                                  <th scope="col" class="text-center" style="width: 33%">PER WEEK</th>
-                                                                                                  <th scope="col" class="text-center" style="width: 33%">PER MONTH</th>
                                                                                                   <th scope="col" class="text-center" style="width: 33%">PRICE</th>
+                                                                                                  <th scope="col" class="text-center" style="width: 33%">QUANTITY</th>
                                                                                               </tr>
                                                                                           </thead>
                                                                                       </table>
@@ -797,34 +637,21 @@
                                                                           </thead>
                                                                           <tbody>
                                                                               <tr>
-                                                                                  <td><a href="#" class="fw-medium text-center">250ml</a></td>
+                                                                                  <td><a href="#" class="fw-medium text-center">250ml (Regular)</a></td>
                                                                                   <td>
                                                                                       <table class="table align-middle table-nowrap mb-0">
                                                                                           <tbody>
                                                                                               <tr>
+                                                                                                <td style="width: 33%">
+                                                                                                    <input class="form-control" disabled readonly value="Rs. 1.39">
+                                                                                                </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="al_container_with_lid_week_250" id="al_container_with_lid_week_250">
+                                                                                                      <select class="form-control" disabled readonly name="al_container_with_lid_250" id="al_container_with_lid_250">
                                                                                                           @for($i = 0; $i <= 10000; $i+=200)
-                                                                                                          <option value="{{$i}}" {{ $data->al_container_with_lid_week_250==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                          <option value="{{$i}}" {{ $data->al_container_with_lid_250==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
                                                                                                       </select>
-                                                                                                      @error('al_container_with_lid_week_250')
-                                                                                                          <div class="invalid-message">{{ $message }}</div>
-                                                                                                      @enderror
-                                                                                                  </td>
-                                                                                                  <td style="width: 33%">
-                                                                                                      <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="al_container_with_lid_month_250" id="al_container_with_lid_month_250">
-                                                                                                          @for($i = 0; $i <= 40000; $i+=(200*4))
-                                                                                                          <option value="{{$i}}" {{ $data->al_container_with_lid_month_250==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                          @endfor
-                                                                                                      </select>
-                                                                                                      @error('al_container_with_lid_month_250')
-                                                                                                          <div class="invalid-message">{{ $message }}</div>
-                                                                                                      @enderror
-                                                                                                  </td>
-                                                                                                  <td style="width: 33%">
-                                                                                                      <input class="form-control" type="number" name="al_container_with_lid_price_250" id="al_container_with_lid_price_250" disabled readonly="true" value="{{$data->al_container_with_lid_price_250}}">
-                                                                                                      @error('al_container_with_lid_price_250')
+                                                                                                      @error('al_container_with_lid_250')
                                                                                                           <div class="invalid-message">{{ $message }}</div>
                                                                                                       @enderror
                                                                                                   </td>
@@ -834,111 +661,125 @@
                                                                                   </td>
                                                                               </tr>
                                                                               <tr>
-                                                                                  <td><a href="#" class="fw-medium text-center">450ml</a></td>
+                                                                                  <td><a href="#" class="fw-medium text-center">450ml (Regular)</a></td>
                                                                                   <td>
                                                                                       <table class="table align-middle table-nowrap mb-0">
                                                                                           <tbody>
                                                                                               <tr>
+                                                                                                <td style="width: 33%">
+                                                                                                    <input class="form-control" disabled readonly value="Rs. 1.85">
+                                                                                                </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="al_container_with_lid_week_450" id="al_container_with_lid_week_450">
+                                                                                                      <select class="form-control" disabled readonly name="al_container_with_lid_450" id="al_container_with_lid_450">
                                                                                                           @for($i = 0; $i <= 10000; $i+=200)
-                                                                                                          <option value="{{$i}}" {{ $data->al_container_with_lid_week_450==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                          <option value="{{$i}}" {{ $data->al_container_with_lid_450==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
                                                                                                       </select>
-                                                                                                      @error('al_container_with_lid_week_450')
+                                                                                                      @error('al_container_with_lid_450')
                                                                                                           <div class="invalid-message">{{ $message }}</div>
                                                                                                       @enderror
                                                                                                   </td>
-                                                                                                  <td style="width: 33%">
-                                                                                                      <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="al_container_with_lid_month_450" id="al_container_with_lid_month_450">
-                                                                                                          @for($i = 0; $i <= 40000; $i+=(200*4))
-                                                                                                          <option value="{{$i}}" {{ $data->al_container_with_lid_month_450==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                          @endfor
-                                                                                                      </select>
-                                                                                                      @error('al_container_with_lid_month_450')
-                                                                                                          <div class="invalid-message">{{ $message }}</div>
-                                                                                                      @enderror
-                                                                                                  </td>
-                                                                                                  <td style="width: 33%">
-                                                                                                      <input class="form-control" type="number" name="al_container_with_lid_price_450" id="al_container_with_lid_price_450" disabled readonly="true" value="{{$data->al_container_with_lid_price_450}}">
-                                                                                                      @error('al_container_with_lid_price_450')
-                                                                                                          <div class="invalid-message">{{ $message }}</div>
-                                                                                                      @enderror
-                                                                                                  </td>
+
                                                                                               </tr>
                                                                                           </tbody>
                                                                                       </table>
                                                                                   </td>
                                                                               </tr>
                                                                               <tr>
-                                                                                  <td><a href="#" class="fw-medium text-center">600ml</a></td>
+                                                                                  <td><a href="#" class="fw-medium text-center">660ml (Regular)</a></td>
                                                                                   <td>
                                                                                       <table class="table align-middle table-nowrap mb-0">
                                                                                           <tbody>
                                                                                               <tr>
+                                                                                                <td style="width: 33%">
+                                                                                                    <input class="form-control" disabled readonly value="Rs. 2.77">
+                                                                                                </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="al_container_with_lid_week_600" id="al_container_with_lid_week_600">
+                                                                                                      <select class="form-control" disabled readonly name="al_container_with_lid_600" id="al_container_with_lid_600">
                                                                                                           @for($i = 0; $i <= 10000; $i+=200)
-                                                                                                          <option value="{{$i}}" {{ $data->al_container_with_lid_week_600==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                          <option value="{{$i}}" {{ $data->al_container_with_lid_600==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
                                                                                                       </select>
-                                                                                                      @error('al_container_with_lid_week_600')
+                                                                                                      @error('al_container_with_lid_600')
                                                                                                           <div class="invalid-message">{{ $message }}</div>
                                                                                                       @enderror
                                                                                                   </td>
-                                                                                                  <td style="width: 33%">
-                                                                                                      <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="al_container_with_lid_month_600" id="al_container_with_lid_month_600">
-                                                                                                          @for($i = 0; $i <= 40000; $i+=(200*4))
-                                                                                                          <option value="{{$i}}" {{ $data->al_container_with_lid_month_600==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                          @endfor
-                                                                                                      </select>
-                                                                                                      @error('al_container_with_lid_month_600')
-                                                                                                          <div class="invalid-message">{{ $message }}</div>
-                                                                                                      @enderror
-                                                                                                  </td>
-                                                                                                  <td style="width: 33%">
-                                                                                                      <input class="form-control" type="number" name="al_container_with_lid_price_600" id="al_container_with_lid_price_600" disabled readonly="true" value="{{$data->al_container_with_lid_price_600}}">
-                                                                                                      @error('al_container_with_lid_price_600')
-                                                                                                          <div class="invalid-message">{{ $message }}</div>
-                                                                                                      @enderror
-                                                                                                  </td>
+
                                                                                               </tr>
                                                                                           </tbody>
                                                                                       </table>
                                                                                   </td>
                                                                               </tr>
                                                                               <tr>
-                                                                                  <td><a href="#" class="fw-medium text-center">750ml</a></td>
+                                                                                  <td><a href="#" class="fw-medium text-center">750ml (Regular)</a></td>
                                                                                   <td>
                                                                                       <table class="table align-middle table-nowrap mb-0">
                                                                                           <tbody>
                                                                                               <tr>
+                                                                                                <td style="width: 33%">
+                                                                                                    <input class="form-control" disabled readonly value="Rs. 2.77">
+                                                                                                </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="al_container_with_lid_week_750" id="al_container_with_lid_week_750">
+                                                                                                      <select class="form-control" disabled readonly name="al_container_with_lid_750" id="al_container_with_lid_750">
                                                                                                           @for($i = 0; $i <= 10000; $i+=200)
-                                                                                                          <option value="{{$i}}" {{ $data->al_container_with_lid_week_750==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                          <option value="{{$i}}" {{ $data->al_container_with_lid_750==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
                                                                                                       </select>
-                                                                                                      @error('al_container_with_lid_week_750')
+                                                                                                      @error('al_container_with_lid_750')
                                                                                                           <div class="invalid-message">{{ $message }}</div>
                                                                                                       @enderror
                                                                                                   </td>
+
+                                                                                              </tr>
+                                                                                          </tbody>
+                                                                                      </table>
+                                                                                  </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td><a href="#" class="fw-medium text-center">450ml (Premium)</a></td>
+                                                                                  <td>
+                                                                                      <table class="table align-middle table-nowrap mb-0">
+                                                                                          <tbody>
+                                                                                              <tr>
+                                                                                                <td style="width: 33%">
+                                                                                                    <input class="form-control" disabled readonly value="Rs. 2.77">
+                                                                                                </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="al_container_with_lid_month_750" id="al_container_with_lid_month_750">
-                                                                                                          @for($i = 0; $i <= 40000; $i+=(200*4))
-                                                                                                          <option value="{{$i}}" {{ $data->al_container_with_lid_month_750==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                      <select class="form-control" disabled readonly name="al_container_with_lid_450_premium" id="al_container_with_lid_450_premium">
+                                                                                                          @for($i = 0; $i <= 10000; $i+=200)
+                                                                                                          <option value="{{$i}}" {{ $data->al_container_with_lid_450_premium==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
                                                                                                       </select>
-                                                                                                      @error('al_container_with_lid_month_750')
+                                                                                                      @error('al_container_with_lid_450_premium')
                                                                                                           <div class="invalid-message">{{ $message }}</div>
                                                                                                       @enderror
                                                                                                   </td>
+
+                                                                                              </tr>
+                                                                                          </tbody>
+                                                                                      </table>
+                                                                                  </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td><a href="#" class="fw-medium text-center">750ml (Premium)</a></td>
+                                                                                  <td>
+                                                                                      <table class="table align-middle table-nowrap mb-0">
+                                                                                          <tbody>
+                                                                                              <tr>
+                                                                                                <td style="width: 33%">
+                                                                                                    <input class="form-control" disabled readonly value="Rs. 4.15">
+                                                                                                </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <input class="form-control" type="number" name="al_container_with_lid_price_750" id="al_container_with_lid_price_750" disabled readonly="true" value="{{$data->al_container_with_lid_price_750}}">
-                                                                                                      @error('al_container_with_lid_price_750')
+                                                                                                      <select class="form-control" disabled readonly name="al_container_with_lid_750_premium" id="al_container_with_lid_750_premium">
+                                                                                                          @for($i = 0; $i <= 10000; $i+=200)
+                                                                                                          <option value="{{$i}}" {{ $data->al_container_with_lid_750_premium==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                          @endfor
+                                                                                                      </select>
+                                                                                                      @error('al_container_with_lid_750_premium')
                                                                                                           <div class="invalid-message">{{ $message }}</div>
                                                                                                       @enderror
                                                                                                   </td>
+
                                                                                               </tr>
                                                                                           </tbody>
                                                                                       </table>
@@ -969,14 +810,13 @@
                                                                       <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
                                                                           <thead class="table-primary">
                                                                               <tr>
-                                                                                  <th scope="col">APPROX <br/>REQUIREMENT</th>
+                                                                                  <th scope="col">SIZE</th>
                                                                                   <th scope="col">
                                                                                       <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
                                                                                           <thead class="table-light">
                                                                                               <tr>
-                                                                                                  <th scope="col" class="text-center" style="width: 33%">PER WEEK</th>
-                                                                                                  <th scope="col" class="text-center" style="width: 33%">PER MONTH</th>
                                                                                                   <th scope="col" class="text-center" style="width: 33%">PRICE</th>
+                                                                                                  <th scope="col" class="text-center" style="width: 33%">QUANTITY</th>
                                                                                               </tr>
                                                                                           </thead>
                                                                                       </table>
@@ -990,32 +830,20 @@
                                                                                       <table class="table align-middle table-nowrap mb-0">
                                                                                           <tbody>
                                                                                               <tr>
+                                                                                                <td style="width: 33%">
+                                                                                                    <input class="form-control" disabled readonly value="Rs. 420">
+                                                                                                </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="aluminium_week_1kg_gross" id="aluminium_week_1kg_gross">
+                                                                                                      <select class="form-control" disabled readonly name="aluminium_1kg_gross" id="aluminium_1kg_gross">
                                                                                                           @for($i = 0; $i <= 20; $i+=5)
-                                                                                                          <option value="{{$i}}" {{ $data->aluminium_week_1kg_gross==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                          <option value="{{$i}}" {{ $data->aluminium_1kg_gross==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
                                                                                                       </select>
-                                                                                                      @error('aluminium_week_1kg_gross')
+                                                                                                      @error('aluminium_1kg_gross')
                                                                                                           <div class="invalid-message">{{ $message }}</div>
                                                                                                       @enderror
                                                                                                   </td>
-                                                                                                  <td style="width: 33%">
-                                                                                                      <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="aluminium_month_1kg_gross" id="aluminium_month_1kg_gross">
-                                                                                                          @for($i = 0; $i <= 80; $i+=(5*4))
-                                                                                                          <option value="{{$i}}" {{ $data->aluminium_month_1kg_gross==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                          @endfor
-                                                                                                      </select>
-                                                                                                      @error('aluminium_month_1kg_gross')
-                                                                                                          <div class="invalid-message">{{ $message }}</div>
-                                                                                                      @enderror
-                                                                                                  </td>
-                                                                                                  <td style="width: 33%">
-                                                                                                      <input class="form-control" type="number" name="aluminium_price_1kg_gross" id="aluminium_price_1kg_gross" disabled readonly="true" value="{{$data->aluminium_price_1kg_gross}}">
-                                                                                                      @error('aluminium_price_1kg_gross')
-                                                                                                          <div class="invalid-message">{{ $message }}</div>
-                                                                                                      @enderror
-                                                                                                  </td>
+
                                                                                               </tr>
                                                                                           </tbody>
                                                                                       </table>
@@ -1027,32 +855,20 @@
                                                                                       <table class="table align-middle table-nowrap mb-0">
                                                                                           <tbody>
                                                                                               <tr>
+                                                                                                <td style="width: 33%">
+                                                                                                    <input class="form-control" disabled readonly value="Rs. 536">
+                                                                                                </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="aluminium_week_1kg_net" id="aluminium_week_1kg_net">
+                                                                                                      <select class="form-control" disabled readonly name="aluminium_1kg_net" id="aluminium_1kg_net">
                                                                                                           @for($i = 0; $i <= 20; $i+=5)
-                                                                                                          <option value="{{$i}}" {{ $data->aluminium_week_1kg_net==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                          <option value="{{$i}}" {{ $data->aluminium_1kg_net==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
                                                                                                       </select>
-                                                                                                      @error('aluminium_week_1kg_net')
+                                                                                                      @error('aluminium_1kg_net')
                                                                                                           <div class="invalid-message">{{ $message }}</div>
                                                                                                       @enderror
                                                                                                   </td>
-                                                                                                  <td style="width: 33%">
-                                                                                                      <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="aluminium_month_1kg_net" id="aluminium_month_1kg_net">
-                                                                                                          @for($i = 0; $i <= 80; $i+=(5 * 4))
-                                                                                                          <option value="{{$i}}" {{ $data->aluminium_month_1kg_net==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                          @endfor
-                                                                                                      </select>
-                                                                                                      @error('aluminium_month_1kg_net')
-                                                                                                          <div class="invalid-message">{{ $message }}</div>
-                                                                                                      @enderror
-                                                                                                  </td>
-                                                                                                  <td style="width: 33%">
-                                                                                                      <input class="form-control" type="number" name="aluminium_price_1kg_net" id="aluminium_price_1kg_net" disabled readonly="true" value="{{$data->aluminium_price_1kg_net}}">
-                                                                                                      @error('aluminium_price_1kg_net')
-                                                                                                          <div class="invalid-message">{{ $message }}</div>
-                                                                                                      @enderror
-                                                                                                  </td>
+
                                                                                               </tr>
                                                                                           </tbody>
                                                                                       </table>
@@ -1084,14 +900,13 @@
                                                                       <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
                                                                           <thead class="table-primary">
                                                                               <tr>
-                                                                                  <th scope="col">APPROX <br/>REQUIREMENT</th>
+                                                                                  <th scope="col">SIZE</th>
                                                                                   <th scope="col">
                                                                                       <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
                                                                                           <thead class="table-light">
                                                                                               <tr>
-                                                                                                  <th scope="col" class="text-center" style="width: 33%">PER WEEK</th>
-                                                                                                  <th scope="col" class="text-center" style="width: 33%">PER MONTH</th>
                                                                                                   <th scope="col" class="text-center" style="width: 33%">PRICE</th>
+                                                                                                  <th scope="col" class="text-center" style="width: 33%">QUANTITY</th>
                                                                                               </tr>
                                                                                           </thead>
                                                                                       </table>
@@ -1105,29 +920,16 @@
                                                                                       <table class="table align-middle table-nowrap mb-0">
                                                                                           <tbody>
                                                                                               <tr>
+                                                                                                <td style="width: 33%">
+                                                                                                    <input class="form-control" disabled readonly value="Rs. 6.13">
+                                                                                                </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="compartment_week_2cp" id="compartment_week_2cp">
+                                                                                                      <select class="form-control" disabled readonly name="compartment_2cp" id="compartment_2cp">
                                                                                                           @for($i = 0; $i <= 10000; $i+=500)
-                                                                                                          <option value="{{$i}}" {{ $data->compartment_week_2cp==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                          <option value="{{$i}}" {{ $data->compartment_2cp==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
                                                                                                       </select>
-                                                                                                      @error('compartment_week_2cp')
-                                                                                                          <div class="invalid-message">{{ $message }}</div>
-                                                                                                      @enderror
-                                                                                                  </td>
-                                                                                                  <td style="width: 33%">
-                                                                                                      <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="compartment_month_2cp" id="compartment_month_2cp">
-                                                                                                          @for($i = 0; $i <= 40000; $i+=(500*4))
-                                                                                                          <option value="{{$i}}" {{ $data->compartment_month_2cp==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                          @endfor
-                                                                                                      </select>
-                                                                                                      @error('compartment_month_2cp')
-                                                                                                          <div class="invalid-message">{{ $message }}</div>
-                                                                                                      @enderror
-                                                                                                  </td>
-                                                                                                  <td style="width: 33%">
-                                                                                                      <input class="form-control" type="number" name="compartment_price_2cp" id="compartment_price_2cp" disabled readonly="true" value="{{$data->compartment_price_2cp}}">
-                                                                                                      @error('compartment_price_2cp')
+                                                                                                      @error('compartment_2cp')
                                                                                                           <div class="invalid-message">{{ $message }}</div>
                                                                                                       @enderror
                                                                                                   </td>
@@ -1142,29 +944,40 @@
                                                                                       <table class="table align-middle table-nowrap mb-0">
                                                                                           <tbody>
                                                                                               <tr>
+                                                                                                <td style="width: 33%">
+                                                                                                    <input class="form-control" disabled readonly value="Rs. 6.13">
+                                                                                                </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="compartment_week_3cp" id="compartment_week_3cp">
+                                                                                                      <select class="form-control" disabled readonly name="compartment_3cp" id="compartment_3cp">
                                                                                                           @for($i = 0; $i <= 10000; $i+=500)
-                                                                                                          <option value="{{$i}}" {{ $data->compartment_week_3cp==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                          <option value="{{$i}}" {{ $data->compartment_3cp==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
                                                                                                       </select>
-                                                                                                      @error('compartment_week_3cp')
+                                                                                                      @error('compartment_3cp')
                                                                                                           <div class="invalid-message">{{ $message }}</div>
                                                                                                       @enderror
                                                                                                   </td>
+                                                                                              </tr>
+                                                                                          </tbody>
+                                                                                      </table>
+                                                                                  </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td><a href="#" class="fw-medium text-center">3CP xl Tray</a></td>
+                                                                                  <td>
+                                                                                      <table class="table align-middle table-nowrap mb-0">
+                                                                                          <tbody>
+                                                                                              <tr>
+                                                                                                <td style="width: 33%">
+                                                                                                    <input class="form-control" disabled readonly value="Rs. 7.71">
+                                                                                                </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="compartment_month_3cp" id="compartment_month_3cp">
-                                                                                                          @for($i = 0; $i <= 40000; $i+=(500*4))
-                                                                                                          <option value="{{$i}}" {{ $data->compartment_month_3cp==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                      <select class="form-control" disabled readonly name="compartment_3cp_xl" id="compartment_3cp_xl">
+                                                                                                          @for($i = 0; $i <= 10000; $i+=500)
+                                                                                                          <option value="{{$i}}" {{ $data->compartment_3cp_xl==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
                                                                                                       </select>
-                                                                                                      @error('compartment_month_3cp')
-                                                                                                          <div class="invalid-message">{{ $message }}</div>
-                                                                                                      @enderror
-                                                                                                  </td>
-                                                                                                  <td style="width: 33%">
-                                                                                                      <input class="form-control" type="number" name="compartment_price_3cp" id="compartment_price_3cp" disabled readonly="true" value="{{$data->compartment_price_3cp}}">
-                                                                                                      @error('compartment_price_3cp')
+                                                                                                      @error('compartment_3cp_xl')
                                                                                                           <div class="invalid-message">{{ $message }}</div>
                                                                                                       @enderror
                                                                                                   </td>
@@ -1179,32 +992,20 @@
                                                                                       <table class="table align-middle table-nowrap mb-0">
                                                                                           <tbody>
                                                                                               <tr>
+                                                                                                <td style="width: 33%">
+                                                                                                    <input class="form-control" disabled readonly value="Rs. 4.79">
+                                                                                                </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="compartment_week_4cp" id="compartment_week_4cp">
+                                                                                                      <select class="form-control" disabled readonly name="compartment_4cp" id="compartment_4cp">
                                                                                                           @for($i = 0; $i <= 10000; $i+=500)
-                                                                                                          <option value="{{$i}}" {{ $data->compartment_week_4cp==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                          <option value="{{$i}}" {{ $data->compartment_4cp==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
                                                                                                       </select>
-                                                                                                      @error('compartment_week_4cp')
+                                                                                                      @error('compartment_4cp')
                                                                                                           <div class="invalid-message">{{ $message }}</div>
                                                                                                       @enderror
                                                                                                   </td>
-                                                                                                  <td style="width: 33%">
-                                                                                                      <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="compartment_month_4cp" id="compartment_month_4cp">
-                                                                                                          @for($i = 0; $i <= 40000; $i+=(500*4))
-                                                                                                          <option value="{{$i}}" {{ $data->compartment_month_4cp==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                          @endfor
-                                                                                                      </select>
-                                                                                                      @error('compartment_month_4cp')
-                                                                                                          <div class="invalid-message">{{ $message }}</div>
-                                                                                                      @enderror
-                                                                                                  </td>
-                                                                                                  <td style="width: 33%">
-                                                                                                      <input class="form-control" type="number" name="compartment_price_4cp" id="compartment_price_4cp" disabled readonly="true" value="{{$data->compartment_price_4cp}}">
-                                                                                                      @error('compartment_price_4cp')
-                                                                                                          <div class="invalid-message">{{ $message }}</div>
-                                                                                                      @enderror
-                                                                                                  </td>
+
                                                                                               </tr>
                                                                                           </tbody>
                                                                                       </table>
@@ -1216,32 +1017,20 @@
                                                                                       <table class="table align-middle table-nowrap mb-0">
                                                                                           <tbody>
                                                                                               <tr>
+                                                                                                <td style="width: 33%">
+                                                                                                    <input class="form-control" disabled readonly value="Rs. 9.39">
+                                                                                                </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="compartment_week_5cp" id="compartment_week_5cp">
+                                                                                                      <select class="form-control" disabled readonly name="compartment_5cp" id="compartment_5cp">
                                                                                                           @for($i = 0; $i <= 10000; $i+=500)
-                                                                                                          <option value="{{$i}}" {{ $data->compartment_week_5cp==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                          <option value="{{$i}}" {{ $data->compartment_5cp==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
                                                                                                       </select>
-                                                                                                      @error('compartment_week_5cp')
+                                                                                                      @error('compartment_5cp')
                                                                                                           <div class="invalid-message">{{ $message }}</div>
                                                                                                       @enderror
                                                                                                   </td>
-                                                                                                  <td style="width: 33%">
-                                                                                                      <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="compartment_month_5cp" id="compartment_month_5cp">
-                                                                                                          @for($i = 0; $i <= 40000; $i+=(500*4))
-                                                                                                          <option value="{{$i}}" {{ $data->compartment_month_5cp==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                          @endfor
-                                                                                                      </select>
-                                                                                                      @error('compartment_month_5cp')
-                                                                                                          <div class="invalid-message">{{ $message }}</div>
-                                                                                                      @enderror
-                                                                                                  </td>
-                                                                                                  <td style="width: 33%">
-                                                                                                      <input class="form-control" type="number" name="compartment_price_5cp" id="compartment_price_5cp" disabled readonly="true" value="{{$data->compartment_price_5cp}}">
-                                                                                                      @error('compartment_price_5cp')
-                                                                                                          <div class="invalid-message">{{ $message }}</div>
-                                                                                                      @enderror
-                                                                                                  </td>
+
                                                                                               </tr>
                                                                                           </tbody>
                                                                                       </table>
@@ -1253,32 +1042,20 @@
                                                                                       <table class="table align-middle table-nowrap mb-0">
                                                                                           <tbody>
                                                                                               <tr>
+                                                                                                <td style="width: 33%">
+                                                                                                    <input class="form-control" disabled readonly value="Rs. 9.74">
+                                                                                                </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="compartment_week_6cp" id="compartment_week_6cp">
+                                                                                                      <select class="form-control" disabled readonly name="compartment_6cp" id="compartment_6cp">
                                                                                                           @for($i = 0; $i <= 10000; $i+=500)
-                                                                                                          <option value="{{$i}}" {{ $data->compartment_week_6cp==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                          <option value="{{$i}}" {{ $data->compartment_6cp==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
                                                                                                       </select>
-                                                                                                      @error('compartment_week_6cp')
+                                                                                                      @error('compartment_6cp')
                                                                                                           <div class="invalid-message">{{ $message }}</div>
                                                                                                       @enderror
                                                                                                   </td>
-                                                                                                  <td style="width: 33%">
-                                                                                                      <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="compartment_month_6cp" id="compartment_month_6cp">
-                                                                                                          @for($i = 0; $i <= 40000; $i+=(500*4))
-                                                                                                          <option value="{{$i}}" {{ $data->compartment_month_6cp==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                          @endfor
-                                                                                                      </select>
-                                                                                                      @error('compartment_month_6cp')
-                                                                                                          <div class="invalid-message">{{ $message }}</div>
-                                                                                                      @enderror
-                                                                                                  </td>
-                                                                                                  <td style="width: 33%">
-                                                                                                      <input class="form-control" type="number" name="compartment_price_6cp" id="compartment_price_6cp" disabled readonly="true" value="{{$data->compartment_price_6cp}}">
-                                                                                                      @error('compartment_price_6cp')
-                                                                                                          <div class="invalid-message">{{ $message }}</div>
-                                                                                                      @enderror
-                                                                                                  </td>
+
                                                                                               </tr>
                                                                                           </tbody>
                                                                                       </table>
@@ -1290,32 +1067,45 @@
                                                                                       <table class="table align-middle table-nowrap mb-0">
                                                                                           <tbody>
                                                                                               <tr>
+                                                                                                <td style="width: 33%">
+                                                                                                    <input class="form-control" disabled readonly value="Rs. 12.37">
+                                                                                                </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="compartment_week_8cp" id="compartment_week_8cp">
+                                                                                                      <select class="form-control" disabled readonly name="compartment_8cp" id="compartment_8cp">
                                                                                                           @for($i = 0; $i <= 10000; $i+=500)
-                                                                                                          <option value="{{$i}}" {{ $data->compartment_week_8cp==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                          <option value="{{$i}}" {{ $data->compartment_8cp==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
                                                                                                       </select>
-                                                                                                      @error('compartment_week_8cp')
+                                                                                                      @error('compartment_8cp')
                                                                                                           <div class="invalid-message">{{ $message }}</div>
                                                                                                       @enderror
                                                                                                   </td>
+
+                                                                                              </tr>
+                                                                                          </tbody>
+                                                                                      </table>
+                                                                                  </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td><a href="#" class="fw-medium text-center">750 bow</a></td>
+                                                                                  <td>
+                                                                                      <table class="table align-middle table-nowrap mb-0">
+                                                                                          <tbody>
+                                                                                              <tr>
+                                                                                                <td style="width: 33%">
+                                                                                                    <input class="form-control" disabled readonly value="Rs. 6.57">
+                                                                                                </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="compartment_month_8cp" id="compartment_month_8cp">
-                                                                                                          @for($i = 0; $i <= 40000; $i+=(500*4))
-                                                                                                          <option value="{{$i}}" {{ $data->compartment_month_8cp==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                      <select class="form-control" disabled readonly name="compartment_750_bow" id="compartment_750_bow">
+                                                                                                          @for($i = 0; $i <= 10000; $i+=500)
+                                                                                                          <option value="{{$i}}" {{ $data->compartment_750_bow==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
                                                                                                       </select>
-                                                                                                      @error('compartment_month_8cp')
+                                                                                                      @error('compartment_750_bow')
                                                                                                           <div class="invalid-message">{{ $message }}</div>
                                                                                                       @enderror
                                                                                                   </td>
-                                                                                                  <td style="width: 33%">
-                                                                                                      <input class="form-control" type="number" name="compartment_price_8cp" id="compartment_price_8cp" disabled readonly="true" value="{{$data->compartment_price_8cp}}">
-                                                                                                      @error('compartment_price_8cp')
-                                                                                                          <div class="invalid-message">{{ $message }}</div>
-                                                                                                      @enderror
-                                                                                                  </td>
+
                                                                                               </tr>
                                                                                           </tbody>
                                                                                       </table>
@@ -1345,14 +1135,13 @@
                                                                       <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
                                                                           <thead class="table-primary">
                                                                               <tr>
-                                                                                  <th scope="col">APPROX <br/>REQUIREMENT</th>
+                                                                                  <th scope="col">ITEM</th>
                                                                                   <th scope="col">
                                                                                       <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
                                                                                           <thead class="table-light">
                                                                                               <tr>
-                                                                                                  <th scope="col" class="text-center" style="width: 33%">PER WEEK</th>
-                                                                                                  <th scope="col" class="text-center" style="width: 33%">PER MONTH</th>
                                                                                                   <th scope="col" class="text-center" style="width: 33%">PRICE</th>
+                                                                                                  <th scope="col" class="text-center" style="width: 33%">QUANTITY</th>
                                                                                               </tr>
                                                                                           </thead>
                                                                                       </table>
@@ -1367,31 +1156,19 @@
                                                                                         <tbody>
                                                                                             <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="p_box_week_sandwich" id="p_box_week_sandwich">
+                                                                                                    <input class="form-control" disabled readonly value="Rs. 2.79">
+                                                                                                </td>
+                                                                                                <td style="width: 33%">
+                                                                                                    <select class="form-control" disabled readonly name="p_box_sandwich" id="p_box_sandwich">
                                                                                                         @for($i = 0; $i <= 10000; $i+=500)
-                                                                                                        <option value="{{$i}}" {{ $data->p_box_week_sandwich==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                        <option value="{{$i}}" {{ $data->p_box_sandwich==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
                                                                                                     </select>
-                                                                                                    @error('p_box_week_sandwich')
+                                                                                                    @error('p_box_sandwich')
                                                                                                         <div class="invalid-message">{{ $message }}</div>
                                                                                                     @enderror
                                                                                                 </td>
-                                                                                                <td style="width: 33%">
-                                                                                                    <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="p_box_month_sandwich" id="p_box_month_sandwich">
-                                                                                                        @for($i = 0; $i <= 40000; $i+=(500*4))
-                                                                                                        <option value="{{$i}}" {{ $data->p_box_month_sandwich==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                        @endfor
-                                                                                                    </select>
-                                                                                                    @error('p_box_month_sandwich')
-                                                                                                        <div class="invalid-message">{{ $message }}</div>
-                                                                                                    @enderror
-                                                                                                </td>
-                                                                                                <td style="width: 33%">
-                                                                                                    <input class="form-control" type="number" name="p_box_price_sandwich" id="p_box_price_sandwich" disabled readonly="true" value="{{$data->p_box_price_sandwich}}">
-                                                                                                    @error('p_box_price_sandwich')
-                                                                                                        <div class="invalid-message">{{ $message }}</div>
-                                                                                                    @enderror
-                                                                                                </td>
+
                                                                                             </tr>
                                                                                         </tbody>
                                                                                     </table>
@@ -1404,69 +1181,70 @@
                                                                                       <table class="table align-middle table-nowrap mb-0">
                                                                                           <tbody>
                                                                                               <tr>
+                                                                                                <td style="width: 33%">
+                                                                                                    <input class="form-control" disabled readonly value="Rs. 1.98">
+                                                                                                  </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="p_box_week_dosa" id="p_box_week_dosa">
+                                                                                                      <select class="form-control" disabled readonly name="p_box_dosa" id="p_box_dosa">
                                                                                                           @for($i = 0; $i <= 10000; $i+=500)
-                                                                                                          <option value="{{$i}}" {{ $data->p_box_week_dosa==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                          <option value="{{$i}}" {{ $data->p_box_dosa==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
                                                                                                       </select>
-                                                                                                      @error('p_box_week_dosa')
+                                                                                                      @error('p_box_dosa')
                                                                                                           <div class="invalid-message">{{ $message }}</div>
                                                                                                       @enderror
                                                                                                   </td>
-                                                                                                  <td style="width: 33%">
-                                                                                                      <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="p_box_month_dosa" id="p_box_month_dosa">
-                                                                                                          @for($i = 0; $i <= 40000; $i+=(500*4))
-                                                                                                          <option value="{{$i}}" {{ $data->p_box_month_dosa==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                          @endfor
-                                                                                                      </select>
-                                                                                                      @error('p_box_month_dosa')
-                                                                                                          <div class="invalid-message">{{ $message }}</div>
-                                                                                                      @enderror
-                                                                                                  </td>
-                                                                                                  <td style="width: 33%">
-                                                                                                      <input class="form-control" type="number" name="p_box_price_dosa" id="p_box_price_dosa" disabled readonly="true" value="{{$data->p_box_price_dosa}}">
-                                                                                                      @error('p_box_price_dosa')
-                                                                                                          <div class="invalid-message">{{ $message }}</div>
-                                                                                                      @enderror
-                                                                                                  </td>
+
                                                                                               </tr>
                                                                                           </tbody>
                                                                                       </table>
                                                                                   </td>
                                                                               </tr>
                                                                               <tr>
-                                                                                <td><a href="#" class="fw-medium text-center">Idly Box</a></td>
+                                                                                <td><a href="#" class="fw-medium text-center">Idly 2pc Box</a></td>
                                                                                 <td>
                                                                                     <table class="table align-middle table-nowrap mb-0">
                                                                                         <tbody>
                                                                                             <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="p_box_week_idly" id="p_box_week_idly">
+                                                                                                    <input class="form-control" disabled readonly value="Rs. 1.67">
+                                                                                                </td>
+                                                                                                <td style="width: 33%">
+                                                                                                    <select class="form-control" disabled readonly name="p_box_idly" id="p_box_idly">
                                                                                                         @for($i = 0; $i <= 10000; $i+=500)
-                                                                                                        <option value="{{$i}}" {{ $data->p_box_week_idly==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                        <option value="{{$i}}" {{ $data->p_box_idly==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
                                                                                                     </select>
-                                                                                                    @error('p_box_week_idly')
+                                                                                                    @error('p_box_idly')
                                                                                                         <div class="invalid-message">{{ $message }}</div>
                                                                                                     @enderror
                                                                                                 </td>
+
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td><a href="#" class="fw-medium text-center">Idly Vada Box</a></td>
+                                                                                <td>
+                                                                                    <table class="table align-middle table-nowrap mb-0">
+                                                                                        <tbody>
+                                                                                            <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="p_box_month_idly" id="p_box_month_idly">
-                                                                                                        @for($i = 0; $i <= 40000; $i+=(500*4))
-                                                                                                        <option value="{{$i}}" {{ $data->p_box_month_idly==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                    <input class="form-control" disabled readonly value="Rs. 2.29">
+                                                                                                </td>
+                                                                                                <td style="width: 33%">
+                                                                                                    <select class="form-control" disabled readonly name="p_box_idly_vada" id="p_box_idly_vada">
+                                                                                                        @for($i = 0; $i <= 10000; $i+=500)
+                                                                                                        <option value="{{$i}}" {{ $data->p_box_idly_vada==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
                                                                                                     </select>
-                                                                                                    @error('p_box_month_idly')
+                                                                                                    @error('p_box_idly_vada')
                                                                                                         <div class="invalid-message">{{ $message }}</div>
                                                                                                     @enderror
                                                                                                 </td>
-                                                                                                <td style="width: 33%">
-                                                                                                    <input class="form-control" type="number" name="p_box_price_idly" id="p_box_price_idly" disabled readonly="true" value="{{$data->p_box_price_idly}}">
-                                                                                                    @error('p_box_price_idly')
-                                                                                                        <div class="invalid-message">{{ $message }}</div>
-                                                                                                    @enderror
-                                                                                                </td>
+
                                                                                             </tr>
                                                                                         </tbody>
                                                                                     </table>
@@ -1477,379 +1255,6 @@
                                                                       </table>
                                                                   </div>
                                                               </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="accordion-item">
-                                                            <h2 class="accordion-header" id="headingSix">
-                                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                                                    <img
-                                                                    src="http://atlas-content-cdn.pixelsquid.com/stock-images/grocery-bag-paper-a8YvZe0-600.jpg"
-                                                                    alt=""
-                                                                    style="height:80px;object-fit:contain;margin-right:20px"
-                                                                    >
-                                                                    <br/>
-                                                                    GROCERY BAG
-                                                                </button>
-                                                            </h2>
-                                                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
-                                                                <div class="accordion-body">
-                                                                    <div class="table-responsive">
-                                                                        <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
-                                                                            <thead class="table-primary">
-                                                                                <tr>
-                                                                                    <th scope="col">APPROX <br/>REQUIREMENT</th>
-                                                                                    <th scope="col">
-                                                                                        <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
-                                                                                            <thead class="table-light">
-                                                                                                <tr>
-                                                                                                    <th scope="col" class="text-center" style="width: 33%">PER WEEK</th>
-                                                                                                    <th scope="col" class="text-center" style="width: 33%">PER MONTH</th>
-                                                                                                    <th scope="col" class="text-center" style="width: 33%">PRICE</th>
-                                                                                                </tr>
-                                                                                            </thead>
-                                                                                        </table>
-                                                                                    </th>
-                                                                                </tr>
-                                                                            </thead>
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">1KG</a></td>
-                                                                                    <td>
-                                                                                        <table class="table align-middle table-nowrap mb-0">
-                                                                                            <tbody>
-                                                                                                <tr>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="groccery_bag_week_1" id="groccery_bag_week_1">
-                                                                                                            @for($i = 0; $i <= 10000; $i+=500)
-                                                                                                            <option value="{{$i}}" {{ $data->groccery_bag_week_1==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('groccery_bag_week_1')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="groccery_bag_month_1" id="groccery_bag_month_1">
-                                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
-                                                                                                            <option value="{{$i}}" {{ $data->groccery_bag_month_1==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('groccery_bag_month_1')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <input class="form-control" type="number" name="groccery_bag_price_1" id="groccery_bag_price_1" disabled readonly="true" value="{{$data->groccery_bag_price_1}}">
-                                                                                                        @error('groccery_bag_price_1')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                            </tbody>
-                                                                                        </table>
-                                                                                    </td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">2KG</a></td>
-                                                                                    <td>
-                                                                                        <table class="table align-middle table-nowrap mb-0">
-                                                                                            <tbody>
-                                                                                                <tr>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="groccery_bag_week_2" id="groccery_bag_week_2">
-                                                                                                            @for($i = 0; $i <= 10000; $i+=500)
-                                                                                                            <option value="{{$i}}" {{ $data->groccery_bag_week_2==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('groccery_bag_week_2')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="groccery_bag_month_2" id="groccery_bag_month_2">
-                                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
-                                                                                                            <option value="{{$i}}" {{ $data->groccery_bag_month_2==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('groccery_bag_month_2')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td><td style="width: 33%">
-                                                                                                        <input class="form-control" type="number" name="groccery_bag_price_2" id="groccery_bag_price_2" disabled readonly="true" value="{{$data->groccery_bag_price_2}}">
-                                                                                                        @error('groccery_bag_price_2')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                            </tbody>
-                                                                                        </table>
-                                                                                    </td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">3KG</a></td>
-                                                                                    <td>
-                                                                                        <table class="table align-middle table-nowrap mb-0">
-                                                                                            <tbody>
-                                                                                                <tr>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="groccery_bag_week_3" id="groccery_bag_week_3">
-                                                                                                            @for($i = 0; $i <= 10000; $i+=500)
-                                                                                                            <option value="{{$i}}" {{ $data->groccery_bag_week_3==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('groccery_bag_week_3')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="groccery_bag_month_3" id="groccery_bag_month_3">
-                                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
-                                                                                                            <option value="{{$i}}" {{ $data->groccery_bag_month_3==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('groccery_bag_month_3')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <input class="form-control" type="number" name="groccery_bag_price_3" id="groccery_bag_price_3" disabled readonly="true" value="{{$data->groccery_bag_price_3}}">
-                                                                                                        @error('groccery_bag_price_3')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                            </tbody>
-                                                                                        </table>
-                                                                                    </td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">5KG</a></td>
-                                                                                    <td>
-                                                                                        <table class="table align-middle table-nowrap mb-0">
-                                                                                            <tbody>
-                                                                                                <tr>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="groccery_bag_week_5" id="groccery_bag_week_5">
-                                                                                                            @for($i = 0; $i <= 10000; $i+=500)
-                                                                                                            <option value="{{$i}}" {{ $data->groccery_bag_week_5==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('groccery_bag_week_5')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="groccery_bag_month_5" id="groccery_bag_month_5">
-                                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
-                                                                                                            <option value="{{$i}}" {{ $data->groccery_bag_month_5==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('groccery_bag_month_5')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <input class="form-control" type="number" name="groccery_bag_price_5" id="groccery_bag_price_5" disabled readonly="true" value="{{$data->groccery_bag_price_5}}">
-                                                                                                        @error('groccery_bag_price_5')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                            </tbody>
-                                                                                        </table>
-                                                                                    </td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="accordion-item">
-                                                            <h2 class="accordion-header" id="headingSevent2">
-                                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSevent2" aria-expanded="false" aria-controls="collapseSevent2">
-                                                                    <img
-                                                                    src="http://atlas-content-cdn.pixelsquid.com/stock-images/paper-bag-aqOAYV4-600.jpg"
-                                                                    alt=""
-                                                                    style="height:80px;object-fit:contain;margin-right:20px"
-                                                                    >
-                                                                    <br/>
-                                                                    CARRY BAG
-                                                                </button>
-                                                            </h2>
-                                                            <div id="collapseSevent2" class="accordion-collapse collapse" aria-labelledby="headingSevent2" data-bs-parent="#accordionExample">
-                                                                <div class="accordion-body">
-                                                                    <div class="table-responsive">
-                                                                        <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
-                                                                            <thead class="table-primary">
-                                                                                <tr>
-                                                                                    <th scope="col">APPROX <br/>REQUIREMENT</th>
-                                                                                    <th scope="col">
-                                                                                        <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
-                                                                                            <thead class="table-light">
-                                                                                                <tr>
-                                                                                                    <th scope="col" class="text-center" style="width: 33%">PER WEEK</th>
-                                                                                                    <th scope="col" class="text-center" style="width: 33%">PER MONTH</th>
-                                                                                                    <th scope="col" class="text-center" style="width: 33%">PRICE</th>
-                                                                                                </tr>
-                                                                                            </thead>
-                                                                                        </table>
-                                                                                    </th>
-                                                                                </tr>
-                                                                            </thead>
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">small <br> W = 22.5cm,<br> H = 23.5cm,<br> G = 14cm</a></td>
-                                                                                    <td>
-                                                                                        <table class="table align-middle table-nowrap mb-0">
-                                                                                            <tbody>
-                                                                                                <tr>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="carry_bag_bag_week_small" id="carry_bag_bag_week_small">
-                                                                                                            @for($i = 0; $i <= 30; $i+=5)
-                                                                                                            <option value="{{$i}}" {{ $data->carry_bag_bag_week_small==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('carry_bag_bag_week_small')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="carry_bag_bag_month_small" id="carry_bag_bag_month_small">
-                                                                                                            @for($i = 0; $i <= 120; $i+=(5*4))
-                                                                                                            <option value="{{$i}}" {{ $data->carry_bag_bag_month_small==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('carry_bag_bag_month_small')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <input class="form-control" type="number" name="carry_bag_bag_price_small" id="carry_bag_bag_price_small" disabled readonly="true" value="{{$data->carry_bag_bag_price_small}}">
-                                                                                                        @error('carry_bag_bag_price_small')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                            </tbody>
-                                                                                        </table>
-                                                                                    </td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">medium <br> W = 29cm,<br> H = 21cm,<br> G = 19cm</a></td>
-                                                                                    <td>
-                                                                                        <table class="table align-middle table-nowrap mb-0">
-                                                                                            <tbody>
-                                                                                                <tr>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="carry_bag_bag_week_medium" id="carry_bag_bag_week_medium">
-                                                                                                            @for($i = 0; $i <= 30; $i+=5)
-                                                                                                            <option value="{{$i}}" {{ $data->carry_bag_bag_week_medium==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('carry_bag_bag_week_medium')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="carry_bag_bag_month_medium" id="carry_bag_bag_month_medium">
-                                                                                                            @for($i = 0; $i <= 120; $i+=(5*4))
-                                                                                                            <option value="{{$i}}" {{ $data->carry_bag_bag_month_medium==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('carry_bag_bag_month_medium')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <input class="form-control" type="number" name="carry_bag_bag_price_medium" id="carry_bag_bag_price_medium" disabled readonly="true" value="{{$data->carry_bag_bag_price_medium}}">
-                                                                                                        @error('carry_bag_bag_price_medium')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                            </tbody>
-                                                                                        </table>
-                                                                                    </td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">large <br> W = 32cm,<br> H = 23.5cm,<br> G = 21cm</a></td>
-                                                                                    <td>
-                                                                                        <table class="table align-middle table-nowrap mb-0">
-                                                                                            <tbody>
-                                                                                                <tr>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="carry_bag_bag_week_large" id="carry_bag_bag_week_large">
-                                                                                                            @for($i = 0; $i <= 30; $i+=5)
-                                                                                                            <option value="{{$i}}" {{ $data->carry_bag_bag_week_large==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('carry_bag_bag_week_large')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="carry_bag_bag_month_large" id="carry_bag_bag_month_large">
-                                                                                                            @for($i = 0; $i <= 120; $i+=(5*4))
-                                                                                                            <option value="{{$i}}" {{ $data->carry_bag_bag_month_large==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('carry_bag_bag_month_large')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <input class="form-control" type="number" name="carry_bag_bag_price_large" id="carry_bag_bag_price_large" disabled readonly="true" value="{{$data->carry_bag_bag_price_large}}">
-                                                                                                        @error('carry_bag_bag_price_large')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                            </tbody>
-                                                                                        </table>
-                                                                                    </td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">extra large <br> W = 38cm,<br> H = 27cm,<br> G = 25cm</a></td>
-                                                                                    <td>
-                                                                                        <table class="table align-middle table-nowrap mb-0">
-                                                                                            <tbody>
-                                                                                                <tr>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="carry_bag_bag_week_x_large" id="carry_bag_bag_week_x_large">
-                                                                                                            @for($i = 0; $i <= 30; $i+=5)
-                                                                                                            <option value="{{$i}}" {{ $data->carry_bag_bag_week_x_large==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('carry_bag_bag_week_x_large')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="carry_bag_bag_month_x_large" id="carry_bag_bag_month_x_large">
-                                                                                                            @for($i = 0; $i <= 120; $i+=(5*4))
-                                                                                                            <option value="{{$i}}" {{ $data->carry_bag_bag_month_x_large==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('carry_bag_bag_month_x_large')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <input class="form-control" type="number" name="carry_bag_bag_price_x_large" id="carry_bag_bag_price_x_large" disabled readonly="true" value="{{$data->carry_bag_bag_price_x_large}}">
-                                                                                                        @error('carry_bag_bag_price_x_large')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                            </tbody>
-                                                                                        </table>
-                                                                                    </td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </div>
-                                                                </div>
                                                             </div>
                                                         </div>
                                                         <div class="accordion-item">
@@ -1870,14 +1275,13 @@
                                                                         <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
                                                                             <thead class="table-primary">
                                                                                 <tr>
-                                                                                    <th scope="col">APPROX <br/>REQUIREMENT</th>
+                                                                                    <th scope="col">SIZE</th>
                                                                                     <th scope="col">
                                                                                         <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
                                                                                             <thead class="table-light">
                                                                                                 <tr>
-                                                                                                    <th scope="col" class="text-center" style="width: 33%">PER WEEK</th>
-                                                                                                    <th scope="col" class="text-center" style="width: 33%">PER MONTH</th>
-                                                                                                    <th scope="col" class="text-center" style="width: 33%">PRICE</th>
+                                                                                                    <th scope="col" class="text-center" style="width: 33%">PRICE/KG<br>24BF PRICE</th>
+                                                                                                    <th scope="col" class="text-center" style="width: 33%">QUANTITY</th>
                                                                                                 </tr>
                                                                                             </thead>
                                                                                         </table>
@@ -1892,28 +1296,15 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="p_bag_week_small" id="p_bag_week_small">
+                                                                                                        <input class="form-control" disabled readonly value="Rs. 70.665">
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select class="form-control" disabled readonly name="p_bag_small" id="p_bag_small">
                                                                                                             @for($i = 0; $i <= 30; $i+=5)
-                                                                                                            <option value="{{$i}}" {{ $data->p_bag_week_small==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            <option value="{{$i}}" {{ $data->p_bag_small==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
                                                                                                         </select>
-                                                                                                        @error('p_bag_week_small')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="p_bag_month_small" id="p_bag_month_small">
-                                                                                                            @for($i = 0; $i <= 120; $i+=(5*4))
-                                                                                                            <option value="{{$i}}" {{ $data->p_bag_month_small==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('p_bag_month_small')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <input class="form-control" type="number" name="p_bag_price_small" id="p_bag_price_small" disabled readonly="true" value="{{$data->p_bag_price_small}}">
-                                                                                                        @error('p_bag_price_small')
+                                                                                                        @error('p_bag_small')
                                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                                         @enderror
                                                                                                     </td>
@@ -1929,31 +1320,19 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="p_bag_week_medium" id="p_bag_week_medium">
+                                                                                                        <input class="form-control" disabled readonly value="Rs. 70.665">
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select class="form-control" disabled readonly name="p_bag_medium" id="p_bag_medium">
                                                                                                             @for($i = 0; $i <= 30; $i+=5)
-                                                                                                            <option value="{{$i}}" {{ $data->p_bag_week_medium==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            <option value="{{$i}}" {{ $data->p_bag_medium==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
                                                                                                         </select>
-                                                                                                        @error('p_bag_week_medium')
+                                                                                                        @error('p_bag_medium')
                                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                                         @enderror
                                                                                                     </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="p_bag_month_medium" id="p_bag_month_medium">
-                                                                                                            @for($i = 0; $i <= 120; $i+=(5*4))
-                                                                                                            <option value="{{$i}}" {{ $data->p_bag_month_medium==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('p_bag_month_medium')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <input class="form-control" type="number" name="p_bag_price_medium" id="p_bag_price_medium" disabled readonly="true" value="{{$data->p_bag_price_medium}}">
-                                                                                                        @error('p_bag_price_medium')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
+
                                                                                                 </tr>
                                                                                             </tbody>
                                                                                         </table>
@@ -1966,31 +1345,19 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="p_bag_week_large" id="p_bag_week_large">
+                                                                                                        <input class="form-control" disabled readonly value="Rs. 70.665">
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select class="form-control" disabled readonly name="p_bag_large" id="p_bag_large">
                                                                                                             @for($i = 0; $i <= 30; $i+=5)
-                                                                                                            <option value="{{$i}}" {{ $data->p_bag_week_large==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            <option value="{{$i}}" {{ $data->p_bag_large==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
                                                                                                         </select>
-                                                                                                        @error('p_bag_week_large')
+                                                                                                        @error('p_bag_large')
                                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                                         @enderror
                                                                                                     </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="p_bag_month_large" id="p_bag_month_large">
-                                                                                                            @for($i = 0; $i <= 120; $i+=(5*4))
-                                                                                                            <option value="{{$i}}" {{ $data->p_bag_month_large==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('p_bag_month_large')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <input class="form-control" type="number" name="p_bag_price_large" id="p_bag_price_large" disabled readonly="true" value="{{$data->p_bag_price_large}}">
-                                                                                                        @error('p_bag_price_large')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
+
                                                                                                 </tr>
                                                                                             </tbody>
                                                                                         </table>
@@ -2003,31 +1370,19 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="p_bag_week_x_large" id="p_bag_week_x_large">
+                                                                                                        <input class="form-control" disabled readonly value="Rs. 70.665">
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select class="form-control" disabled readonly name="p_bag_x_large" id="p_bag_x_large">
                                                                                                             @for($i = 0; $i <= 30; $i+=5)
-                                                                                                            <option value="{{$i}}" {{ $data->p_bag_week_x_large==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            <option value="{{$i}}" {{ $data->p_bag_x_large==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
                                                                                                         </select>
-                                                                                                        @error('p_bag_week_x_large')
+                                                                                                        @error('p_bag_x_large')
                                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                                         @enderror
                                                                                                     </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="p_bag_month_x_large" id="p_bag_month_x_large">
-                                                                                                            @for($i = 0; $i <= 120; $i+=(5*4))
-                                                                                                            <option value="{{$i}}" {{ $data->p_bag_month_x_large==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('p_bag_month_x_large')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <input class="form-control" type="number" name="p_bag_price_x_large" id="p_bag_price_x_large" disabled readonly="true" value="{{$data->p_bag_price_x_large}}">
-                                                                                                        @error('p_bag_price_x_large')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
+
                                                                                                 </tr>
                                                                                             </tbody>
                                                                                         </table>
@@ -2040,31 +1395,19 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="p_bag_week_xx_large" id="p_bag_week_xx_large">
+                                                                                                        <input class="form-control" disabled readonly value="Rs. 70.665">
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select class="form-control" disabled readonly name="p_bag_xx_large" id="p_bag_xx_large">
                                                                                                             @for($i = 0; $i <= 30; $i+=5)
-                                                                                                            <option value="{{$i}}" {{ $data->p_bag_week_xx_large==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            <option value="{{$i}}" {{ $data->p_bag_xx_large==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
                                                                                                         </select>
-                                                                                                        @error('p_bag_week_xx_large')
+                                                                                                        @error('p_bag_xx_large')
                                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                                         @enderror
                                                                                                     </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="p_bag_month_xx_large" id="p_bag_month_xx_large">
-                                                                                                            @for($i = 0; $i <= 120; $i+=(5*4))
-                                                                                                            <option value="{{$i}}" {{ $data->p_bag_month_xx_large==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('p_bag_month_xx_large')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <input class="form-control" type="number" name="p_bag_price_xx_large" id="p_bag_price_xx_large" disabled readonly="true" value="{{$data->p_bag_price_xx_large}}">
-                                                                                                        @error('p_bag_price_xx_large')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
+
                                                                                                 </tr>
                                                                                             </tbody>
                                                                                         </table>
@@ -2094,14 +1437,13 @@
                                                                         <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
                                                                             <thead class="table-primary">
                                                                                 <tr>
-                                                                                    <th scope="col">APPROX <br/>REQUIREMENT</th>
+                                                                                    <th scope="col">SIZE</th>
                                                                                     <th scope="col">
                                                                                         <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
                                                                                             <thead class="table-light">
                                                                                                 <tr>
-                                                                                                    <th scope="col" class="text-center" style="width: 33%">PER WEEK <br> (Per pack 50)</th>
-                                                                                                    <th scope="col" class="text-center" style="width: 33%">PER MONTH <br> (Per pack 50)</th>
-                                                                                                    <th scope="col" class="text-center" style="width: 33%">PRICE <br> (Per pack 50)</th>
+                                                                                                    <th scope="col" class="text-center" style="width: 33%">PRICE</th>
+                                                                                                    <th scope="col" class="text-center" style="width: 33%">QUANTITY</th>
                                                                                                 </tr>
                                                                                             </thead>
                                                                                         </table>
@@ -2110,224 +1452,225 @@
                                                                             </thead>
                                                                             <tbody>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">Small</a></td>
+                                                                                    <td><a href="#" class="fw-medium text-center">10*11</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select disabled readonly onchange="week_change_handler(event)" class="form-control" name="cloth_bag_week_small" id="cloth_bag_week_small">
+                                                                                                        <input class="form-control" disabled readonly value="Rs. 4.58">
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select class="form-control" disabled readonly name="cloth_bag_10_11" id="cloth_bag_10_11">
                                                                                                             @for($i = 0; $i <= 1000; $i+=5)
-                                                                                                            <option value="{{$i}}" {{ $data->cloth_bag_week_small==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            <option value="{{$i}}" {{ $data->cloth_bag_10_11==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
                                                                                                         </select>
-                                                                                                        @error('cloth_bag_week_small')
+                                                                                                        @error('cloth_bag_10_11')
                                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                                         @enderror
                                                                                                     </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly onchange="month_change_handler(event)" class="form-control" name="cloth_bag_month_small" id="cloth_bag_month_small">
-                                                                                                            @for($i = 0; $i <= 4000; $i+=(5*4))
-                                                                                                            <option value="{{$i}}" {{ $data->cloth_bag_month_small==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('cloth_bag_month_small')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <input disabled readonly class="form-control" type="number" name="cloth_bag_price_small" id="cloth_bag_price_small" value="{{$data->cloth_bag_price_small}}">
-                                                                                                        @error('cloth_bag_price_small')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
+
                                                                                                 </tr>
                                                                                             </tbody>
                                                                                         </table>
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">Medium</a></td>
+                                                                                    <td><a href="#" class="fw-medium text-center">11*12</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select disabled readonly onchange="week_change_handler(event)" class="form-control" name="cloth_bag_week_medium" id="cloth_bag_week_medium">
+                                                                                                        <input class="form-control" disabled readonly value="Rs. 5.08">
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select class="form-control" disabled readonly name="cloth_bag_11_12" id="cloth_bag_11_12">
                                                                                                             @for($i = 0; $i <= 1000; $i+=5)
-                                                                                                            <option value="{{$i}}" {{ $data->cloth_bag_week_medium==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            <option value="{{$i}}" {{ $data->cloth_bag_11_12==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
                                                                                                         </select>
-                                                                                                        @error('cloth_bag_week_medium')
+                                                                                                        @error('cloth_bag_11_12')
                                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                                         @enderror
                                                                                                     </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly onchange="month_change_handler(event)" class="form-control" name="cloth_bag_month_medium" id="cloth_bag_month_medium">
-                                                                                                            @for($i = 0; $i <= 4000; $i+=(5*4))
-                                                                                                            <option value="{{$i}}" {{ $data->cloth_bag_month_medium==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('cloth_bag_month_medium')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <input disabled readonly class="form-control" type="number" name="cloth_bag_price_medium" id="cloth_bag_price_medium" value="{{$data->cloth_bag_price_medium}}">
-                                                                                                        @error('cloth_bag_price_medium')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
+
                                                                                                 </tr>
                                                                                             </tbody>
                                                                                         </table>
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">Large</a></td>
+                                                                                    <td><a href="#" class="fw-medium text-center">12*12</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select disabled readonly onchange="week_change_handler(event)" class="form-control" name="cloth_bag_week_large" id="cloth_bag_week_large">
+                                                                                                        <input class="form-control" disabled readonly value="Rs. 5.31">
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select class="form-control" disabled readonly name="cloth_bag_12_12" id="cloth_bag_12_12">
                                                                                                             @for($i = 0; $i <= 1000; $i+=5)
-                                                                                                            <option value="{{$i}}" {{ $data->cloth_bag_week_large==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            <option value="{{$i}}" {{ $data->cloth_bag_12_12==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
                                                                                                         </select>
-                                                                                                        @error('cloth_bag_week_large')
+                                                                                                        @error('cloth_bag_12_12')
                                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                                         @enderror
                                                                                                     </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly onchange="month_change_handler(event)" class="form-control" name="cloth_bag_month_large" id="cloth_bag_month_large">
-                                                                                                            @for($i = 0; $i <= 4000; $i+=(5*4))
-                                                                                                            <option value="{{$i}}" {{ $data->cloth_bag_month_large==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('cloth_bag_month_large')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <input disabled readonly class="form-control" type="number" name="cloth_bag_price_large" id="cloth_bag_price_large" value="{{$data->cloth_bag_price_large}}">
-                                                                                                        @error('cloth_bag_price_large')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                            </tbody>
-                                                                                        </table>
-                                                                                    </td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="accordion-item">
-                                                            <h2 class="accordion-header" id="headingThirteen2">
-                                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen2" aria-expanded="false" aria-controls="collapseThirteen2">
-                                                                    <img
-                                                                    src="https://m.media-amazon.com/images/I/717ILnnHiZL.jpg"
-                                                                    alt=""
-                                                                    style="height:80px;object-fit:contain;margin-right:20px"
-                                                                    >
-                                                                    <br/>
-                                                                    PAPER STRAW
-                                                                </button>
-                                                            </h2>
-                                                            <div id="collapseThirteen2" class="accordion-collapse collapse" aria-labelledby="headingThirteen2" data-bs-parent="#accordionExample">
-                                                                <div class="accordion-body">
-                                                                    <div class="table-responsive">
-                                                                        <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
-                                                                            <thead class="table-primary">
-                                                                                <tr>
-                                                                                    <th scope="col">APPROX <br/>REQUIREMENT</th>
-                                                                                    <th scope="col">
-                                                                                        <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
-                                                                                            <thead class="table-light">
-                                                                                                <tr>
-                                                                                                    <th scope="col" class="text-center" style="width: 33%">PER WEEK <br>(Per pack 100)</th>
-                                                                                                    <th scope="col" class="text-center" style="width: 33%">PER MONTH <br>(Per pack 100)</th>
-                                                                                                    <th scope="col" class="text-center" style="width: 33%">PRICE <br>(Per pack 100)</th>
-                                                                                                </tr>
-                                                                                            </thead>
-                                                                                        </table>
-                                                                                    </th>
-                                                                                </tr>
-                                                                            </thead>
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">6mm</a></td>
-                                                                                    <td>
-                                                                                        <table class="table align-middle table-nowrap mb-0">
-                                                                                            <tbody>
-                                                                                                <tr>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly onchange="week_change_handler(event)" class="form-control" name="paper_straw_week_6mm" id="paper_straw_week_6mm">
-                                                                                                            @for($i = 0; $i <= 30; $i+=5)
-                                                                                                            <option value="{{$i}}" {{ $data->paper_straw_week_6mm==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('paper_straw_week_6mm')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly onchange="month_change_handler(event)" class="form-control" name="paper_straw_month_6mm" id="paper_straw_month_6mm">
-                                                                                                            @for($i = 0; $i <= 120; $i+=(5*4))
-                                                                                                            <option value="{{$i}}" {{ $data->paper_straw_month_6mm==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('paper_straw_month_6mm')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <input disabled readonly class="form-control" type="number" name="paper_straw_price_6mm" id="paper_straw_price_6mm" value="{{$data->paper_straw_price_6mm}}">
-                                                                                                        @error('paper_straw_price_6mm')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
+
                                                                                                 </tr>
                                                                                             </tbody>
                                                                                         </table>
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">8mm</a></td>
+                                                                                    <td><a href="#" class="fw-medium text-center">11*14</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select disabled readonly onchange="week_change_handler(event)" class="form-control" name="paper_straw_week_8mm" id="paper_straw_week_8mm">
-                                                                                                            @for($i = 0; $i <= 30; $i+=5)
-                                                                                                            <option value="{{$i}}" {{ $data->paper_straw_week_8mm==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('paper_straw_week_8mm')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
+                                                                                                        <input class="form-control" disabled readonly value="Rs. 5.82">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select disabled readonly onchange="month_change_handler(event)" class="form-control" name="paper_straw_month_8mm" id="paper_straw_month_8mm">
-                                                                                                            @for($i = 0; $i <= 120; $i+=(5*4))
-                                                                                                            <option value="{{$i}}" {{ $data->paper_straw_month_8mm==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                        <select class="form-control" disabled readonly name="cloth_bag_11_14" id="cloth_bag_11_14">
+                                                                                                            @for($i = 0; $i <= 1000; $i+=5)
+                                                                                                            <option value="{{$i}}" {{ $data->cloth_bag_11_14==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
                                                                                                         </select>
-                                                                                                        @error('paper_straw_month_8mm')
+                                                                                                        @error('cloth_bag_11_14')
                                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                                         @enderror
+                                                                                                    </td>
+
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td><a href="#" class="fw-medium text-center">13*16</a></td>
+                                                                                    <td>
+                                                                                        <table class="table align-middle table-nowrap mb-0">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <input class="form-control" disabled readonly value="Rs. 6.94">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input disabled readonly class="form-control" type="number" name="paper_straw_price_8mm" id="paper_straw_price_8mm" value="{{$data->paper_straw_price_8mm}}">
-                                                                                                        @error('paper_straw_price_8mm')
+                                                                                                        <select class="form-control" disabled readonly name="cloth_bag_13_16" id="cloth_bag_13_16">
+                                                                                                            @for($i = 0; $i <= 1000; $i+=5)
+                                                                                                            <option value="{{$i}}" {{ $data->cloth_bag_13_16==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            @endfor
+                                                                                                        </select>
+                                                                                                        @error('cloth_bag_13_16')
                                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                                         @enderror
                                                                                                     </td>
+
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td><a href="#" class="fw-medium text-center">15*18</a></td>
+                                                                                    <td>
+                                                                                        <table class="table align-middle table-nowrap mb-0">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <input class="form-control" disabled readonly value="Rs. 8.18">
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select class="form-control" disabled readonly name="cloth_bag_15_18" id="cloth_bag_15_18">
+                                                                                                            @for($i = 0; $i <= 1000; $i+=5)
+                                                                                                            <option value="{{$i}}" {{ $data->cloth_bag_15_18==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            @endfor
+                                                                                                        </select>
+                                                                                                        @error('cloth_bag_15_18')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td><a href="#" class="fw-medium text-center">16*20</a></td>
+                                                                                    <td>
+                                                                                        <table class="table align-middle table-nowrap mb-0">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <input class="form-control" disabled readonly value="Rs. 9.29">
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select class="form-control" disabled readonly name="cloth_bag_16_20" id="cloth_bag_16_20">
+                                                                                                            @for($i = 0; $i <= 1000; $i+=5)
+                                                                                                            <option value="{{$i}}" {{ $data->cloth_bag_16_20==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            @endfor
+                                                                                                        </select>
+                                                                                                        @error('cloth_bag_16_20')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td><a href="#" class="fw-medium text-center">18*20</a></td>
+                                                                                    <td>
+                                                                                        <table class="table align-middle table-nowrap mb-0">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <input class="form-control" disabled readonly value="Rs. 10.61">
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select class="form-control" disabled readonly name="cloth_bag_18_20" id="cloth_bag_18_20">
+                                                                                                            @for($i = 0; $i <= 1000; $i+=5)
+                                                                                                            <option value="{{$i}}" {{ $data->cloth_bag_18_20==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            @endfor
+                                                                                                        </select>
+                                                                                                        @error('cloth_bag_18_20')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td><a href="#" class="fw-medium text-center">20*20</a></td>
+                                                                                    <td>
+                                                                                        <table class="table align-middle table-nowrap mb-0">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <input class="form-control" disabled readonly value="Rs. 11.77">
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select class="form-control" disabled readonly name="cloth_bag_20_20" id="cloth_bag_20_20">
+                                                                                                            @for($i = 0; $i <= 1000; $i+=5)
+                                                                                                            <option value="{{$i}}" {{ $data->cloth_bag_20_20==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            @endfor
+                                                                                                        </select>
+                                                                                                        @error('cloth_bag_20_20')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+
                                                                                                 </tr>
                                                                                             </tbody>
                                                                                         </table>
@@ -2364,461 +1707,13 @@
                                                                         <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
                                                                             <thead class="table-primary">
                                                                                 <tr>
-                                                                                    <th scope="col">APPROX <br/>REQUIREMENT</th>
+                                                                                    <th scope="col">SIZE</th>
                                                                                     <th scope="col">
                                                                                         <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
                                                                                             <thead class="table-light">
                                                                                                 <tr>
-                                                                                                    <th scope="col" class="text-center" style="width: 33%">PER WEEK<br>(100 pcs pack)</th>
-                                                                                                    <th scope="col" class="text-center" style="width: 33%">PER MONTH<br>(100 pcs pack)</th>
-                                                                                                    <th scope="col" class="text-center" style="width: 33%">PRICE<br>(100 pcs pack)</th>
-                                                                                                </tr>
-                                                                                            </thead>
-                                                                                        </table>
-                                                                                    </th>
-                                                                                </tr>
-                                                                            </thead>
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">3X5 - 80X130mm</a></td>
-                                                                                    <td>
-                                                                                        <table class="table align-middle table-nowrap mb-0">
-                                                                                            <tbody>
-                                                                                                <tr>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="al_pouch_week_3_5" id="al_pouch_week_3_5">
-                                                                                                            @for($i = 0; $i <= 20; $i+=5)
-                                                                                                            <option value="{{$i}}" {{ $data->al_pouch_week_3_5==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('al_pouch_week_3_5')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="al_pouch_month_3_5" id="al_pouch_month_3_5">
-                                                                                                            @for($i = 0; $i <= 80; $i+=(5*4))
-                                                                                                            <option value="{{$i}}" {{ $data->al_pouch_month_3_5==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('al_pouch_month_3_5')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <input class="form-control" type="number" name="al_pouch_price_3_5" id="al_pouch_price_3_5" disabled readonly="true" value="{{$data->al_pouch_price_3_5}}">
-                                                                                                        @error('al_pouch_price_3_5')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                            </tbody>
-                                                                                        </table>
-                                                                                    </td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">4x6 - 100x155mm</a></td>
-                                                                                    <td>
-                                                                                        <table class="table align-middle table-nowrap mb-0">
-                                                                                            <tbody>
-                                                                                                <tr>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="al_pouch_week_4_6" id="al_pouch_week_4_6">
-                                                                                                            @for($i = 0; $i <= 20; $i+=5)
-                                                                                                            <option value="{{$i}}" {{ $data->al_pouch_week_4_6==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('al_pouch_week_4_6')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="al_pouch_month_4_6" id="al_pouch_month_4_6">
-                                                                                                            @for($i = 0; $i <= 80; $i+=(5*4))
-                                                                                                            <option value="{{$i}}" {{ $data->al_pouch_month_4_6==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('al_pouch_month_4_6')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <input class="form-control" type="number" name="al_pouch_price_4_6" id="al_pouch_price_4_6" disabled readonly="true" value="{{$data->al_pouch_price_4_6}}">
-                                                                                                        @error('al_pouch_price_4_6')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                            </tbody>
-                                                                                        </table>
-                                                                                    </td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">5x7 - 120x180mm</a></td>
-                                                                                    <td>
-                                                                                        <table class="table align-middle table-nowrap mb-0">
-                                                                                            <tbody>
-                                                                                                <tr>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="al_pouch_week_5_7" id="al_pouch_week_5_7">
-                                                                                                            @for($i = 0; $i <= 20; $i+=5)
-                                                                                                            <option value="{{$i}}" {{ $data->al_pouch_week_5_7==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('al_pouch_week_5_7')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="al_pouch_month_5_7" id="al_pouch_month_5_7">
-                                                                                                            @for($i = 0; $i <= 80; $i+=(5*4))
-                                                                                                            <option value="{{$i}}" {{ $data->al_pouch_month_5_7==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('al_pouch_month_5_7')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <input class="form-control" type="number" name="al_pouch_price_5_7" id="al_pouch_price_5_7" disabled readonly="true" value="{{$data->al_pouch_price_5_7}}">
-                                                                                                        @error('al_pouch_price_5_7')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                            </tbody>
-                                                                                        </table>
-                                                                                    </td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">6x8 - 145x180mm</a></td>
-                                                                                    <td>
-                                                                                        <table class="table align-middle table-nowrap mb-0">
-                                                                                            <tbody>
-                                                                                                <tr>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="al_pouch_week_6_8" id="al_pouch_week_6_8">
-                                                                                                            @for($i = 0; $i <= 20; $i+=5)
-                                                                                                            <option value="{{$i}}" {{ $data->al_pouch_week_6_8==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('al_pouch_week_6_8')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="al_pouch_month_6_8" id="al_pouch_month_6_8">
-                                                                                                            @for($i = 0; $i <= 80; $i+=(5*4))
-                                                                                                            <option value="{{$i}}" {{ $data->al_pouch_month_6_8==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('al_pouch_month_6_8')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <input class="form-control" type="number" name="al_pouch_price_6_8" id="al_pouch_price_6_8" disabled readonly="true" value="{{$data->al_pouch_price_6_8}}">
-                                                                                                        @error('al_pouch_price_6_8')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                            </tbody>
-                                                                                        </table>
-                                                                                    </td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">6x9 - 145x215mm</a></td>
-                                                                                    <td>
-                                                                                        <table class="table align-middle table-nowrap mb-0">
-                                                                                            <tbody>
-                                                                                                <tr>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="al_pouch_week_6_9" id="al_pouch_week_6_9">
-                                                                                                            @for($i = 0; $i <= 20; $i+=5)
-                                                                                                            <option value="{{$i}}" {{ $data->al_pouch_week_6_9==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('al_pouch_week_6_9')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="al_pouch_month_6_9" id="al_pouch_month_6_9">
-                                                                                                            @for($i = 0; $i <= 80; $i+=(5*4))
-                                                                                                            <option value="{{$i}}" {{ $data->al_pouch_month_6_9==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('al_pouch_month_6_9')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <input class="form-control" type="number" name="al_pouch_price_6_9" id="al_pouch_price_6_9" disabled readonly="true" value="{{$data->al_pouch_price_6_9}}">
-                                                                                                        @error('al_pouch_price_6_9')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                            </tbody>
-                                                                                        </table>
-                                                                                    </td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">7x9 - 165x230mm</a></td>
-                                                                                    <td>
-                                                                                        <table class="table align-middle table-nowrap mb-0">
-                                                                                            <tbody>
-                                                                                                <tr>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="al_pouch_week_7_9" id="al_pouch_week_7_9">
-                                                                                                            @for($i = 0; $i <= 20; $i+=5)
-                                                                                                            <option value="{{$i}}" {{ $data->al_pouch_week_7_9==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('al_pouch_week_7_9')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="al_pouch_month_7_9" id="al_pouch_month_7_9">
-                                                                                                            @for($i = 0; $i <= 80; $i+=(5*4))
-                                                                                                            <option value="{{$i}}" {{ $data->al_pouch_month_7_9==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('al_pouch_month_7_9')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <input class="form-control" type="number" name="al_pouch_price_7_9" id="al_pouch_price_7_9" disabled readonly="true" value="{{$data->al_pouch_price_7_9}}">
-                                                                                                        @error('al_pouch_price_7_9')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                            </tbody>
-                                                                                        </table>
-                                                                                    </td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">7x10 - 165x255mm</a></td>
-                                                                                    <td>
-                                                                                        <table class="table align-middle table-nowrap mb-0">
-                                                                                            <tbody>
-                                                                                                <tr>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="al_pouch_week_7_10" id="al_pouch_week_7_10">
-                                                                                                            @for($i = 0; $i <= 20; $i+=5)
-                                                                                                            <option value="{{$i}}" {{ $data->al_pouch_week_7_10==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('al_pouch_week_7_10')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="al_pouch_month_7_10" id="al_pouch_month_7_10">
-                                                                                                            @for($i = 0; $i <= 80; $i+=(5*4))
-                                                                                                            <option value="{{$i}}" {{ $data->al_pouch_month_7_10==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('al_pouch_month_7_10')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <input class="form-control" type="number" name="al_pouch_price_7_10" id="al_pouch_price_7_10" disabled readonly="true" value="{{$data->al_pouch_price_7_10}}">
-                                                                                                        @error('al_pouch_price_7_10')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                            </tbody>
-                                                                                        </table>
-                                                                                    </td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">8x10 - 195x255mm</a></td>
-                                                                                    <td>
-                                                                                        <table class="table align-middle table-nowrap mb-0">
-                                                                                            <tbody>
-                                                                                                <tr>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="al_pouch_week_8_10" id="al_pouch_week_8_10">
-                                                                                                            @for($i = 0; $i <= 20; $i+=5)
-                                                                                                            <option value="{{$i}}" {{ $data->al_pouch_week_8_10==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('al_pouch_week_8_10')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="al_pouch_month_8_10" id="al_pouch_month_8_10">
-                                                                                                            @for($i = 0; $i <= 80; $i+=(5*4))
-                                                                                                            <option value="{{$i}}" {{ $data->al_pouch_month_8_10==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('al_pouch_month_8_10')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <input class="form-control" type="number" name="al_pouch_price_8_10" id="al_pouch_price_8_10" disabled readonly="true" value="{{$data->al_pouch_price_8_10}}">
-                                                                                                        @error('al_pouch_price_8_10')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                            </tbody>
-                                                                                        </table>
-                                                                                    </td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">9x12 - 225x305mm</a></td>
-                                                                                    <td>
-                                                                                        <table class="table align-middle table-nowrap mb-0">
-                                                                                            <tbody>
-                                                                                                <tr>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="al_pouch_week_9_12" id="al_pouch_week_9_12">
-                                                                                                            @for($i = 0; $i <= 20; $i+=5)
-                                                                                                            <option value="{{$i}}" {{ $data->al_pouch_week_9_12==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('al_pouch_week_9_12')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="al_pouch_month_9_12" id="al_pouch_month_9_12">
-                                                                                                            @for($i = 0; $i <= 80; $i+=(5*4))
-                                                                                                            <option value="{{$i}}" {{ $data->al_pouch_month_9_12==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('al_pouch_month_9_12')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <input class="form-control" type="number" name="al_pouch_price_9_12" id="al_pouch_price_9_12" disabled readonly="true" value="{{$data->al_pouch_price_9_12}}">
-                                                                                                        @error('al_pouch_price_9_12')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                            </tbody>
-                                                                                        </table>
-                                                                                    </td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">10x12 - 240x300mm</a></td>
-                                                                                    <td>
-                                                                                        <table class="table align-middle table-nowrap mb-0">
-                                                                                            <tbody>
-                                                                                                <tr>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="al_pouch_week_10_12" id="al_pouch_week_10_12">
-                                                                                                            @for($i = 0; $i <= 20; $i+=5)
-                                                                                                            <option value="{{$i}}" {{ $data->al_pouch_week_10_12==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('al_pouch_week_10_12')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="al_pouch_month_10_12" id="al_pouch_month_10_12">
-                                                                                                            @for($i = 0; $i <= 80; $i+=(5*4))
-                                                                                                            <option value="{{$i}}" {{ $data->al_pouch_month_10_12==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('al_pouch_month_10_12')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <input class="form-control" type="number" name="al_pouch_price_10_12" id="al_pouch_price_10_12" disabled readonly="true" value="{{$data->al_pouch_price_10_12}}">
-                                                                                                        @error('al_pouch_price_10_12')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                            </tbody>
-                                                                                        </table>
-                                                                                    </td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">10x14 - 240x360mm</a></td>
-                                                                                    <td>
-                                                                                        <table class="table align-middle table-nowrap mb-0">
-                                                                                            <tbody>
-                                                                                                <tr>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="al_pouch_week_10_14" id="al_pouch_week_10_14">
-                                                                                                            @for($i = 0; $i <= 20; $i+=5)
-                                                                                                            <option value="{{$i}}" {{ $data->al_pouch_week_10_14==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('al_pouch_week_10_14')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="al_pouch_month_10_14" id="al_pouch_month_10_14">
-                                                                                                            @for($i = 0; $i <= 80; $i+=(5*4))
-                                                                                                            <option value="{{$i}}" {{ $data->al_pouch_month_10_14==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('al_pouch_month_10_14')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <input class="form-control" type="number" name="al_pouch_price_10_14" id="al_pouch_price_10_14" disabled readonly="true" value="{{$data->al_pouch_price_10_14}}">
-                                                                                                        @error('al_pouch_price_10_14')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                            </tbody>
-                                                                                        </table>
-                                                                                    </td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="accordion-item">
-                                                            <h2 class="accordion-header" id="headingEleven">
-                                                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
-                                                                <img
-                                                                src="https://www.ikea.com/in/en/images/products/gamman-24-piece-cutlery-set-stainless-steel__0713267_pe729383_s5.jpg?f=s"
-                                                                alt=""
-                                                                style="height:80px;object-fit:contain;margin-right:20px"
-                                                                >
-                                                                <br/>
-                                                                CUTLERY
-                                                              </button>
-                                                            </h2>
-                                                            <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven" data-bs-parent="#accordionExample2">
-                                                                <div class="accordion-body">
-                                                                    <div class="table-responsive">
-                                                                        <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
-                                                                            <thead class="table-primary">
-                                                                                <tr>
-                                                                                    <th scope="col">APPROX <br/>REQUIREMENT</th>
-                                                                                    <th scope="col">
-                                                                                        <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
-                                                                                            <thead class="table-light">
-                                                                                                <tr>
-                                                                                                    <th scope="col" class="text-center" style="width: 33%">PER WEEK</th>
-                                                                                                    <th scope="col" class="text-center" style="width: 33%">PER MONTH</th>
                                                                                                     <th scope="col" class="text-center" style="width: 33%">PRICE</th>
+                                                                                                    <th scope="col" class="text-center" style="width: 33%">QUANTITY</th>
                                                                                                 </tr>
                                                                                             </thead>
                                                                                         </table>
@@ -2827,185 +1722,500 @@
                                                                             </thead>
                                                                             <tbody>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">110mm Spoon</a></td>
+                                                                                    <td><a href="#" class="fw-medium text-center">4x6 - (Cut Size)</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="cuttlery_week_110_spoon" id="cuttlery_week_110_spoon">
-                                                                                                            @for($i = 0; $i <= 10000; $i+=500)
-                                                                                                            <option value="{{$i}}" {{ $data->cuttlery_week_110_spoon==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('cuttlery_week_110_spoon')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
+                                                                                                        <input class="form-control" disabled readonly value="Rs. 21.735">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="cuttlery_month_110_spoon" id="cuttlery_month_110_spoon">
-                                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
-                                                                                                            <option value="{{$i}}" {{ $data->cuttlery_month_110_spoon==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                        <select class="form-control" disabled readonly name="al_pouch_4_6" id="al_pouch_4_6">
+                                                                                                            @for($i = 0; $i <= 20; $i+=5)
+                                                                                                            <option value="{{$i}}" {{ $data->al_pouch_4_6==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
                                                                                                         </select>
-                                                                                                        @error('cuttlery_month_110_spoon')
+                                                                                                        @error('al_pouch_4_6')
                                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                                         @enderror
                                                                                                     </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <input class="form-control" type="number" name="cuttlery_price_110_spoon" id="cuttlery_price_110_spoon" disabled readonly="true" value="{{$data->cuttlery_price_110_spoon}}">
-                                                                                                        @error('cuttlery_price_110_spoon')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
+
                                                                                                 </tr>
                                                                                             </tbody>
                                                                                         </table>
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">140mm Spoon</a></td>
+                                                                                    <td><a href="#" class="fw-medium text-center">5x7 - (Cut Size)</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="cuttlery_week_140_spoon" id="cuttlery_week_140_spoon">
-                                                                                                            @for($i = 0; $i <= 10000; $i+=500)
-                                                                                                            <option value="{{$i}}" {{ $data->cuttlery_week_140_spoon==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('cuttlery_week_140_spoon')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
+                                                                                                        <input class="form-control" disabled readonly value="Rs. 28.35">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="cuttlery_month_140_spoon" id="cuttlery_month_140_spoon">
-                                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
-                                                                                                            <option value="{{$i}}" {{ $data->cuttlery_month_140_spoon==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                        <select class="form-control" disabled readonly name="al_pouch_5_7" id="al_pouch_5_7">
+                                                                                                            @for($i = 0; $i <= 20; $i+=5)
+                                                                                                            <option value="{{$i}}" {{ $data->al_pouch_5_7==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
                                                                                                         </select>
-                                                                                                        @error('cuttlery_month_140_spoon')
+                                                                                                        @error('al_pouch_5_7')
                                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                                         @enderror
                                                                                                     </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <input class="form-control" type="number" name="cuttlery_price_140_spoon" id="cuttlery_price_140_spoon" disabled readonly="true" value="{{$data->cuttlery_price_140_spoon}}">
-                                                                                                        @error('cuttlery_price_140_spoon')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
+
                                                                                                 </tr>
                                                                                             </tbody>
                                                                                         </table>
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">160mm Spoon</a></td>
+                                                                                    <td><a href="#" class="fw-medium text-center">6x8 - (Cut Size)</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="cuttlery_week_160_spoon" id="cuttlery_week_160_spoon">
-                                                                                                            @for($i = 0; $i <= 10000; $i+=500)
-                                                                                                            <option value="{{$i}}" {{ $data->cuttlery_week_160_spoon==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('cuttlery_week_160_spoon')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
+                                                                                                        <input class="form-control" disabled readonly value="Rs. 35.532">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="cuttlery_month_160_spoon" id="cuttlery_month_160_spoon">
-                                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
-                                                                                                            <option value="{{$i}}" {{ $data->cuttlery_month_160_spoon==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                        <select class="form-control" disabled readonly name="al_pouch_6_8" id="al_pouch_6_8">
+                                                                                                            @for($i = 0; $i <= 20; $i+=5)
+                                                                                                            <option value="{{$i}}" {{ $data->al_pouch_6_8==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
                                                                                                         </select>
-                                                                                                        @error('cuttlery_month_160_spoon')
+                                                                                                        @error('al_pouch_6_8')
                                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                                         @enderror
                                                                                                     </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <input class="form-control" type="number" name="cuttlery_price_160_spoon" id="cuttlery_price_160_spoon" disabled readonly="true" value="{{$data->cuttlery_price_160_spoon}}">
-                                                                                                        @error('cuttlery_price_160_spoon')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
+
                                                                                                 </tr>
                                                                                             </tbody>
                                                                                         </table>
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">140mm Fork</a></td>
+                                                                                    <td><a href="#" class="fw-medium text-center">6x9 - (Cut Size)</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="cuttlery_week_140_fork" id="cuttlery_week_140_fork">
-                                                                                                            @for($i = 0; $i <= 10000; $i+=500)
-                                                                                                            <option value="{{$i}}" {{ $data->cuttlery_week_140_fork==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('cuttlery_week_140_fork')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
+                                                                                                        <input class="form-control" disabled readonly value="Rs. 40.635">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="cuttlery_month_140_fork" id="cuttlery_month_140_fork">
-                                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
-                                                                                                            <option value="{{$i}}" {{ $data->cuttlery_month_140_fork==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                        <select class="form-control" disabled readonly name="al_pouch_6_9" id="al_pouch_6_9">
+                                                                                                            @for($i = 0; $i <= 20; $i+=5)
+                                                                                                            <option value="{{$i}}" {{ $data->al_pouch_6_9==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
                                                                                                         </select>
-                                                                                                        @error('cuttlery_month_140_fork')
+                                                                                                        @error('al_pouch_6_9')
                                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                                         @enderror
                                                                                                     </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <input class="form-control" type="number" name="cuttlery_price_140_fork" id="cuttlery_price_140_fork" disabled readonly="true" value="{{$data->cuttlery_price_140_fork}}">
-                                                                                                        @error('cuttlery_price_140_fork')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
+
                                                                                                 </tr>
                                                                                             </tbody>
                                                                                         </table>
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">160mm Fork</a></td>
+                                                                                    <td><a href="#" class="fw-medium text-center">7x9 - (Cut Size)</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="cuttlery_week_160_fork" id="cuttlery_week_160_fork">
-                                                                                                            @for($i = 0; $i <= 10000; $i+=500)
-                                                                                                            <option value="{{$i}}" {{ $data->cuttlery_week_160_fork==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('cuttlery_week_160_fork')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
+                                                                                                        <input class="form-control" disabled readonly value="Rs. 48.195">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="cuttlery_month_160_fork" id="cuttlery_month_160_fork">
-                                                                                                            @for($i = 0; $i <= 40000; $i+=(500*4))
-                                                                                                            <option value="{{$i}}" {{ $data->cuttlery_month_160_fork==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                        <select class="form-control" disabled readonly name="al_pouch_7_9" id="al_pouch_7_9">
+                                                                                                            @for($i = 0; $i <= 20; $i+=5)
+                                                                                                            <option value="{{$i}}" {{ $data->al_pouch_7_9==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
                                                                                                         </select>
-                                                                                                        @error('cuttlery_month_160_fork')
+                                                                                                        @error('al_pouch_7_9')
                                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                                         @enderror
+                                                                                                    </td>
+
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td><a href="#" class="fw-medium text-center">7x10 - (Cut Size)</a></td>
+                                                                                    <td>
+                                                                                        <table class="table align-middle table-nowrap mb-0">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <input class="form-control" disabled readonly value="Rs. 52.92">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" type="number" name="cuttlery_price_160_fork" id="cuttlery_price_160_fork" disabled readonly="true" value="{{$data->cuttlery_price_160_fork}}">
-                                                                                                        @error('cuttlery_price_160_fork')
+                                                                                                        <select class="form-control" disabled readonly name="al_pouch_7_10" id="al_pouch_7_10">
+                                                                                                            @for($i = 0; $i <= 20; $i+=5)
+                                                                                                            <option value="{{$i}}" {{ $data->al_pouch_7_10==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            @endfor
+                                                                                                        </select>
+                                                                                                        @error('al_pouch_7_10')
                                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                                         @enderror
                                                                                                     </td>
+
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td><a href="#" class="fw-medium text-center">8x10 - (Cut Size)</a></td>
+                                                                                    <td>
+                                                                                        <table class="table align-middle table-nowrap mb-0">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <input class="form-control" disabled readonly value="Rs. 60.48">
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select class="form-control" disabled readonly name="al_pouch_8_10" id="al_pouch_8_10">
+                                                                                                            @for($i = 0; $i <= 20; $i+=5)
+                                                                                                            <option value="{{$i}}" {{ $data->al_pouch_8_10==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            @endfor
+                                                                                                        </select>
+                                                                                                        @error('al_pouch_8_10')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td><a href="#" class="fw-medium text-center">9x12 - (Cut Size)</a></td>
+                                                                                    <td>
+                                                                                        <table class="table align-middle table-nowrap mb-0">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <input class="form-control" disabled readonly value="Rs. 83.16">
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select class="form-control" disabled readonly name="al_pouch_9_12" id="al_pouch_9_12">
+                                                                                                            @for($i = 0; $i <= 20; $i+=5)
+                                                                                                            <option value="{{$i}}" {{ $data->al_pouch_9_12==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            @endfor
+                                                                                                        </select>
+                                                                                                        @error('al_pouch_9_12')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td><a href="#" class="fw-medium text-center">10x12 - (Cut Size)</a></td>
+                                                                                    <td>
+                                                                                        <table class="table align-middle table-nowrap mb-0">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <input class="form-control" disabled readonly value="Rs. 96.39">
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select class="form-control" disabled readonly name="al_pouch_10_12" id="al_pouch_10_12">
+                                                                                                            @for($i = 0; $i <= 20; $i+=5)
+                                                                                                            <option value="{{$i}}" {{ $data->al_pouch_10_12==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            @endfor
+                                                                                                        </select>
+                                                                                                        @error('al_pouch_10_12')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td><a href="#" class="fw-medium text-center">10x14 - (Cut Size)</a></td>
+                                                                                    <td>
+                                                                                        <table class="table align-middle table-nowrap mb-0">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <input class="form-control" disabled readonly value="Rs. 107.73">
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select class="form-control" disabled readonly name="al_pouch_10_14" id="al_pouch_10_14">
+                                                                                                            @for($i = 0; $i <= 20; $i+=5)
+                                                                                                            <option value="{{$i}}" {{ $data->al_pouch_10_14==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            @endfor
+                                                                                                        </select>
+                                                                                                        @error('al_pouch_10_14')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td><a href="#" class="fw-medium text-center">4x6 - (Full Size)</a></td>
+                                                                                    <td>
+                                                                                        <table class="table align-middle table-nowrap mb-0">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <input class="form-control" disabled readonly value="Rs. 21.9">
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select class="form-control" disabled readonly name="al_pouch_4_6_full" id="al_pouch_4_6_full">
+                                                                                                            @for($i = 0; $i <= 20; $i+=5)
+                                                                                                            <option value="{{$i}}" {{ $data->al_pouch_4_6_full==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            @endfor
+                                                                                                        </select>
+                                                                                                        @error('al_pouch_4_6_full')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td><a href="#" class="fw-medium text-center">5x7 - (Full Size)</a></td>
+                                                                                    <td>
+                                                                                        <table class="table align-middle table-nowrap mb-0">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <input class="form-control" disabled readonly value="Rs. 38.1">
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select class="form-control" disabled readonly name="al_pouch_5_7_full" id="al_pouch_5_7_full">
+                                                                                                            @for($i = 0; $i <= 20; $i+=5)
+                                                                                                            <option value="{{$i}}" {{ $data->al_pouch_5_7_full==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            @endfor
+                                                                                                        </select>
+                                                                                                        @error('al_pouch_5_7_full')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td><a href="#" class="fw-medium text-center">6x8 - (Full Size)</a></td>
+                                                                                    <td>
+                                                                                        <table class="table align-middle table-nowrap mb-0">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <input class="form-control" disabled readonly value="Rs. 43.5">
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select class="form-control" disabled readonly name="al_pouch_6_8_full" id="al_pouch_6_8_full">
+                                                                                                            @for($i = 0; $i <= 20; $i+=5)
+                                                                                                            <option value="{{$i}}" {{ $data->al_pouch_6_8_full==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            @endfor
+                                                                                                        </select>
+                                                                                                        @error('al_pouch_6_8_full')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td><a href="#" class="fw-medium text-center">6x9 - (Full Size)</a></td>
+                                                                                    <td>
+                                                                                        <table class="table align-middle table-nowrap mb-0">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <input class="form-control" disabled readonly value="Rs. 46.3">
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select class="form-control" disabled readonly name="al_pouch_6_9_full" id="al_pouch_6_9_full">
+                                                                                                            @for($i = 0; $i <= 20; $i+=5)
+                                                                                                            <option value="{{$i}}" {{ $data->al_pouch_6_9_full==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            @endfor
+                                                                                                        </select>
+                                                                                                        @error('al_pouch_6_9_full')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td><a href="#" class="fw-medium text-center">7x9 - (Full Size)</a></td>
+                                                                                    <td>
+                                                                                        <table class="table align-middle table-nowrap mb-0">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <input class="form-control" disabled readonly value="Rs. 55.8">
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select class="form-control" disabled readonly name="al_pouch_7_9_full" id="al_pouch_7_9_full">
+                                                                                                            @for($i = 0; $i <= 20; $i+=5)
+                                                                                                            <option value="{{$i}}" {{ $data->al_pouch_7_9_full==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            @endfor
+                                                                                                        </select>
+                                                                                                        @error('al_pouch_7_9_full')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td><a href="#" class="fw-medium text-center">7x10 - (Full Size)</a></td>
+                                                                                    <td>
+                                                                                        <table class="table align-middle table-nowrap mb-0">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <input class="form-control" disabled readonly value="Rs. 58.6">
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select class="form-control" disabled readonly name="al_pouch_7_10_full" id="al_pouch_7_10_full">
+                                                                                                            @for($i = 0; $i <= 20; $i+=5)
+                                                                                                            <option value="{{$i}}" {{ $data->al_pouch_7_10_full==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            @endfor
+                                                                                                        </select>
+                                                                                                        @error('al_pouch_7_10_full')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td><a href="#" class="fw-medium text-center">8x10 - (Full Size)</a></td>
+                                                                                    <td>
+                                                                                        <table class="table align-middle table-nowrap mb-0">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <input class="form-control" disabled readonly value="Rs. 69.9">
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select class="form-control" disabled readonly name="al_pouch_8_10_full" id="al_pouch_8_10_full">
+                                                                                                            @for($i = 0; $i <= 20; $i+=5)
+                                                                                                            <option value="{{$i}}" {{ $data->al_pouch_8_10_full==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            @endfor
+                                                                                                        </select>
+                                                                                                        @error('al_pouch_8_10_full')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td><a href="#" class="fw-medium text-center">9x12 - (Full Size)</a></td>
+                                                                                    <td>
+                                                                                        <table class="table align-middle table-nowrap mb-0">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <input class="form-control" disabled readonly value="Rs. 92.6">
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select class="form-control" disabled readonly name="al_pouch_9_12_full" id="al_pouch_9_12_full">
+                                                                                                            @for($i = 0; $i <= 20; $i+=5)
+                                                                                                            <option value="{{$i}}" {{ $data->al_pouch_9_12_full==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            @endfor
+                                                                                                        </select>
+                                                                                                        @error('al_pouch_9_12_full')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td><a href="#" class="fw-medium text-center">10x12 - (Full Size)</a></td>
+                                                                                    <td>
+                                                                                        <table class="table align-middle table-nowrap mb-0">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <input class="form-control" disabled readonly value="Rs. 109.6">
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select class="form-control" disabled readonly name="al_pouch_10_12_full" id="al_pouch_10_12_full">
+                                                                                                            @for($i = 0; $i <= 20; $i+=5)
+                                                                                                            <option value="{{$i}}" {{ $data->al_pouch_10_12_full==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            @endfor
+                                                                                                        </select>
+                                                                                                        @error('al_pouch_10_12_full')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td><a href="#" class="fw-medium text-center">10x14 - (Full Size)</a></td>
+                                                                                    <td>
+                                                                                        <table class="table align-middle table-nowrap mb-0">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <input class="form-control" disabled readonly value="Rs. 119.1">
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select class="form-control" disabled readonly name="al_pouch_10_14_full" id="al_pouch_10_14_full">
+                                                                                                            @for($i = 0; $i <= 20; $i+=5)
+                                                                                                            <option value="{{$i}}" {{ $data->al_pouch_10_14_full==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            @endfor
+                                                                                                        </select>
+                                                                                                        @error('al_pouch_10_14_full')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+
                                                                                                 </tr>
                                                                                             </tbody>
                                                                                         </table>
@@ -3036,14 +2246,13 @@
                                                                         <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
                                                                             <thead class="table-primary">
                                                                                 <tr>
-                                                                                    <th scope="col">APPROX <br/>REQUIREMENT</th>
+                                                                                    <th scope="col">SIZE/SOFT</th>
                                                                                     <th scope="col">
                                                                                         <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
                                                                                             <thead class="table-light">
                                                                                                 <tr>
-                                                                                                    <th scope="col" class="text-center" style="width: 33%">PER WEEK<br>12 pack / bag</th>
-                                                                                                    <th scope="col" class="text-center" style="width: 33%">PER MONTH<br>12 pack / bag</th>
-                                                                                                    <th scope="col" class="text-center" style="width: 33%">PRICE<br>12 pack / bag</th>
+                                                                                                    <th scope="col" class="text-center" style="width: 33%">PRICE</th>
+                                                                                                    <th scope="col" class="text-center" style="width: 33%">QUANTITY</th>
                                                                                                 </tr>
                                                                                             </thead>
                                                                                         </table>
@@ -3052,185 +2261,75 @@
                                                                             </thead>
                                                                             <tbody>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">22*22</a></td>
+                                                                                    <td><a href="#" class="fw-medium text-center">22*22/9*9</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="tissue_week_22_22" id="tissue_week_22_22">
+                                                                                                        <input class="form-control" disabled readonly value="Rs. 12.6">
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select class="form-control" disabled readonly name="tissue_22_22" id="tissue_22_22">
                                                                                                             @for($i = 0; $i <= 100; $i+=10)
-                                                                                                            <option value="{{$i}}" {{ $data->tissue_week_22_22==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            <option value="{{$i}}" {{ $data->tissue_22_22==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
                                                                                                         </select>
-                                                                                                        @error('tissue_week_22_22')
+                                                                                                        @error('tissue_22_22')
                                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                                         @enderror
                                                                                                     </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="tissue_month_22_22" id="tissue_month_22_22">
-                                                                                                            @for($i = 0; $i <= 400; $i+=(10*4))
-                                                                                                            <option value="{{$i}}" {{ $data->tissue_month_22_22==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('tissue_month_22_22')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <input class="form-control" type="number" name="tissue_price_22_22" id="tissue_price_22_22" disabled readonly="true" value="{{$data->tissue_price_22_22}}">
-                                                                                                        @error('tissue_price_22_22')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
+
                                                                                                 </tr>
                                                                                             </tbody>
                                                                                         </table>
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">27*30</a></td>
+                                                                                    <td><a href="#" class="fw-medium text-center">27*30/11*12</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="tissue_week_27_30" id="tissue_week_27_30">
+                                                                                                        <input class="form-control" disabled readonly value="Rs. 19.95">
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select class="form-control" disabled readonly name="tissue_27_30" id="tissue_27_30">
                                                                                                             @for($i = 0; $i <= 100; $i+=10)
-                                                                                                            <option value="{{$i}}" {{ $data->tissue_week_27_30==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            <option value="{{$i}}" {{ $data->tissue_27_30==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
                                                                                                         </select>
-                                                                                                        @error('tissue_week_27_30')
+                                                                                                        @error('tissue_27_30')
                                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                                         @enderror
                                                                                                     </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="tissue_month_27_30" id="tissue_month_27_30">
-                                                                                                            @for($i = 0; $i <= 400; $i+=(10*4))
-                                                                                                            <option value="{{$i}}" {{ $data->tissue_month_27_30==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('tissue_month_27_30')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <input class="form-control" type="number" name="tissue_price_27_30" id="tissue_price_27_30" disabled readonly="true" value="{{$data->tissue_price_27_30}}">
-                                                                                                        @error('tissue_price_27_30')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
+
                                                                                                 </tr>
                                                                                             </tbody>
                                                                                         </table>
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">30*30</a></td>
+                                                                                    <td><a href="#" class="fw-medium text-center">30*30/12*12</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="tissue_week_30_30" id="tissue_week_30_30">
+                                                                                                        <input class="form-control" disabled readonly value="Rs. 26.25">
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select class="form-control" disabled readonly name="tissue_30_30" id="tissue_30_30">
                                                                                                             @for($i = 0; $i <= 100; $i+=10)
-                                                                                                            <option value="{{$i}}" {{ $data->tissue_week_30_30==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            <option value="{{$i}}" {{ $data->tissue_30_30==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
                                                                                                         </select>
-                                                                                                        @error('tissue_week_30_30')
+                                                                                                        @error('tissue_30_30')
                                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                                         @enderror
                                                                                                     </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="tissue_month_30_30" id="tissue_month_30_30">
-                                                                                                            @for($i = 0; $i <= 400; $i+=(10*4))
-                                                                                                            <option value="{{$i}}" {{ $data->tissue_month_30_30==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('tissue_month_30_30')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <input class="form-control" type="number" name="tissue_price_30_30" id="tissue_price_30_30" disabled readonly="true" value="{{$data->tissue_price_30_30}}">
-                                                                                                        @error('tissue_price_30_30')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                            </tbody>
-                                                                                        </table>
-                                                                                    </td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">32*32</a></td>
-                                                                                    <td>
-                                                                                        <table class="table align-middle table-nowrap mb-0">
-                                                                                            <tbody>
-                                                                                                <tr>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="tissue_week_32_32" id="tissue_week_32_32">
-                                                                                                            @for($i = 0; $i <= 100; $i+=10)
-                                                                                                            <option value="{{$i}}" {{ $data->tissue_week_32_32==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('tissue_week_32_32')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="tissue_month_32_32" id="tissue_month_32_32">
-                                                                                                            @for($i = 0; $i <= 400; $i+=(10*4))
-                                                                                                            <option value="{{$i}}" {{ $data->tissue_month_32_32==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('tissue_month_32_32')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <input class="form-control" type="number" name="tissue_price_32_32" id="tissue_price_32_32" disabled readonly="true" value="{{$data->tissue_price_32_32}}">
-                                                                                                        @error('tissue_price_32_32')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                            </tbody>
-                                                                                        </table>
-                                                                                    </td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">40*40</a></td>
-                                                                                    <td>
-                                                                                        <table class="table align-middle table-nowrap mb-0">
-                                                                                            <tbody>
-                                                                                                <tr>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="tissue_week_40_40" id="tissue_week_40_40">
-                                                                                                            @for($i = 0; $i <= 100; $i+=10)
-                                                                                                            <option value="{{$i}}" {{ $data->tissue_week_40_40==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('tissue_week_40_40')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="tissue_month_40_40" id="tissue_month_40_40">
-                                                                                                            @for($i = 0; $i <= 400; $i+=(10*4))
-                                                                                                            <option value="{{$i}}" {{ $data->tissue_month_40_40==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('tissue_month_40_40')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <input class="form-control" type="number" name="tissue_price_40_40" id="tissue_price_40_40" disabled readonly="true" value="{{$data->tissue_price_40_40}}">
-                                                                                                        @error('tissue_price_40_40')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
+
                                                                                                 </tr>
                                                                                             </tbody>
                                                                                         </table>
@@ -3261,14 +2360,13 @@
                                                                         <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
                                                                             <thead class="table-primary">
                                                                                 <tr>
-                                                                                    <th scope="col">APPROX <br/>REQUIREMENT</th>
+                                                                                    <th scope="col">SIZE</th>
                                                                                     <th scope="col">
                                                                                         <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
                                                                                             <thead class="table-light">
                                                                                                 <tr>
-                                                                                                    <th scope="col" class="text-center" style="width: 33%">PER WEEK <br>(12 pcs / bag)</th>
-                                                                                                    <th scope="col" class="text-center" style="width: 33%">PER MONTH <br>(12 pcs / bag)</th>
-                                                                                                    <th scope="col" class="text-center" style="width: 33%">PRICE <br>(12 pcs / bag)</th>
+                                                                                                    <th scope="col" class="text-center" style="width: 33%">PRICE</th>
+                                                                                                    <th scope="col" class="text-center" style="width: 33%">QUANTITY</th>
                                                                                                 </tr>
                                                                                             </thead>
                                                                                         </table>
@@ -3283,31 +2381,19 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="garbage_bag_week_small" id="garbage_bag_week_small">
+                                                                                                        <input class="form-control" disabled readonly value="Rs. 34">
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select class="form-control" disabled readonly name="garbage_bag_small" id="garbage_bag_small">
                                                                                                             @for($i = 0; $i <= 5; $i+=1)
-                                                                                                            <option value="{{$i}}" {{ $data->garbage_bag_week_small==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            <option value="{{$i}}" {{ $data->garbage_bag_small==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
                                                                                                         </select>
-                                                                                                        @error('garbage_bag_week_small')
+                                                                                                        @error('garbage_bag_small')
                                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                                         @enderror
                                                                                                     </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="garbage_bag_month_small" id="garbage_bag_month_small">
-                                                                                                            @for($i = 0; $i <= 20; $i+=(1*4))
-                                                                                                            <option value="{{$i}}" {{ $data->garbage_bag_month_small==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('garbage_bag_month_small')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <input class="form-control" type="number" name="garbage_bag_price_small" id="garbage_bag_price_small" disabled readonly="true" value="{{$data->garbage_bag_price_small}}">
-                                                                                                        @error('garbage_bag_price_small')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
+
                                                                                                 </tr>
                                                                                             </tbody>
                                                                                         </table>
@@ -3320,31 +2406,19 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="garbage_bag_week_medium" id="garbage_bag_week_medium">
+                                                                                                        <input class="form-control" disabled readonly value="Rs. 38">
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select class="form-control" disabled readonly name="garbage_bag_medium" id="garbage_bag_medium">
                                                                                                             @for($i = 0; $i <= 5; $i+=1)
-                                                                                                            <option value="{{$i}}" {{ $data->garbage_bag_week_medium==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            <option value="{{$i}}" {{ $data->garbage_bag_medium==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
                                                                                                         </select>
-                                                                                                        @error('garbage_bag_week_medium')
+                                                                                                        @error('garbage_bag_medium')
                                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                                         @enderror
                                                                                                     </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="garbage_bag_month_medium" id="garbage_bag_month_medium">
-                                                                                                            @for($i = 0; $i <= 20; $i+=(1*4))
-                                                                                                            <option value="{{$i}}" {{ $data->garbage_bag_month_medium==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('garbage_bag_month_medium')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <input class="form-control" type="number" name="garbage_bag_price_medium" id="garbage_bag_price_medium" disabled readonly="true" value="{{$data->garbage_bag_price_medium}}">
-                                                                                                        @error('garbage_bag_price_medium')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
+
                                                                                                 </tr>
                                                                                             </tbody>
                                                                                         </table>
@@ -3357,31 +2431,19 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="garbage_bag_week_large" id="garbage_bag_week_large">
+                                                                                                        <input class="form-control" disabled readonly value="Rs. 44">
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select class="form-control" disabled readonly name="garbage_bag_large" id="garbage_bag_large">
                                                                                                             @for($i = 0; $i <= 5; $i+=1)
-                                                                                                            <option value="{{$i}}" {{ $data->garbage_bag_week_large==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            <option value="{{$i}}" {{ $data->garbage_bag_large==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
                                                                                                         </select>
-                                                                                                        @error('garbage_bag_week_large')
+                                                                                                        @error('garbage_bag_large')
                                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                                         @enderror
                                                                                                     </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="garbage_bag_month_large" id="garbage_bag_month_large">
-                                                                                                            @for($i = 0; $i <= 20; $i+=(1*4))
-                                                                                                            <option value="{{$i}}" {{ $data->garbage_bag_month_large==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('garbage_bag_month_large')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <input class="form-control" type="number" name="garbage_bag_price_large" id="garbage_bag_price_large" disabled readonly="true" value="{{$data->garbage_bag_price_large}}">
-                                                                                                        @error('garbage_bag_price_large')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
+
                                                                                                 </tr>
                                                                                             </tbody>
                                                                                         </table>
@@ -3394,31 +2456,19 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="garbage_bag_week_x_large" id="garbage_bag_week_x_large">
+                                                                                                        <input class="form-control" disabled readonly value="Rs. 71">
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select class="form-control" disabled readonly name="garbage_bag_x_large" id="garbage_bag_x_large">
                                                                                                             @for($i = 0; $i <= 5; $i+=1)
-                                                                                                            <option value="{{$i}}" {{ $data->garbage_bag_week_x_large==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            <option value="{{$i}}" {{ $data->garbage_bag_x_large==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
                                                                                                         </select>
-                                                                                                        @error('garbage_bag_week_x_large')
+                                                                                                        @error('garbage_bag_x_large')
                                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                                         @enderror
                                                                                                     </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="garbage_bag_month_x_large" id="garbage_bag_month_x_large">
-                                                                                                            @for($i = 0; $i <= 20; $i+=(1*4))
-                                                                                                            <option value="{{$i}}" {{ $data->garbage_bag_month_x_large==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                            @endfor
-                                                                                                        </select>
-                                                                                                        @error('garbage_bag_month_x_large')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
-                                                                                                    <td style="width: 33%">
-                                                                                                        <input class="form-control" type="number" name="garbage_bag_price_x_large" id="garbage_bag_price_x_large" disabled readonly="true" value="{{$data->garbage_bag_price_x_large}}">
-                                                                                                        @error('garbage_bag_price_x_large')
-                                                                                                            <div class="invalid-message">{{ $message }}</div>
-                                                                                                        @enderror
-                                                                                                    </td>
+
                                                                                                 </tr>
                                                                                             </tbody>
                                                                                         </table>
@@ -3449,14 +2499,13 @@
                                                                       <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
                                                                           <thead class="table-primary">
                                                                               <tr>
-                                                                                  <th scope="col">APPROX <br/>REQUIREMENT</th>
+                                                                                  <th scope="col">SIZE</th>
                                                                                   <th scope="col">
                                                                                       <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
                                                                                           <thead class="table-light">
                                                                                               <tr>
-                                                                                                  <th scope="col" class="text-center" style="width: 33%">PER WEEK</th>
-                                                                                                  <th scope="col" class="text-center" style="width: 33%">PER MONTH</th>
-                                                                                                  <th scope="col" class="text-center" style="width: 33%">PRICE</th>
+                                                                                                  <th scope="col" class="text-center" style="width: 33%">PRICE/60mtr</th>
+                                                                                                  <th scope="col" class="text-center" style="width: 33%">QUANTITY
                                                                                               </tr>
                                                                                           </thead>
                                                                                       </table>
@@ -3465,37 +2514,25 @@
                                                                           </thead>
                                                                           <tbody>
                                                                             <tr>
-                                                                                <td><a href="#" class="fw-medium text-center">1"</a></td>
+                                                                                <td><a href="#" class="fw-medium text-center">3"</a></td>
                                                                                 <td>
                                                                                     <table class="table align-middle table-nowrap mb-0">
                                                                                         <tbody>
                                                                                             <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="bopp_tape_week_1" id="bopp_tape_week_1">
+                                                                                                    <input class="form-control" disabled readonly value="Rs. 37.2">
+                                                                                                </td>
+                                                                                                <td style="width: 33%">
+                                                                                                    <select class="form-control" disabled readonly name="bopp_tape_3" id="bopp_tape_3">
                                                                                                         @for($i = 0; $i <= 5; $i+=1)
-                                                                                                        <option value="{{$i}}" {{ $data->bopp_tape_week_1==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                        <option value="{{$i}}" {{ $data->bopp_tape_3==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
                                                                                                     </select>
-                                                                                                    @error('bopp_tape_week_1')
+                                                                                                    @error('bopp_tape_3')
                                                                                                         <div class="invalid-message">{{ $message }}</div>
                                                                                                     @enderror
                                                                                                 </td>
-                                                                                                <td style="width: 33%">
-                                                                                                    <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="bopp_tape_month_1" id="bopp_tape_month_1">
-                                                                                                        @for($i = 0; $i <= 20; $i+=(1*4))
-                                                                                                        <option value="{{$i}}" {{ $data->bopp_tape_month_1==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                        @endfor
-                                                                                                    </select>
-                                                                                                    @error('bopp_tape_month_1')
-                                                                                                        <div class="invalid-message">{{ $message }}</div>
-                                                                                                    @enderror
-                                                                                                </td>
-                                                                                                <td style="width: 33%">
-                                                                                                    <input class="form-control" type="number" name="bopp_tape_price_1" id="bopp_tape_price_1" disabled readonly="true" value="{{$data->bopp_tape_price_1}}">
-                                                                                                    @error('bopp_tape_price_1')
-                                                                                                        <div class="invalid-message">{{ $message }}</div>
-                                                                                                    @enderror
-                                                                                                </td>
+
                                                                                             </tr>
                                                                                         </tbody>
                                                                                     </table>
@@ -3507,32 +2544,20 @@
                                                                                       <table class="table align-middle table-nowrap mb-0">
                                                                                           <tbody>
                                                                                               <tr>
+                                                                                                <td style="width: 33%">
+                                                                                                    <input class="form-control" disabled readonly value="Rs. 24.8">
+                                                                                                </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="bopp_tape_week_2" id="bopp_tape_week_2">
+                                                                                                      <select class="form-control" disabled readonly name="bopp_tape_2" id="bopp_tape_2">
                                                                                                           @for($i = 0; $i <= 5; $i+=1)
-                                                                                                          <option value="{{$i}}" {{ $data->bopp_tape_week_2==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                          <option value="{{$i}}" {{ $data->bopp_tape_2==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
                                                                                                       </select>
-                                                                                                      @error('bopp_tape_week_2')
+                                                                                                      @error('bopp_tape_2')
                                                                                                           <div class="invalid-message">{{ $message }}</div>
                                                                                                       @enderror
                                                                                                   </td>
-                                                                                                  <td style="width: 33%">
-                                                                                                      <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="bopp_tape_month_2" id="bopp_tape_month_2">
-                                                                                                          @for($i = 0; $i <= 20; $i+=(1*4))
-                                                                                                          <option value="{{$i}}" {{ $data->bopp_tape_month_2==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                          @endfor
-                                                                                                      </select>
-                                                                                                      @error('bopp_tape_month_2')
-                                                                                                          <div class="invalid-message">{{ $message }}</div>
-                                                                                                      @enderror
-                                                                                                  </td>
-                                                                                                  <td style="width: 33%">
-                                                                                                      <input class="form-control" type="number" name="bopp_tape_price_2" id="bopp_tape_price_2" disabled readonly="true" value="{{$data->bopp_tape_price_2}}">
-                                                                                                      @error('bopp_tape_price_2')
-                                                                                                          <div class="invalid-message">{{ $message }}</div>
-                                                                                                      @enderror
-                                                                                                  </td>
+
                                                                                               </tr>
                                                                                           </tbody>
                                                                                       </table>
@@ -3563,14 +2588,13 @@
                                                                       <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
                                                                           <thead class="table-primary">
                                                                               <tr>
-                                                                                  <th scope="col">APPROX <br/>REQUIREMENT</th>
+                                                                                  <th scope="col">SIZE (mtr)</th>
                                                                                   <th scope="col">
                                                                                       <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
                                                                                           <thead class="table-light">
                                                                                               <tr>
-                                                                                                  <th scope="col" class="text-center" style="width: 33%">PER WEEK <br>(200 rolls / box)</th>
-                                                                                                  <th scope="col" class="text-center" style="width: 33%">PER MONTH <br>(200 rolls / box)</th>
-                                                                                                  <th scope="col" class="text-center" style="width: 33%">PRICE <br>(200 rolls / box)</th>
+                                                                                                  <th scope="col" class="text-center" style="width: 33%">PRICE</th>
+                                                                                                  <th scope="col" class="text-center" style="width: 33%">QUANTITY</th>
                                                                                               </tr>
                                                                                           </thead>
                                                                                       </table>
@@ -3579,74 +2603,50 @@
                                                                           </thead>
                                                                           <tbody>
                                                                               <tr>
-                                                                                  <td><a href="#" class="fw-medium text-center">2"</a></td>
+                                                                                  <td><a href="#" class="fw-medium text-center">2inch 22mtr</a></td>
                                                                                   <td>
                                                                                       <table class="table align-middle table-nowrap mb-0">
                                                                                           <tbody>
                                                                                               <tr>
+                                                                                                <td style="width: 33%">
+                                                                                                    <input class="form-control" disabled readonly value="Rs. 15.2">
+                                                                                                </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="billing_roll_week_2" id="billing_roll_week_2">
+                                                                                                      <select class="form-control" disabled readonly name="billing_roll_2" id="billing_roll_2">
                                                                                                           @for($i = 0; $i <= 5; $i+=1)
-                                                                                                          <option value="{{$i}}" {{ $data->billing_roll_week_2==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                          <option value="{{$i}}" {{ $data->billing_roll_2==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
                                                                                                       </select>
-                                                                                                      @error('billing_roll_week_2')
+                                                                                                      @error('billing_roll_2')
                                                                                                           <div class="invalid-message">{{ $message }}</div>
                                                                                                       @enderror
                                                                                                   </td>
-                                                                                                  <td style="width: 33%">
-                                                                                                      <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="billing_roll_month_2" id="billing_roll_month_2">
-                                                                                                          @for($i = 0; $i <= 20; $i+=(1*4))
-                                                                                                          <option value="{{$i}}" {{ $data->billing_roll_month_2==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                          @endfor
-                                                                                                      </select>
-                                                                                                      @error('billing_roll_month_2')
-                                                                                                          <div class="invalid-message">{{ $message }}</div>
-                                                                                                      @enderror
-                                                                                                  </td>
-                                                                                                  <td style="width: 33%">
-                                                                                                      <input class="form-control" type="number" name="billing_roll_price_2" id="billing_roll_price_2" disabled readonly="true" value="{{$data->billing_roll_price_2}}">
-                                                                                                      @error('billing_roll_price_2')
-                                                                                                          <div class="invalid-message">{{ $message }}</div>
-                                                                                                      @enderror
-                                                                                                  </td>
+
                                                                                               </tr>
                                                                                           </tbody>
                                                                                       </table>
                                                                                   </td>
                                                                               </tr>
                                                                               <tr>
-                                                                                  <td><a href="#" class="fw-medium text-center">3"</a></td>
+                                                                                  <td><a href="#" class="fw-medium text-center">3inch 35mtr</a></td>
                                                                                   <td>
                                                                                       <table class="table align-middle table-nowrap mb-0">
                                                                                           <tbody>
                                                                                               <tr>
+                                                                                                <td style="width: 33%">
+                                                                                                    <input class="form-control" disabled readonly value="Rs. 32.6">
+                                                                                                </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select disabled readonly="true" onchange="week_change_handler(event)" class="form-control" name="billing_roll_week_3" id="billing_roll_week_3">
+                                                                                                      <select class="form-control" disabled readonly name="billing_roll_3" id="billing_roll_3">
                                                                                                           @for($i = 0; $i <= 5; $i+=1)
-                                                                                                          <option value="{{$i}}" {{ $data->billing_roll_week_3==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                          <option value="{{$i}}" {{ $data->billing_roll_3==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
                                                                                                       </select>
-                                                                                                      @error('billing_roll_week_3')
+                                                                                                      @error('billing_roll_3')
                                                                                                           <div class="invalid-message">{{ $message }}</div>
                                                                                                       @enderror
                                                                                                   </td>
-                                                                                                  <td style="width: 33%">
-                                                                                                      <select disabled readonly="true" onchange="month_change_handler(event)" class="form-control" name="billing_roll_month_3" id="billing_roll_month_3">
-                                                                                                          @for($i = 0; $i <= 20; $i+=(1*4))
-                                                                                                          <option value="{{$i}}" {{ $data->billing_roll_month_3==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                          @endfor
-                                                                                                      </select>
-                                                                                                      @error('billing_roll_month_3')
-                                                                                                          <div class="invalid-message">{{ $message }}</div>
-                                                                                                      @enderror
-                                                                                                  </td>
-                                                                                                  <td style="width: 33%">
-                                                                                                      <input class="form-control" type="number" name="billing_roll_price_3" id="billing_roll_price_3" disabled readonly="true" value="{{$data->billing_roll_price_3}}">
-                                                                                                      @error('billing_roll_price_3')
-                                                                                                          <div class="invalid-message">{{ $message }}</div>
-                                                                                                      @enderror
-                                                                                                  </td>
+
                                                                                               </tr>
                                                                                           </tbody>
                                                                                       </table>
@@ -3677,14 +2677,13 @@
                                                                       <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
                                                                           <thead class="table-primary">
                                                                               <tr>
-                                                                                  <th scope="col">APPROX <br/>REQUIREMENT</th>
+                                                                                  <th scope="col">SIZE</th>
                                                                                   <th scope="col">
                                                                                       <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
                                                                                           <thead class="table-light">
                                                                                               <tr>
-                                                                                                  <th scope="col" class="text-center" style="width: 33%">PER WEEK</th>
-                                                                                                  <th scope="col" class="text-center" style="width: 33%">PER MONTH</th>
                                                                                                   <th scope="col" class="text-center" style="width: 33%">PRICE</th>
+                                                                                                  <th scope="col" class="text-center" style="width: 33%">QUANTITY</th>
                                                                                               </tr>
                                                                                           </thead>
                                                                                       </table>
@@ -3693,342 +2692,50 @@
                                                                           </thead>
                                                                           <tbody>
                                                                               <tr>
-                                                                                  <td><a href="#" class="fw-medium text-center">1KG</a></td>
+                                                                                  <td><a href="#" class="fw-medium text-center">0</a></td>
                                                                                   <td>
                                                                                       <table class="table align-middle table-nowrap mb-0">
                                                                                           <tbody>
                                                                                               <tr>
+                                                                                                <td style="width: 33%">
+                                                                                                    <input class="form-control" disabled readonly value="Rs. 336">
+                                                                                                </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select disabled readonly onchange="week_change_handler(event)" class="form-control" name="rubber_band_week_1" id="rubber_band_week_1">
+                                                                                                      <select class="form-control" disabled readonly name="rubber_band_1" id="rubber_band_1">
                                                                                                           @for($i = 0; $i <= 5; $i+=1)
-                                                                                                          <option value="{{$i}}" {{ $data->rubber_band_week_1==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                          <option value="{{$i}}" {{ $data->rubber_band_1==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
                                                                                                       </select>
-                                                                                                      @error('rubber_band_week_1')
+                                                                                                      @error('rubber_band_1')
                                                                                                           <div class="invalid-message">{{ $message }}</div>
                                                                                                       @enderror
                                                                                                   </td>
-                                                                                                  <td style="width: 33%">
-                                                                                                      <select disabled readonly onchange="month_change_handler(event)" class="form-control" name="rubber_band_month_1" id="rubber_band_month_1">
-                                                                                                          @for($i = 0; $i <= 20; $i+=(1*4))
-                                                                                                          <option value="{{$i}}" {{ $data->rubber_band_month_1==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                          @endfor
-                                                                                                      </select>
-                                                                                                      @error('rubber_band_month_1')
-                                                                                                          <div class="invalid-message">{{ $message }}</div>
-                                                                                                      @enderror
-                                                                                                  </td>
-                                                                                                  <td style="width: 33%">
-                                                                                                      <input disabled readonly class="form-control" type="number" name="rubber_band_price_1" id="rubber_band_price_1" value="{{$data->rubber_band_price_1}}">
-                                                                                                      @error('rubber_band_price_1')
-                                                                                                          <div class="invalid-message">{{ $message }}</div>
-                                                                                                      @enderror
-                                                                                                  </td>
-                                                                                              </tr>
-                                                                                          </tbody>
-                                                                                      </table>
-                                                                                  </td>
-                                                                              </tr>
-                                                                          </tbody>
-                                                                      </table>
-                                                                  </div>
-                                                              </div>
-                                                            </div>
-                                                        </div>
 
-                                                        <div class="accordion-item">
-                                                            <h2 class="accordion-header" id="headingFour2">
-                                                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour2" aria-expanded="false" aria-controls="collapseFour2">
-                                                                  <img
-                                                                  src="https://m.media-amazon.com/images/I/41nxgp-YRUL._AC_UF350,350_QL50_.jpg"
-                                                                  alt=""
-                                                                  style="height:80px;object-fit:contain;margin-right:20px"
-                                                                  >
-                                                                  <br/>
-                                                                  BUTTER PAPER SHEET
-                                                              </button>
-                                                            </h2>
-                                                            <div id="collapseFour2" class="accordion-collapse collapse" aria-labelledby="headingFour2" data-bs-parent="#accordionExample">
-                                                              <div class="accordion-body">
-                                                                  <div class="table-responsive">
-                                                                      <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
-                                                                          <thead class="table-primary">
-                                                                              <tr>
-                                                                                  <th scope="col">APPROX <br/>REQUIREMENT</th>
-                                                                                  <th scope="col">
-                                                                                      <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
-                                                                                          <thead class="table-light">
-                                                                                              <tr>
-                                                                                                  <th scope="col" class="text-center" style="width: 33%">PER WEEK</th>
-                                                                                                  <th scope="col" class="text-center" style="width: 33%">PER MONTH</th>
-                                                                                                  <th scope="col" class="text-center" style="width: 33%">PRICE</th>
-                                                                                              </tr>
-                                                                                          </thead>
-                                                                                      </table>
-                                                                                  </th>
-                                                                              </tr>
-                                                                          </thead>
-                                                                          <tbody>
-                                                                              <tr>
-                                                                                  <td><a href="#" class="fw-medium text-center">12 x 12</a></td>
-                                                                                  <td>
-                                                                                      <table class="table align-middle table-nowrap mb-0">
-                                                                                          <tbody>
-                                                                                              <tr>
-                                                                                                  <td style="width: 33%">
-                                                                                                      <select disabled readonly onchange="week_change_handler(event)" class="form-control" name="butter_paper_week_12" id="butter_paper_week_12">
-                                                                                                          @for($i = 0; $i <= 50; $i+=5)
-                                                                                                          <option value="{{$i}}" {{ $data->butter_paper_week_12==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                          @endfor
-                                                                                                      </select>
-                                                                                                      @error('butter_paper_week_12')
-                                                                                                          <div class="invalid-message">{{ $message }}</div>
-                                                                                                      @enderror
-                                                                                                  </td>
-                                                                                                  <td style="width: 33%">
-                                                                                                      <select disabled readonly onchange="month_change_handler(event)" class="form-control" name="butter_paper_month_12" id="butter_paper_month_12">
-                                                                                                          @for($i = 0; $i <= 200; $i+=(5*4))
-                                                                                                          <option value="{{$i}}" {{ $data->butter_paper_month_12==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                          @endfor
-                                                                                                      </select>
-                                                                                                      @error('butter_paper_month_12')
-                                                                                                          <div class="invalid-message">{{ $message }}</div>
-                                                                                                      @enderror
-                                                                                                  </td>
-                                                                                                  <td style="width: 33%">
-                                                                                                      <input disabled readonly class="form-control" type="number" name="butter_paper_price_12" id="butter_paper_price_12" value="{{$data->butter_paper_price_12}}">
-                                                                                                      @error('butter_paper_price_12')
-                                                                                                          <div class="invalid-message">{{ $message }}</div>
-                                                                                                      @enderror
-                                                                                                  </td>
-                                                                                              </tr>
-                                                                                          </tbody>
-                                                                                      </table>
-                                                                                  </td>
-                                                                              </tr>
-                                                                          </tbody>
-                                                                      </table>
-                                                                  </div>
-                                                              </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="accordion-item">
-                                                            <h2 class="accordion-header" id="headingFive2">
-                                                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive2" aria-expanded="false" aria-controls="collapseFive2">
-                                                                  <img
-                                                                  src="https://m.media-amazon.com/images/I/61e+jkuy5-L.jpg"
-                                                                  alt=""
-                                                                  style="height:80px;object-fit:contain;margin-right:20px"
-                                                                  >
-                                                                  <br/>
-                                                                  PARCEL PAPER SHEET
-                                                              </button>
-                                                            </h2>
-                                                            <div id="collapseFive2" class="accordion-collapse collapse" aria-labelledby="headingFive2" data-bs-parent="#accordionExample">
-                                                              <div class="accordion-body">
-                                                                  <div class="table-responsive">
-                                                                      <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
-                                                                          <thead class="table-primary">
-                                                                              <tr>
-                                                                                  <th scope="col">APPROX <br/>REQUIREMENT</th>
-                                                                                  <th scope="col">
-                                                                                      <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
-                                                                                          <thead class="table-light">
-                                                                                              <tr>
-                                                                                                  <th scope="col" class="text-center" style="width: 33%">PER WEEK</th>
-                                                                                                  <th scope="col" class="text-center" style="width: 33%">PER MONTH</th>
-                                                                                                  <th scope="col" class="text-center" style="width: 33%">PRICE</th>
-                                                                                              </tr>
-                                                                                          </thead>
-                                                                                      </table>
-                                                                                  </th>
-                                                                              </tr>
-                                                                          </thead>
-                                                                          <tbody>
-                                                                              <tr>
-                                                                                  <td><a href="#" class="fw-medium text-center">12 x 12</a></td>
-                                                                                  <td>
-                                                                                      <table class="table align-middle table-nowrap mb-0">
-                                                                                          <tbody>
-                                                                                              <tr>
-                                                                                                  <td style="width: 33%">
-                                                                                                      <select disabled readonly onchange="week_change_handler(event)" class="form-control" name="parcel_paper_week_12" id="parcel_paper_week_12">
-                                                                                                          @for($i = 0; $i <= 50; $i+=5)
-                                                                                                          <option value="{{$i}}" {{ $data->parcel_paper_week_12==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                          @endfor
-                                                                                                      </select>
-                                                                                                      @error('parcel_paper_week_12')
-                                                                                                          <div class="invalid-message">{{ $message }}</div>
-                                                                                                      @enderror
-                                                                                                  </td>
-                                                                                                  <td style="width: 33%">
-                                                                                                      <select disabled readonly onchange="month_change_handler(event)" class="form-control" name="parcel_paper_month_12" id="parcel_paper_month_12">
-                                                                                                          @for($i = 0; $i <= 200; $i+=(5*4))
-                                                                                                          <option value="{{$i}}" {{ $data->parcel_paper_month_12==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                          @endfor
-                                                                                                      </select>
-                                                                                                      @error('parcel_paper_month_12')
-                                                                                                          <div class="invalid-message">{{ $message }}</div>
-                                                                                                      @enderror
-                                                                                                  </td>
-                                                                                                  <td style="width: 33%">
-                                                                                                      <input disabled readonly class="form-control" type="number" name="parcel_paper_price_12" id="parcel_paper_price_12" value="{{$data->parcel_paper_price_12}}">
-                                                                                                      @error('parcel_paper_price_12')
-                                                                                                          <div class="invalid-message">{{ $message }}</div>
-                                                                                                      @enderror
-                                                                                                  </td>
                                                                                               </tr>
                                                                                           </tbody>
                                                                                       </table>
                                                                                   </td>
                                                                               </tr>
                                                                               <tr>
-                                                                                  <td><a href="#" class="fw-medium text-center">14 x 14</a></td>
+                                                                                  <td><a href="#" class="fw-medium text-center">0</a></td>
                                                                                   <td>
                                                                                       <table class="table align-middle table-nowrap mb-0">
                                                                                           <tbody>
                                                                                               <tr>
+                                                                                                <td style="width: 33%">
+                                                                                                    <input class="form-control" disabled readonly value="Rs. 273">
+                                                                                                </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select disabled readonly onchange="week_change_handler(event)" class="form-control" name="parcel_paper_week_14" id="parcel_paper_week_14">
-                                                                                                          @for($i = 0; $i <= 50; $i+=5)
-                                                                                                          <option value="{{$i}}" {{ $data->parcel_paper_week_14==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                          @endfor
-                                                                                                      </select>
-                                                                                                      @error('parcel_paper_week_14')
-                                                                                                          <div class="invalid-message">{{ $message }}</div>
-                                                                                                      @enderror
-                                                                                                  </td>
-                                                                                                  <td style="width: 33%">
-                                                                                                      <select disabled readonly onchange="month_change_handler(event)" class="form-control" name="parcel_paper_month_14" id="parcel_paper_month_14">
-                                                                                                          @for($i = 0; $i <= 200; $i+=(5*4))
-                                                                                                          <option value="{{$i}}" {{ $data->parcel_paper_month_14==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                          @endfor
-                                                                                                      </select>
-                                                                                                      @error('parcel_paper_month_14')
-                                                                                                          <div class="invalid-message">{{ $message }}</div>
-                                                                                                      @enderror
-                                                                                                  </td>
-                                                                                                  <td style="width: 33%">
-                                                                                                      <input disabled readonly class="form-control" type="number" name="parcel_paper_price_14" id="parcel_paper_price_14" value="{{$data->parcel_paper_price_14}}">
-                                                                                                      @error('parcel_paper_price_14')
-                                                                                                          <div class="invalid-message">{{ $message }}</div>
-                                                                                                      @enderror
-                                                                                                  </td>
-                                                                                              </tr>
-                                                                                          </tbody>
-                                                                                      </table>
-                                                                                  </td>
-                                                                              </tr>
-                                                                              <tr>
-                                                                                  <td><a href="#" class="fw-medium text-center">15 x 15</a></td>
-                                                                                  <td>
-                                                                                      <table class="table align-middle table-nowrap mb-0">
-                                                                                          <tbody>
-                                                                                              <tr>
-                                                                                                  <td style="width: 33%">
-                                                                                                      <select disabled readonly onchange="week_change_handler(event)" class="form-control" name="parcel_paper_week_15" id="parcel_paper_week_15">
-                                                                                                          @for($i = 0; $i <= 50; $i+=5)
-                                                                                                          <option value="{{$i}}" {{ $data->parcel_paper_week_15==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                          @endfor
-                                                                                                      </select>
-                                                                                                      @error('parcel_paper_week_15')
-                                                                                                          <div class="invalid-message">{{ $message }}</div>
-                                                                                                      @enderror
-                                                                                                  </td>
-                                                                                                  <td style="width: 33%">
-                                                                                                      <select disabled readonly onchange="month_change_handler(event)" class="form-control" name="parcel_paper_month_15" id="parcel_paper_month_15">
-                                                                                                          @for($i = 0; $i <= 200; $i+=(5*4))
-                                                                                                          <option value="{{$i}}" {{ $data->parcel_paper_month_15==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                          @endfor
-                                                                                                      </select>
-                                                                                                      @error('parcel_paper_month_15')
-                                                                                                          <div class="invalid-message">{{ $message }}</div>
-                                                                                                      @enderror
-                                                                                                  </td>
-                                                                                                  <td style="width: 33%">
-                                                                                                      <input disabled readonly class="form-control" type="number" name="parcel_paper_price_15" id="parcel_paper_price_15" value="{{$data->parcel_paper_price_15}}">
-                                                                                                      @error('parcel_paper_price_15')
-                                                                                                          <div class="invalid-message">{{ $message }}</div>
-                                                                                                      @enderror
-                                                                                                  </td>
-                                                                                              </tr>
-                                                                                          </tbody>
-                                                                                      </table>
-                                                                                  </td>
-                                                                              </tr>
-                                                                          </tbody>
-                                                                      </table>
-                                                                  </div>
-                                                              </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="accordion-item">
-                                                            <h2 class="accordion-header" id="headingSix2">
-                                                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix2" aria-expanded="false" aria-controls="collapseSix2">
-                                                                  <img
-                                                                  src="https://img.freepik.com/premium-photo/toothpicks-box-isolated-white_179068-1760.jpg?w=2000"
-                                                                  alt=""
-                                                                  style="height:80px;object-fit:contain;margin-right:20px"
-                                                                  >
-                                                                  <br/>
-                                                                  TOOTHPICK
-                                                              </button>
-                                                            </h2>
-                                                            <div id="collapseSix2" class="accordion-collapse collapse" aria-labelledby="headingSix2" data-bs-parent="#accordionExample">
-                                                              <div class="accordion-body">
-                                                                  <div class="table-responsive">
-                                                                      <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
-                                                                          <thead class="table-primary">
-                                                                              <tr>
-                                                                                  <th scope="col">APPROX <br/>REQUIREMENT</th>
-                                                                                  <th scope="col">
-                                                                                      <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
-                                                                                          <thead class="table-light">
-                                                                                              <tr>
-                                                                                                  <th scope="col" class="text-center" style="width: 33%">PER WEEK</th>
-                                                                                                  <th scope="col" class="text-center" style="width: 33%">PER MONTH</th>
-                                                                                                  <th scope="col" class="text-center" style="width: 33%">PRICE</th>
-                                                                                              </tr>
-                                                                                          </thead>
-                                                                                      </table>
-                                                                                  </th>
-                                                                              </tr>
-                                                                          </thead>
-                                                                          <tbody>
-                                                                              <tr>
-                                                                                  <td><a href="#" class="fw-medium text-center">12 x 12</a></td>
-                                                                                  <td>
-                                                                                      <table class="table align-middle table-nowrap mb-0">
-                                                                                          <tbody>
-                                                                                              <tr>
-                                                                                                  <td style="width: 33%">
-                                                                                                      <select disabled readonly onchange="week_change_handler(event)" class="form-control" name="toothpick_week_12" id="toothpick_week_12">
+                                                                                                      <select class="form-control" disabled readonly name="rubber_band_2" id="rubber_band_2">
                                                                                                           @for($i = 0; $i <= 5; $i+=1)
-                                                                                                          <option value="{{$i}}" {{ $data->toothpick_week_12==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                          <option value="{{$i}}" {{ $data->rubber_band_2==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
                                                                                                       </select>
-                                                                                                      @error('toothpick_week_12')
+                                                                                                      @error('rubber_band_2')
                                                                                                           <div class="invalid-message">{{ $message }}</div>
                                                                                                       @enderror
                                                                                                   </td>
-                                                                                                  <td style="width: 33%">
-                                                                                                      <select disabled readonly onchange="month_change_handler(event)" class="form-control" name="toothpick_month_12" id="toothpick_month_12">
-                                                                                                          @for($i = 0; $i <= 20; $i+=(1*4))
-                                                                                                          <option value="{{$i}}" {{ $data->toothpick_month_12==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                          @endfor
-                                                                                                      </select>
-                                                                                                      @error('toothpick_month_12')
-                                                                                                          <div class="invalid-message">{{ $message }}</div>
-                                                                                                      @enderror
-                                                                                                  </td>
-                                                                                                  <td style="width: 33%">
-                                                                                                      <input disabled readonly class="form-control" type="number" name="toothpick_price_12" id="toothpick_price_12" value="{{$data->toothpick_price_12}}">
-                                                                                                      @error('toothpick_price_12')
-                                                                                                          <div class="invalid-message">{{ $message }}</div>
-                                                                                                      @enderror
-                                                                                                  </td>
+
                                                                                               </tr>
                                                                                           </tbody>
                                                                                       </table>
@@ -4041,70 +2748,223 @@
                                                             </div>
                                                         </div>
 
-                                                    </div>
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header" id="headingThirteen2">
+                                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen2" aria-expanded="false" aria-controls="collapseThirteen2">
+                                                                    <img
+                                                                    src="https://m.media-amazon.com/images/I/717ILnnHiZL.jpg"
+                                                                    alt=""
+                                                                    style="height:80px;object-fit:contain;margin-right:20px"
+                                                                    >
+                                                                    <br/>
+                                                                    PAPER STRAW
+                                                                </button>
+                                                            </h2>
+                                                            <div id="collapseThirteen2" class="accordion-collapse collapse" aria-labelledby="headingThirteen2" data-bs-parent="#accordionExample">
+                                                                <div class="accordion-body">
+                                                                    <div class="table-responsive">
+                                                                        <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
+                                                                            <thead class="table-primary">
+                                                                                <tr>
+                                                                                    <th scope="col">ITEM</th>
+                                                                                    <th scope="col">
+                                                                                        <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
+                                                                                            <thead class="table-light">
+                                                                                                <tr>
+                                                                                                    <th scope="col" class="text-center" style="width: 33%">PRICE/100pc</th>
+                                                                                                    <th scope="col" class="text-center" style="width: 33%">QUANTITY</th>
+                                                                                                </tr>
+                                                                                            </thead>
+                                                                                        </table>
+                                                                                    </th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td><a href="#" class="fw-medium text-center">6*200mm</a></td>
+                                                                                    <td>
+                                                                                        <table class="table align-middle table-nowrap mb-0">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <input class="form-control" disabled readonly value="Rs. 38.64">
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select class="form-control" disabled readonly name="paper_straw_6mm" id="paper_straw_6mm">
+                                                                                                            @for($i = 0; $i <= 30; $i+=5)
+                                                                                                            <option value="{{$i}}" {{ $data->paper_straw_6mm==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            @endfor
+                                                                                                        </select>
+                                                                                                        @error('paper_straw_6mm')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
 
-                                                </div>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td><a href="#" class="fw-medium text-center">8*200mm</a></td>
+                                                                                    <td>
+                                                                                        <table class="table align-middle table-nowrap mb-0">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <input class="form-control" disabled readonly value="Rs. 45.08">
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select class="form-control" disabled readonly name="paper_straw_8mm" id="paper_straw_8mm">
+                                                                                                            @for($i = 0; $i <= 30; $i+=5)
+                                                                                                            <option value="{{$i}}" {{ $data->paper_straw_8mm==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            @endfor
+                                                                                                        </select>
+                                                                                                        @error('paper_straw_8mm')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
 
-                                                <div class="col-xxl-12 col-md-12 col-sm-12">
-                                                    <div>
-                                                        <label for="payment_duration"
-                                                            class="form-label">Advance Payment To Be Made Within :</label>
-                                                        <div class="d-flex align-item-center gap-5">
-                                                            <div class="col-auto">
-                                                                <label for="payment_duration1">
-                                                                    <input type="radio" name="payment_duration" value="7 days" readonly {{$data->payment_duration=='7 days' ? 'checked' : ''}}
-                                                                        id="payment_duration1">
-                                                                    7 days
-                                                                </label>
-                                                            </div>
-                                                            <div class="col-auto">
-                                                                <label for="payment_duration2">
-                                                                    <input type="radio" name="payment_duration" value="15 days" readonly {{$data->payment_duration=='15 days' ? 'checked' : ''}}
-                                                                        id="payment_duration2">
-                                                                    15 days
-                                                                </label>
-                                                            </div>
-                                                            <div class="col-auto">
-                                                                <label for="payment_duration3">
-                                                                    <input type="radio" name="payment_duration" value="1 month" readonly {{$data->payment_duration=='1 month' ? 'checked' : ''}}
-                                                                        id="payment_duration3">
-                                                                    1 month
-                                                                </label>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td><a href="#" class="fw-medium text-center">10*200mm</a></td>
+                                                                                    <td>
+                                                                                        <table class="table align-middle table-nowrap mb-0">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <input class="form-control" disabled readonly value="Rs. 57.96">
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select class="form-control" disabled readonly name="paper_straw_10mm" id="paper_straw_10mm">
+                                                                                                            @for($i = 0; $i <= 30; $i+=5)
+                                                                                                            <option value="{{$i}}" {{ $data->paper_straw_10mm==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            @endfor
+                                                                                                        </select>
+                                                                                                        @error('paper_straw_10mm')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td><a href="#" class="fw-medium text-center">12*200mm</a></td>
+                                                                                    <td>
+                                                                                        <table class="table align-middle table-nowrap mb-0">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <input class="form-control" disabled readonly value="Rs. 77.28">
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select class="form-control" disabled readonly name="paper_straw_12mm" id="paper_straw_12mm">
+                                                                                                            @for($i = 0; $i <= 30; $i+=5)
+                                                                                                            <option value="{{$i}}" {{ $data->paper_straw_12mm==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            @endfor
+                                                                                                        </select>
+                                                                                                        @error('paper_straw_12mm')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td><a href="#" class="fw-medium text-center">6*200mm</a></td>
+                                                                                    <td>
+                                                                                        <table class="table align-middle table-nowrap mb-0">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <input class="form-control" disabled readonly value="Rs. 57.96">
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select class="form-control" disabled readonly name="paper_straw_6mm_2" id="paper_straw_6mm_2">
+                                                                                                            @for($i = 0; $i <= 30; $i+=5)
+                                                                                                            <option value="{{$i}}" {{ $data->paper_straw_6mm_2==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            @endfor
+                                                                                                        </select>
+                                                                                                        @error('paper_straw_6mm_2')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td><a href="#" class="fw-medium text-center">8*200mm</a></td>
+                                                                                    <td>
+                                                                                        <table class="table align-middle table-nowrap mb-0">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <input class="form-control" disabled readonly value="Rs. 64.4">
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select class="form-control" disabled readonly name="paper_straw_8mm_2" id="paper_straw_8mm_2">
+                                                                                                            @for($i = 0; $i <= 30; $i+=5)
+                                                                                                            <option value="{{$i}}" {{ $data->paper_straw_8mm_2==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            @endfor
+                                                                                                        </select>
+                                                                                                        @error('paper_straw_8mm_2')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td><a href="#" class="fw-medium text-center">10*200mm</a></td>
+                                                                                    <td>
+                                                                                        <table class="table align-middle table-nowrap mb-0">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <input class="form-control" disabled readonly value="Rs. 77.28">
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select class="form-control" disabled readonly name="paper_straw_10mm_2" id="paper_straw_10mm_2">
+                                                                                                            @for($i = 0; $i <= 30; $i+=5)
+                                                                                                            <option value="{{$i}}" {{ $data->paper_straw_10mm_2==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            @endfor
+                                                                                                        </select>
+                                                                                                        @error('paper_straw_10mm_2')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                        @error('payment_duration')
-                                                            <div class="invalid-message">{{ $message }}</div>
-                                                        @enderror
+
                                                     </div>
+
                                                 </div>
-
-                                                <div class="col-xxl-12 col-md-12 col-sm-12">
-                                                    <div>
-                                                        <label for="cash_payment"
-                                                            class="form-label">If given the offer of 10% discount, will you make the advance payment in cash? :</label>
-                                                        <div class="d-flex align-item-center gap-5">
-                                                            <div class="col-auto">
-                                                                <label for="cash_payment1">
-                                                                    <input type="radio" name="cash_payment" value="Yes" readonly {{$data->cash_payment=='Yes' ? 'checked' : ''}}
-                                                                        id="cash_payment1">
-                                                                    Yes
-                                                                </label>
-                                                            </div>
-                                                            <div class="col-auto">
-                                                                <label for="cash_payment2">
-                                                                    <input type="radio" name="cash_payment" value="No" readonly {{$data->cash_payment=='No' ? 'checked' : ''}}
-                                                                        id="cash_payment2">
-                                                                    No
-                                                                </label>
-                                                            </div>
-                                                        </div>
-                                                        @error('cash_payment')
-                                                            <div class="invalid-message">{{ $message }}</div>
-                                                        @enderror
-                                                    </div>
-                                                </div>
-
-
 
                                             </div>
                                             <!--end row-->

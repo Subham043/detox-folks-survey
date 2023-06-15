@@ -4,6 +4,12 @@
 
 @section('content')
 
+<style>
+    .pagination-div nav .pagination{
+        justify-content: center
+    }
+</style>
+
 <div class="page-content">
     <div class="container-fluid">
 
@@ -104,23 +110,9 @@
                                 @endif
                             </div>
 
-                            @if($country->total() > 0)
-                            <div class="d-flex justify-content-end">
-                                <div class="pagination-wrap hstack gap-2">
-                                    <a class="page-item pagination-prev {{ $country->currentPage() > 1 ? '' : 'disabled' }} " href="{{ $country->currentPage() > 1 ? $country->previousPageUrl() : '#' }}">
-                                        Previous
-                                    </a>
-                                    <ul class="pagination listjs-pagination mb-0">
-                                        @for ($i = 1; $i <= $country->lastPage(); $i++)
-                                        <li class=" {{ $country->currentPage() == $i ? 'active' : '' }}"><a class="page" href="{{$country->url($i)}}">{{ $i }}</a></li>
-                                        @endfor
-                                    </ul>
-                                    <a class="page-item pagination-next {{ $country->currentPage() == $country->lastPage() ? 'disabled' : '' }}" href="{{ $country->currentPage() == $country->lastPage() ? '#' : $country->nextPageUrl() }}">
-                                        Next
-                                    </a>
-                                </div>
+                            <div class="pagination-div">
+                                {{$country->onEachSide(5)->links()}}
                             </div>
-                            @endif
                         </div>
                     </div><!-- end card -->
                 </div>

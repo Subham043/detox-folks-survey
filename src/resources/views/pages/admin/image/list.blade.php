@@ -4,6 +4,12 @@
 
 @section('content')
 
+<style>
+    .pagination-div nav .pagination{
+        justify-content: center
+    }
+</style>
+
 <div class="page-content">
     <div class="container-fluid">
 
@@ -102,7 +108,9 @@
                                 @endif
                             </div>
 
-                            {{$country->onEachSide(5)->links()}}
+                            <div class="pagination-div">
+                                {{$country->onEachSide(5)->links()}}
+                            </div>
                         </div>
                     </div><!-- end card -->
                 </div>

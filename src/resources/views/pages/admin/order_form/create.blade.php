@@ -238,7 +238,7 @@
                                                                                                     @enderror
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
-                                                                                                    <select class="form-control" name="pp_50" id="pp_50">
+                                                                                                    <select data-price="1.31" onchange="amount_change_handler()" class="quantity_price form-control" name="pp_50" id="pp_50">
                                                                                                         @for($i = 0; $i <= 10000; $i+=200)
                                                                                                         <option value="{{$i}}" {{ old('pp_50')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
@@ -273,7 +273,7 @@
                                                                                                     @enderror
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
-                                                                                                    <select class="form-control" name="pp_100" id="pp_100">
+                                                                                                    <select data-price="1.73" onchange="amount_change_handler()" class="quantity_price form-control" name="pp_100" id="pp_100">
                                                                                                         @for($i = 0; $i <= 10000; $i+=200)
                                                                                                         <option value="{{$i}}" {{ old('pp_100')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
@@ -307,7 +307,7 @@
                                                                                                     @enderror
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
-                                                                                                    <select class="form-control" name="pp_150" id="pp_150">
+                                                                                                    <select data-price="2.21" onchange="amount_change_handler()" class="quantity_price form-control" name="pp_150" id="pp_150">
                                                                                                         @for($i = 0; $i <= 10000; $i+=200)
                                                                                                         <option value="{{$i}}" {{ old('pp_150')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
@@ -331,17 +331,17 @@
                                                                                                     <input class="form-control" disabled readonly value="2.78">
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
-                                                                                                    <select class="form-control" name="pp_200_color" id="pp_200_color">
-                                                                                                        <option value="Black" {{ old('pp_200_color')=='Black' ? 'selected' : '' }}>Black</option>
-                                                                                                        <option value="White" {{ old('pp_200_color')=='White' ? 'selected' : '' }}>White</option>
-                                                                                                        <option value="Transparent" {{ old('pp_200_color')=='Transparent' ? 'selected' : '' }}>Transparent</option>
+                                                                                                    <select class="form-control" name="pp_200_g_color" id="pp_200_g_color">
+                                                                                                        <option value="Black" {{ old('pp_200_g_color')=='Black' ? 'selected' : '' }}>Black</option>
+                                                                                                        <option value="White" {{ old('pp_200_g_color')=='White' ? 'selected' : '' }}>White</option>
+                                                                                                        <option value="Transparent" {{ old('pp_200_g_color')=='Transparent' ? 'selected' : '' }}>Transparent</option>
                                                                                                     </select>
-                                                                                                    @error('pp_200_color')
+                                                                                                    @error('pp_200_g_color')
                                                                                                         <div class="invalid-message">{{ $message }}</div>
                                                                                                     @enderror
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
-                                                                                                    <select class="form-control" name="pp_200_g" id="pp_200_g">
+                                                                                                    <select data-price="2.78" onchange="amount_change_handler()" class="quantity_price form-control" name="pp_200_g" id="pp_200_g">
                                                                                                         @for($i = 0; $i <= 10000; $i+=200)
                                                                                                         <option value="{{$i}}" {{ old('pp_200_g')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
@@ -375,7 +375,7 @@
                                                                                                     @enderror
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
-                                                                                                    <select class="form-control" name="pp_250" id="pp_250">
+                                                                                                    <select data-price="2.89" onchange="amount_change_handler()" class="quantity_price form-control" name="pp_250" id="pp_250">
                                                                                                         @for($i = 0; $i <= 10000; $i+=200)
                                                                                                         <option value="{{$i}}" {{ old('pp_250')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
@@ -410,7 +410,7 @@
                                                                                                     @enderror
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
-                                                                                                    <select class="form-control" name="pp_300" id="pp_300">
+                                                                                                    <select data-price="4.04" onchange="amount_change_handler()" class="quantity_price form-control" name="pp_300" id="pp_300">
                                                                                                         @for($i = 0; $i <= 10000; $i+=200)
                                                                                                         <option value="{{$i}}" {{ old('pp_300')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
@@ -445,7 +445,7 @@
                                                                                                     @enderror
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
-                                                                                                    <select class="form-control" name="pp_500_g" id="pp_500_g">
+                                                                                                    <select data-price="3.62" onchange="amount_change_handler()" class="quantity_price form-control" name="pp_500_g" id="pp_500_g">
                                                                                                         @for($i = 0; $i <= 10000; $i+=200)
                                                                                                         <option value="{{$i}}" {{ old('pp_500_g')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
@@ -480,7 +480,7 @@
                                                                                                     @enderror
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
-                                                                                                    <select class="form-control" name="pp_500" id="pp_500">
+                                                                                                    <select data-price="3.83" onchange="amount_change_handler()" class="quantity_price form-control" name="pp_500" id="pp_500">
                                                                                                         @for($i = 0; $i <= 10000; $i+=200)
                                                                                                         <option value="{{$i}}" {{ old('pp_500')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
@@ -515,7 +515,7 @@
                                                                                                     @enderror
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
-                                                                                                    <select class="form-control" name="pp_750" id="pp_750">
+                                                                                                    <select data-price="5.51" onchange="amount_change_handler()" class="quantity_price form-control" name="pp_750" id="pp_750">
                                                                                                         @for($i = 0; $i <= 10000; $i+=200)
                                                                                                         <option value="{{$i}}" {{ old('pp_750')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
@@ -550,7 +550,7 @@
                                                                                                     @enderror
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
-                                                                                                    <select class="form-control" name="pp_750_flat" id="pp_750_flat">
+                                                                                                    <select data-price="5.62" onchange="amount_change_handler()" class="quantity_price form-control" name="pp_750_flat" id="pp_750_flat">
                                                                                                         @for($i = 0; $i <= 10000; $i+=200)
                                                                                                         <option value="{{$i}}" {{ old('pp_750_flat')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
@@ -585,7 +585,7 @@
                                                                                                     @enderror
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
-                                                                                                    <select class="form-control" name="pp_1000" id="pp_1000">
+                                                                                                    <select data-price="7.04" onchange="amount_change_handler()" class="quantity_price form-control" name="pp_1000" id="pp_1000">
                                                                                                         @for($i = 0; $i <= 10000; $i+=200)
                                                                                                         <option value="{{$i}}" {{ old('pp_1000')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
@@ -620,7 +620,7 @@
                                                                                                     @enderror
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
-                                                                                                    <select class="form-control" name="pp_500_rec" id="pp_500_rec">
+                                                                                                    <select data-price="5.99" onchange="amount_change_handler()" class="quantity_price form-control" name="pp_500_rec" id="pp_500_rec">
                                                                                                         @for($i = 0; $i <= 10000; $i+=200)
                                                                                                         <option value="{{$i}}" {{ old('pp_500_rec')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
@@ -655,7 +655,7 @@
                                                                                                     @enderror
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
-                                                                                                    <select class="form-control" name="pp_650_rec" id="pp_650_rec">
+                                                                                                    <select data-price="6.20" onchange="amount_change_handler()" class="quantity_price form-control" name="pp_650_rec" id="pp_650_rec">
                                                                                                         @for($i = 0; $i <= 10000; $i+=200)
                                                                                                         <option value="{{$i}}" {{ old('pp_650_rec')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
@@ -690,7 +690,7 @@
                                                                                                     @enderror
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
-                                                                                                    <select class="form-control" name="pp_750_rec" id="pp_750_rec">
+                                                                                                    <select data-price="6.51" onchange="amount_change_handler()" class="quantity_price form-control" name="pp_750_rec" id="pp_750_rec">
                                                                                                         @for($i = 0; $i <= 10000; $i+=200)
                                                                                                         <option value="{{$i}}" {{ old('pp_750_rec')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
@@ -725,7 +725,7 @@
                                                                                                     @enderror
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
-                                                                                                    <select class="form-control" name="pp_1000_rec" id="pp_1000_rec">
+                                                                                                    <select data-price="6.83" onchange="amount_change_handler()" class="quantity_price form-control" name="pp_1000_rec" id="pp_1000_rec">
                                                                                                         @for($i = 0; $i <= 10000; $i+=200)
                                                                                                         <option value="{{$i}}" {{ old('pp_1000_rec')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
@@ -760,7 +760,7 @@
                                                                                                     @enderror
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
-                                                                                                    <select class="form-control" name="pp_650_bowl" id="pp_650_bowl">
+                                                                                                    <select data-price="5.78" onchange="amount_change_handler()" class="quantity_price form-control" name="pp_650_bowl" id="pp_650_bowl">
                                                                                                         @for($i = 0; $i <= 10000; $i+=200)
                                                                                                         <option value="{{$i}}" {{ old('pp_650_bowl')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
@@ -823,7 +823,7 @@
                                                                                                     <input class="form-control" disabled readonly value="1.39">
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select class="form-control" name="al_container_with_lid_250" id="al_container_with_lid_250">
+                                                                                                      <select data-price="1.39" onchange="amount_change_handler()" class="quantity_price form-control" name="al_container_with_lid_250" id="al_container_with_lid_250">
                                                                                                           @for($i = 0; $i <= 10000; $i+=200)
                                                                                                           <option value="{{$i}}" {{ old('al_container_with_lid_250')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
@@ -847,7 +847,7 @@
                                                                                                     <input class="form-control" disabled readonly value="1.85">
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select class="form-control" name="al_container_with_lid_450" id="al_container_with_lid_450">
+                                                                                                      <select data-price="1.85" onchange="amount_change_handler()" class="quantity_price form-control" name="al_container_with_lid_450" id="al_container_with_lid_450">
                                                                                                           @for($i = 0; $i <= 10000; $i+=200)
                                                                                                           <option value="{{$i}}" {{ old('al_container_with_lid_450')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
@@ -872,7 +872,7 @@
                                                                                                     <input class="form-control" disabled readonly value="2.77">
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select class="form-control" name="al_container_with_lid_600" id="al_container_with_lid_600">
+                                                                                                      <select data-price="2.77" onchange="amount_change_handler()" class="quantity_price form-control" name="al_container_with_lid_600" id="al_container_with_lid_600">
                                                                                                           @for($i = 0; $i <= 10000; $i+=200)
                                                                                                           <option value="{{$i}}" {{ old('al_container_with_lid_600')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
@@ -897,7 +897,7 @@
                                                                                                     <input class="form-control" disabled readonly value="2.77">
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select class="form-control" name="al_container_with_lid_750" id="al_container_with_lid_750">
+                                                                                                      <select data-price="2.77" onchange="amount_change_handler()" class="quantity_price form-control" name="al_container_with_lid_750" id="al_container_with_lid_750">
                                                                                                           @for($i = 0; $i <= 10000; $i+=200)
                                                                                                           <option value="{{$i}}" {{ old('al_container_with_lid_750')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
@@ -922,7 +922,7 @@
                                                                                                     <input class="form-control" disabled readonly value="2.77">
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select class="form-control" name="al_container_with_lid_450_premium" id="al_container_with_lid_450_premium">
+                                                                                                      <select data-price="2.77" onchange="amount_change_handler()" class="quantity_price form-control" name="al_container_with_lid_450_premium" id="al_container_with_lid_450_premium">
                                                                                                           @for($i = 0; $i <= 10000; $i+=200)
                                                                                                           <option value="{{$i}}" {{ old('al_container_with_lid_450_premium')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
@@ -947,7 +947,7 @@
                                                                                                     <input class="form-control" disabled readonly value="4.15">
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select class="form-control" name="al_container_with_lid_750_premium" id="al_container_with_lid_750_premium">
+                                                                                                      <select data-price="4.15" onchange="amount_change_handler()" class="quantity_price form-control" name="al_container_with_lid_750_premium" id="al_container_with_lid_750_premium">
                                                                                                           @for($i = 0; $i <= 10000; $i+=200)
                                                                                                           <option value="{{$i}}" {{ old('al_container_with_lid_750_premium')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
@@ -1011,7 +1011,7 @@
                                                                                                     <input class="form-control" disabled readonly value="420">
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select class="form-control" name="aluminium_1kg_gross" id="aluminium_1kg_gross">
+                                                                                                      <select data-price="420" onchange="amount_change_handler()" class="quantity_price form-control" name="aluminium_1kg_gross" id="aluminium_1kg_gross">
                                                                                                           @for($i = 0; $i <= 20; $i+=5)
                                                                                                           <option value="{{$i}}" {{ old('aluminium_1kg_gross')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
@@ -1036,7 +1036,7 @@
                                                                                                     <input class="form-control" disabled readonly value="536">
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select class="form-control" name="aluminium_1kg_net" id="aluminium_1kg_net">
+                                                                                                      <select data-price="536" onchange="amount_change_handler()" class="quantity_price form-control" name="aluminium_1kg_net" id="aluminium_1kg_net">
                                                                                                           @for($i = 0; $i <= 20; $i+=5)
                                                                                                           <option value="{{$i}}" {{ old('aluminium_1kg_net')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
@@ -1111,7 +1111,7 @@
                                                                                                       @enderror
                                                                                                   </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select class="form-control" name="compartment_2cp" id="compartment_2cp">
+                                                                                                      <select  data-price="6.13)"class="form-control" name="compartment_2cp" id="compartment_2cp">
                                                                                                           @for($i = 0; $i <= 10000; $i+=500)
                                                                                                           <option value="{{$i}}" {{ old('compartment_2cp')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
@@ -1144,7 +1144,7 @@
                                                                                                     @enderror
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select class="form-control" name="compartment_3cp" id="compartment_3cp">
+                                                                                                      <select data-price="6.13" onchange="amount_change_handler()" class="quantity_price form-control" name="compartment_3cp" id="compartment_3cp">
                                                                                                           @for($i = 0; $i <= 10000; $i+=500)
                                                                                                           <option value="{{$i}}" {{ old('compartment_3cp')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
@@ -1177,7 +1177,7 @@
                                                                                                     @enderror
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select class="form-control" name="compartment_3cp_xl" id="compartment_3cp_xl">
+                                                                                                      <select data-price="7.71" onchange="amount_change_handler()" class="quantity_price form-control" name="compartment_3cp_xl" id="compartment_3cp_xl">
                                                                                                           @for($i = 0; $i <= 10000; $i+=500)
                                                                                                           <option value="{{$i}}" {{ old('compartment_3cp_xl')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
@@ -1210,7 +1210,7 @@
                                                                                                     @enderror
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select class="form-control" name="compartment_4cp" id="compartment_4cp">
+                                                                                                      <select data-price="7.79" onchange="amount_change_handler()" class="quantity_price form-control" name="compartment_4cp" id="compartment_4cp">
                                                                                                           @for($i = 0; $i <= 10000; $i+=500)
                                                                                                           <option value="{{$i}}" {{ old('compartment_4cp')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
@@ -1244,7 +1244,7 @@
                                                                                                     @enderror
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select class="form-control" name="compartment_5cp" id="compartment_5cp">
+                                                                                                      <select data-price="9.39" onchange="amount_change_handler()" class="quantity_price form-control" name="compartment_5cp" id="compartment_5cp">
                                                                                                           @for($i = 0; $i <= 10000; $i+=500)
                                                                                                           <option value="{{$i}}" {{ old('compartment_5cp')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
@@ -1278,7 +1278,7 @@
                                                                                                     @enderror
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select class="form-control" name="compartment_6cp" id="compartment_6cp">
+                                                                                                      <select data-price="9.74" onchange="amount_change_handler()" class="quantity_price form-control" name="compartment_6cp" id="compartment_6cp">
                                                                                                           @for($i = 0; $i <= 10000; $i+=500)
                                                                                                           <option value="{{$i}}" {{ old('compartment_6cp')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
@@ -1312,7 +1312,7 @@
                                                                                                     @enderror
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select class="form-control" name="compartment_8cp" id="compartment_8cp">
+                                                                                                      <select data-price="12.37" onchange="amount_change_handler()" class="quantity_price form-control" name="compartment_8cp" id="compartment_8cp">
                                                                                                           @for($i = 0; $i <= 10000; $i+=500)
                                                                                                           <option value="{{$i}}" {{ old('compartment_8cp')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
@@ -1346,7 +1346,7 @@
                                                                                                     @enderror
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select class="form-control" name="compartment_750_bow" id="compartment_750_bow">
+                                                                                                      <select data-price="6.57" onchange="amount_change_handler()" class="quantity_price form-control" name="compartment_750_bow" id="compartment_750_bow">
                                                                                                           @for($i = 0; $i <= 10000; $i+=500)
                                                                                                           <option value="{{$i}}" {{ old('compartment_750_bow')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
@@ -1409,7 +1409,7 @@
                                                                                                     <input class="form-control" disabled readonly value="2.79">
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
-                                                                                                    <select class="form-control" name="p_box_sandwich" id="p_box_sandwich">
+                                                                                                    <select data-price="2.79" onchange="amount_change_handler()" class="quantity_price form-control" name="p_box_sandwich" id="p_box_sandwich">
                                                                                                         @for($i = 0; $i <= 10000; $i+=500)
                                                                                                         <option value="{{$i}}" {{ old('p_box_sandwich')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
@@ -1435,7 +1435,7 @@
                                                                                                     <input class="form-control" disabled readonly value="1.98">
                                                                                                   </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select class="form-control" name="p_box_dosa" id="p_box_dosa">
+                                                                                                      <select data-price="1.98" onchange="amount_change_handler()" class="quantity_price form-control" name="p_box_dosa" id="p_box_dosa">
                                                                                                           @for($i = 0; $i <= 10000; $i+=500)
                                                                                                           <option value="{{$i}}" {{ old('p_box_dosa')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
@@ -1460,7 +1460,7 @@
                                                                                                     <input class="form-control" disabled readonly value="1.67">
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
-                                                                                                    <select class="form-control" name="p_box_idly" id="p_box_idly">
+                                                                                                    <select data-price="1.67" onchange="amount_change_handler()" class="quantity_price form-control" name="p_box_idly" id="p_box_idly">
                                                                                                         @for($i = 0; $i <= 10000; $i+=500)
                                                                                                         <option value="{{$i}}" {{ old('p_box_idly')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
@@ -1485,7 +1485,7 @@
                                                                                                     <input class="form-control" disabled readonly value="2.29">
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
-                                                                                                    <select class="form-control" name="p_box_idly_vada" id="p_box_idly_vada">
+                                                                                                    <select data-price="2.29" onchange="amount_change_handler()" class="quantity_price form-control" name="p_box_idly_vada" id="p_box_idly_vada">
                                                                                                         @for($i = 0; $i <= 10000; $i+=500)
                                                                                                         <option value="{{$i}}" {{ old('p_box_idly_vada')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
@@ -1549,7 +1549,7 @@
                                                                                                         <input class="form-control" disabled readonly value="60">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="p_bag_small" id="p_bag_small">
+                                                                                                        <select data-price="60" onchange="amount_change_handler()" class="quantity_price form-control" name="p_bag_small" id="p_bag_small">
                                                                                                             @for($i = 0; $i <= 30; $i+=5)
                                                                                                             <option value="{{$i}}" {{ old('p_bag_small')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
@@ -1573,7 +1573,7 @@
                                                                                                         <input class="form-control" disabled readonly value="60">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="p_bag_medium" id="p_bag_medium">
+                                                                                                        <select data-price="60" onchange="amount_change_handler()" class="quantity_price form-control" name="p_bag_medium" id="p_bag_medium">
                                                                                                             @for($i = 0; $i <= 30; $i+=5)
                                                                                                             <option value="{{$i}}" {{ old('p_bag_medium')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
@@ -1598,7 +1598,7 @@
                                                                                                         <input class="form-control" disabled readonly value="60">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="p_bag_large" id="p_bag_large">
+                                                                                                        <select data-price="60" onchange="amount_change_handler()" class="quantity_price form-control" name="p_bag_large" id="p_bag_large">
                                                                                                             @for($i = 0; $i <= 30; $i+=5)
                                                                                                             <option value="{{$i}}" {{ old('p_bag_large')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
@@ -1623,7 +1623,7 @@
                                                                                                         <input class="form-control" disabled readonly value="60">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="p_bag_x_large" id="p_bag_x_large">
+                                                                                                        <select data-price="60" onchange="amount_change_handler()" class="quantity_price form-control" name="p_bag_x_large" id="p_bag_x_large">
                                                                                                             @for($i = 0; $i <= 30; $i+=5)
                                                                                                             <option value="{{$i}}" {{ old('p_bag_x_large')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
@@ -1648,7 +1648,7 @@
                                                                                                         <input class="form-control" disabled readonly value="60">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="p_bag_xx_large" id="p_bag_xx_large">
+                                                                                                        <select data-price="60" onchange="amount_change_handler()" class="quantity_price form-control" name="p_bag_xx_large" id="p_bag_xx_large">
                                                                                                             @for($i = 0; $i <= 30; $i+=5)
                                                                                                             <option value="{{$i}}" {{ old('p_bag_xx_large')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
@@ -1711,7 +1711,7 @@
                                                                                                         <input class="form-control" disabled readonly value="4.58">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="cloth_bag_10_11" id="cloth_bag_10_11">
+                                                                                                        <select data-price="4.58" onchange="amount_change_handler()" class="quantity_price form-control" name="cloth_bag_10_11" id="cloth_bag_10_11">
                                                                                                             @for($i = 0; $i <= 1000; $i+=100)
                                                                                                             <option value="{{$i}}" {{ old('cloth_bag_10_11')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
@@ -1736,7 +1736,7 @@
                                                                                                         <input class="form-control" disabled readonly value="5.08">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="cloth_bag_11_12" id="cloth_bag_11_12">
+                                                                                                        <select data-price="5.08" onchange="amount_change_handler()" class="quantity_price form-control" name="cloth_bag_11_12" id="cloth_bag_11_12">
                                                                                                             @for($i = 0; $i <= 1000; $i+=100)
                                                                                                             <option value="{{$i}}" {{ old('cloth_bag_11_12')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
@@ -1761,7 +1761,7 @@
                                                                                                         <input class="form-control" disabled readonly value="5.31">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="cloth_bag_12_12" id="cloth_bag_12_12">
+                                                                                                        <select data-price="5.31" onchange="amount_change_handler()" class="quantity_price form-control" name="cloth_bag_12_12" id="cloth_bag_12_12">
                                                                                                             @for($i = 0; $i <= 1000; $i+=100)
                                                                                                             <option value="{{$i}}" {{ old('cloth_bag_12_12')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
@@ -1786,7 +1786,7 @@
                                                                                                         <input class="form-control" disabled readonly value="5.82">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="cloth_bag_11_14" id="cloth_bag_11_14">
+                                                                                                        <select data-price="5.82" onchange="amount_change_handler()" class="quantity_price form-control" name="cloth_bag_11_14" id="cloth_bag_11_14">
                                                                                                             @for($i = 0; $i <= 1000; $i+=100)
                                                                                                             <option value="{{$i}}" {{ old('cloth_bag_11_14')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
@@ -1811,7 +1811,7 @@
                                                                                                         <input class="form-control" disabled readonly value="6.94">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="cloth_bag_13_16" id="cloth_bag_13_16">
+                                                                                                        <select data-price="6.94" onchange="amount_change_handler()" class="quantity_price form-control" name="cloth_bag_13_16" id="cloth_bag_13_16">
                                                                                                             @for($i = 0; $i <= 1000; $i+=100)
                                                                                                             <option value="{{$i}}" {{ old('cloth_bag_13_16')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
@@ -1836,7 +1836,7 @@
                                                                                                         <input class="form-control" disabled readonly value="8.18">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="cloth_bag_15_18" id="cloth_bag_15_18">
+                                                                                                        <select data-price="8.18" onchange="amount_change_handler()" class="quantity_price form-control" name="cloth_bag_15_18" id="cloth_bag_15_18">
                                                                                                             @for($i = 0; $i <= 1000; $i+=100)
                                                                                                             <option value="{{$i}}" {{ old('cloth_bag_15_18')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
@@ -1861,7 +1861,7 @@
                                                                                                         <input class="form-control" disabled readonly value="9.29">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="cloth_bag_16_20" id="cloth_bag_16_20">
+                                                                                                        <select data-price="9.29" onchange="amount_change_handler()" class="quantity_price form-control" name="cloth_bag_16_20" id="cloth_bag_16_20">
                                                                                                             @for($i = 0; $i <= 1000; $i+=100)
                                                                                                             <option value="{{$i}}" {{ old('cloth_bag_16_20')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
@@ -1886,7 +1886,7 @@
                                                                                                         <input class="form-control" disabled readonly value="10.61">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="cloth_bag_18_20" id="cloth_bag_18_20">
+                                                                                                        <select data-price="10.61" onchange="amount_change_handler()" class="quantity_price form-control" name="cloth_bag_18_20" id="cloth_bag_18_20">
                                                                                                             @for($i = 0; $i <= 1000; $i+=100)
                                                                                                             <option value="{{$i}}" {{ old('cloth_bag_18_20')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
@@ -1911,7 +1911,7 @@
                                                                                                         <input class="form-control" disabled readonly value="11.77">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="cloth_bag_20_20" id="cloth_bag_20_20">
+                                                                                                        <select data-price="11.77" onchange="amount_change_handler()" class="quantity_price form-control" name="cloth_bag_20_20" id="cloth_bag_20_20">
                                                                                                             @for($i = 0; $i <= 1000; $i+=100)
                                                                                                             <option value="{{$i}}" {{ old('cloth_bag_20_20')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
@@ -1975,7 +1975,7 @@
                                                                                                     <input class="form-control" disabled readonly value="19.824">
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select class="form-control" name="gloves_regular" id="gloves_regular">
+                                                                                                      <select data-price="19.824" onchange="amount_change_handler()" class="quantity_price form-control" name="gloves_regular" id="gloves_regular">
                                                                                                           @for($i = 0; $i <= 5; $i+=1)
                                                                                                           <option value="{{$i}}" {{ old('gloves_regular')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
@@ -2039,7 +2039,7 @@
                                                                                                     <input class="form-control" disabled readonly value="71.66">
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select class="form-control" name="head_cap_16_10" id="head_cap_16_10">
+                                                                                                      <select data-price="71.66" onchange="amount_change_handler()" class="quantity_price form-control" name="head_cap_16_10" id="head_cap_16_10">
                                                                                                           @for($i = 0; $i <= 5; $i+=1)
                                                                                                           <option value="{{$i}}" {{ old('head_cap_16_10')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
@@ -2064,7 +2064,7 @@
                                                                                                     <input class="form-control" disabled readonly value="82.69">
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select class="form-control" name="head_cap_18_10" id="head_cap_18_10">
+                                                                                                      <select data-price="82.69" onchange="amount_change_handler()" class="quantity_price form-control" name="head_cap_18_10" id="head_cap_18_10">
                                                                                                           @for($i = 0; $i <= 5; $i+=1)
                                                                                                           <option value="{{$i}}" {{ old('head_cap_18_10')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
@@ -2089,7 +2089,7 @@
                                                                                                     <input class="form-control" disabled readonly value="93.71">
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select class="form-control" name="head_cap_21_10" id="head_cap_21_10">
+                                                                                                      <select data-price="93.71" onchange="amount_change_handler()" class="quantity_price form-control" name="head_cap_21_10" id="head_cap_21_10">
                                                                                                           @for($i = 0; $i <= 5; $i+=1)
                                                                                                           <option value="{{$i}}" {{ old('head_cap_21_10')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
@@ -2153,7 +2153,7 @@
                                                                                                         <input class="form-control" disabled readonly value="0.53">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="cuttlery_110_spoon" id="cuttlery_110_spoon">
+                                                                                                        <select data-price="0.53" onchange="amount_change_handler()" class="quantity_price form-control" name="cuttlery_110_spoon" id="cuttlery_110_spoon">
                                                                                                             @for($i = 0; $i <= 10000; $i+=500)
                                                                                                             <option value="{{$i}}" {{ old('cuttlery_110_spoon')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
@@ -2177,7 +2177,7 @@
                                                                                                         <input class="form-control" disabled readonly value="0.51">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="cuttlery_140_spoon" id="cuttlery_140_spoon">
+                                                                                                        <select data-price="0.51" onchange="amount_change_handler()" class="quantity_price form-control" name="cuttlery_140_spoon" id="cuttlery_140_spoon">
                                                                                                             @for($i = 0; $i <= 10000; $i+=500)
                                                                                                             <option value="{{$i}}" {{ old('cuttlery_140_spoon')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
@@ -2201,7 +2201,7 @@
                                                                                                         <input class="form-control" disabled readonly value="0.71">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="cuttlery_160_spoon" id="cuttlery_160_spoon">
+                                                                                                        <select data-price="0.71" onchange="amount_change_handler()" class="quantity_price form-control" name="cuttlery_160_spoon" id="cuttlery_160_spoon">
                                                                                                             @for($i = 0; $i <= 10000; $i+=500)
                                                                                                             <option value="{{$i}}" {{ old('cuttlery_160_spoon')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
@@ -2225,7 +2225,7 @@
                                                                                                         <input class="form-control" disabled readonly value="0.71">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="cuttlery_140_fork" id="cuttlery_140_fork">
+                                                                                                        <select data-price="0.71" onchange="amount_change_handler()" class="quantity_price form-control" name="cuttlery_140_fork" id="cuttlery_140_fork">
                                                                                                             @for($i = 0; $i <= 10000; $i+=500)
                                                                                                             <option value="{{$i}}" {{ old('cuttlery_140_fork')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
@@ -2249,7 +2249,7 @@
                                                                                                         <input class="form-control" disabled readonly value="0.71">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="cuttlery_160_fork" id="cuttlery_160_fork">
+                                                                                                        <select data-price="0.71" onchange="amount_change_handler()" class="quantity_price form-control" name="cuttlery_160_fork" id="cuttlery_160_fork">
                                                                                                             @for($i = 0; $i <= 10000; $i+=500)
                                                                                                             <option value="{{$i}}" {{ old('cuttlery_160_fork')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
@@ -2318,7 +2318,7 @@
                                                                                                         <input class="form-control" disabled readonly value="21.735">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="al_pouch_4_6" id="al_pouch_4_6">
+                                                                                                        <select data-price="21.735" onchange="amount_change_handler()" class="quantity_price form-control" name="al_pouch_4_6" id="al_pouch_4_6">
                                                                                                             @for($i = 0; $i <= 20; $i+=5)
                                                                                                             <option value="{{$i}}" {{ old('al_pouch_4_6')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
@@ -2343,7 +2343,7 @@
                                                                                                         <input class="form-control" disabled readonly value="28.35">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="al_pouch_5_7" id="al_pouch_5_7">
+                                                                                                        <select data-price="28.35" onchange="amount_change_handler()" class="quantity_price form-control" name="al_pouch_5_7" id="al_pouch_5_7">
                                                                                                             @for($i = 0; $i <= 20; $i+=5)
                                                                                                             <option value="{{$i}}" {{ old('al_pouch_5_7')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
@@ -2368,7 +2368,7 @@
                                                                                                         <input class="form-control" disabled readonly value="35.532">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="al_pouch_6_8" id="al_pouch_6_8">
+                                                                                                        <select data-price="35.532" onchange="amount_change_handler()" class="quantity_price form-control" name="al_pouch_6_8" id="al_pouch_6_8">
                                                                                                             @for($i = 0; $i <= 20; $i+=5)
                                                                                                             <option value="{{$i}}" {{ old('al_pouch_6_8')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
@@ -2393,7 +2393,7 @@
                                                                                                         <input class="form-control" disabled readonly value="40.635">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="al_pouch_6_9" id="al_pouch_6_9">
+                                                                                                        <select data-price="40.635" onchange="amount_change_handler()" class="quantity_price form-control" name="al_pouch_6_9" id="al_pouch_6_9">
                                                                                                             @for($i = 0; $i <= 20; $i+=5)
                                                                                                             <option value="{{$i}}" {{ old('al_pouch_6_9')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
@@ -2418,7 +2418,7 @@
                                                                                                         <input class="form-control" disabled readonly value="48.195">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="al_pouch_7_9" id="al_pouch_7_9">
+                                                                                                        <select data-price="48.195" onchange="amount_change_handler()" class="quantity_price form-control" name="al_pouch_7_9" id="al_pouch_7_9">
                                                                                                             @for($i = 0; $i <= 20; $i+=5)
                                                                                                             <option value="{{$i}}" {{ old('al_pouch_7_9')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
@@ -2443,7 +2443,7 @@
                                                                                                         <input class="form-control" disabled readonly value="52.92">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="al_pouch_7_10" id="al_pouch_7_10">
+                                                                                                        <select data-price="52.92" onchange="amount_change_handler()" class="quantity_price form-control" name="al_pouch_7_10" id="al_pouch_7_10">
                                                                                                             @for($i = 0; $i <= 20; $i+=5)
                                                                                                             <option value="{{$i}}" {{ old('al_pouch_7_10')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
@@ -2468,7 +2468,7 @@
                                                                                                         <input class="form-control" disabled readonly value="60.48">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="al_pouch_8_10" id="al_pouch_8_10">
+                                                                                                        <select data-price="60.48" onchange="amount_change_handler()" class="quantity_price form-control" name="al_pouch_8_10" id="al_pouch_8_10">
                                                                                                             @for($i = 0; $i <= 20; $i+=5)
                                                                                                             <option value="{{$i}}" {{ old('al_pouch_8_10')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
@@ -2493,7 +2493,7 @@
                                                                                                         <input class="form-control" disabled readonly value="83.16">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="al_pouch_9_12" id="al_pouch_9_12">
+                                                                                                        <select data-price="83.16" onchange="amount_change_handler()" class="quantity_price form-control" name="al_pouch_9_12" id="al_pouch_9_12">
                                                                                                             @for($i = 0; $i <= 20; $i+=5)
                                                                                                             <option value="{{$i}}" {{ old('al_pouch_9_12')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
@@ -2518,7 +2518,7 @@
                                                                                                         <input class="form-control" disabled readonly value="96.39">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="al_pouch_10_12" id="al_pouch_10_12">
+                                                                                                        <select data-price="96.39" onchange="amount_change_handler()" class="quantity_price form-control" name="al_pouch_10_12" id="al_pouch_10_12">
                                                                                                             @for($i = 0; $i <= 20; $i+=5)
                                                                                                             <option value="{{$i}}" {{ old('al_pouch_10_12')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
@@ -2543,7 +2543,7 @@
                                                                                                         <input class="form-control" disabled readonly value="107.73">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="al_pouch_10_14" id="al_pouch_10_14">
+                                                                                                        <select data-price="107.73" onchange="amount_change_handler()" class="quantity_price form-control" name="al_pouch_10_14" id="al_pouch_10_14">
                                                                                                             @for($i = 0; $i <= 20; $i+=5)
                                                                                                             <option value="{{$i}}" {{ old('al_pouch_10_14')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
@@ -2568,7 +2568,7 @@
                                                                                                         <input class="form-control" disabled readonly value="21.9">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="al_pouch_4_6_full" id="al_pouch_4_6_full">
+                                                                                                        <select data-price="21.9" onchange="amount_change_handler()" class="quantity_price form-control" name="al_pouch_4_6_full" id="al_pouch_4_6_full">
                                                                                                             @for($i = 0; $i <= 20; $i+=5)
                                                                                                             <option value="{{$i}}" {{ old('al_pouch_4_6_full')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
@@ -2593,7 +2593,7 @@
                                                                                                         <input class="form-control" disabled readonly value="32.1">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="al_pouch_5_7_full" id="al_pouch_5_7_full">
+                                                                                                        <select data-price="32.1" onchange="amount_change_handler()" class="quantity_price form-control" name="al_pouch_5_7_full" id="al_pouch_5_7_full">
                                                                                                             @for($i = 0; $i <= 20; $i+=5)
                                                                                                             <option value="{{$i}}" {{ old('al_pouch_5_7_full')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
@@ -2618,7 +2618,7 @@
                                                                                                         <input class="form-control" disabled readonly value="43.5">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="al_pouch_6_8_full" id="al_pouch_6_8_full">
+                                                                                                        <select data-price="43.5" onchange="amount_change_handler()" class="quantity_price form-control" name="al_pouch_6_8_full" id="al_pouch_6_8_full">
                                                                                                             @for($i = 0; $i <= 20; $i+=5)
                                                                                                             <option value="{{$i}}" {{ old('al_pouch_6_8_full')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
@@ -2643,7 +2643,7 @@
                                                                                                         <input class="form-control" disabled readonly value="46.3">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="al_pouch_6_9_full" id="al_pouch_6_9_full">
+                                                                                                        <select data-price="46.3" onchange="amount_change_handler()" class="quantity_price form-control" name="al_pouch_6_9_full" id="al_pouch_6_9_full">
                                                                                                             @for($i = 0; $i <= 20; $i+=5)
                                                                                                             <option value="{{$i}}" {{ old('al_pouch_6_9_full')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
@@ -2668,7 +2668,7 @@
                                                                                                         <input class="form-control" disabled readonly value="55.8">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="al_pouch_7_9_full" id="al_pouch_7_9_full">
+                                                                                                        <select data-price="55.8" onchange="amount_change_handler()" class="quantity_price form-control" name="al_pouch_7_9_full" id="al_pouch_7_9_full">
                                                                                                             @for($i = 0; $i <= 20; $i+=5)
                                                                                                             <option value="{{$i}}" {{ old('al_pouch_7_9_full')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
@@ -2693,7 +2693,7 @@
                                                                                                         <input class="form-control" disabled readonly value="58.6">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="al_pouch_7_10_full" id="al_pouch_7_10_full">
+                                                                                                        <select data-price="58.6" onchange="amount_change_handler()" class="quantity_price form-control" name="al_pouch_7_10_full" id="al_pouch_7_10_full">
                                                                                                             @for($i = 0; $i <= 20; $i+=5)
                                                                                                             <option value="{{$i}}" {{ old('al_pouch_7_10_full')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
@@ -2718,7 +2718,7 @@
                                                                                                         <input class="form-control" disabled readonly value="69.9">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="al_pouch_8_10_full" id="al_pouch_8_10_full">
+                                                                                                        <select data-price="69.9" onchange="amount_change_handler()" class="quantity_price form-control" name="al_pouch_8_10_full" id="al_pouch_8_10_full">
                                                                                                             @for($i = 0; $i <= 20; $i+=5)
                                                                                                             <option value="{{$i}}" {{ old('al_pouch_8_10_full')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
@@ -2743,7 +2743,7 @@
                                                                                                         <input class="form-control" disabled readonly value="92.6">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="al_pouch_9_12_full" id="al_pouch_9_12_full">
+                                                                                                        <select data-price="92.6" onchange="amount_change_handler()" class="quantity_price form-control" name="al_pouch_9_12_full" id="al_pouch_9_12_full">
                                                                                                             @for($i = 0; $i <= 20; $i+=5)
                                                                                                             <option value="{{$i}}" {{ old('al_pouch_9_12_full')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
@@ -2768,7 +2768,7 @@
                                                                                                         <input class="form-control" disabled readonly value="109.6">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="al_pouch_10_12_full" id="al_pouch_10_12_full">
+                                                                                                        <select data-price="109.6" onchange="amount_change_handler()" class="quantity_price form-control" name="al_pouch_10_12_full" id="al_pouch_10_12_full">
                                                                                                             @for($i = 0; $i <= 20; $i+=5)
                                                                                                             <option value="{{$i}}" {{ old('al_pouch_10_12_full')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
@@ -2793,7 +2793,7 @@
                                                                                                         <input class="form-control" disabled readonly value="119.1">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="al_pouch_10_14_full" id="al_pouch_10_14_full">
+                                                                                                        <select data-price="119.1" onchange="amount_change_handler()" class="quantity_price form-control" name="al_pouch_10_14_full" id="al_pouch_10_14_full">
                                                                                                             @for($i = 0; $i <= 20; $i+=5)
                                                                                                             <option value="{{$i}}" {{ old('al_pouch_10_14_full')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
@@ -2857,7 +2857,7 @@
                                                                                                         <input class="form-control" disabled readonly value="12.6">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="tissue_22_22" id="tissue_22_22">
+                                                                                                        <select data-price="12.6" onchange="amount_change_handler()" class="quantity_price form-control" name="tissue_22_22" id="tissue_22_22">
                                                                                                             @for($i = 0; $i <= 100; $i+=10)
                                                                                                             <option value="{{$i}}" {{ old('tissue_22_22')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
@@ -2882,7 +2882,7 @@
                                                                                                         <input class="form-control" disabled readonly value="19.95">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="tissue_27_30" id="tissue_27_30">
+                                                                                                        <select data-price="19.95" onchange="amount_change_handler()" class="quantity_price form-control" name="tissue_27_30" id="tissue_27_30">
                                                                                                             @for($i = 0; $i <= 100; $i+=10)
                                                                                                             <option value="{{$i}}" {{ old('tissue_27_30')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
@@ -2907,7 +2907,7 @@
                                                                                                         <input class="form-control" disabled readonly value="26.25">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="tissue_30_30" id="tissue_30_30">
+                                                                                                        <select data-price="26.25" onchange="amount_change_handler()" class="quantity_price form-control" name="tissue_30_30" id="tissue_30_30">
                                                                                                             @for($i = 0; $i <= 100; $i+=10)
                                                                                                             <option value="{{$i}}" {{ old('tissue_30_30')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
@@ -2971,7 +2971,7 @@
                                                                                                         <input class="form-control" disabled readonly value="34">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="garbage_bag_small" id="garbage_bag_small">
+                                                                                                        <select data-price="34" onchange="amount_change_handler()" class="quantity_price form-control" name="garbage_bag_small" id="garbage_bag_small">
                                                                                                             @for($i = 0; $i <= 5; $i+=1)
                                                                                                             <option value="{{$i}}" {{ old('garbage_bag_small')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
@@ -2996,7 +2996,7 @@
                                                                                                         <input class="form-control" disabled readonly value="38">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="garbage_bag_medium" id="garbage_bag_medium">
+                                                                                                        <select data-price="38" onchange="amount_change_handler()" class="quantity_price form-control" name="garbage_bag_medium" id="garbage_bag_medium">
                                                                                                             @for($i = 0; $i <= 5; $i+=1)
                                                                                                             <option value="{{$i}}" {{ old('garbage_bag_medium')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
@@ -3021,7 +3021,7 @@
                                                                                                         <input class="form-control" disabled readonly value="44">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="garbage_bag_large" id="garbage_bag_large">
+                                                                                                        <select data-price="44" onchange="amount_change_handler()" class="quantity_price form-control" name="garbage_bag_large" id="garbage_bag_large">
                                                                                                             @for($i = 0; $i <= 5; $i+=1)
                                                                                                             <option value="{{$i}}" {{ old('garbage_bag_large')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
@@ -3046,7 +3046,7 @@
                                                                                                         <input class="form-control" disabled readonly value="71">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="garbage_bag_x_large" id="garbage_bag_x_large">
+                                                                                                        <select data-price="71" onchange="amount_change_handler()" class="quantity_price form-control" name="garbage_bag_x_large" id="garbage_bag_x_large">
                                                                                                             @for($i = 0; $i <= 5; $i+=1)
                                                                                                             <option value="{{$i}}" {{ old('garbage_bag_x_large')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
@@ -3120,7 +3120,7 @@
                                                                                                     @enderror
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
-                                                                                                    <select class="form-control" name="bopp_tape_3" id="bopp_tape_3">
+                                                                                                    <select data-price="37.2" onchange="amount_change_handler()" class="quantity_price form-control" name="bopp_tape_3" id="bopp_tape_3">
                                                                                                         @for($i = 0; $i <= 5; $i+=1)
                                                                                                         <option value="{{$i}}" {{ old('bopp_tape_3')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
@@ -3154,7 +3154,7 @@
                                                                                                     @enderror
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select class="form-control" name="bopp_tape_2" id="bopp_tape_2">
+                                                                                                      <select data-price="24.8" onchange="amount_change_handler()" class="quantity_price form-control" name="bopp_tape_2" id="bopp_tape_2">
                                                                                                           @for($i = 0; $i <= 5; $i+=1)
                                                                                                           <option value="{{$i}}" {{ old('bopp_tape_2')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
@@ -3218,7 +3218,7 @@
                                                                                                     <input class="form-control" disabled readonly value="17.84">
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select class="form-control" name="billing_roll_2" id="billing_roll_2">
+                                                                                                      <select data-price="17.84" onchange="amount_change_handler()" class="quantity_price form-control" name="billing_roll_2" id="billing_roll_2">
                                                                                                           @for($i = 0; $i <= 5; $i+=1)
                                                                                                           <option value="{{$i}}" {{ old('billing_roll_2')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
@@ -3243,7 +3243,7 @@
                                                                                                     <input class="form-control" disabled readonly value="38.53">
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select class="form-control" name="billing_roll_3" id="billing_roll_3">
+                                                                                                      <select data-price="38.53" onchange="amount_change_handler()" class="quantity_price form-control" name="billing_roll_3" id="billing_roll_3">
                                                                                                           @for($i = 0; $i <= 5; $i+=1)
                                                                                                           <option value="{{$i}}" {{ old('billing_roll_3')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
@@ -3307,7 +3307,7 @@
                                                                                                     <input class="form-control" disabled readonly value="336">
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select class="form-control" name="rubber_band_1" id="rubber_band_1">
+                                                                                                      <select data-price="336" onchange="amount_change_handler()" class="quantity_price form-control" name="rubber_band_1" id="rubber_band_1">
                                                                                                           @for($i = 0; $i <= 5; $i+=1)
                                                                                                           <option value="{{$i}}" {{ old('rubber_band_1')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
@@ -3332,7 +3332,7 @@
                                                                                                     <input class="form-control" disabled readonly value="273">
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select class="form-control" name="rubber_band_2" id="rubber_band_2">
+                                                                                                      <select data-price="273" onchange="amount_change_handler()" class="quantity_price form-control" name="rubber_band_2" id="rubber_band_2">
                                                                                                           @for($i = 0; $i <= 5; $i+=1)
                                                                                                           <option value="{{$i}}" {{ old('rubber_band_2')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
@@ -3396,7 +3396,7 @@
                                                                                                         <input class="form-control" disabled readonly value="38.64">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="paper_straw_6mm" id="paper_straw_6mm">
+                                                                                                        <select data-price="38.64" onchange="amount_change_handler()" class="quantity_price form-control" name="paper_straw_6mm" id="paper_straw_6mm">
                                                                                                             @for($i = 0; $i <= 30; $i+=5)
                                                                                                             <option value="{{$i}}" {{ old('paper_straw_6mm')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
@@ -3421,7 +3421,7 @@
                                                                                                         <input class="form-control" disabled readonly value="45.08">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="paper_straw_8mm" id="paper_straw_8mm">
+                                                                                                        <select data-price="45.08" onchange="amount_change_handler()" class="quantity_price form-control" name="paper_straw_8mm" id="paper_straw_8mm">
                                                                                                             @for($i = 0; $i <= 30; $i+=5)
                                                                                                             <option value="{{$i}}" {{ old('paper_straw_8mm')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
@@ -3446,7 +3446,7 @@
                                                                                                         <input class="form-control" disabled readonly value="57.96">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="paper_straw_10mm" id="paper_straw_10mm">
+                                                                                                        <select data-price="57.96" onchange="amount_change_handler()" class="quantity_price form-control" name="paper_straw_10mm" id="paper_straw_10mm">
                                                                                                             @for($i = 0; $i <= 30; $i+=5)
                                                                                                             <option value="{{$i}}" {{ old('paper_straw_10mm')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
@@ -3471,7 +3471,7 @@
                                                                                                         <input class="form-control" disabled readonly value="77.28">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="paper_straw_12mm" id="paper_straw_12mm">
+                                                                                                        <select data-price="77.28" onchange="amount_change_handler()" class="quantity_price form-control" name="paper_straw_12mm" id="paper_straw_12mm">
                                                                                                             @for($i = 0; $i <= 30; $i+=5)
                                                                                                             <option value="{{$i}}" {{ old('paper_straw_12mm')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
@@ -3535,7 +3535,7 @@
                                                                                                     <input class="form-control" disabled readonly value="0.94">
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select class="form-control" name="mask_3_play" id="mask_3_play">
+                                                                                                      <select data-price="0.94" onchange="amount_change_handler()" class="quantity_price form-control" name="mask_3_play" id="mask_3_play">
                                                                                                           @for($i = 0; $i <= 5; $i+=1)
                                                                                                           <option value="{{$i}}" {{ old('mask_3_play')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
@@ -3560,7 +3560,7 @@
                                                                                                     <input class="form-control" disabled readonly value="1.32">
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select class="form-control" name="mask_meltblown" id="mask_meltblown">
+                                                                                                      <select data-price="1.32" onchange="amount_change_handler()" class="quantity_price form-control" name="mask_meltblown" id="mask_meltblown">
                                                                                                           @for($i = 0; $i <= 5; $i+=1)
                                                                                                           <option value="{{$i}}" {{ old('mask_meltblown')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
@@ -3624,7 +3624,7 @@
                                                                                                         <input class="form-control" disabled readonly value="&#8377; 4.31">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="carry_bag_bag_small" id="carry_bag_bag_small">
+                                                                                                        <select data-price="4.31" onchange="amount_change_handler()" class="quantity_price form-control" name="carry_bag_bag_small" id="carry_bag_bag_small">
                                                                                                             @for($i = 0; $i <= 2000; $i+=200)
                                                                                                             <option value="{{$i}}" {{ old('carry_bag_bag_small')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
@@ -3648,7 +3648,7 @@
                                                                                                         <input class="form-control" disabled readonly value="&#8377; 4.31">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="carry_bag_bag_medium" id="carry_bag_bag_medium">
+                                                                                                        <select data-price="4.31" onchange="amount_change_handler()" class="quantity_price form-control" name="carry_bag_bag_medium" id="carry_bag_bag_medium">
                                                                                                             @for($i = 0; $i <= 2000; $i+=200)
                                                                                                             <option value="{{$i}}" {{ old('carry_bag_bag_medium')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
@@ -3672,7 +3672,7 @@
                                                                                                         <input class="form-control" disabled readonly value="&#8377; 4.91">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="carry_bag_bag_large" id="carry_bag_bag_large">
+                                                                                                        <select data-price="4.91" onchange="amount_change_handler()" class="quantity_price form-control" name="carry_bag_bag_large" id="carry_bag_bag_large">
                                                                                                             @for($i = 0; $i <= 2000; $i+=200)
                                                                                                             <option value="{{$i}}" {{ old('carry_bag_bag_large')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
@@ -3696,7 +3696,7 @@
                                                                                                         <input class="form-control" disabled readonly value="&#8377; 5.29">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="carry_bag_bag_x_large" id="carry_bag_bag_x_large">
+                                                                                                        <select data-price="5.29" onchange="amount_change_handler()" class="quantity_price form-control" name="carry_bag_bag_x_large" id="carry_bag_bag_x_large">
                                                                                                             @for($i = 0; $i <= 2000; $i+=200)
                                                                                                             <option value="{{$i}}" {{ old('carry_bag_bag_x_large')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
@@ -3759,7 +3759,7 @@
                                                                                                   <input class="form-control" disabled readonly value="&#8377; 60">
                                                                                               </td>
                                                                                                 <td style="width: 33%">
-                                                                                                    <select class="form-control" name="parcel_paper_10" id="parcel_paper_10">
+                                                                                                    <select data-price="60" onchange="amount_change_handler()" class="quantity_price form-control" name="parcel_paper_10" id="parcel_paper_10">
                                                                                                         @for($i = 0; $i <= 100; $i+=5)
                                                                                                         <option value="{{$i}}" {{ old('parcel_paper_10')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                         @endfor
@@ -3783,7 +3783,7 @@
                                                                                                     <input class="form-control" disabled readonly value="&#8377; 60">
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select class="form-control" name="parcel_paper_12" id="parcel_paper_12">
+                                                                                                      <select data-price="60" onchange="amount_change_handler()" class="quantity_price form-control" name="parcel_paper_12" id="parcel_paper_12">
                                                                                                           @for($i = 0; $i <= 100; $i+=5)
                                                                                                           <option value="{{$i}}" {{ old('parcel_paper_12')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
@@ -3807,7 +3807,7 @@
                                                                                                     <input class="form-control" disabled readonly value="&#8377; 60">
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select class="form-control" name="parcel_paper_14" id="parcel_paper_14">
+                                                                                                      <select data-price="60" onchange="amount_change_handler()" class="quantity_price form-control" name="parcel_paper_14" id="parcel_paper_14">
                                                                                                           @for($i = 0; $i <= 100; $i+=5)
                                                                                                           <option value="{{$i}}" {{ old('parcel_paper_14')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
@@ -3833,6 +3833,11 @@
 
                                                 </div>
 
+
+                                                <div class="col-xxl-12 col-lg-12 col-md-12">
+                                                    <label for="form-label">Total Amount</label>
+                                                    <input class="form-control" id="price_input" name="amount" disabled readonly value="{{empty(old('amount')) ? 0.0 : old('amount')}}">
+                                                </div>
 
                                                 <div class="col-xxl-12 col-md-12">
                                                     <button type="submit"
@@ -3960,6 +3965,23 @@
         .onSuccess((event) => {
             event.target.submit();
         });
+    </script>
+
+    <script>
+        const quantitySelect = document.querySelectorAll(".quantity_price");
+        function getTotalPrices() {
+            // selected all checkBoxes
+            let total = 0.0;
+            // Loop through checkbox list
+            for (let i = 0; i < quantitySelect.length; i++) {
+                value = parseFloat(quantitySelect[i].value) * parseFloat(quantitySelect[i].getAttribute("data-price"));
+                total = (total+value);
+            }
+            return parseFloat(total).toFixed(2)
+        }
+        function amount_change_handler(){
+            document.querySelector('#price_input').value = getTotalPrices()
+        }
     </script>
 
 </body>

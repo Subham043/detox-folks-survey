@@ -171,7 +171,7 @@
                                                     <div class="accordion" id="accordionExample">
                                                         <div class="accordion-item">
                                                             <h2 class="accordion-header" id="headingOne">
-                                                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                                                   <img
                                                                       src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxATDg8SEBAQDg8PDg0NDxAQEBAQDg8QFREWFhUSFRUYHSgsGBolGxUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKBQwNFg8PFSsZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAOEA4QMBIgACEQEDEQH/xAAbAAEAAwEBAQEAAAAAAAAAAAAAAQIDBAUGB//EADgQAAIBAgEJBAgHAQEBAAAAAAABAgMRIQQFMUFRYXGBkRITodEUFSJCUmKxwSMyY3KS4fDxooL/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AP3EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEOSWlpczKWUwWmcetwNgcssvpr3vBlfWMNSm+EQOwHE8v2U6j5FZZe1j3UwO8HlvO/6b/l/RHrf9N9f6A9UHleuP0/H+gs7/AKb/AJAeqDzFnZfBLqi6ztDXGa5ID0AcKzpS+ZcUaxy+k/fS43QHSDONeD0Si+aNAAAAAAAAAAAAArUmkrvBI8yvl8pNqHsrbrt9gPSqVYx/M0uLOSrnKK0Jve7RXieW227rH5nj0LwpK99L2vEDaedJv8qtwV/FmEspqy963N/YvPQZOaA0o0bv2pN+B2wow+Fc8fqefGrsTZ1RlUeiCXFtgdMLLUlwSX2L95x6s51TrPXGPIt6LU11HywCNHLc+jKVp4PAj0J65yfNlKmRpLS3zYVwtb0RbgT2h325ARdbRbf4l/SNy6Issq3LogMuZHZZ0LKvlXRD0iGuMelgOezLdnd4G6q037tuDZZKD1teIHN3UXqEbr8s5Lnb6HS6K1SXNWKSoS3PgwKLOFWPvXW9KS8zooZ5XvRvvg/szka5PfgY1KW7msGB9BQy2nP8slfY8H0Og+S1pPHfr5ndkucZwwl7cdj08n9gPfBnQrRnFSi7p/6xoAAAHm51q4xjtTlxxscEl7LtvN89SUmkn2ZU9Et/kedTy3s4VF2dSl7j56gOlVFFK5HezehWW16SvYTxWOzWuRoltCMmtrbEUXktj6EKm/8ArA0pSV0etGaseTGn/kd8Vhr6gdPeoOsjBIkDR1zKtVwfMFJ6wrznAjujZoqBj3Q7reasgDPu96Dps1IAz7LJxLkpgUUwqzLsylFAWnWvv4mDk1oLSiUbASqJou3hfXZGM5RWLaW9nNUymUsIKy1yf2QHtZirt1qkV+XsKT/dfyZ7x8pmuqqVRYXv7MtuOvifVgAAB4ecaTjUb1SuzhhTb7SejDg77UfT1aakrSSaZ5WW5C4Rcou6W38y8wjyfRnF+zePB+z0N6dR2x66V4GlOd8Hp1LQ/EmdB3uk1hsswJVW+hp8GvuWvbSmuTOd31rrZkRml8u9OSA6lJbTshJW0nkqvtb5qMjaFVbFyUl9GB6aa2ok89SW1r/680O8+Z9YMK72UmcfePa/4rzKyry39H5gWZBzSyjj0IeUAdJDRz98zqyfJ6k1dOCW9sCoZ0er56501ybHoO2vFcIrzA5rg6lkEddapL9sVH7ErN9P4as/3TaXgBxSmlpw4tIwnlUdTT4YvwPUeSQjopU4vf7TODK272wstisgOSWVPVGTW/2TCdSb1qPBNvqzqlTdr6eJVQ/yA56eS3beLaV25PFI6KdNX3LTtIjux4Hr5uzYpRjKbweKitfF+QHJkOSOpUvb2U12nqVtXE+lK06aikopJLQlgiwAAADHK43py4X6GxWaumtqaA8WKTWKuaU1bQ2t17rozOmjWAQk3rUZdUYzpwemLjwszoZmwMZUIfFbirExyRapRZodNJKyul0QHL6JLcUnk1TUlr2YnoKEdi5YE92t/wDKXmFeXLJ6i93wRnOlP4fA9d0t8upV0/ml4eQHhOMsbrwZXsS/yZ6dSLv+Z9I+Rm6XzPpHyCOFRew9jNk0oYpYbbI43T+Z/wDnyJVFbX4eQV67qRvj2Lcg8ror3o8keUqK3k92tj6sD0pZwp6m3wiznrZwg7YSw4L6s5lTWxFrICsssvog+bv9Ec9SUn7qXReN2dEzMDHuW9LXJX8WT3Md74v7GrIYGcj6HJI2pwXyx+h881q24H0qQEgAAAAAAA8WStKS2SZaJOVRtUlyfVERCNGjNmhmwIN6GgwRvRA2RZFUWAMpIuyswOGekqXmigVBKIJQEokABYkhEgUmZl5FQIZVlpFWBNCN6kFtnH6n0J4eb43qw5voj3AAAAAAAAAPNzgvxFvijFHTnNYwfFHMgNCki6KSQRBrRMjSiBvEuiiZZMAysiSsgOSprKF6mkoFQSiCQLAgm4Allbi4FZFLlpFUAZVksqwOvNEfxG9kX4tHsHlZlWNR/tX1Z6oAAAAAAAAHJnJewnskjhiz0cuX4cuT8TzIaANu0VciAEDSjpMu0TCpZgdaLI5XlS2dSHlb2JAdRRnK8pe0o6r+JhUzekp2iOZPZQEXIuXUFvJjGO8CqZNzRxiR3a2gURDLOnsZVwYFGQJEdoCTOci7ZjMD2cyr8OT2zfgkegceao2ox39p+J2AAAAAAAAAUrK8ZL5X9DxYnuNHhvBtbG14gadopOoYykwkEW7x7CHfaCGFCbEIsBBBJAE3FyGRcCwTIJQGiJIiyQJbFyAAZlOGOBqyrA5pNopJnRKJzSjjba7AfS5HG1KC+SP0NiIqyS2JIkAAAAAAAAAeJnCm4zeyT7SPbMq9FTjZ8nrT2oDwkUnOzR0ZRk8oPHFapLRz2GM43AsQjOKa8i/a23XHzAkm5AAAACAkSAFiSCWBeJJESwEAXIc9mPACxlF4smzeklJICJI0ybJ+3UirYJqUuCL0cnlJ4LDa9B6tCioKy4t62wNACAJAAAAAAAAAAESV9OJxV82xeMH2Hs0x/o7gB4dXJKi0xvvjiZxqNYPpJWPoCsoJ6UnxQHhrsP3bb0W7qOqT52Z6k8ipv3UuF0ZPNsNTkuaYHnOi9Ti+qK9zLYup6Hq3ZN9CPV8/jXRgee6ctniiLPZ4o9D1fP449GPQJ/FHowPPtL4fFFuzLYubO71dP4l0Y9Wv410A4UntiurJ7PzPkkj0I5t+fpFGkcgjrcnzsB5kYr/uJdRvoTb3I9SOSwXurnibJJaMAPLp5HN6lFb9PQ6qOQxWn2nv0dDrAEJEgAQSAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf/9k="
                                                                       alt=""
@@ -181,7 +181,7 @@
                                                                   PP CONTAINER
                                                               </button>
                                                             </h2>
-                                                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                                               <div class="accordion-body">
                                                                   <div class="table-responsive">
                                                                       <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
@@ -767,7 +767,7 @@
                                                         </div>
                                                         <div class="accordion-item">
                                                             <h2 class="accordion-header" id="headingThree">
-                                                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                                                   <img
                                                                   src="https://5.imimg.com/data5/ANDROID/Default/2022/11/NH/SS/MO/4041306/product-jpeg-500x500.jpg"
                                                                   alt=""
@@ -777,7 +777,7 @@
                                                                   ALUMINIUM CONTAINER WITH LID
                                                               </button>
                                                             </h2>
-                                                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                                            <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                                               <div class="accordion-body">
                                                                   <div class="table-responsive">
                                                                       <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
@@ -955,7 +955,7 @@
 
                                                         <div class="accordion-item">
                                                             <h2 class="accordion-header" id="headingEight">
-                                                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
                                                                   <img
                                                                   src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/41rFWZCxP8L._SX679_.jpg"
                                                                   alt=""
@@ -965,7 +965,7 @@
                                                                   ALUMINIUM FOIL
                                                               </button>
                                                             </h2>
-                                                            <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample2">
+                                                            <div id="collapseEight" class="accordion-collapse collapse show" aria-labelledby="headingEight" data-bs-parent="#accordionExample2">
                                                               <div class="accordion-body">
                                                                   <div class="table-responsive">
                                                                       <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
@@ -1045,7 +1045,7 @@
 
                                                         <div class="accordion-item">
                                                             <h2 class="accordion-header" id="headingSeven">
-                                                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                                                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
                                                                   <img
                                                                   src="https://images.meesho.com/images/products/106133445/o4svw_512.webp"
                                                                   alt=""
@@ -1055,7 +1055,7 @@
                                                                   COMPARTMENT TRAY
                                                               </button>
                                                             </h2>
-                                                            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample2">
+                                                            <div id="collapseSeven" class="accordion-collapse collapse show" aria-labelledby="headingSeven" data-bs-parent="#accordionExample2">
                                                               <div class="accordion-body">
                                                                   <div class="table-responsive">
                                                                       <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
@@ -1353,7 +1353,7 @@
                                                         </div>
                                                         <div class="accordion-item">
                                                             <h2 class="accordion-header" id="headingNine">
-                                                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
                                                                   <img
                                                                   src="https://static.vecteezy.com/system/resources/previews/009/886/744/original/brown-paper-box-file-png.png"
                                                                   alt=""
@@ -1363,7 +1363,7 @@
                                                                   PAPER BOX
                                                               </button>
                                                             </h2>
-                                                            <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample2">
+                                                            <div id="collapseNine" class="accordion-collapse collapse show" aria-labelledby="headingNine" data-bs-parent="#accordionExample2">
                                                               <div class="accordion-body">
                                                                   <div class="table-responsive">
                                                                       <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
@@ -1493,7 +1493,7 @@
                                                         </div>
                                                         <div class="accordion-item">
                                                             <h2 class="accordion-header" id="headingFour">
-                                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                                                                     <img
                                                                     src="https://m.media-amazon.com/images/I/31quZokr3kL._SX300_SY300_QL70_ML2_.jpg"
                                                                     alt=""
@@ -1503,7 +1503,7 @@
                                                                     V BOTTOM PAPER BAG
                                                                 </button>
                                                             </h2>
-                                                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                                            <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                                                                 <div class="accordion-body">
                                                                     <div class="table-responsive">
                                                                         <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
@@ -1655,7 +1655,7 @@
                                                         </div>
                                                         <div class="accordion-item">
                                                             <h2 class="accordion-header" id="headingTwelve2">
-                                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve2" aria-expanded="false" aria-controls="collapseTwelve2">
+                                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve2" aria-expanded="false" aria-controls="collapseTwelve2">
                                                                     <img
                                                                     src="https://m.media-amazon.com/images/I/51NfoHE61QL.jpg"
                                                                     alt=""
@@ -1665,7 +1665,7 @@
                                                                     CLOTH BAG
                                                                 </button>
                                                             </h2>
-                                                            <div id="collapseTwelve2" class="accordion-collapse collapse" aria-labelledby="headingTwelve2" data-bs-parent="#accordionExample">
+                                                            <div id="collapseTwelve2" class="accordion-collapse collapse show" aria-labelledby="headingTwelve2" data-bs-parent="#accordionExample">
                                                                 <div class="accordion-body">
                                                                     <div class="table-responsive">
                                                                         <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
@@ -1919,7 +1919,7 @@
 
                                                         <div class="accordion-item">
                                                             <h2 class="accordion-header" id="headingFive3">
-                                                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive3" aria-expanded="false" aria-controls="collapseFive3">
+                                                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive3" aria-expanded="false" aria-controls="collapseFive3">
                                                                   <img
                                                                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNP3az4rugbFmlXWxDrult3_2zwnuOCeuDHg&usqp=CAU"
                                                                   alt=""
@@ -1929,7 +1929,7 @@
                                                                   GLOVES
                                                               </button>
                                                             </h2>
-                                                            <div id="collapseFive3" class="accordion-collapse collapse" aria-labelledby="headingFive3" data-bs-parent="#accordionExample">
+                                                            <div id="collapseFive3" class="accordion-collapse collapse show" aria-labelledby="headingFive3" data-bs-parent="#accordionExample">
                                                               <div class="accordion-body">
                                                                   <div class="table-responsive">
                                                                       <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
@@ -1983,7 +1983,7 @@
 
                                                         <div class="accordion-item">
                                                             <h2 class="accordion-header" id="headingFour3">
-                                                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour3" aria-expanded="false" aria-controls="collapseFour3">
+                                                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour3" aria-expanded="false" aria-controls="collapseFour3">
                                                                   <img
                                                                   src="https://cdn.shopify.com/s/files/1/0490/1447/2862/products/disposable-medical-head-cap-146524_grande.png?v=1613322470"
                                                                   alt=""
@@ -1993,7 +1993,7 @@
                                                                   HEAD CAP
                                                               </button>
                                                             </h2>
-                                                            <div id="collapseFour3" class="accordion-collapse collapse" aria-labelledby="headingFour3" data-bs-parent="#accordionExample">
+                                                            <div id="collapseFour3" class="accordion-collapse collapse show" aria-labelledby="headingFour3" data-bs-parent="#accordionExample">
                                                               <div class="accordion-body">
                                                                   <div class="table-responsive">
                                                                       <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
@@ -2097,7 +2097,7 @@
 
                                                         <div class="accordion-item">
                                                             <h2 class="accordion-header" id="headingEleven">
-                                                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                                                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
                                                                 <img
                                                                 src="data:image/jpeg;base64,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"
                                                                 alt=""
@@ -2107,7 +2107,7 @@
                                                                 CUTLERY
                                                               </button>
                                                             </h2>
-                                                            <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven" data-bs-parent="#accordionExample2">
+                                                            <div id="collapseEleven" class="accordion-collapse collapse show" aria-labelledby="headingEleven" data-bs-parent="#accordionExample2">
                                                                 <div class="accordion-body">
                                                                     <div class="table-responsive">
                                                                         <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
@@ -2262,7 +2262,7 @@
 
                                                         <div class="accordion-item">
                                                             <h2 class="accordion-header" id="headingTwelve">
-                                                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                                                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
                                                                 <img
                                                                 src="https://3.imimg.com/data3/RY/JL/MY-11348186/aluminium-foil-pouch-1000x1000.jpg"
                                                                 alt=""
@@ -2272,7 +2272,7 @@
                                                                 SILVER POUCH (6 LAYER ALUMINIUM COATED)
                                                               </button>
                                                             </h2>
-                                                            <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve" data-bs-parent="#accordionExample2">
+                                                            <div id="collapseTwelve" class="accordion-collapse collapse show" aria-labelledby="headingTwelve" data-bs-parent="#accordionExample2">
                                                                 <div class="accordion-body">
                                                                     <div class="table-responsive">
                                                                         <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
@@ -2801,7 +2801,7 @@
 
                                                         <div class="accordion-item">
                                                             <h2 class="accordion-header" id="headingFive">
-                                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                                                                     <img
                                                                     src="https://static.vecteezy.com/system/resources/previews/016/694/735/original/tissue-with-transparent-background-png.png"
                                                                     alt=""
@@ -2811,7 +2811,7 @@
                                                                     TISSUES
                                                                 </button>
                                                             </h2>
-                                                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                                            <div id="collapseFive" class="accordion-collapse collapse show" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
                                                                 <div class="accordion-body">
                                                                     <div class="table-responsive">
                                                                         <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
@@ -2915,7 +2915,7 @@
 
                                                         <div class="accordion-item">
                                                             <h2 class="accordion-header" id="headingTen">
-                                                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
                                                                 <img
                                                                 src="http://atlas-content-cdn.pixelsquid.com/stock-images/trash-bag-garbage-e1XEqNE-600.jpg"
                                                                 alt=""
@@ -2925,7 +2925,7 @@
                                                                 GARBAGE BAG
                                                               </button>
                                                             </h2>
-                                                            <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample2">
+                                                            <div id="collapseTen" class="accordion-collapse collapse show" aria-labelledby="headingTen" data-bs-parent="#accordionExample2">
                                                                 <div class="accordion-body">
                                                                     <div class="table-responsive">
                                                                         <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
@@ -3054,7 +3054,7 @@
 
                                                         <div class="accordion-item">
                                                             <h2 class="accordion-header" id="headingTwo">
-                                                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                                                   <img
                                                                   src="https://m.media-amazon.com/images/I/51pILIz20gL._SL1200_.jpg"
                                                                   alt=""
@@ -3064,7 +3064,7 @@
                                                                   BOPP TAPE
                                                               </button>
                                                             </h2>
-                                                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                            <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                                               <div class="accordion-body">
                                                                   <div class="table-responsive">
                                                                       <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
@@ -3162,7 +3162,7 @@
 
                                                         <div class="accordion-item">
                                                             <h2 class="accordion-header" id="headingTwo2">
-                                                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
+                                                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
                                                                   <img
                                                                   src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxIQEBATEBAVFhUVFRUPDw8PFRAPFQ8VFRUWFhUVFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDQ0NFQ0PDysZFRkrLSstLS0rKy03KysrNysrKy03LSsrKy0rKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAOEA4QMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABAUBAgMGB//EADwQAAIBAgIGBwUGBgMBAAAAAAABAgMRBAUSITFBUXEGIjJSYYGRobHB0eEUFSMzQ3ITQmKCovBTkvEH/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAER/9oADAMBAAIRAxEAPwD7iAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABzrVVFXYHQw2V9TFt7NXI4znvb9S4LR1Y95eqH8aPeXqjzWKzjD0nadWKe+O1+iONLpFhZOyq/8AZNfAg9Ypp7GvI2KWhiITScZJp7GmmmSFUa2MosgQ6eM73qS0yDIAAAAAAAAAAAAAAAAAAAAAAAAAAEDMY3ceTJ5Dxu2PJgQlRfESoPcbylY0niktqZUfPs36BYiU5SoYqKTd1CvCSa/vhdPnZEPD9BcdfrYijFcYqrN+mivefSJY+nvl7GcZZlRX6i9H8hhqHkGTPDU9DTc7vSnOSUbuyXVgr6K82y2cHxITzmitjb5J/E0ecp9mD/udvYhgnSjba/MtcDK9OD8Dy88RKfafkth6XK/yaf7RSJQAIoAAAAAAAAAAAAAAAAYbMTlZNvdrKyriXLa/ICfLERW/01nN41cH7CBpop836S0MM9Gd3LboxtdX2X3Io9N9uXdZtHGLgzwkenNJv8t246US4yvpFRxD0YPrWvoy22324kHp414vf66iPje0uT95G/iow6tyoVCHXJc2RK5RV4jeVtYs8QVldlRygybhyDAnYcET4HqsAvwqf7V7jysD1eB/Kp/tj7jNWO4AIoAAAAAAAAAAAAAAADlil1JFdGmixxPYlyK+ZYjP8JFHnfRTDYt3rQu1qU4SlSnZbLtan5otZ1Wtj9SJVzCUdyfqgPMR/wDmuET7de3B1Y+/QuX2U9HKGFX4MNG+qU25TnJcHKWxeCsa1M7a/TXq/kcXn03shFerGGvQaCOGIqRh4vgv91FNHMKk9sreEdR1gUW8JXjF8Vcj4g70V1Icl7jhiAKvEFbVRZ4gq6zKjnAm0CFAm4cETonrMB+VT/ZH3HkovUejoZlRjCMXPZFLUpPYuRmrFiCD97Ue/wD4y+Rn70o9/wBkvkRU0EeOOpv9SPm7e86xqxeySfJpgbgAAAAAAAAAAAAOWK7EuRXzLDFdiRXz2FiI1YrMSWdYrMTvKiqxBHjtO9dnBLWVKnYYnwIGGJ8CKtqfYjyXuOFckQ7EeS9xxnC7sFVVaDk7RTb4LWKeRzl2mo+1l7SgoqyX1N7k0xWUchpra2yXHK6a3P1O86ljx3SPpi8NUlTSScXa9S+vxUdWrxIr1iwFLu+1mHgKfB+rPnS6d1H+quSii5yPphKvUhTtpOTt1L3Xi1wQHqZZdHc2vRnKWXtbGn7CbTm2bgVMqLW1GugW8lfaRK9C2wCPCpJbJNcm0SaeY1F/Nf8AckR0hYCyo5v34+cfkyfQxMZ9l38NjXkeesY2a1q8VqA9QCnwmaNaqmtbpb1z4lvF3V1zTQGQAAAAHLFdiRXz2FhiuxIr5liVGrFZiSzrlZiSoqq5xpxbdkrt7EixoZfKq9Wpd5/DiXuX5bCktS175PaxaYrsFlMrJzdvBa2Tvu5d5+wsWrHNRc99o8Vtly4ImtOUV1bLXo2i3Z7kcJSs0yyskrLUtxAxtNWbQR2jK+w2K6nUfE6LFNbUn7CKmtXI+JwNOqtGpCM13akY1F7UarHx3prlZm326nxfowKx9EsDe/2Oj5U17ixw2X0qUdGnTjCPdpxjTT522m326n3/AGS+Ro8ypL+Z+UZASoRSVkrLwNiunm0N0ZP0j8SPVzab7MYx8X1mBb1JqKvJ2XFkH7XpN31LdfhxKyVZyd5NyfjsXJG8W29YE5GbBGQMWNWjcwwOMkWuRYhtSg/5bOPJ7v8AeJWTLTIIapy4tL0V/iBagAAYZkAcsT2JcivmWGJ7EuRXTluLER6pzp4O7vL0+ZMhT4nVRGjSELHSKFjKRFZcbmxqYnIDhiq+iVVTFNuxjHV7yaIl9a5gSkzbSNbGGAkc3E3NWBzkjVxOjZowNNEKJszAGYo60lrOaOlMCZFm6I1KZIiwM2MMyYYHORd5PC1JeLb9v0KSR6LCRtTgv6V7gOwAAHLEV401pTkkuL/3WYxeIVOEpPYlfnwR43F4iVWTlN3e5borgkBc4vPoyuoqVt7slf1OFPNaa2xl6J/Ep7BAeipZjTlslb9yaOsa7k7Qs+9LdH6nmCbhMynT1bY91/B7gPR6IZHwuMjUV4vnF7UdtK4DSOdeWoSZGxU9QHncXX68udhGpsI2JX4kufoZUwLtGGYpu6RtIDmzVmzNQNWas2ZqwNWAEBlG8naLZqjGLdoPyXtA3oTuS6ciqw8yxpSAkphmkWbAY0btLi0vU9MUOXQvVj4Xl6F8AAAFP0ll+HBcZXfkmeeaPRdJKd6cHwlr80/jY86BpJGDdnKUrbPNvcBuhYhfedLS0XXpX7rnBP3k1MDanNxacXZreXmAxiqLhJbVx8UUYhNxaa2rYB6WTIleIo4lTimvNcGc60wKDHLrMhYmpoxk/AscftPN59ibR0Ftlq8t7A9hgJ6VOD4xi/VIkMrsj/IpLhGMfRWLEDnJGrRuzVgaNGh0kjRgagyLAZSOWYu0Fz+DO8URszg2oJcW+YEajIsqMirpxadmrcyfQYE6LOlzhBnZAWGTx68nwXvf0Lcrcljqm+LS9F9SyAAADjjKH8SnKL3rV4Pc/U8dKLTaeprU14o9uUOfYG34kVt7a4PcwKRlJ0jqSjQqaPFXt3XtL2xHxNBSTTV01Z8gPjeZYaVRO0W/IndCekGJwlWNDEKcsPJqKlPrPDt6lJPucVu2q2u/uZ9HY36uw5Vejie8D0kZGxHoxskm72Si3xsjugO+Dq6Mrbnq89xKrTK871qmr2gVmaV1FNs81ChKpNzkuS4LgegnhnXlq7K2ePidqmX6CA75K/w0uDaLRFRlL7a/q+CLeIGrMNG7NbAc5GjOjRqwNAbBIDMUR8auvG3D4kqKN44fSd/IDpg6SkrSV1wZ2r5Q0r09a3we1cnvJOEw9i1pRA8tBW2+aeo7RLjMcDp9aK62/wDq+pUJAXeVQtTXi2/bb4Ew5YWNoQXgvcdQAAAGJRTTTV09TT3mQB5fNMvdKV1rg3qfd8GQbHtKkFJNNXT1NPeeezHKZQvKCco8FrlH5oCrcDSUGdYyDA4xpWNrG5hoDVoxOi6lor+63uO1Ki5uy/8AC+y/AKK2AcssyxRitRzzTBanqL2MbGlaldAeFwtNxqTXGz+HwLSJLx+WO+lFa1u4oiRAyzVo3ZqwObMNG7RhoDQIzYykBmKLjL8PenF8bv2lVCLbSW1uy8z09GloxiluSQHOnTsd0hYyAKrMcN14tfzOz5lqc61PS0fCSl6AboyAAAAAAAAABAxeU06mu2jLvQsr81sZW1ciqLsyjLneL+J6EAeV+6a//H/lD5kihkc325KPgus/keiAELDYCMFZLm3tfMlxjY2AAAAauJW43LbvSp7d8dl+RaADy04tOzVnweowemq0Yz7UU+ZDqZTB7G1yd/eBSNGrLaWTcKnrH6hZK99T0j9QKixtCLbsld7ktZc08mgu1KT9EidQw0IdmKXjvfmBCy3L9DrT7W5d36lkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH//Z"
                                                                   alt=""
@@ -3172,7 +3172,7 @@
                                                                   BILLING ROLL
                                                               </button>
                                                             </h2>
-                                                            <div id="collapseTwo2" class="accordion-collapse collapse" aria-labelledby="headingTwo2" data-bs-parent="#accordionExample">
+                                                            <div id="collapseTwo2" class="accordion-collapse collapse show" aria-labelledby="headingTwo2" data-bs-parent="#accordionExample">
                                                               <div class="accordion-body">
                                                                   <div class="table-responsive">
                                                                       <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
@@ -3251,7 +3251,7 @@
 
                                                         <div class="accordion-item">
                                                             <h2 class="accordion-header" id="headingThree2">
-                                                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree2" aria-expanded="false" aria-controls="collapseThree2">
+                                                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree2" aria-expanded="false" aria-controls="collapseThree2">
                                                                   <img
                                                                   src="https://m.media-amazon.com/images/I/61it6tDMqKL.jpg"
                                                                   alt=""
@@ -3261,7 +3261,7 @@
                                                                   RUBBER BAND
                                                               </button>
                                                             </h2>
-                                                            <div id="collapseThree2" class="accordion-collapse collapse" aria-labelledby="headingThree2" data-bs-parent="#accordionExample">
+                                                            <div id="collapseThree2" class="accordion-collapse collapse show" aria-labelledby="headingThree2" data-bs-parent="#accordionExample">
                                                               <div class="accordion-body">
                                                                   <div class="table-responsive">
                                                                       <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
@@ -3340,7 +3340,7 @@
 
                                                         <div class="accordion-item">
                                                             <h2 class="accordion-header" id="headingThirteen2">
-                                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen2" aria-expanded="false" aria-controls="collapseThirteen2">
+                                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen2" aria-expanded="false" aria-controls="collapseThirteen2">
                                                                     <img
                                                                     src="https://m.media-amazon.com/images/I/717ILnnHiZL.jpg"
                                                                     alt=""
@@ -3350,7 +3350,7 @@
                                                                     PAPER STRAW
                                                                 </button>
                                                             </h2>
-                                                            <div id="collapseThirteen2" class="accordion-collapse collapse" aria-labelledby="headingThirteen2" data-bs-parent="#accordionExample">
+                                                            <div id="collapseThirteen2" class="accordion-collapse collapse show" aria-labelledby="headingThirteen2" data-bs-parent="#accordionExample">
                                                                 <div class="accordion-body">
                                                                     <div class="table-responsive">
                                                                         <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
@@ -3479,7 +3479,7 @@
 
                                                         <div class="accordion-item">
                                                             <h2 class="accordion-header" id="headingThree3">
-                                                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">
+                                                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">
                                                                   <img
                                                                   src="https://m.media-amazon.com/images/I/61+ilDgVVwS._AC_UY1100_.jpg"
                                                                   alt=""
@@ -3489,7 +3489,7 @@
                                                                   MASK
                                                               </button>
                                                             </h2>
-                                                            <div id="collapseThree3" class="accordion-collapse collapse" aria-labelledby="headingThree3" data-bs-parent="#accordionExample">
+                                                            <div id="collapseThree3" class="accordion-collapse collapse show" aria-labelledby="headingThree3" data-bs-parent="#accordionExample">
                                                               <div class="accordion-body">
                                                                   <div class="table-responsive">
                                                                       <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
@@ -3568,7 +3568,7 @@
 
                                                         <div class="accordion-item">
                                                             <h2 class="accordion-header" id="headingSeven2">
-                                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven2" aria-expanded="false" aria-controls="collapseSeven2">
+                                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven2" aria-expanded="false" aria-controls="collapseSeven2">
                                                                     <img
                                                                     src="http://atlas-content-cdn.pixelsquid.com/stock-images/paper-bag-aqOAYV4-600.jpg"
                                                                     alt=""
@@ -3578,7 +3578,7 @@
                                                                     CARRY BAG
                                                                 </button>
                                                             </h2>
-                                                            <div id="collapseSeven2" class="accordion-collapse collapse" aria-labelledby="headingSeven2" data-bs-parent="#accordionExample">
+                                                            <div id="collapseSeven2" class="accordion-collapse collapse show" aria-labelledby="headingSeven2" data-bs-parent="#accordionExample">
                                                                 <div class="accordion-body">
                                                                     <div class="table-responsive">
                                                                         <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
@@ -3703,7 +3703,7 @@
 
                                                         <div class="accordion-item">
                                                             <h2 class="accordion-header" id="headingFive2">
-                                                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive2" aria-expanded="false" aria-controls="collapseFive2">
+                                                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive2" aria-expanded="false" aria-controls="collapseFive2">
                                                                   <img
                                                                   src="https://m.media-amazon.com/images/I/61e+jkuy5-L.jpg"
                                                                   alt=""
@@ -3713,7 +3713,7 @@
                                                                   PARCEL PAPER SHEET
                                                               </button>
                                                             </h2>
-                                                            <div id="collapseFive2" class="accordion-collapse collapse" aria-labelledby="headingFive2" data-bs-parent="#accordionExample">
+                                                            <div id="collapseFive2" class="accordion-collapse collapse show" aria-labelledby="headingFive2" data-bs-parent="#accordionExample">
                                                               <div class="accordion-body">
                                                                   <div class="table-responsive">
                                                                       <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
@@ -3815,6 +3815,11 @@
 
                                                     </div>
 
+                                                </div>
+
+                                                <div class="col-xxl-12 col-lg-12 col-md-12">
+                                                    <label for="form-label">Total Amount</label>
+                                                    <input class="form-control" id="price_input" name="amount" disabled readonly value="{{$data->amount}}">
                                                 </div>
 
                                             </div>

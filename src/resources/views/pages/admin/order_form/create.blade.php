@@ -208,7 +208,8 @@
                                                                                     <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
                                                                                         <thead class="table-light">
                                                                                             <tr>
-                                                                                                <th scope="col" class="text-center" style="width: 33%">PRICE</th>
+                                                                                                <th scope="col" class="text-center" style="width: 33%">PRICE (&#8377; )</th>
+                                                                                                <th scope="col" class="text-center" style="width: 33%">COLOR</th>
                                                                                                 <th scope="col" class="text-center" style="width: 33%">QUANTITY</th>
                                                                                             </tr>
                                                                                         </thead>
@@ -224,7 +225,17 @@
                                                                                         <tbody>
                                                                                             <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <input class="form-control" disabled readonly value="Rs. 1.31">
+                                                                                                    <input class="form-control" disabled readonly value="1.31">
+                                                                                                </td>
+                                                                                                <td style="width: 33%">
+                                                                                                    <select class="form-control" name="pp_50_color" id="pp_50_color">
+                                                                                                        <option value="Black" {{ old('pp_50_color')=='Black' ? 'selected' : '' }}>Black</option>
+                                                                                                        <option value="White" {{ old('pp_50_color')=='White' ? 'selected' : '' }}>White</option>
+                                                                                                        <option value="Transparent" {{ old('pp_50_color')=='Transparent' ? 'selected' : '' }}>Transparent</option>
+                                                                                                    </select>
+                                                                                                    @error('pp_50_color')
+                                                                                                        <div class="invalid-message">{{ $message }}</div>
+                                                                                                    @enderror
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
                                                                                                     <select class="form-control" name="pp_50" id="pp_50">
@@ -249,7 +260,17 @@
                                                                                         <tbody>
                                                                                             <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <input class="form-control" disabled readonly value="Rs. 1.73">
+                                                                                                    <input class="form-control" disabled readonly value="1.73">
+                                                                                                </td>
+                                                                                                <td style="width: 33%">
+                                                                                                    <select class="form-control" name="pp_100_color" id="pp_100_color">
+                                                                                                        <option value="Black" {{ old('pp_100_color')=='Black' ? 'selected' : '' }}>Black</option>
+                                                                                                        <option value="White" {{ old('pp_100_color')=='White' ? 'selected' : '' }}>White</option>
+                                                                                                        <option value="Transparent" {{ old('pp_100_color')=='Transparent' ? 'selected' : '' }}>Transparent</option>
+                                                                                                    </select>
+                                                                                                    @error('pp_100_color')
+                                                                                                        <div class="invalid-message">{{ $message }}</div>
+                                                                                                    @enderror
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
                                                                                                     <select class="form-control" name="pp_100" id="pp_100">
@@ -273,7 +294,17 @@
                                                                                         <tbody>
                                                                                             <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <input class="form-control" disabled readonly value="Rs. 2.21">
+                                                                                                    <input class="form-control" disabled readonly value="2.21">
+                                                                                                </td>
+                                                                                                <td style="width: 33%">
+                                                                                                    <select class="form-control" name="pp_150_color" id="pp_150_color">
+                                                                                                        <option value="Black" {{ old('pp_150_color')=='Black' ? 'selected' : '' }}>Black</option>
+                                                                                                        <option value="White" {{ old('pp_150_color')=='White' ? 'selected' : '' }}>White</option>
+                                                                                                        <option value="Transparent" {{ old('pp_150_color')=='Transparent' ? 'selected' : '' }}>Transparent</option>
+                                                                                                    </select>
+                                                                                                    @error('pp_150_color')
+                                                                                                        <div class="invalid-message">{{ $message }}</div>
+                                                                                                    @enderror
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
                                                                                                     <select class="form-control" name="pp_150" id="pp_150">
@@ -297,7 +328,17 @@
                                                                                         <tbody>
                                                                                             <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <input class="form-control" disabled readonly value="Rs. 2.78">
+                                                                                                    <input class="form-control" disabled readonly value="2.78">
+                                                                                                </td>
+                                                                                                <td style="width: 33%">
+                                                                                                    <select class="form-control" name="pp_200_color" id="pp_200_color">
+                                                                                                        <option value="Black" {{ old('pp_200_color')=='Black' ? 'selected' : '' }}>Black</option>
+                                                                                                        <option value="White" {{ old('pp_200_color')=='White' ? 'selected' : '' }}>White</option>
+                                                                                                        <option value="Transparent" {{ old('pp_200_color')=='Transparent' ? 'selected' : '' }}>Transparent</option>
+                                                                                                    </select>
+                                                                                                    @error('pp_200_color')
+                                                                                                        <div class="invalid-message">{{ $message }}</div>
+                                                                                                    @enderror
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
                                                                                                     <select class="form-control" name="pp_200_g" id="pp_200_g">
@@ -321,7 +362,17 @@
                                                                                         <tbody>
                                                                                             <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <input class="form-control" disabled readonly value="Rs. 2.89">
+                                                                                                    <input class="form-control" disabled readonly value="2.89">
+                                                                                                </td>
+                                                                                                <td style="width: 33%">
+                                                                                                    <select class="form-control" name="pp_250_color" id="pp_250_color">
+                                                                                                        <option value="Black" {{ old('pp_250_color')=='Black' ? 'selected' : '' }}>Black</option>
+                                                                                                        <option value="White" {{ old('pp_250_color')=='White' ? 'selected' : '' }}>White</option>
+                                                                                                        <option value="Transparent" {{ old('pp_250_color')=='Transparent' ? 'selected' : '' }}>Transparent</option>
+                                                                                                    </select>
+                                                                                                    @error('pp_250_color')
+                                                                                                        <div class="invalid-message">{{ $message }}</div>
+                                                                                                    @enderror
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
                                                                                                     <select class="form-control" name="pp_250" id="pp_250">
@@ -346,7 +397,17 @@
                                                                                         <tbody>
                                                                                             <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <input class="form-control" disabled readonly value="Rs. 4.04">
+                                                                                                    <input class="form-control" disabled readonly value="4.04">
+                                                                                                </td>
+                                                                                                <td style="width: 33%">
+                                                                                                    <select class="form-control" name="pp_300_color" id="pp_300_color">
+                                                                                                        <option value="Black" {{ old('pp_300_color')=='Black' ? 'selected' : '' }}>Black</option>
+                                                                                                        <option value="White" {{ old('pp_300_color')=='White' ? 'selected' : '' }}>White</option>
+                                                                                                        <option value="Transparent" {{ old('pp_300_color')=='Transparent' ? 'selected' : '' }}>Transparent</option>
+                                                                                                    </select>
+                                                                                                    @error('pp_300_color')
+                                                                                                        <div class="invalid-message">{{ $message }}</div>
+                                                                                                    @enderror
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
                                                                                                     <select class="form-control" name="pp_300" id="pp_300">
@@ -371,7 +432,17 @@
                                                                                         <tbody>
                                                                                             <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <input class="form-control" disabled readonly value="Rs. 3.62">
+                                                                                                    <input class="form-control" disabled readonly value="3.62">
+                                                                                                </td>
+                                                                                                <td style="width: 33%">
+                                                                                                    <select class="form-control" name="pp_500_g_color" id="pp_500_g_color">
+                                                                                                        <option value="Black" {{ old('pp_500_g_color')=='Black' ? 'selected' : '' }}>Black</option>
+                                                                                                        <option value="White" {{ old('pp_500_g_color')=='White' ? 'selected' : '' }}>White</option>
+                                                                                                        <option value="Transparent" {{ old('pp_500_g_color')=='Transparent' ? 'selected' : '' }}>Transparent</option>
+                                                                                                    </select>
+                                                                                                    @error('pp_500_g_color')
+                                                                                                        <div class="invalid-message">{{ $message }}</div>
+                                                                                                    @enderror
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
                                                                                                     <select class="form-control" name="pp_500_g" id="pp_500_g">
@@ -396,7 +467,17 @@
                                                                                         <tbody>
                                                                                             <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <input class="form-control" disabled readonly value="Rs. 3.83">
+                                                                                                    <input class="form-control" disabled readonly value="3.83">
+                                                                                                </td>
+                                                                                                <td style="width: 33%">
+                                                                                                    <select class="form-control" name="pp_500_color" id="pp_500_color">
+                                                                                                        <option value="Black" {{ old('pp_500_color')=='Black' ? 'selected' : '' }}>Black</option>
+                                                                                                        <option value="White" {{ old('pp_500_color')=='White' ? 'selected' : '' }}>White</option>
+                                                                                                        <option value="Transparent" {{ old('pp_500_color')=='Transparent' ? 'selected' : '' }}>Transparent</option>
+                                                                                                    </select>
+                                                                                                    @error('pp_500_color')
+                                                                                                        <div class="invalid-message">{{ $message }}</div>
+                                                                                                    @enderror
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
                                                                                                     <select class="form-control" name="pp_500" id="pp_500">
@@ -415,13 +496,23 @@
                                                                                 </td>
                                                                             </tr>
                                                                             <tr>
-                                                                                <td><a href="#" class="fw-medium text-center">750ml Tall</a></td>
+                                                                                <td><a href="#" class="fw-medium text-center">750ml <br>Tall</a></td>
                                                                                 <td>
                                                                                     <table class="table align-middle table-nowrap mb-0">
                                                                                         <tbody>
                                                                                             <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <input class="form-control" disabled readonly value="Rs. 5.51">
+                                                                                                    <input class="form-control" disabled readonly value="5.51">
+                                                                                                </td>
+                                                                                                <td style="width: 33%">
+                                                                                                    <select class="form-control" name="pp_750_color" id="pp_750_color">
+                                                                                                        <option value="Black" {{ old('pp_750_color')=='Black' ? 'selected' : '' }}>Black</option>
+                                                                                                        <option value="White" {{ old('pp_750_color')=='White' ? 'selected' : '' }}>White</option>
+                                                                                                        <option value="Transparent" {{ old('pp_750_color')=='Transparent' ? 'selected' : '' }}>Transparent</option>
+                                                                                                    </select>
+                                                                                                    @error('pp_750_color')
+                                                                                                        <div class="invalid-message">{{ $message }}</div>
+                                                                                                    @enderror
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
                                                                                                     <select class="form-control" name="pp_750" id="pp_750">
@@ -440,13 +531,23 @@
                                                                                 </td>
                                                                             </tr>
                                                                             <tr>
-                                                                                <td><a href="#" class="fw-medium text-center">750ml Flat</a></td>
+                                                                                <td><a href="#" class="fw-medium text-center">750ml <br>Flat</a></td>
                                                                                 <td>
                                                                                     <table class="table align-middle table-nowrap mb-0">
                                                                                         <tbody>
                                                                                             <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <input class="form-control" disabled readonly value="Rs. 5.62">
+                                                                                                    <input class="form-control" disabled readonly value="5.62">
+                                                                                                </td>
+                                                                                                <td style="width: 33%">
+                                                                                                    <select class="form-control" name="pp_750_flat_color" id="pp_750_flat_color">
+                                                                                                        <option value="Black" {{ old('pp_750_flat_color')=='Black' ? 'selected' : '' }}>Black</option>
+                                                                                                        <option value="White" {{ old('pp_750_flat_color')=='White' ? 'selected' : '' }}>White</option>
+                                                                                                        <option value="Transparent" {{ old('pp_750_flat_color')=='Transparent' ? 'selected' : '' }}>Transparent</option>
+                                                                                                    </select>
+                                                                                                    @error('pp_750_flat_color')
+                                                                                                        <div class="invalid-message">{{ $message }}</div>
+                                                                                                    @enderror
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
                                                                                                     <select class="form-control" name="pp_750_flat" id="pp_750_flat">
@@ -465,13 +566,23 @@
                                                                                 </td>
                                                                             </tr>
                                                                             <tr>
-                                                                                <td><a href="#" class="fw-medium text-center">1000ml flat</a></td>
+                                                                                <td><a href="#" class="fw-medium text-center">1000ml <br>flat</a></td>
                                                                                 <td>
                                                                                     <table class="table align-middle table-nowrap mb-0">
                                                                                         <tbody>
                                                                                             <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <input class="form-control" disabled readonly value="Rs. 7.04">
+                                                                                                    <input class="form-control" disabled readonly value="7.04">
+                                                                                                </td>
+                                                                                                <td style="width: 33%">
+                                                                                                    <select class="form-control" name="pp_1000_color" id="pp_1000_color">
+                                                                                                        <option value="Black" {{ old('pp_1000_color')=='Black' ? 'selected' : '' }}>Black</option>
+                                                                                                        <option value="White" {{ old('pp_1000_color')=='White' ? 'selected' : '' }}>White</option>
+                                                                                                        <option value="Transparent" {{ old('pp_1000_color')=='Transparent' ? 'selected' : '' }}>Transparent</option>
+                                                                                                    </select>
+                                                                                                    @error('pp_1000_color')
+                                                                                                        <div class="invalid-message">{{ $message }}</div>
+                                                                                                    @enderror
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
                                                                                                     <select class="form-control" name="pp_1000" id="pp_1000">
@@ -496,7 +607,17 @@
                                                                                         <tbody>
                                                                                             <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <input class="form-control" disabled readonly value="Rs. 5.99">
+                                                                                                    <input class="form-control" disabled readonly value="5.99">
+                                                                                                </td>
+                                                                                                <td style="width: 33%">
+                                                                                                    <select class="form-control" name="pp_500_rec_color" id="pp_500_rec_color">
+                                                                                                        <option value="Black" {{ old('pp_500_rec_color')=='Black' ? 'selected' : '' }}>Black</option>
+                                                                                                        <option value="White" {{ old('pp_500_rec_color')=='White' ? 'selected' : '' }}>White</option>
+                                                                                                        <option value="Transparent" {{ old('pp_500_rec_color')=='Transparent' ? 'selected' : '' }}>Transparent</option>
+                                                                                                    </select>
+                                                                                                    @error('pp_500_rec_color')
+                                                                                                        <div class="invalid-message">{{ $message }}</div>
+                                                                                                    @enderror
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
                                                                                                     <select class="form-control" name="pp_500_rec" id="pp_500_rec">
@@ -521,7 +642,17 @@
                                                                                         <tbody>
                                                                                             <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <input class="form-control" disabled readonly value="Rs. 6.20">
+                                                                                                    <input class="form-control" disabled readonly value="6.20">
+                                                                                                </td>
+                                                                                                <td style="width: 33%">
+                                                                                                    <select class="form-control" name="pp_650_rec_color" id="pp_650_rec_color">
+                                                                                                        <option value="Black" {{ old('pp_650_rec_color')=='Black' ? 'selected' : '' }}>Black</option>
+                                                                                                        <option value="White" {{ old('pp_650_rec_color')=='White' ? 'selected' : '' }}>White</option>
+                                                                                                        <option value="Transparent" {{ old('pp_650_rec_color')=='Transparent' ? 'selected' : '' }}>Transparent</option>
+                                                                                                    </select>
+                                                                                                    @error('pp_650_rec_color')
+                                                                                                        <div class="invalid-message">{{ $message }}</div>
+                                                                                                    @enderror
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
                                                                                                     <select class="form-control" name="pp_650_rec" id="pp_650_rec">
@@ -546,7 +677,17 @@
                                                                                         <tbody>
                                                                                             <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <input class="form-control" disabled readonly value="Rs. 6.51">
+                                                                                                    <input class="form-control" disabled readonly value="6.51">
+                                                                                                </td>
+                                                                                                <td style="width: 33%">
+                                                                                                    <select class="form-control" name="pp_750_rec_color" id="pp_750_rec_color">
+                                                                                                        <option value="Black" {{ old('pp_750_rec_color')=='Black' ? 'selected' : '' }}>Black</option>
+                                                                                                        <option value="White" {{ old('pp_750_rec_color')=='White' ? 'selected' : '' }}>White</option>
+                                                                                                        <option value="Transparent" {{ old('pp_750_rec_color')=='Transparent' ? 'selected' : '' }}>Transparent</option>
+                                                                                                    </select>
+                                                                                                    @error('pp_750_rec_color')
+                                                                                                        <div class="invalid-message">{{ $message }}</div>
+                                                                                                    @enderror
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
                                                                                                     <select class="form-control" name="pp_750_rec" id="pp_750_rec">
@@ -571,7 +712,17 @@
                                                                                         <tbody>
                                                                                             <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <input class="form-control" disabled readonly value="Rs. 6.83">
+                                                                                                    <input class="form-control" disabled readonly value="6.83">
+                                                                                                </td>
+                                                                                                <td style="width: 33%">
+                                                                                                    <select class="form-control" name="pp_1000_rec_color" id="pp_1000_rec_color">
+                                                                                                        <option value="Black" {{ old('pp_1000_rec_color')=='Black' ? 'selected' : '' }}>Black</option>
+                                                                                                        <option value="White" {{ old('pp_1000_rec_color')=='White' ? 'selected' : '' }}>White</option>
+                                                                                                        <option value="Transparent" {{ old('pp_1000_rec_color')=='Transparent' ? 'selected' : '' }}>Transparent</option>
+                                                                                                    </select>
+                                                                                                    @error('pp_1000_rec_color')
+                                                                                                        <div class="invalid-message">{{ $message }}</div>
+                                                                                                    @enderror
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
                                                                                                     <select class="form-control" name="pp_1000_rec" id="pp_1000_rec">
@@ -596,7 +747,17 @@
                                                                                         <tbody>
                                                                                             <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <input class="form-control" disabled readonly value="Rs. 5.78">
+                                                                                                    <input class="form-control" disabled readonly value="5.78">
+                                                                                                </td>
+                                                                                                <td style="width: 33%">
+                                                                                                    <select class="form-control" name="pp_650_bowl_color" id="pp_650_bowl_color">
+                                                                                                        <option value="Black" {{ old('pp_650_bowl_color')=='Black' ? 'selected' : '' }}>Black</option>
+                                                                                                        <option value="White" {{ old('pp_650_bowl_color')=='White' ? 'selected' : '' }}>White</option>
+                                                                                                        <option value="Transparent" {{ old('pp_650_bowl_color')=='Transparent' ? 'selected' : '' }}>Transparent</option>
+                                                                                                    </select>
+                                                                                                    @error('pp_650_bowl_color')
+                                                                                                        <div class="invalid-message">{{ $message }}</div>
+                                                                                                    @enderror
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
                                                                                                     <select class="form-control" name="pp_650_bowl" id="pp_650_bowl">
@@ -643,7 +804,7 @@
                                                                                       <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
                                                                                           <thead class="table-light">
                                                                                               <tr>
-                                                                                                  <th scope="col" class="text-center" style="width: 33%">PRICE</th>
+                                                                                                  <th scope="col" class="text-center" style="width: 33%">PRICE (&#8377; )</th>
                                                                                                   <th scope="col" class="text-center" style="width: 33%">QUANTITY</th>
                                                                                               </tr>
                                                                                           </thead>
@@ -659,7 +820,7 @@
                                                                                           <tbody>
                                                                                               <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <input class="form-control" disabled readonly value="Rs. 1.39">
+                                                                                                    <input class="form-control" disabled readonly value="1.39">
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
                                                                                                       <select class="form-control" name="al_container_with_lid_250" id="al_container_with_lid_250">
@@ -683,7 +844,7 @@
                                                                                           <tbody>
                                                                                               <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <input class="form-control" disabled readonly value="Rs. 1.85">
+                                                                                                    <input class="form-control" disabled readonly value="1.85">
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
                                                                                                       <select class="form-control" name="al_container_with_lid_450" id="al_container_with_lid_450">
@@ -708,7 +869,7 @@
                                                                                           <tbody>
                                                                                               <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <input class="form-control" disabled readonly value="Rs. 2.77">
+                                                                                                    <input class="form-control" disabled readonly value="2.77">
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
                                                                                                       <select class="form-control" name="al_container_with_lid_600" id="al_container_with_lid_600">
@@ -733,7 +894,7 @@
                                                                                           <tbody>
                                                                                               <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <input class="form-control" disabled readonly value="Rs. 2.77">
+                                                                                                    <input class="form-control" disabled readonly value="2.77">
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
                                                                                                       <select class="form-control" name="al_container_with_lid_750" id="al_container_with_lid_750">
@@ -758,7 +919,7 @@
                                                                                           <tbody>
                                                                                               <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <input class="form-control" disabled readonly value="Rs. 2.77">
+                                                                                                    <input class="form-control" disabled readonly value="2.77">
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
                                                                                                       <select class="form-control" name="al_container_with_lid_450_premium" id="al_container_with_lid_450_premium">
@@ -783,7 +944,7 @@
                                                                                           <tbody>
                                                                                               <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <input class="form-control" disabled readonly value="Rs. 4.15">
+                                                                                                    <input class="form-control" disabled readonly value="4.15">
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
                                                                                                       <select class="form-control" name="al_container_with_lid_750_premium" id="al_container_with_lid_750_premium">
@@ -831,7 +992,7 @@
                                                                                       <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
                                                                                           <thead class="table-light">
                                                                                               <tr>
-                                                                                                  <th scope="col" class="text-center" style="width: 33%">PRICE</th>
+                                                                                                  <th scope="col" class="text-center" style="width: 33%">PRICE (&#8377; )</th>
                                                                                                   <th scope="col" class="text-center" style="width: 33%">QUANTITY</th>
                                                                                               </tr>
                                                                                           </thead>
@@ -847,7 +1008,7 @@
                                                                                           <tbody>
                                                                                               <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <input class="form-control" disabled readonly value="Rs. 420">
+                                                                                                    <input class="form-control" disabled readonly value="420">
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
                                                                                                       <select class="form-control" name="aluminium_1kg_gross" id="aluminium_1kg_gross">
@@ -872,7 +1033,7 @@
                                                                                           <tbody>
                                                                                               <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <input class="form-control" disabled readonly value="Rs. 536">
+                                                                                                    <input class="form-control" disabled readonly value="536">
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
                                                                                                       <select class="form-control" name="aluminium_1kg_net" id="aluminium_1kg_net">
@@ -921,7 +1082,8 @@
                                                                                       <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
                                                                                           <thead class="table-light">
                                                                                               <tr>
-                                                                                                  <th scope="col" class="text-center" style="width: 33%">PRICE</th>
+                                                                                                  <th scope="col" class="text-center" style="width: 33%">PRICE (&#8377; )</th>
+                                                                                                  <th scope="col" class="text-center" style="width: 33%">COLOR</th>
                                                                                                   <th scope="col" class="text-center" style="width: 33%">QUANTITY</th>
                                                                                               </tr>
                                                                                           </thead>
@@ -931,14 +1093,23 @@
                                                                           </thead>
                                                                           <tbody>
                                                                               <tr>
-                                                                                  <td><a href="#" class="fw-medium text-center">2CP Tray</a></td>
+                                                                                  <td><a href="#" class="fw-medium text-center">2CP <br>Tray</a></td>
                                                                                   <td>
-                                                                                      <table class="table align-middle table-nowrap mb-0">
+                                                                                      <table class="table align-middle table-nowrap mb-0 w-100">
                                                                                           <tbody>
                                                                                               <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <input class="form-control" disabled readonly value="Rs. 6.13">
+                                                                                                    <input class="form-control" disabled readonly value="6.13">
                                                                                                 </td>
+                                                                                                  <td style="width: 33%">
+                                                                                                      <select class="form-control" name="compartment_2cp_color" id="compartment_2cp_color">
+                                                                                                          <option value="White" {{ old('compartment_2cp_color')=='White' ? 'selected' : '' }}>White</option>
+                                                                                                          <option value="Black" {{ old('compartment_2cp_color')=='Black' ? 'selected' : '' }}>Black</option>
+                                                                                                      </select>
+                                                                                                      @error('compartment_2cp_color')
+                                                                                                          <div class="invalid-message">{{ $message }}</div>
+                                                                                                      @enderror
+                                                                                                  </td>
                                                                                                   <td style="width: 33%">
                                                                                                       <select class="form-control" name="compartment_2cp" id="compartment_2cp">
                                                                                                           @for($i = 0; $i <= 10000; $i+=500)
@@ -955,13 +1126,22 @@
                                                                                   </td>
                                                                               </tr>
                                                                               <tr>
-                                                                                  <td><a href="#" class="fw-medium text-center">3CP Tray</a></td>
+                                                                                  <td><a href="#" class="fw-medium text-center">3CP <br>Tray</a></td>
                                                                                   <td>
                                                                                       <table class="table align-middle table-nowrap mb-0">
                                                                                           <tbody>
                                                                                               <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <input class="form-control" disabled readonly value="Rs. 6.13">
+                                                                                                    <input class="form-control" disabled readonly value="6.13">
+                                                                                                </td>
+                                                                                                <td style="width: 33%">
+                                                                                                    <select class="form-control" name="compartment_3cp_color" id="compartment_3cp_color">
+                                                                                                        <option value="White" {{ old('compartment_3cp_color')=='White' ? 'selected' : '' }}>White</option>
+                                                                                                        <option value="Black" {{ old('compartment_3cp_color')=='Black' ? 'selected' : '' }}>Black</option>
+                                                                                                    </select>
+                                                                                                    @error('compartment_3cp_color')
+                                                                                                        <div class="invalid-message">{{ $message }}</div>
+                                                                                                    @enderror
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
                                                                                                       <select class="form-control" name="compartment_3cp" id="compartment_3cp">
@@ -979,13 +1159,22 @@
                                                                                   </td>
                                                                               </tr>
                                                                               <tr>
-                                                                                  <td><a href="#" class="fw-medium text-center">3CP xl Tray</a></td>
+                                                                                  <td><a href="#" class="fw-medium text-center">3CP <br>xl Tray</a></td>
                                                                                   <td>
                                                                                       <table class="table align-middle table-nowrap mb-0">
                                                                                           <tbody>
                                                                                               <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <input class="form-control" disabled readonly value="Rs. 7.71">
+                                                                                                    <input class="form-control" disabled readonly value="7.71">
+                                                                                                </td>
+                                                                                                <td style="width: 33%">
+                                                                                                    <select class="form-control" name="compartment_3cp_xl_color" id="compartment_3cp_xl_color">
+                                                                                                        <option value="White" {{ old('compartment_3cp_xl_color')=='White' ? 'selected' : '' }}>White</option>
+                                                                                                        <option value="Black" {{ old('compartment_3cp_xl_color')=='Black' ? 'selected' : '' }}>Black</option>
+                                                                                                    </select>
+                                                                                                    @error('compartment_3cp_xl_color')
+                                                                                                        <div class="invalid-message">{{ $message }}</div>
+                                                                                                    @enderror
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
                                                                                                       <select class="form-control" name="compartment_3cp_xl" id="compartment_3cp_xl">
@@ -1003,13 +1192,22 @@
                                                                                   </td>
                                                                               </tr>
                                                                               <tr>
-                                                                                  <td><a href="#" class="fw-medium text-center">4CP Tray</a></td>
+                                                                                  <td><a href="#" class="fw-medium text-center">4CP <br>Tray</a></td>
                                                                                   <td>
                                                                                       <table class="table align-middle table-nowrap mb-0">
                                                                                           <tbody>
                                                                                               <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <input class="form-control" disabled readonly value="Rs. 4.79">
+                                                                                                    <input class="form-control" disabled readonly value="7.79">
+                                                                                                </td>
+                                                                                                <td style="width: 33%">
+                                                                                                    <select class="form-control" name="compartment_4cp_color" id="compartment_4cp_color">
+                                                                                                        <option value="White" {{ old('compartment_4cp_color')=='White' ? 'selected' : '' }}>White</option>
+                                                                                                        <option value="Black" {{ old('compartment_4cp_color')=='Black' ? 'selected' : '' }}>Black</option>
+                                                                                                    </select>
+                                                                                                    @error('compartment_4cp_color')
+                                                                                                        <div class="invalid-message">{{ $message }}</div>
+                                                                                                    @enderror
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
                                                                                                       <select class="form-control" name="compartment_4cp" id="compartment_4cp">
@@ -1028,13 +1226,22 @@
                                                                                   </td>
                                                                               </tr>
                                                                               <tr>
-                                                                                  <td><a href="#" class="fw-medium text-center">5CP Tray</a></td>
+                                                                                  <td><a href="#" class="fw-medium text-center">5CP <br>Tray</a></td>
                                                                                   <td>
                                                                                       <table class="table align-middle table-nowrap mb-0">
                                                                                           <tbody>
                                                                                               <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <input class="form-control" disabled readonly value="Rs. 9.39">
+                                                                                                    <input class="form-control" disabled readonly value="9.39">
+                                                                                                </td>
+                                                                                                <td style="width: 33%">
+                                                                                                    <select class="form-control" name="compartment_5cp_color" id="compartment_5cp_color">
+                                                                                                        <option value="White" {{ old('compartment_5cp_color')=='White' ? 'selected' : '' }}>White</option>
+                                                                                                        <option value="Black" {{ old('compartment_5cp_color')=='Black' ? 'selected' : '' }}>Black</option>
+                                                                                                    </select>
+                                                                                                    @error('compartment_5cp_color')
+                                                                                                        <div class="invalid-message">{{ $message }}</div>
+                                                                                                    @enderror
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
                                                                                                       <select class="form-control" name="compartment_5cp" id="compartment_5cp">
@@ -1053,13 +1260,22 @@
                                                                                   </td>
                                                                               </tr>
                                                                               <tr>
-                                                                                  <td><a href="#" class="fw-medium text-center">6CP Tray</a></td>
+                                                                                  <td><a href="#" class="fw-medium text-center">6CP <br>Tray</a></td>
                                                                                   <td>
                                                                                       <table class="table align-middle table-nowrap mb-0">
                                                                                           <tbody>
                                                                                               <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <input class="form-control" disabled readonly value="Rs. 9.74">
+                                                                                                    <input class="form-control" disabled readonly value="9.74">
+                                                                                                </td>
+                                                                                                <td style="width: 33%">
+                                                                                                    <select class="form-control" name="compartment_6cp_color" id="compartment_6cp_color">
+                                                                                                        <option value="White" {{ old('compartment_6cp_color')=='White' ? 'selected' : '' }}>White</option>
+                                                                                                        <option value="Black" {{ old('compartment_6cp_color')=='Black' ? 'selected' : '' }}>Black</option>
+                                                                                                    </select>
+                                                                                                    @error('compartment_6cp_color')
+                                                                                                        <div class="invalid-message">{{ $message }}</div>
+                                                                                                    @enderror
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
                                                                                                       <select class="form-control" name="compartment_6cp" id="compartment_6cp">
@@ -1078,13 +1294,22 @@
                                                                                   </td>
                                                                               </tr>
                                                                               <tr>
-                                                                                  <td><a href="#" class="fw-medium text-center">8CP Tray</a></td>
+                                                                                  <td><a href="#" class="fw-medium text-center">8CP <br>Tray</a></td>
                                                                                   <td>
                                                                                       <table class="table align-middle table-nowrap mb-0">
                                                                                           <tbody>
                                                                                               <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <input class="form-control" disabled readonly value="Rs. 12.37">
+                                                                                                    <input class="form-control" disabled readonly value="12.37">
+                                                                                                </td>
+                                                                                                <td style="width: 33%">
+                                                                                                    <select class="form-control" name="compartment_8cp_color" id="compartment_8cp_color">
+                                                                                                        <option value="White" {{ old('compartment_8cp_color')=='White' ? 'selected' : '' }}>White</option>
+                                                                                                        <option value="Black" {{ old('compartment_8cp_color')=='Black' ? 'selected' : '' }}>Black</option>
+                                                                                                    </select>
+                                                                                                    @error('compartment_8cp_color')
+                                                                                                        <div class="invalid-message">{{ $message }}</div>
+                                                                                                    @enderror
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
                                                                                                       <select class="form-control" name="compartment_8cp" id="compartment_8cp">
@@ -1103,13 +1328,22 @@
                                                                                   </td>
                                                                               </tr>
                                                                               <tr>
-                                                                                  <td><a href="#" class="fw-medium text-center">750 bow</a></td>
+                                                                                  <td><a href="#" class="fw-medium text-center">750 <br>bow</a></td>
                                                                                   <td>
                                                                                       <table class="table align-middle table-nowrap mb-0">
                                                                                           <tbody>
                                                                                               <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <input class="form-control" disabled readonly value="Rs. 6.57">
+                                                                                                    <input class="form-control" disabled readonly value="6.57">
+                                                                                                </td>
+                                                                                                <td style="width: 33%">
+                                                                                                    <select class="form-control" name="compartment_750_bow_color" id="compartment_750_bow_color">
+                                                                                                        <option value="White" {{ old('compartment_750_bow_color')=='White' ? 'selected' : '' }}>White</option>
+                                                                                                        <option value="Black" {{ old('compartment_750_bow_color')=='Black' ? 'selected' : '' }}>Black</option>
+                                                                                                    </select>
+                                                                                                    @error('compartment_750_bow_color')
+                                                                                                        <div class="invalid-message">{{ $message }}</div>
+                                                                                                    @enderror
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
                                                                                                       <select class="form-control" name="compartment_750_bow" id="compartment_750_bow">
@@ -1156,7 +1390,7 @@
                                                                                       <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
                                                                                           <thead class="table-light">
                                                                                               <tr>
-                                                                                                  <th scope="col" class="text-center" style="width: 33%">PRICE</th>
+                                                                                                  <th scope="col" class="text-center" style="width: 33%">PRICE (&#8377; )</th>
                                                                                                   <th scope="col" class="text-center" style="width: 33%">QUANTITY</th>
                                                                                               </tr>
                                                                                           </thead>
@@ -1172,7 +1406,7 @@
                                                                                         <tbody>
                                                                                             <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <input class="form-control" disabled readonly value="Rs. 2.79">
+                                                                                                    <input class="form-control" disabled readonly value="2.79">
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
                                                                                                     <select class="form-control" name="p_box_sandwich" id="p_box_sandwich">
@@ -1198,7 +1432,7 @@
                                                                                           <tbody>
                                                                                               <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <input class="form-control" disabled readonly value="Rs. 1.98">
+                                                                                                    <input class="form-control" disabled readonly value="1.98">
                                                                                                   </td>
                                                                                                   <td style="width: 33%">
                                                                                                       <select class="form-control" name="p_box_dosa" id="p_box_dosa">
@@ -1223,7 +1457,7 @@
                                                                                         <tbody>
                                                                                             <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <input class="form-control" disabled readonly value="Rs. 1.67">
+                                                                                                    <input class="form-control" disabled readonly value="1.67">
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
                                                                                                     <select class="form-control" name="p_box_idly" id="p_box_idly">
@@ -1248,7 +1482,7 @@
                                                                                         <tbody>
                                                                                             <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <input class="form-control" disabled readonly value="Rs. 2.29">
+                                                                                                    <input class="form-control" disabled readonly value="2.29">
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
                                                                                                     <select class="form-control" name="p_box_idly_vada" id="p_box_idly_vada">
@@ -1296,8 +1530,8 @@
                                                                                         <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
                                                                                             <thead class="table-light">
                                                                                                 <tr>
-                                                                                                    <th scope="col" class="text-center" style="width: 33%">PRICE/KG<br>24BF PRICE</th>
-                                                                                                    <th scope="col" class="text-center" style="width: 33%">QUANTITY</th>
+                                                                                                    <th scope="col" class="text-center" style="width: 33%">PRICE (&#8377; )/KG<br>24BF PRICE (&#8377; )</th>
+                                                                                                    <th scope="col" class="text-center" style="width: 33%">QUANTITY (Kg)</th>
                                                                                                 </tr>
                                                                                             </thead>
                                                                                         </table>
@@ -1312,7 +1546,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="Rs. 70.665">
+                                                                                                        <input class="form-control" disabled readonly value="60">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select class="form-control" name="p_bag_small" id="p_bag_small">
@@ -1336,7 +1570,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="Rs. 70.665">
+                                                                                                        <input class="form-control" disabled readonly value="60">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select class="form-control" name="p_bag_medium" id="p_bag_medium">
@@ -1361,7 +1595,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="Rs. 70.665">
+                                                                                                        <input class="form-control" disabled readonly value="60">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select class="form-control" name="p_bag_large" id="p_bag_large">
@@ -1386,7 +1620,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="Rs. 70.665">
+                                                                                                        <input class="form-control" disabled readonly value="60">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select class="form-control" name="p_bag_x_large" id="p_bag_x_large">
@@ -1411,7 +1645,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="Rs. 70.665">
+                                                                                                        <input class="form-control" disabled readonly value="60">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select class="form-control" name="p_bag_xx_large" id="p_bag_xx_large">
@@ -1458,7 +1692,7 @@
                                                                                         <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
                                                                                             <thead class="table-light">
                                                                                                 <tr>
-                                                                                                    <th scope="col" class="text-center" style="width: 33%">PRICE</th>
+                                                                                                    <th scope="col" class="text-center" style="width: 33%">PRICE (&#8377; )</th>
                                                                                                     <th scope="col" class="text-center" style="width: 33%">QUANTITY</th>
                                                                                                 </tr>
                                                                                             </thead>
@@ -1474,11 +1708,11 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="Rs. 4.58">
+                                                                                                        <input class="form-control" disabled readonly value="4.58">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select class="form-control" name="cloth_bag_10_11" id="cloth_bag_10_11">
-                                                                                                            @for($i = 0; $i <= 1000; $i+=5)
+                                                                                                            @for($i = 0; $i <= 1000; $i+=100)
                                                                                                             <option value="{{$i}}" {{ old('cloth_bag_10_11')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
                                                                                                         </select>
@@ -1499,11 +1733,11 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="Rs. 5.08">
+                                                                                                        <input class="form-control" disabled readonly value="5.08">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select class="form-control" name="cloth_bag_11_12" id="cloth_bag_11_12">
-                                                                                                            @for($i = 0; $i <= 1000; $i+=5)
+                                                                                                            @for($i = 0; $i <= 1000; $i+=100)
                                                                                                             <option value="{{$i}}" {{ old('cloth_bag_11_12')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
                                                                                                         </select>
@@ -1524,11 +1758,11 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="Rs. 5.31">
+                                                                                                        <input class="form-control" disabled readonly value="5.31">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select class="form-control" name="cloth_bag_12_12" id="cloth_bag_12_12">
-                                                                                                            @for($i = 0; $i <= 1000; $i+=5)
+                                                                                                            @for($i = 0; $i <= 1000; $i+=100)
                                                                                                             <option value="{{$i}}" {{ old('cloth_bag_12_12')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
                                                                                                         </select>
@@ -1549,11 +1783,11 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="Rs. 5.82">
+                                                                                                        <input class="form-control" disabled readonly value="5.82">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select class="form-control" name="cloth_bag_11_14" id="cloth_bag_11_14">
-                                                                                                            @for($i = 0; $i <= 1000; $i+=5)
+                                                                                                            @for($i = 0; $i <= 1000; $i+=100)
                                                                                                             <option value="{{$i}}" {{ old('cloth_bag_11_14')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
                                                                                                         </select>
@@ -1574,11 +1808,11 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="Rs. 6.94">
+                                                                                                        <input class="form-control" disabled readonly value="6.94">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select class="form-control" name="cloth_bag_13_16" id="cloth_bag_13_16">
-                                                                                                            @for($i = 0; $i <= 1000; $i+=5)
+                                                                                                            @for($i = 0; $i <= 1000; $i+=100)
                                                                                                             <option value="{{$i}}" {{ old('cloth_bag_13_16')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
                                                                                                         </select>
@@ -1599,11 +1833,11 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="Rs. 8.18">
+                                                                                                        <input class="form-control" disabled readonly value="8.18">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select class="form-control" name="cloth_bag_15_18" id="cloth_bag_15_18">
-                                                                                                            @for($i = 0; $i <= 1000; $i+=5)
+                                                                                                            @for($i = 0; $i <= 1000; $i+=100)
                                                                                                             <option value="{{$i}}" {{ old('cloth_bag_15_18')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
                                                                                                         </select>
@@ -1624,11 +1858,11 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="Rs. 9.29">
+                                                                                                        <input class="form-control" disabled readonly value="9.29">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select class="form-control" name="cloth_bag_16_20" id="cloth_bag_16_20">
-                                                                                                            @for($i = 0; $i <= 1000; $i+=5)
+                                                                                                            @for($i = 0; $i <= 1000; $i+=100)
                                                                                                             <option value="{{$i}}" {{ old('cloth_bag_16_20')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
                                                                                                         </select>
@@ -1649,11 +1883,11 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="Rs. 10.61">
+                                                                                                        <input class="form-control" disabled readonly value="10.61">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select class="form-control" name="cloth_bag_18_20" id="cloth_bag_18_20">
-                                                                                                            @for($i = 0; $i <= 1000; $i+=5)
+                                                                                                            @for($i = 0; $i <= 1000; $i+=100)
                                                                                                             <option value="{{$i}}" {{ old('cloth_bag_18_20')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
                                                                                                         </select>
@@ -1674,11 +1908,11 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="Rs. 11.77">
+                                                                                                        <input class="form-control" disabled readonly value="11.77">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select class="form-control" name="cloth_bag_20_20" id="cloth_bag_20_20">
-                                                                                                            @for($i = 0; $i <= 1000; $i+=5)
+                                                                                                            @for($i = 0; $i <= 1000; $i+=100)
                                                                                                             <option value="{{$i}}" {{ old('cloth_bag_20_20')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
                                                                                                         </select>
@@ -1687,6 +1921,343 @@
                                                                                                         @enderror
                                                                                                     </td>
 
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header" id="headingFive3">
+                                                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive3" aria-expanded="false" aria-controls="collapseFive3">
+                                                                  <img
+                                                                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNP3az4rugbFmlXWxDrult3_2zwnuOCeuDHg&usqp=CAU"
+                                                                  alt=""
+                                                                  style="height:80px;object-fit:contain;margin-right:20px"
+                                                                  >
+                                                                  <br/>
+                                                                  GLOVES
+                                                              </button>
+                                                            </h2>
+                                                            <div id="collapseFive3" class="accordion-collapse collapse" aria-labelledby="headingFive3" data-bs-parent="#accordionExample">
+                                                              <div class="accordion-body">
+                                                                  <div class="table-responsive">
+                                                                      <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
+                                                                          <thead class="table-primary">
+                                                                              <tr>
+                                                                                  <th scope="col">ITEM</th>
+                                                                                  <th scope="col">
+                                                                                      <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
+                                                                                          <thead class="table-light">
+                                                                                              <tr>
+                                                                                                  <th scope="col" class="text-center" style="width: 33%">PRICE (&#8377; )</th>
+                                                                                                  <th scope="col" class="text-center" style="width: 33%">QUANTITY</th>
+                                                                                              </tr>
+                                                                                          </thead>
+                                                                                      </table>
+                                                                                  </th>
+                                                                              </tr>
+                                                                          </thead>
+                                                                          <tbody>
+                                                                              <tr>
+                                                                                  <td><a href="#" class="fw-medium text-center">Regular</a></td>
+                                                                                  <td>
+                                                                                      <table class="table align-middle table-nowrap mb-0">
+                                                                                          <tbody>
+                                                                                              <tr>
+                                                                                                <td style="width: 33%">
+                                                                                                    <input class="form-control" disabled readonly value="19.824">
+                                                                                                </td>
+                                                                                                  <td style="width: 33%">
+                                                                                                      <select class="form-control" name="gloves_regular" id="gloves_regular">
+                                                                                                          @for($i = 0; $i <= 5; $i+=1)
+                                                                                                          <option value="{{$i}}" {{ old('gloves_regular')==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                          @endfor
+                                                                                                      </select>
+                                                                                                      @error('gloves_regular')
+                                                                                                          <div class="invalid-message">{{ $message }}</div>
+                                                                                                      @enderror
+                                                                                                  </td>
+
+                                                                                              </tr>
+                                                                                          </tbody>
+                                                                                      </table>
+                                                                                  </td>
+                                                                              </tr>
+                                                                          </tbody>
+                                                                      </table>
+                                                                  </div>
+                                                              </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header" id="headingFour3">
+                                                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour3" aria-expanded="false" aria-controls="collapseFour3">
+                                                                  <img
+                                                                  src="https://cdn.shopify.com/s/files/1/0490/1447/2862/products/disposable-medical-head-cap-146524_grande.png?v=1613322470"
+                                                                  alt=""
+                                                                  style="height:80px;object-fit:contain;margin-right:20px"
+                                                                  >
+                                                                  <br/>
+                                                                  HEAD CAP
+                                                              </button>
+                                                            </h2>
+                                                            <div id="collapseFour3" class="accordion-collapse collapse" aria-labelledby="headingFour3" data-bs-parent="#accordionExample">
+                                                              <div class="accordion-body">
+                                                                  <div class="table-responsive">
+                                                                      <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
+                                                                          <thead class="table-primary">
+                                                                              <tr>
+                                                                                  <th scope="col">ITEM</th>
+                                                                                  <th scope="col">
+                                                                                      <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
+                                                                                          <thead class="table-light">
+                                                                                              <tr>
+                                                                                                  <th scope="col" class="text-center" style="width: 33%">PRICE (&#8377; )</th>
+                                                                                                  <th scope="col" class="text-center" style="width: 33%">QUANTITY</th>
+                                                                                              </tr>
+                                                                                          </thead>
+                                                                                      </table>
+                                                                                  </th>
+                                                                              </tr>
+                                                                          </thead>
+                                                                          <tbody>
+                                                                              <tr>
+                                                                                  <td><a href="#" class="fw-medium text-center">16x10</a></td>
+                                                                                  <td>
+                                                                                      <table class="table align-middle table-nowrap mb-0">
+                                                                                          <tbody>
+                                                                                              <tr>
+                                                                                                <td style="width: 33%">
+                                                                                                    <input class="form-control" disabled readonly value="71.66">
+                                                                                                </td>
+                                                                                                  <td style="width: 33%">
+                                                                                                      <select class="form-control" name="head_cap_16_10" id="head_cap_16_10">
+                                                                                                          @for($i = 0; $i <= 5; $i+=1)
+                                                                                                          <option value="{{$i}}" {{ old('head_cap_16_10')==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                          @endfor
+                                                                                                      </select>
+                                                                                                      @error('head_cap_16_10')
+                                                                                                          <div class="invalid-message">{{ $message }}</div>
+                                                                                                      @enderror
+                                                                                                  </td>
+
+                                                                                              </tr>
+                                                                                          </tbody>
+                                                                                      </table>
+                                                                                  </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td><a href="#" class="fw-medium text-center">18x10</a></td>
+                                                                                  <td>
+                                                                                      <table class="table align-middle table-nowrap mb-0">
+                                                                                          <tbody>
+                                                                                              <tr>
+                                                                                                <td style="width: 33%">
+                                                                                                    <input class="form-control" disabled readonly value="82.69">
+                                                                                                </td>
+                                                                                                  <td style="width: 33%">
+                                                                                                      <select class="form-control" name="head_cap_18_10" id="head_cap_18_10">
+                                                                                                          @for($i = 0; $i <= 5; $i+=1)
+                                                                                                          <option value="{{$i}}" {{ old('head_cap_18_10')==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                          @endfor
+                                                                                                      </select>
+                                                                                                      @error('head_cap_18_10')
+                                                                                                          <div class="invalid-message">{{ $message }}</div>
+                                                                                                      @enderror
+                                                                                                  </td>
+
+                                                                                              </tr>
+                                                                                          </tbody>
+                                                                                      </table>
+                                                                                  </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td><a href="#" class="fw-medium text-center">21x10</a></td>
+                                                                                  <td>
+                                                                                      <table class="table align-middle table-nowrap mb-0">
+                                                                                          <tbody>
+                                                                                              <tr>
+                                                                                                <td style="width: 33%">
+                                                                                                    <input class="form-control" disabled readonly value="93.71">
+                                                                                                </td>
+                                                                                                  <td style="width: 33%">
+                                                                                                      <select class="form-control" name="head_cap_21_10" id="head_cap_21_10">
+                                                                                                          @for($i = 0; $i <= 5; $i+=1)
+                                                                                                          <option value="{{$i}}" {{ old('head_cap_21_10')==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                          @endfor
+                                                                                                      </select>
+                                                                                                      @error('head_cap_21_10')
+                                                                                                          <div class="invalid-message">{{ $message }}</div>
+                                                                                                      @enderror
+                                                                                                  </td>
+
+                                                                                              </tr>
+                                                                                          </tbody>
+                                                                                      </table>
+                                                                                  </td>
+                                                                              </tr>
+                                                                          </tbody>
+                                                                      </table>
+                                                                  </div>
+                                                              </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header" id="headingEleven">
+                                                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                                                                <img
+                                                                src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8QEBEQDQ8NDQ0QEhUQDw0NDQ8NDQ8PFRYWFxUSFRUYHSggGBolGxUVITEhJi0rLi4uFx8zODMtNygtLisBCgoKDg0OGxAQFTcdHR8rLSstLS0tLS0tLS0tLSstLS0tLy0tLS0tLS0tLS0tLS0tLSstLS0tLS0tLS0tLS0tN//AABEIAOEA4QMBEQACEQEDEQH/xAAbAAEBAQADAQEAAAAAAAAAAAAABQQCAwYBB//EAD8QAAIBAQIJCgQEBAcAAAAAAAABAgMFEQQhMUFRYXGxwRIiIzNygZGh0fAyQrLCBmJzglKi4fETU2OS0uLy/8QAGQEBAAMBAQAAAAAAAAAAAAAAAAIDBAEF/8QAKREBAQABBAICAwACAQUAAAAAAAEDAhExMgRBIXESIlEzwfATQmGBsf/aAAwDAQACEQMRAD8A/cQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfJSSTbaSWVt3JC3YcaNWM1yoSjOOmLTRyWX5jtlnLmdcAAACbhlt0KTucuVJZo4zPr8nRp+OVunDq1M9L8S0JO58qOa9ohPM0X0nfH1RWo1ozV8JKS1GnTqmqbyqLLOXYScAAAAAAAAAAAAAw4DVvdR7Hv9DPi1b3VVmubbFmT5ktWPxR3Bf1pkny4YFUvpT0pN+K/uRxXfHXdc/aO2zKvKhdouu2Nf3J4NW+lHJNq2FyAAA4Vaiim3kRzVqmmb12TdJwqs6mX4bndHMYteu61+nTs0WPkqLRP7Il+Di/avJzFEvVgADy/wCI7Zd7o0ndd8clp0Hn+Tn+fx0tmDD/AN1eaWO+/HjMLU7Ywx964HdnFez68oSTi2n5PUy/Hrum7xTr0yx6vBMIVSPKWJ5GtD0HqaNc1TeMWrTtdncSRAAAAAAAAAADrwifJhJ6It+CI6rtptd0zeo9izv5Wukn5syePfi/S/LHfZT5s+yvuJYOtRycxws59HU/TX3nMPS/TuTtHKxZ5F/FTT/2/wDo741/+OZYrGtSAAI+H4RypuK+GK885jy6/wAtW38X6NO03dbyr3oK0muxslV6an2QNODrftVk5iiXqwDFa+F/4NGU/muuj2nkKc+T8NFqzFo/LVs8BjbbeNvKzx3pO2nTy7Tsc3aKdPH70EpEbWuhBk5EKs2TV5Mkn82Lvze9Zr8fVtdv6z5ZvFs2s4AAAAAAAAAAZLVd1Cq/yS3FWb/HfpPH3iVYOV/pPya9TL43v6XZv9u+yZcyfY/5E/H636Rycxxs18yf6XqcwdL9O5OZ9vtj/FDsSX0jxuf/AE5l4WjaoAOvCKnJjKWhXkdd202uyb1AoY22864mCNNd7Z1xqsH4J66j+mJp8fqry8qReqAPNfjKtipQ0vlPxS4mDzdXEavGnNedpxy7TBGppoU8u30LJEbWunTJyI2tVKBORC12Y1NNZletqyEpdrEbw9JF3pNZHjPSZH0AAAAAAAAAAy2rG+hVX5JbirN/jv0nj7RH/Drx/skvNGTxf9L87RZSuUl/psng4v0hk9PmBq6nU/SluGLpq+ndfM+3Oylz46oy+31O+P2cycLBsUAGK15XUnraRTnv6rMfKTg+TuMkXV2yFcbbD6t9t7kavH6KsvZRL1YB5P8AF/W09UfuR5nmd42eN1qVCPEzRfu2UYbyyRC1rpwyFkQtaIRJSI2vtSOO/Qmdri5gr6OHZjuRv09YzauXaScAAAAAAAAAHXhEOVCS0xa8UR1TfTY7pu1ebsaq4X3XX3Z9d552DV+LXlm7ZQqci+67GrsZZp1fjvsrs3OW4ppXXSTi9lwmqybT2bbtVmR50noil4v/AKl2CfNQycKRpVAE+2urXaW5lHkdZ9rMXKbg2f3oMsXVzmKRvsPqv3S8ndwNeDopy9lAuVgHmvxZT51OWq7zPP8AMn7Stfj34sS6cDLIutbKEN5bIha1QjjRORCu+MSaLhhGLlPQr95ykXKMboxWhJeCN8m0Z7y5nXAAAAAAAAAAA8s48ic46JNd1+I8uz8dVjZzJXdyt3od3cdid/vUSRU7NjzZPTLFsWLema8M/VTkvy2FyABhthdE3oafDiU5+izH2TKHFGSLq7H6nXG2w+pXan9TNWDpFWXsoFysAlfiHB+XTT/hkn3PEZvK0b6d/wCLsOraoSjjWsw7NNrbRjxLNMV2tEYk9kd3dBEo44unyqihpuv2XtvyTJaZvq2ct2m6ybFAAAAAAAAAAAAINr0bqjlmlc+/JwMHkadte/8AWnFd9LMne9mLcVJu+m/ieh8CcRq3g0OTCKeVLHtz+Zv0TbTIzarvXaScAOjDYcqnJar/AAxkMk301LTdqiUsi2owxoruuOuN1iq6jHtT+uRrwdIpydm4tQAOM4KSaeNM5ZvNqS7PO4XgrhO56cXgedr0fjdmrTq3jspx4nZC1pjEnIi+uSR3dxps6llqSyyxR7Onv4Ivw6dv2vtDXfTaXKwAAAAAAAAAAAT7Yp3xT0O7xM3kz4lW4r8pEFjfvMjJF7Vg0L5XaZq/Zn8ky3HN9WyvVfhdN7OAAPjQEBQuvWiS8medZt8NO7tOjfZC6GO2X1SNeHpFOTs2FqAAAx2jRvjys8dxTm07zf8AieO7XZOzrvMq52Xkt3H2lT5clHNn7Ky8F3ktGn8tWzmq7RYNigAAAAAAAAAAAADPh8b6ctWMryzfRUtF+USKxe9BgaWyzY31Nl78kuJowT9lWThXNakAAAI+HQuqPW4vzMWWbaqv0X4cFmIJKFl9VDvf8zNmLpFOvs1liAAA+TjemnkauOWbzYQ5Ync8163mC/FaX1yzgbbMh8ctkVve9eBpwT4tVZL6by9WAAAAAAAAAAAABwrK+MtjI6uK7OUGCxeR57S3WUr5TehJeP8AY0+PzVWT0pmlUAAAE61I44vu80Zs8+ZVuOsbeIoWKlm9VDYbcXSKNfatJNEAAAImHxuqPXj8UYcs21tGj50uiUvPEV7pLWARupx13y8Xeb8c20xn135aCaIAAAAAAAAAAAAHxiiDSz9pnnRprfZK+PauJp8fiqsnpQNCsAAAMdprmrVJFGefqsx8plR4tvqjLVsV7P6qGw3Y+kUa+1aCaIAAASbWjz4vTEyeRP2i/Fwwyzace5lCx6KnG6KWhJHoybRkrkdAAAAAAAAAAAAADAg0sr2y3nnTlprfZWSe01ePxVWRvL1YAAAZLT6t7UU5+iePsl1M2x70ZKuVrO6qPfvZux9Io19mkmiAAAE21/k7+Bl8j0uxe05Rvmtq3MonZZeHoz0WUAAAAAAAAAAAAAB8YHn6bxvtPeebOWpRsp/HtXH0NWDiqsnpQNCoAAAMlqPo3tRTn6J4+yS8mzFuMi9Xs3qo/u+pm3F0jPr7NRYiAAAE21/k7+Bl8j0txe2BK5p61uKJzFl4ehPRZgAAAAAAAAAAAAAHGeR7GcvDsedpSz639R5saqpWU+dU2R3yNXj+1OT0pGlUAAAGG2H0e2SM/kdVmLlMi8TMsXK1lvoo7ZfVI3YukUa+zWWIAAABKth86GxmTyeYuxcVjeRe8zKYsehR6LKAAAAAAAAAAAAAA4V3zZbGR19a7OXnKOT3pPNjVVGyn0k9cdz/AKmrBzVWTiKpqUgAABNtx82PaM3k34i3FynwyMzRbVayeqj2p/XI24ekUZOzYWoAAABHth9JHsmLyO0X4uGVrmlU4TegpO+KepHozhmrkdcAAAAAAAAAAAAA6cLd0JbCGTrUtPLz1LIjzY1VRszrdsJb4GrB2U5OFY1qQAAAlW68UNre4yeV6XYfbFTzmfSsqrZD6PZOf1N8Tdh6KMnZtLUAAAAiWv1q1RMPkd2jF1dMMngVxKrmCvo4dmO49DT1jNq5dpJwAAAAAAAAAAAADPaD6KewrzdKlo7R5+lkR50aqoWc+ljrjJfT6GnB2VZOFg2KAAAAkW68cPecx+VzF+Fjp5yiLKqWO+ZPVUfmovibcHVRk5by5WAAAEO1X0vcjBn7tOPq6aeRdxCO1bwHq4dlG/H1jPq5d5NEAAAAAD4B9AAAAADJasrqUinPf0qePsh0siMEaa14C+lp63Jfy38DRh7RXr4XDazgAABFt186OziYfK7Row8MtLOVaU6p2M8VT9T7Ymzx+L9qMnMUS9WAAAEC030z7uB5+b/JWnH1cKeQjHas2e+jj372bsXSM+vlpLEQAAAAAAAAAAAAMNsvontKPJ6LMXZGpowxorVgbuqUu2/OEi/F2n/PSvXxV03M4AAAQ7dfO7kYPJ7NOHhnpZivSlVGx8tRa0964Gvx+Kpy+lM0KgAAA87acukk/wA3FHnZr+9atHUhkOQqxZnVLbLezbh6RRr7NRagAAAAAAAAAAAABgtnq+8z+T1WYuUiGUxxorRTd0qT/PHzvRdj7RXq4q8bmcAAAIFtPny1JcDz/I7tOLq66WYhEqo2V8dTZF+czV4/tTk9KRpVAAAB5m0Xz5P83E8zL2rXo4jtprcdjlVrM+DZJ8Dbh6qMnLWWoAAAAAAAAAAAAATrafMW30M3k9YtxcpTyPY+JkXu3/K/Vp/UvUs08z7iF9vQnoMwAAAeftbHOfdwPOz961Y+rjSWQ5pK32Z1k9cV5N+ppwc1Vk4imaVQAAAeXw3G32uJ5evmtmnhopolEap2X8Mu19sTZg6qcnLaXKwAAAAAAAAAAAAJduSxRWl+hl8q/EXYUyfwy2PiZfS5zi+anonF+HJZPT6Rr0h6LKAAAHnbUfPntu8zzs3atWjh9pnIVrs2XStfkk/5ol+C/tVeThWNakAAAPK1/j2tb2eVeWycNdMsiNUbKeKW1Py/oasHCnJy3F6sAAAAAAAAAAAACTbeWHvT6GTyeYuxMLWJmda+SXRy2X+SO+nPb0p6TKAAAHnLQV8pdriebk7Vq0cOUBBowDFXWuMl5p8C7D3Q19Vk2KAABxm8T2M5eHY8vXXOT1reeXeWucNdP35lkRrbY/z/ALeJo8f2qy+lI0qgAAAAAAAAAAAAJtqwvcX7z+pl8ifMW46wyV1+u9lGy1w+SWy5bWkJwe3okeiyvoAABAw2GN7WefknzWnTfh9jE5IO7Ao31lqUm933eRdhn7oa+qwa1IAA41FemtKZy/MdnLztWONe86PNsaY74rITcbLJXx93Ev8AH9q8iiaVQAAAAAAAAAAAAHVhFFTV2R5U9ZDXo/KbO6btUytg018snia5q5Wgy3HqnpdNUdmBYDJtSqLkxi01FtNuSSubuyXNFmPFd99SOrX6ioaVQAAAY8NwTlY45c60lGXF+XzFmjXtyx/4NTIqcm+5LxZT/wBPV/E/yn9b8CwbkJuVznLK1kSWRI049H4z/wAqtWrdpLEQAAAnYbgTb5UMelZ8qZmyYbvvFunX6rojQqPFGEr9MubFe9RCY9V9JflP6pYLQVON2V5ZPJe9PvQatGmaZsp1Xeu4k4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//Z"
+                                                                alt=""
+                                                                style="height:80px;object-fit:contain;margin-right:20px"
+                                                                >
+                                                                <br/>
+                                                                CUTLERY
+                                                              </button>
+                                                            </h2>
+                                                            <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven" data-bs-parent="#accordionExample2">
+                                                                <div class="accordion-body">
+                                                                    <div class="table-responsive">
+                                                                        <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
+                                                                            <thead class="table-primary">
+                                                                                <tr>
+                                                                                    <th scope="col">ITEM</th>
+                                                                                    <th scope="col">
+                                                                                        <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
+                                                                                            <thead class="table-light">
+                                                                                                <tr>
+                                                                                                    <th scope="col" class="text-center" style="width: 33%">PRICE</th>
+                                                                                                    <th scope="col" class="text-center" style="width: 33%">QUANTITY (10000 pcs / box)</th>
+                                                                                                </tr>
+                                                                                            </thead>
+                                                                                        </table>
+                                                                                    </th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td><a href="#" class="fw-medium text-center">110mm Spoon</a></td>
+                                                                                    <td>
+                                                                                        <table class="table align-middle table-nowrap mb-0">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <input class="form-control" disabled readonly value="0.53">
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select class="form-control" name="cuttlery_110_spoon" id="cuttlery_110_spoon">
+                                                                                                            @for($i = 0; $i <= 10000; $i+=500)
+                                                                                                            <option value="{{$i}}" {{ old('cuttlery_110_spoon')==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            @endfor
+                                                                                                        </select>
+                                                                                                        @error('cuttlery_110_spoon')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td><a href="#" class="fw-medium text-center">140mm Spoon</a></td>
+                                                                                    <td>
+                                                                                        <table class="table align-middle table-nowrap mb-0">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <input class="form-control" disabled readonly value="0.51">
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select class="form-control" name="cuttlery_140_spoon" id="cuttlery_140_spoon">
+                                                                                                            @for($i = 0; $i <= 10000; $i+=500)
+                                                                                                            <option value="{{$i}}" {{ old('cuttlery_140_spoon')==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            @endfor
+                                                                                                        </select>
+                                                                                                        @error('cuttlery_140_spoon')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td><a href="#" class="fw-medium text-center">160mm Spoon</a></td>
+                                                                                    <td>
+                                                                                        <table class="table align-middle table-nowrap mb-0">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <input class="form-control" disabled readonly value="0.71">
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select class="form-control" name="cuttlery_160_spoon" id="cuttlery_160_spoon">
+                                                                                                            @for($i = 0; $i <= 10000; $i+=500)
+                                                                                                            <option value="{{$i}}" {{ old('cuttlery_160_spoon')==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            @endfor
+                                                                                                        </select>
+                                                                                                        @error('cuttlery_160_spoon')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td><a href="#" class="fw-medium text-center">140mm Fork</a></td>
+                                                                                    <td>
+                                                                                        <table class="table align-middle table-nowrap mb-0">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <input class="form-control" disabled readonly value="0.71">
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select class="form-control" name="cuttlery_140_fork" id="cuttlery_140_fork">
+                                                                                                            @for($i = 0; $i <= 10000; $i+=500)
+                                                                                                            <option value="{{$i}}" {{ old('cuttlery_140_fork')==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            @endfor
+                                                                                                        </select>
+                                                                                                        @error('cuttlery_140_fork')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td><a href="#" class="fw-medium text-center">160mm Fork</a></td>
+                                                                                    <td>
+                                                                                        <table class="table align-middle table-nowrap mb-0">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <input class="form-control" disabled readonly value="0.71">
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select class="form-control" name="cuttlery_160_fork" id="cuttlery_160_fork">
+                                                                                                            @for($i = 0; $i <= 10000; $i+=500)
+                                                                                                            <option value="{{$i}}" {{ old('cuttlery_160_fork')==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            @endfor
+                                                                                                        </select>
+                                                                                                        @error('cuttlery_160_fork')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
                                                                                                 </tr>
                                                                                             </tbody>
                                                                                         </table>
@@ -1728,7 +2299,7 @@
                                                                                         <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
                                                                                             <thead class="table-light">
                                                                                                 <tr>
-                                                                                                    <th scope="col" class="text-center" style="width: 33%">PRICE</th>
+                                                                                                    <th scope="col" class="text-center" style="width: 33%">PRICE (&#8377; )</th>
                                                                                                     <th scope="col" class="text-center" style="width: 33%">QUANTITY</th>
                                                                                                 </tr>
                                                                                             </thead>
@@ -1744,7 +2315,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="Rs. 21.735">
+                                                                                                        <input class="form-control" disabled readonly value="21.735">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select class="form-control" name="al_pouch_4_6" id="al_pouch_4_6">
@@ -1769,7 +2340,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="Rs. 28.35">
+                                                                                                        <input class="form-control" disabled readonly value="28.35">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select class="form-control" name="al_pouch_5_7" id="al_pouch_5_7">
@@ -1794,7 +2365,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="Rs. 35.532">
+                                                                                                        <input class="form-control" disabled readonly value="35.532">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select class="form-control" name="al_pouch_6_8" id="al_pouch_6_8">
@@ -1819,7 +2390,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="Rs. 40.635">
+                                                                                                        <input class="form-control" disabled readonly value="40.635">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select class="form-control" name="al_pouch_6_9" id="al_pouch_6_9">
@@ -1844,7 +2415,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="Rs. 48.195">
+                                                                                                        <input class="form-control" disabled readonly value="48.195">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select class="form-control" name="al_pouch_7_9" id="al_pouch_7_9">
@@ -1869,7 +2440,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="Rs. 52.92">
+                                                                                                        <input class="form-control" disabled readonly value="52.92">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select class="form-control" name="al_pouch_7_10" id="al_pouch_7_10">
@@ -1894,7 +2465,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="Rs. 60.48">
+                                                                                                        <input class="form-control" disabled readonly value="60.48">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select class="form-control" name="al_pouch_8_10" id="al_pouch_8_10">
@@ -1919,7 +2490,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="Rs. 83.16">
+                                                                                                        <input class="form-control" disabled readonly value="83.16">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select class="form-control" name="al_pouch_9_12" id="al_pouch_9_12">
@@ -1944,7 +2515,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="Rs. 96.39">
+                                                                                                        <input class="form-control" disabled readonly value="96.39">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select class="form-control" name="al_pouch_10_12" id="al_pouch_10_12">
@@ -1969,7 +2540,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="Rs. 107.73">
+                                                                                                        <input class="form-control" disabled readonly value="107.73">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select class="form-control" name="al_pouch_10_14" id="al_pouch_10_14">
@@ -1994,7 +2565,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="Rs. 21.9">
+                                                                                                        <input class="form-control" disabled readonly value="21.9">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select class="form-control" name="al_pouch_4_6_full" id="al_pouch_4_6_full">
@@ -2019,7 +2590,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="Rs. 38.1">
+                                                                                                        <input class="form-control" disabled readonly value="32.1">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select class="form-control" name="al_pouch_5_7_full" id="al_pouch_5_7_full">
@@ -2044,7 +2615,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="Rs. 43.5">
+                                                                                                        <input class="form-control" disabled readonly value="43.5">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select class="form-control" name="al_pouch_6_8_full" id="al_pouch_6_8_full">
@@ -2069,7 +2640,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="Rs. 46.3">
+                                                                                                        <input class="form-control" disabled readonly value="46.3">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select class="form-control" name="al_pouch_6_9_full" id="al_pouch_6_9_full">
@@ -2094,7 +2665,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="Rs. 55.8">
+                                                                                                        <input class="form-control" disabled readonly value="55.8">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select class="form-control" name="al_pouch_7_9_full" id="al_pouch_7_9_full">
@@ -2119,7 +2690,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="Rs. 58.6">
+                                                                                                        <input class="form-control" disabled readonly value="58.6">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select class="form-control" name="al_pouch_7_10_full" id="al_pouch_7_10_full">
@@ -2144,7 +2715,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="Rs. 69.9">
+                                                                                                        <input class="form-control" disabled readonly value="69.9">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select class="form-control" name="al_pouch_8_10_full" id="al_pouch_8_10_full">
@@ -2169,7 +2740,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="Rs. 92.6">
+                                                                                                        <input class="form-control" disabled readonly value="92.6">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select class="form-control" name="al_pouch_9_12_full" id="al_pouch_9_12_full">
@@ -2194,7 +2765,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="Rs. 109.6">
+                                                                                                        <input class="form-control" disabled readonly value="109.6">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select class="form-control" name="al_pouch_10_12_full" id="al_pouch_10_12_full">
@@ -2219,7 +2790,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="Rs. 119.1">
+                                                                                                        <input class="form-control" disabled readonly value="119.1">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select class="form-control" name="al_pouch_10_14_full" id="al_pouch_10_14_full">
@@ -2267,8 +2838,8 @@
                                                                                         <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
                                                                                             <thead class="table-light">
                                                                                                 <tr>
-                                                                                                    <th scope="col" class="text-center" style="width: 33%">PRICE</th>
-                                                                                                    <th scope="col" class="text-center" style="width: 33%">QUANTITY</th>
+                                                                                                    <th scope="col" class="text-center" style="width: 33%">PRICE (&#8377; )</th>
+                                                                                                    <th scope="col" class="text-center" style="width: 33%">QUANTITY (Bags)</th>
                                                                                                 </tr>
                                                                                             </thead>
                                                                                         </table>
@@ -2277,13 +2848,13 @@
                                                                             </thead>
                                                                             <tbody>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">22*22/9*9</a></td>
+                                                                                    <td><a href="#" class="fw-medium text-center">22*22/9*9 <br/>(100 pcs / packet - 48 packets / bag)</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="Rs. 12.6">
+                                                                                                        <input class="form-control" disabled readonly value="12.6">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select class="form-control" name="tissue_22_22" id="tissue_22_22">
@@ -2302,13 +2873,13 @@
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">27*30/11*12</a></td>
+                                                                                    <td><a href="#" class="fw-medium text-center">27*30/11*12<br/>(100 pcs / packet - 30 packets / bag)</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="Rs. 19.95">
+                                                                                                        <input class="form-control" disabled readonly value="19.95">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select class="form-control" name="tissue_27_30" id="tissue_27_30">
@@ -2327,13 +2898,13 @@
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">30*30/12*12</a></td>
+                                                                                    <td><a href="#" class="fw-medium text-center">30*30/12*12<br/>(100 pcs / packet - 30 packets / bag)</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="Rs. 26.25">
+                                                                                                        <input class="form-control" disabled readonly value="26.25">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select class="form-control" name="tissue_30_30" id="tissue_30_30">
@@ -2381,7 +2952,7 @@
                                                                                         <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
                                                                                             <thead class="table-light">
                                                                                                 <tr>
-                                                                                                    <th scope="col" class="text-center" style="width: 33%">PRICE</th>
+                                                                                                    <th scope="col" class="text-center" style="width: 33%">PRICE (&#8377; )</th>
                                                                                                     <th scope="col" class="text-center" style="width: 33%">QUANTITY</th>
                                                                                                 </tr>
                                                                                             </thead>
@@ -2397,7 +2968,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="Rs. 34">
+                                                                                                        <input class="form-control" disabled readonly value="34">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select class="form-control" name="garbage_bag_small" id="garbage_bag_small">
@@ -2422,7 +2993,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="Rs. 38">
+                                                                                                        <input class="form-control" disabled readonly value="38">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select class="form-control" name="garbage_bag_medium" id="garbage_bag_medium">
@@ -2447,7 +3018,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="Rs. 44">
+                                                                                                        <input class="form-control" disabled readonly value="44">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select class="form-control" name="garbage_bag_large" id="garbage_bag_large">
@@ -2472,7 +3043,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="Rs. 71">
+                                                                                                        <input class="form-control" disabled readonly value="71">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select class="form-control" name="garbage_bag_x_large" id="garbage_bag_x_large">
@@ -2520,8 +3091,9 @@
                                                                                       <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
                                                                                           <thead class="table-light">
                                                                                               <tr>
-                                                                                                  <th scope="col" class="text-center" style="width: 33%">PRICE/60mtr</th>
-                                                                                                  <th scope="col" class="text-center" style="width: 33%">QUANTITY
+                                                                                                  <th scope="col" class="text-center" style="width: 33%">PRICE (&#8377; )/60mtr</th>
+                                                                                                  <th scope="col" class="text-center" style="width: 33%">COLOR</th>
+                                                                                                  <th scope="col" class="text-center" style="width: 33%">QUANTITY</th>
                                                                                               </tr>
                                                                                           </thead>
                                                                                       </table>
@@ -2536,7 +3108,16 @@
                                                                                         <tbody>
                                                                                             <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <input class="form-control" disabled readonly value="Rs. 37.2">
+                                                                                                    <input class="form-control" disabled readonly value="37.2">
+                                                                                                </td>
+                                                                                                <td style="width: 33%">
+                                                                                                    <select class="form-control" name="bopp_tape_3_color" id="bopp_tape_3_color">
+                                                                                                        <option value="Transparent" {{ old('bopp_tape_3_color')=='Transparent' ? 'selected' : '' }}>Transparent</option>
+                                                                                                        <option value="Brown" {{ old('bopp_tape_3_color')=='Brown' ? 'selected' : '' }}>Brown</option>
+                                                                                                    </select>
+                                                                                                    @error('bopp_tape_3_color')
+                                                                                                        <div class="invalid-message">{{ $message }}</div>
+                                                                                                    @enderror
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
                                                                                                     <select class="form-control" name="bopp_tape_3" id="bopp_tape_3">
@@ -2561,7 +3142,16 @@
                                                                                           <tbody>
                                                                                               <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <input class="form-control" disabled readonly value="Rs. 24.8">
+                                                                                                    <input class="form-control" disabled readonly value="24.8">
+                                                                                                </td>
+                                                                                                <td style="width: 33%">
+                                                                                                    <select class="form-control" name="bopp_tape_2_color" id="bopp_tape_2_color">
+                                                                                                        <option value="Transparent" {{ old('bopp_tape_2_color')=='Transparent' ? 'selected' : '' }}>Transparent</option>
+                                                                                                        <option value="Brown" {{ old('bopp_tape_2_color')=='Brown' ? 'selected' : '' }}>Brown</option>
+                                                                                                    </select>
+                                                                                                    @error('bopp_tape_2_color')
+                                                                                                        <div class="invalid-message">{{ $message }}</div>
+                                                                                                    @enderror
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
                                                                                                       <select class="form-control" name="bopp_tape_2" id="bopp_tape_2">
@@ -2595,7 +3185,7 @@
                                                                   style="height:80px;object-fit:contain;margin-right:20px"
                                                                   >
                                                                   <br/>
-                                                                  BILLING ROLE
+                                                                  BILLING ROLL
                                                               </button>
                                                             </h2>
                                                             <div id="collapseTwo2" class="accordion-collapse collapse" aria-labelledby="headingTwo2" data-bs-parent="#accordionExample">
@@ -2609,7 +3199,7 @@
                                                                                       <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
                                                                                           <thead class="table-light">
                                                                                               <tr>
-                                                                                                  <th scope="col" class="text-center" style="width: 33%">PRICE</th>
+                                                                                                  <th scope="col" class="text-center" style="width: 33%">PRICE (&#8377; )</th>
                                                                                                   <th scope="col" class="text-center" style="width: 33%">QUANTITY</th>
                                                                                               </tr>
                                                                                           </thead>
@@ -2625,7 +3215,7 @@
                                                                                           <tbody>
                                                                                               <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <input class="form-control" disabled readonly value="Rs. 15.2">
+                                                                                                    <input class="form-control" disabled readonly value="17.84">
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
                                                                                                       <select class="form-control" name="billing_roll_2" id="billing_roll_2">
@@ -2650,7 +3240,7 @@
                                                                                           <tbody>
                                                                                               <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <input class="form-control" disabled readonly value="Rs. 32.6">
+                                                                                                    <input class="form-control" disabled readonly value="38.53">
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
                                                                                                       <select class="form-control" name="billing_roll_3" id="billing_roll_3">
@@ -2698,7 +3288,7 @@
                                                                                       <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
                                                                                           <thead class="table-light">
                                                                                               <tr>
-                                                                                                  <th scope="col" class="text-center" style="width: 33%">PRICE</th>
+                                                                                                  <th scope="col" class="text-center" style="width: 33%">PRICE (&#8377; )</th>
                                                                                                   <th scope="col" class="text-center" style="width: 33%">QUANTITY</th>
                                                                                               </tr>
                                                                                           </thead>
@@ -2708,13 +3298,13 @@
                                                                           </thead>
                                                                           <tbody>
                                                                               <tr>
-                                                                                  <td><a href="#" class="fw-medium text-center">0</a></td>
+                                                                                  <td><a href="#" class="fw-medium text-center">Premium</a></td>
                                                                                   <td>
                                                                                       <table class="table align-middle table-nowrap mb-0">
                                                                                           <tbody>
                                                                                               <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <input class="form-control" disabled readonly value="Rs. 336">
+                                                                                                    <input class="form-control" disabled readonly value="336">
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
                                                                                                       <select class="form-control" name="rubber_band_1" id="rubber_band_1">
@@ -2733,13 +3323,13 @@
                                                                                   </td>
                                                                               </tr>
                                                                               <tr>
-                                                                                  <td><a href="#" class="fw-medium text-center">0</a></td>
+                                                                                  <td><a href="#" class="fw-medium text-center">Regular</a></td>
                                                                                   <td>
                                                                                       <table class="table align-middle table-nowrap mb-0">
                                                                                           <tbody>
                                                                                               <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <input class="form-control" disabled readonly value="Rs. 273">
+                                                                                                    <input class="form-control" disabled readonly value="273">
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
                                                                                                       <select class="form-control" name="rubber_band_2" id="rubber_band_2">
@@ -2787,7 +3377,7 @@
                                                                                         <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
                                                                                             <thead class="table-light">
                                                                                                 <tr>
-                                                                                                    <th scope="col" class="text-center" style="width: 33%">PRICE/100pc</th>
+                                                                                                    <th scope="col" class="text-center" style="width: 33%">PRICE (&#8377; )/100pc</th>
                                                                                                     <th scope="col" class="text-center" style="width: 33%">QUANTITY</th>
                                                                                                 </tr>
                                                                                             </thead>
@@ -2803,7 +3393,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="Rs. 38.64">
+                                                                                                        <input class="form-control" disabled readonly value="38.64">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select class="form-control" name="paper_straw_6mm" id="paper_straw_6mm">
@@ -2828,7 +3418,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="Rs. 45.08">
+                                                                                                        <input class="form-control" disabled readonly value="45.08">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select class="form-control" name="paper_straw_8mm" id="paper_straw_8mm">
@@ -2853,7 +3443,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="Rs. 57.96">
+                                                                                                        <input class="form-control" disabled readonly value="57.96">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select class="form-control" name="paper_straw_10mm" id="paper_straw_10mm">
@@ -2878,7 +3468,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="Rs. 77.28">
+                                                                                                        <input class="form-control" disabled readonly value="77.28">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select class="form-control" name="paper_straw_12mm" id="paper_straw_12mm">
@@ -2896,76 +3486,225 @@
                                                                                         </table>
                                                                                     </td>
                                                                                 </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header" id="headingThree3">
+                                                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">
+                                                                  <img
+                                                                  src="https://m.media-amazon.com/images/I/61+ilDgVVwS._AC_UY1100_.jpg"
+                                                                  alt=""
+                                                                  style="height:80px;object-fit:contain;margin-right:20px"
+                                                                  >
+                                                                  <br/>
+                                                                  MASK
+                                                              </button>
+                                                            </h2>
+                                                            <div id="collapseThree3" class="accordion-collapse collapse" aria-labelledby="headingThree3" data-bs-parent="#accordionExample">
+                                                              <div class="accordion-body">
+                                                                  <div class="table-responsive">
+                                                                      <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
+                                                                          <thead class="table-primary">
+                                                                              <tr>
+                                                                                  <th scope="col">ITEM</th>
+                                                                                  <th scope="col">
+                                                                                      <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
+                                                                                          <thead class="table-light">
+                                                                                              <tr>
+                                                                                                  <th scope="col" class="text-center" style="width: 33%">PRICE (&#8377; )</th>
+                                                                                                  <th scope="col" class="text-center" style="width: 33%">QUANTITY</th>
+                                                                                              </tr>
+                                                                                          </thead>
+                                                                                      </table>
+                                                                                  </th>
+                                                                              </tr>
+                                                                          </thead>
+                                                                          <tbody>
+                                                                              <tr>
+                                                                                  <td><a href="#" class="fw-medium text-center">3 play</a></td>
+                                                                                  <td>
+                                                                                      <table class="table align-middle table-nowrap mb-0">
+                                                                                          <tbody>
+                                                                                              <tr>
+                                                                                                <td style="width: 33%">
+                                                                                                    <input class="form-control" disabled readonly value="0.94">
+                                                                                                </td>
+                                                                                                  <td style="width: 33%">
+                                                                                                      <select class="form-control" name="mask_3_play" id="mask_3_play">
+                                                                                                          @for($i = 0; $i <= 5; $i+=1)
+                                                                                                          <option value="{{$i}}" {{ old('mask_3_play')==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                          @endfor
+                                                                                                      </select>
+                                                                                                      @error('mask_3_play')
+                                                                                                          <div class="invalid-message">{{ $message }}</div>
+                                                                                                      @enderror
+                                                                                                  </td>
+
+                                                                                              </tr>
+                                                                                          </tbody>
+                                                                                      </table>
+                                                                                  </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td><a href="#" class="fw-medium text-center">Meltblown</a></td>
+                                                                                  <td>
+                                                                                      <table class="table align-middle table-nowrap mb-0">
+                                                                                          <tbody>
+                                                                                              <tr>
+                                                                                                <td style="width: 33%">
+                                                                                                    <input class="form-control" disabled readonly value="1.32">
+                                                                                                </td>
+                                                                                                  <td style="width: 33%">
+                                                                                                      <select class="form-control" name="mask_meltblown" id="mask_meltblown">
+                                                                                                          @for($i = 0; $i <= 5; $i+=1)
+                                                                                                          <option value="{{$i}}" {{ old('mask_meltblown')==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                          @endfor
+                                                                                                      </select>
+                                                                                                      @error('mask_meltblown')
+                                                                                                          <div class="invalid-message">{{ $message }}</div>
+                                                                                                      @enderror
+                                                                                                  </td>
+
+                                                                                              </tr>
+                                                                                          </tbody>
+                                                                                      </table>
+                                                                                  </td>
+                                                                              </tr>
+                                                                          </tbody>
+                                                                      </table>
+                                                                  </div>
+                                                              </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header" id="headingSeven2">
+                                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven2" aria-expanded="false" aria-controls="collapseSeven2">
+                                                                    <img
+                                                                    src="http://atlas-content-cdn.pixelsquid.com/stock-images/paper-bag-aqOAYV4-600.jpg"
+                                                                    alt=""
+                                                                    style="height:80px;object-fit:contain;margin-right:20px"
+                                                                    >
+                                                                    <br/>
+                                                                    CARRY BAG
+                                                                </button>
+                                                            </h2>
+                                                            <div id="collapseSeven2" class="accordion-collapse collapse" aria-labelledby="headingSeven2" data-bs-parent="#accordionExample">
+                                                                <div class="accordion-body">
+                                                                    <div class="table-responsive">
+                                                                        <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
+                                                                            <thead class="table-primary">
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">6*200mm</a></td>
+                                                                                    <th scope="col">ITEM</th>
+                                                                                    <th scope="col">
+                                                                                        <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
+                                                                                            <thead class="table-light">
+                                                                                                <tr>
+                                                                                                    <th scope="col" class="text-center" style="width: 33%">PRICE</th>
+                                                                                                    <th scope="col" class="text-center" style="width: 33%">QUANTITY</th>
+                                                                                                </tr>
+                                                                                            </thead>
+                                                                                        </table>
+                                                                                    </th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td><a href="#" class="fw-medium text-center">small <br> W = 7.5cm,<br> H = 8.5cm,<br> G = 5cm</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="Rs. 57.96">
+                                                                                                        <input class="form-control" disabled readonly value="&#8377; 4.31">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="paper_straw_6mm_2" id="paper_straw_6mm_2">
-                                                                                                            @for($i = 0; $i <= 30; $i+=5)
-                                                                                                            <option value="{{$i}}" {{ old('paper_straw_6mm_2')==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                        <select class="form-control" name="carry_bag_bag_small" id="carry_bag_bag_small">
+                                                                                                            @for($i = 0; $i <= 2000; $i+=200)
+                                                                                                            <option value="{{$i}}" {{ old('carry_bag_bag_small')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
                                                                                                         </select>
-                                                                                                        @error('paper_straw_6mm_2')
+                                                                                                        @error('carry_bag_bag_small')
                                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                                         @enderror
                                                                                                     </td>
-
                                                                                                 </tr>
                                                                                             </tbody>
                                                                                         </table>
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">8*200mm</a></td>
+                                                                                    <td><a href="#" class="fw-medium text-center">medium <br> W = 8.5cm,<br> H = 8.5cm,<br> G = 6cm</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="Rs. 64.4">
+                                                                                                        <input class="form-control" disabled readonly value="&#8377; 4.31">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="paper_straw_8mm_2" id="paper_straw_8mm_2">
-                                                                                                            @for($i = 0; $i <= 30; $i+=5)
-                                                                                                            <option value="{{$i}}" {{ old('paper_straw_8mm_2')==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                        <select class="form-control" name="carry_bag_bag_medium" id="carry_bag_bag_medium">
+                                                                                                            @for($i = 0; $i <= 2000; $i+=200)
+                                                                                                            <option value="{{$i}}" {{ old('carry_bag_bag_medium')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
                                                                                                         </select>
-                                                                                                        @error('paper_straw_8mm_2')
+                                                                                                        @error('carry_bag_bag_medium')
                                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                                         @enderror
                                                                                                     </td>
-
                                                                                                 </tr>
                                                                                             </tbody>
                                                                                         </table>
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">10*200mm</a></td>
+                                                                                    <td><a href="#" class="fw-medium text-center">large <br> W = 11cm,<br> H = 9cm,<br> G = 7cm</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="Rs. 77.28">
+                                                                                                        <input class="form-control" disabled readonly value="&#8377; 4.91">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select class="form-control" name="paper_straw_10mm_2" id="paper_straw_10mm_2">
-                                                                                                            @for($i = 0; $i <= 30; $i+=5)
-                                                                                                            <option value="{{$i}}" {{ old('paper_straw_10mm_2')==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                        <select class="form-control" name="carry_bag_bag_large" id="carry_bag_bag_large">
+                                                                                                            @for($i = 0; $i <= 2000; $i+=200)
+                                                                                                            <option value="{{$i}}" {{ old('carry_bag_bag_large')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
                                                                                                         </select>
-                                                                                                        @error('paper_straw_10mm_2')
+                                                                                                        @error('carry_bag_bag_large')
                                                                                                             <div class="invalid-message">{{ $message }}</div>
                                                                                                         @enderror
                                                                                                     </td>
-
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td><a href="#" class="fw-medium text-center">extra large <br> W = 12cm,<br> H = 9cm,<br> G = 8.5cm</a></td>
+                                                                                    <td>
+                                                                                        <table class="table align-middle table-nowrap mb-0">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <input class="form-control" disabled readonly value="&#8377; 5.29">
+                                                                                                    </td>
+                                                                                                    <td style="width: 33%">
+                                                                                                        <select class="form-control" name="carry_bag_bag_x_large" id="carry_bag_bag_x_large">
+                                                                                                            @for($i = 0; $i <= 2000; $i+=200)
+                                                                                                            <option value="{{$i}}" {{ old('carry_bag_bag_x_large')==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                            @endfor
+                                                                                                        </select>
+                                                                                                        @error('carry_bag_bag_x_large')
+                                                                                                            <div class="invalid-message">{{ $message }}</div>
+                                                                                                        @enderror
+                                                                                                    </td>
                                                                                                 </tr>
                                                                                             </tbody>
                                                                                         </table>
@@ -2975,6 +3714,118 @@
                                                                         </table>
                                                                     </div>
                                                                 </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header" id="headingFive2">
+                                                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive2" aria-expanded="false" aria-controls="collapseFive2">
+                                                                  <img
+                                                                  src="https://m.media-amazon.com/images/I/61e+jkuy5-L.jpg"
+                                                                  alt=""
+                                                                  style="height:80px;object-fit:contain;margin-right:20px"
+                                                                  >
+                                                                  <br/>
+                                                                  PARCEL PAPER SHEET
+                                                              </button>
+                                                            </h2>
+                                                            <div id="collapseFive2" class="accordion-collapse collapse" aria-labelledby="headingFive2" data-bs-parent="#accordionExample">
+                                                              <div class="accordion-body">
+                                                                  <div class="table-responsive">
+                                                                      <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
+                                                                          <thead class="table-primary">
+                                                                              <tr>
+                                                                                  <th scope="col">ITEM</th>
+                                                                                  <th scope="col">
+                                                                                      <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
+                                                                                          <thead class="table-light">
+                                                                                              <tr>
+                                                                                                  <th scope="col" class="text-center" style="width: 33%">PRICE</th>
+                                                                                                  <th scope="col" class="text-center" style="width: 33%">QUANTITY (per kg)</th>
+                                                                                              </tr>
+                                                                                          </thead>
+                                                                                      </table>
+                                                                                  </th>
+                                                                              </tr>
+                                                                          </thead>
+                                                                          <tbody>
+                                                                            <tr>
+                                                                                <td><a href="#" class="fw-medium text-center">10 x 10</a></td>
+                                                                                <td>
+                                                                                    <table class="table align-middle table-nowrap mb-0">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                              <td style="width: 33%">
+                                                                                                  <input class="form-control" disabled readonly value="&#8377; 60">
+                                                                                              </td>
+                                                                                                <td style="width: 33%">
+                                                                                                    <select class="form-control" name="parcel_paper_10" id="parcel_paper_10">
+                                                                                                        @for($i = 0; $i <= 100; $i+=5)
+                                                                                                        <option value="{{$i}}" {{ old('parcel_paper_10')==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                        @endfor
+                                                                                                    </select>
+                                                                                                    @error('parcel_paper_10')
+                                                                                                        <div class="invalid-message">{{ $message }}</div>
+                                                                                                    @enderror
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                              <tr>
+                                                                                  <td><a href="#" class="fw-medium text-center">12 x 12</a></td>
+                                                                                  <td>
+                                                                                      <table class="table align-middle table-nowrap mb-0">
+                                                                                          <tbody>
+                                                                                              <tr>
+                                                                                                <td style="width: 33%">
+                                                                                                    <input class="form-control" disabled readonly value="&#8377; 60">
+                                                                                                </td>
+                                                                                                  <td style="width: 33%">
+                                                                                                      <select class="form-control" name="parcel_paper_12" id="parcel_paper_12">
+                                                                                                          @for($i = 0; $i <= 100; $i+=5)
+                                                                                                          <option value="{{$i}}" {{ old('parcel_paper_12')==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                          @endfor
+                                                                                                      </select>
+                                                                                                      @error('parcel_paper_12')
+                                                                                                          <div class="invalid-message">{{ $message }}</div>
+                                                                                                      @enderror
+                                                                                                  </td>
+                                                                                              </tr>
+                                                                                          </tbody>
+                                                                                      </table>
+                                                                                  </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td><a href="#" class="fw-medium text-center">14 x 14</a></td>
+                                                                                  <td>
+                                                                                      <table class="table align-middle table-nowrap mb-0">
+                                                                                          <tbody>
+                                                                                              <tr>
+                                                                                                <td style="width: 33%">
+                                                                                                    <input class="form-control" disabled readonly value="&#8377; 60">
+                                                                                                </td>
+                                                                                                  <td style="width: 33%">
+                                                                                                      <select class="form-control" name="parcel_paper_14" id="parcel_paper_14">
+                                                                                                          @for($i = 0; $i <= 100; $i+=5)
+                                                                                                          <option value="{{$i}}" {{ old('parcel_paper_14')==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                          @endfor
+                                                                                                      </select>
+                                                                                                      @error('parcel_paper_14')
+                                                                                                          <div class="invalid-message">{{ $message }}</div>
+                                                                                                      @enderror
+                                                                                                  </td>
+                                                                                              </tr>
+                                                                                          </tbody>
+                                                                                      </table>
+                                                                                  </td>
+                                                                              </tr>
+
+                                                                          </tbody>
+                                                                      </table>
+                                                                  </div>
+                                                              </div>
                                                             </div>
                                                         </div>
 

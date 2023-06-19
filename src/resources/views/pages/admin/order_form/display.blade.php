@@ -2842,7 +2842,7 @@
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select class="form-control" disabled readonly name="tissue_22_22" id="tissue_22_22">
-                                                                                                            @for($i = 0; $i <= 100; $i+=10)
+                                                                                                            @for($i = 0; $i <= 20; $i+=1)
                                                                                                             <option value="{{$i}}" {{ $data->tissue_22_22==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
                                                                                                         </select>
@@ -2867,7 +2867,7 @@
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select class="form-control" disabled readonly name="tissue_27_30" id="tissue_27_30">
-                                                                                                            @for($i = 0; $i <= 100; $i+=10)
+                                                                                                            @for($i = 0; $i <= 20; $i+=1)
                                                                                                             <option value="{{$i}}" {{ $data->tissue_27_30==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
                                                                                                         </select>
@@ -2892,7 +2892,7 @@
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select class="form-control" disabled readonly name="tissue_30_30" id="tissue_30_30">
-                                                                                                            @for($i = 0; $i <= 100; $i+=10)
+                                                                                                            @for($i = 0; $i <= 20; $i+=1)
                                                                                                             <option value="{{$i}}" {{ $data->tissue_30_30==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
                                                                                                         </select>
@@ -3153,6 +3153,40 @@
                                                                                       </table>
                                                                                   </td>
                                                                               </tr>
+                                                                              <tr>
+                                                                                  <td><a href="#" class="fw-medium text-center">1"</a></td>
+                                                                                  <td>
+                                                                                      <table class="table align-middle table-nowrap mb-0">
+                                                                                          <tbody>
+                                                                                              <tr>
+                                                                                                <td style="width: 33%">
+                                                                                                    <input class="form-control" disabled readonly value="24.8">
+                                                                                                </td>
+                                                                                                <td style="width: 33%">
+                                                                                                    <select disabled readonly class="form-control" name="bopp_tape_1_color" id="bopp_tape_1_color">
+                                                                                                        <option value="Transparent" {{ $data->bopp_tape_1_color=='Transparent' ? 'selected' : '' }}>Transparent</option>
+                                                                                                        <option value="Brown" {{ $data->bopp_tape_1_color=='Brown' ? 'selected' : '' }}>Brown</option>
+                                                                                                    </select>
+                                                                                                    @error('bopp_tape_1_color')
+                                                                                                        <div class="invalid-message">{{ $message }}</div>
+                                                                                                    @enderror
+                                                                                                </td>
+                                                                                                  <td style="width: 33%">
+                                                                                                      <select disabled readonly class="form-control" name="bopp_tape_1" id="bopp_tape_1">
+                                                                                                          @for($i = 0; $i <= 5; $i+=1)
+                                                                                                          <option value="{{$i}}" {{ $data->bopp_tape_1==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                          @endfor
+                                                                                                      </select>
+                                                                                                      @error('bopp_tape_1')
+                                                                                                          <div class="invalid-message">{{ $message }}</div>
+                                                                                                      @enderror
+                                                                                                  </td>
+
+                                                                                              </tr>
+                                                                                          </tbody>
+                                                                                      </table>
+                                                                                  </td>
+                                                                              </tr>
                                                                           </tbody>
                                                                       </table>
                                                                   </div>
@@ -3203,9 +3237,9 @@
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
                                                                                                       <select class="form-control" disabled readonly name="billing_roll_2" id="billing_roll_2">
-                                                                                                          @for($i = 0; $i <= 5; $i+=1)
+                                                                                                        @for($i = 0; $i <= 200; $i+=5)
                                                                                                           <option value="{{$i}}" {{ $data->billing_roll_2==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                          @endfor
+                                                                                                        @endfor
                                                                                                       </select>
                                                                                                       @error('billing_roll_2')
                                                                                                           <div class="invalid-message">{{ $message }}</div>
@@ -3228,9 +3262,9 @@
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
                                                                                                       <select class="form-control" disabled readonly name="billing_roll_3" id="billing_roll_3">
-                                                                                                          @for($i = 0; $i <= 5; $i+=1)
+                                                                                                        @for($i = 0; $i <= 200; $i+=5)
                                                                                                           <option value="{{$i}}" {{ $data->billing_roll_3==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                          @endfor
+                                                                                                        @endfor
                                                                                                       </select>
                                                                                                       @error('billing_roll_3')
                                                                                                           <div class="invalid-message">{{ $message }}</div>
@@ -3520,7 +3554,7 @@
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
                                                                                                       <select disabled readonly class="form-control" name="mask_3_play" id="mask_3_play">
-                                                                                                          @for($i = 0; $i <= 5; $i+=1)
+                                                                                                        @for($i = 0; $i <= 5000; $i+=100)
                                                                                                           <option value="{{$i}}" {{ $data->mask_3_play==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
                                                                                                       </select>
@@ -3545,7 +3579,7 @@
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
                                                                                                       <select disabled readonly class="form-control" name="mask_meltblown" id="mask_meltblown">
-                                                                                                          @for($i = 0; $i <= 5; $i+=1)
+                                                                                                        @for($i = 0; $i <= 5000; $i+=100)
                                                                                                           <option value="{{$i}}" {{ $data->mask_meltblown==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
                                                                                                       </select>

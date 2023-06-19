@@ -149,6 +149,8 @@ class OrderFormExport implements FromCollection,WithHeadings,WithMapping
             'bopp tape color 3"',
             'bopp tape quantity 2"',
             'bopp tape color 2"',
+            'bopp tape quantity 1"',
+            'bopp tape color 1"',
 
             'billing roll quantity 2"',
             'billing roll quantity 3"',
@@ -315,6 +317,8 @@ class OrderFormExport implements FromCollection,WithHeadings,WithMapping
             $data->bopp_tape_3_color,
             $data->bopp_tape_2,
             $data->bopp_tape_2_color,
+            $data->bopp_tape_1,
+            $data->bopp_tape_1_color,
 
             $data->billing_roll_2,
             $data->billing_roll_3,

@@ -814,7 +814,7 @@
                                                                           </thead>
                                                                           <tbody>
                                                                               <tr>
-                                                                                  <td><a href="#" class="fw-medium text-center">250ml (Regular)</a></td>
+                                                                                  <td><a href="#" class="fw-medium text-center">250ml<br> (Regular)</a></td>
                                                                                   <td>
                                                                                       <table class="table align-middle table-nowrap mb-0">
                                                                                           <tbody>
@@ -838,7 +838,7 @@
                                                                                   </td>
                                                                               </tr>
                                                                               <tr>
-                                                                                  <td><a href="#" class="fw-medium text-center">450ml (Regular)</a></td>
+                                                                                  <td><a href="#" class="fw-medium text-center">450ml<br> (Regular)</a></td>
                                                                                   <td>
                                                                                       <table class="table align-middle table-nowrap mb-0">
                                                                                           <tbody>
@@ -863,7 +863,7 @@
                                                                                   </td>
                                                                               </tr>
                                                                               <tr>
-                                                                                  <td><a href="#" class="fw-medium text-center">660ml (Regular)</a></td>
+                                                                                  <td><a href="#" class="fw-medium text-center">660ml<br> (Regular)</a></td>
                                                                                   <td>
                                                                                       <table class="table align-middle table-nowrap mb-0">
                                                                                           <tbody>
@@ -888,7 +888,7 @@
                                                                                   </td>
                                                                               </tr>
                                                                               <tr>
-                                                                                  <td><a href="#" class="fw-medium text-center">750ml (Regular)</a></td>
+                                                                                  <td><a href="#" class="fw-medium text-center">750ml<br> (Regular)</a></td>
                                                                                   <td>
                                                                                       <table class="table align-middle table-nowrap mb-0">
                                                                                           <tbody>
@@ -913,7 +913,7 @@
                                                                                   </td>
                                                                               </tr>
                                                                               <tr>
-                                                                                  <td><a href="#" class="fw-medium text-center">450ml (Premium)</a></td>
+                                                                                  <td><a href="#" class="fw-medium text-center">450ml<br> (Premium)</a></td>
                                                                                   <td>
                                                                                       <table class="table align-middle table-nowrap mb-0">
                                                                                           <tbody>
@@ -938,7 +938,7 @@
                                                                                   </td>
                                                                               </tr>
                                                                               <tr>
-                                                                                  <td><a href="#" class="fw-medium text-center">750ml (Premium)</a></td>
+                                                                                  <td><a href="#" class="fw-medium text-center">750ml<br> (Premium)</a></td>
                                                                                   <td>
                                                                                       <table class="table align-middle table-nowrap mb-0">
                                                                                           <tbody>
@@ -2134,7 +2134,7 @@
                                                                                         <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
                                                                                             <thead class="table-light">
                                                                                                 <tr>
-                                                                                                    <th scope="col" class="text-center" style="width: 33%">PRICE</th>
+                                                                                                    <th scope="col" class="text-center" style="width: 33%">PRICE (&#8377;)</th>
                                                                                                     <th scope="col" class="text-center" style="width: 33%">QUANTITY (10000 pcs / box)</th>
                                                                                                 </tr>
                                                                                             </thead>
@@ -2144,7 +2144,7 @@
                                                                             </thead>
                                                                             <tbody>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">110mm Spoon</a></td>
+                                                                                    <td><a href="#" class="fw-medium text-center">110mm<br> Spoon</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
@@ -2168,7 +2168,7 @@
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">140mm Spoon</a></td>
+                                                                                    <td><a href="#" class="fw-medium text-center">140mm<br> Spoon</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
@@ -2192,7 +2192,7 @@
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">160mm Spoon</a></td>
+                                                                                    <td><a href="#" class="fw-medium text-center">160mm<br> Spoon</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
@@ -2216,7 +2216,7 @@
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">140mm Fork</a></td>
+                                                                                    <td><a href="#" class="fw-medium text-center">140mm<br> Fork</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
@@ -2240,7 +2240,7 @@
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">160mm Fork</a></td>
+                                                                                    <td><a href="#" class="fw-medium text-center">160mm<br> Fork</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
@@ -2309,7 +2309,7 @@
                                                                             </thead>
                                                                             <tbody>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">4x6 - (Cut Size)</a></td>
+                                                                                    <td><a href="#" class="fw-medium text-center">4x6 <br> (Cut Size)</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
@@ -2334,7 +2334,7 @@
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">5x7 - (Cut Size)</a></td>
+                                                                                    <td><a href="#" class="fw-medium text-center">5x7 <br> (Cut Size)</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
@@ -2359,7 +2359,7 @@
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">6x8 - (Cut Size)</a></td>
+                                                                                    <td><a href="#" class="fw-medium text-center">6x8 <br> (Cut Size)</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
@@ -2384,7 +2384,7 @@
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">6x9 - (Cut Size)</a></td>
+                                                                                    <td><a href="#" class="fw-medium text-center">6x9 <br> (Cut Size)</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
@@ -2409,7 +2409,7 @@
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">7x9 - (Cut Size)</a></td>
+                                                                                    <td><a href="#" class="fw-medium text-center">7x9 <br> (Cut Size)</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
@@ -2434,7 +2434,7 @@
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">7x10 - (Cut Size)</a></td>
+                                                                                    <td><a href="#" class="fw-medium text-center">7x10 <br> (Cut Size)</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
@@ -2459,7 +2459,7 @@
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">8x10 - (Cut Size)</a></td>
+                                                                                    <td><a href="#" class="fw-medium text-center">8x10 <br> (Cut Size)</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
@@ -2484,7 +2484,7 @@
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">9x12 - (Cut Size)</a></td>
+                                                                                    <td><a href="#" class="fw-medium text-center">9x12 <br> (Cut Size)</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
@@ -2509,7 +2509,7 @@
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">10x12 - (Cut Size)</a></td>
+                                                                                    <td><a href="#" class="fw-medium text-center">10x12 <br> (Cut Size)</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
@@ -2534,7 +2534,7 @@
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">10x14 - (Cut Size)</a></td>
+                                                                                    <td><a href="#" class="fw-medium text-center">10x14 <br> (Cut Size)</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
@@ -2559,7 +2559,7 @@
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">4x6 - (Full Size)</a></td>
+                                                                                    <td><a href="#" class="fw-medium text-center">4x6 <br> (Full Size)</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
@@ -2584,7 +2584,7 @@
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">5x7 - (Full Size)</a></td>
+                                                                                    <td><a href="#" class="fw-medium text-center">5x7 <br> (Full Size)</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
@@ -2609,7 +2609,7 @@
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">6x8 - (Full Size)</a></td>
+                                                                                    <td><a href="#" class="fw-medium text-center">6x8 <br> (Full Size)</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
@@ -2634,7 +2634,7 @@
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">6x9 - (Full Size)</a></td>
+                                                                                    <td><a href="#" class="fw-medium text-center">6x9 <br> (Full Size)</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
@@ -2659,7 +2659,7 @@
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">7x9 - (Full Size)</a></td>
+                                                                                    <td><a href="#" class="fw-medium text-center">7x9 <br> (Full Size)</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
@@ -2684,7 +2684,7 @@
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">7x10 - (Full Size)</a></td>
+                                                                                    <td><a href="#" class="fw-medium text-center">7x10 <br> (Full Size)</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
@@ -2709,7 +2709,7 @@
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">8x10 - (Full Size)</a></td>
+                                                                                    <td><a href="#" class="fw-medium text-center">8x10 <br> (Full Size)</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
@@ -2734,7 +2734,7 @@
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">9x12 - (Full Size)</a></td>
+                                                                                    <td><a href="#" class="fw-medium text-center">9x12 <br> (Full Size)</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
@@ -2759,7 +2759,7 @@
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">10x12 - (Full Size)</a></td>
+                                                                                    <td><a href="#" class="fw-medium text-center">10x12 <br> (Full Size)</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
@@ -2784,7 +2784,7 @@
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">10x14 - (Full Size)</a></td>
+                                                                                    <td><a href="#" class="fw-medium text-center">10x14 <br> (Full Size)</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
@@ -2848,7 +2848,7 @@
                                                                             </thead>
                                                                             <tbody>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">22*22/9*9 <br/>(100 pcs / packet - 48 packets / bag)</a></td>
+                                                                                    <td><a href="#" class="fw-medium text-center">22*22/9*9 <br/>(100 pcs / packet - <br>48 packets / bag)</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
@@ -2858,7 +2858,7 @@
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select data-price="12.6" onchange="amount_change_handler()" class="quantity_price form-control" name="tissue_22_22" id="tissue_22_22">
-                                                                                                            @for($i = 0; $i <= 100; $i+=10)
+                                                                                                            @for($i = 0; $i <= 20; $i+=1)
                                                                                                             <option value="{{$i}}" {{ old('tissue_22_22')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
                                                                                                         </select>
@@ -2873,7 +2873,7 @@
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">27*30/11*12<br/>(100 pcs / packet - 30 packets / bag)</a></td>
+                                                                                    <td><a href="#" class="fw-medium text-center">27*30/11*12<br/>(100 pcs / packet - <br>30 packets / bag)</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
@@ -2883,7 +2883,7 @@
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select data-price="19.95" onchange="amount_change_handler()" class="quantity_price form-control" name="tissue_27_30" id="tissue_27_30">
-                                                                                                            @for($i = 0; $i <= 100; $i+=10)
+                                                                                                            @for($i = 0; $i <= 20; $i+=1)
                                                                                                             <option value="{{$i}}" {{ old('tissue_27_30')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
                                                                                                         </select>
@@ -2898,7 +2898,7 @@
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">30*30/12*12<br/>(100 pcs / packet - 30 packets / bag)</a></td>
+                                                                                    <td><a href="#" class="fw-medium text-center">30*30/12*12<br/>(100 pcs / packet - <br>30 packets / bag)</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
@@ -2908,7 +2908,7 @@
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select data-price="26.25" onchange="amount_change_handler()" class="quantity_price form-control" name="tissue_30_30" id="tissue_30_30">
-                                                                                                            @for($i = 0; $i <= 100; $i+=10)
+                                                                                                            @for($i = 0; $i <= 20; $i+=1)
                                                                                                             <option value="{{$i}}" {{ old('tissue_30_30')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
                                                                                                         </select>
@@ -3091,9 +3091,9 @@
                                                                                       <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
                                                                                           <thead class="table-light">
                                                                                               <tr>
-                                                                                                  <th scope="col" class="text-center" style="width: 33%">PRICE (&#8377; )/60mtr</th>
+                                                                                                  <th scope="col" class="text-center" style="width: 33%">PRICE (&#8377; )<br>per 60mtr</th>
                                                                                                   <th scope="col" class="text-center" style="width: 33%">COLOR</th>
-                                                                                                  <th scope="col" class="text-center" style="width: 33%">QUANTITY</th>
+                                                                                                  <th scope="col" class="text-center" style="width: 33%">QUANTITY<br>(pcs/roll)</th>
                                                                                               </tr>
                                                                                           </thead>
                                                                                       </table>
@@ -3169,6 +3169,40 @@
                                                                                       </table>
                                                                                   </td>
                                                                               </tr>
+                                                                              <tr>
+                                                                                  <td><a href="#" class="fw-medium text-center">1"</a></td>
+                                                                                  <td>
+                                                                                      <table class="table align-middle table-nowrap mb-0">
+                                                                                          <tbody>
+                                                                                              <tr>
+                                                                                                <td style="width: 33%">
+                                                                                                    <input class="form-control" disabled readonly value="24.8">
+                                                                                                </td>
+                                                                                                <td style="width: 33%">
+                                                                                                    <select class="form-control" name="bopp_tape_1_color" id="bopp_tape_1_color">
+                                                                                                        <option value="Transparent" {{ old('bopp_tape_1_color')=='Transparent' ? 'selected' : '' }}>Transparent</option>
+                                                                                                        <option value="Brown" {{ old('bopp_tape_1_color')=='Brown' ? 'selected' : '' }}>Brown</option>
+                                                                                                    </select>
+                                                                                                    @error('bopp_tape_1_color')
+                                                                                                        <div class="invalid-message">{{ $message }}</div>
+                                                                                                    @enderror
+                                                                                                </td>
+                                                                                                  <td style="width: 33%">
+                                                                                                      <select data-price="24.8" onchange="amount_change_handler()" class="quantity_price form-control" name="bopp_tape_1" id="bopp_tape_1">
+                                                                                                          @for($i = 0; $i <= 5; $i+=1)
+                                                                                                          <option value="{{$i}}" {{ old('bopp_tape_1')==$i ? 'selected' : '' }}>{{$i}}</option>
+                                                                                                          @endfor
+                                                                                                      </select>
+                                                                                                      @error('bopp_tape_1')
+                                                                                                          <div class="invalid-message">{{ $message }}</div>
+                                                                                                      @enderror
+                                                                                                  </td>
+
+                                                                                              </tr>
+                                                                                          </tbody>
+                                                                                      </table>
+                                                                                  </td>
+                                                                              </tr>
                                                                           </tbody>
                                                                       </table>
                                                                   </div>
@@ -3219,7 +3253,7 @@
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
                                                                                                       <select data-price="17.84" onchange="amount_change_handler()" class="quantity_price form-control" name="billing_roll_2" id="billing_roll_2">
-                                                                                                          @for($i = 0; $i <= 5; $i+=1)
+                                                                                                          @for($i = 0; $i <= 200; $i+=5)
                                                                                                           <option value="{{$i}}" {{ old('billing_roll_2')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
                                                                                                       </select>
@@ -3244,9 +3278,9 @@
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
                                                                                                       <select data-price="38.53" onchange="amount_change_handler()" class="quantity_price form-control" name="billing_roll_3" id="billing_roll_3">
-                                                                                                          @for($i = 0; $i <= 5; $i+=1)
+                                                                                                        @for($i = 0; $i <= 200; $i+=5)
                                                                                                           <option value="{{$i}}" {{ old('billing_roll_3')==$i ? 'selected' : '' }}>{{$i}}</option>
-                                                                                                          @endfor
+                                                                                                        @endfor
                                                                                                       </select>
                                                                                                       @error('billing_roll_3')
                                                                                                           <div class="invalid-message">{{ $message }}</div>
@@ -3526,7 +3560,7 @@
                                                                           </thead>
                                                                           <tbody>
                                                                               <tr>
-                                                                                  <td><a href="#" class="fw-medium text-center">3 play</a></td>
+                                                                                  <td><a href="#" class="fw-medium text-center">3 ply</a></td>
                                                                                   <td>
                                                                                       <table class="table align-middle table-nowrap mb-0">
                                                                                           <tbody>
@@ -3536,7 +3570,7 @@
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
                                                                                                       <select data-price="0.94" onchange="amount_change_handler()" class="quantity_price form-control" name="mask_3_play" id="mask_3_play">
-                                                                                                          @for($i = 0; $i <= 5; $i+=1)
+                                                                                                          @for($i = 0; $i <= 5000; $i+=100)
                                                                                                           <option value="{{$i}}" {{ old('mask_3_play')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
                                                                                                       </select>
@@ -3561,7 +3595,7 @@
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
                                                                                                       <select data-price="1.32" onchange="amount_change_handler()" class="quantity_price form-control" name="mask_meltblown" id="mask_meltblown">
-                                                                                                          @for($i = 0; $i <= 5; $i+=1)
+                                                                                                        @for($i = 0; $i <= 5000; $i+=100)
                                                                                                           <option value="{{$i}}" {{ old('mask_meltblown')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
                                                                                                       </select>
@@ -3605,7 +3639,7 @@
                                                                                         <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
                                                                                             <thead class="table-light">
                                                                                                 <tr>
-                                                                                                    <th scope="col" class="text-center" style="width: 33%">PRICE</th>
+                                                                                                    <th scope="col" class="text-center" style="width: 33%">PRICE (&#8377;)</th>
                                                                                                     <th scope="col" class="text-center" style="width: 33%">QUANTITY</th>
                                                                                                 </tr>
                                                                                             </thead>
@@ -3621,7 +3655,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="&#8377; 4.31">
+                                                                                                        <input class="form-control" disabled readonly value="4.31">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select data-price="4.31" onchange="amount_change_handler()" class="quantity_price form-control" name="carry_bag_bag_small" id="carry_bag_bag_small">
@@ -3645,7 +3679,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="&#8377; 4.31">
+                                                                                                        <input class="form-control" disabled readonly value="4.31">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select data-price="4.31" onchange="amount_change_handler()" class="quantity_price form-control" name="carry_bag_bag_medium" id="carry_bag_bag_medium">
@@ -3669,7 +3703,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="&#8377; 4.91">
+                                                                                                        <input class="form-control" disabled readonly value="4.91">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select data-price="4.91" onchange="amount_change_handler()" class="quantity_price form-control" name="carry_bag_bag_large" id="carry_bag_bag_large">
@@ -3693,7 +3727,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="&#8377; 5.29">
+                                                                                                        <input class="form-control" disabled readonly value="5.29">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select data-price="5.29" onchange="amount_change_handler()" class="quantity_price form-control" name="carry_bag_bag_x_large" id="carry_bag_bag_x_large">
@@ -3740,8 +3774,8 @@
                                                                                       <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
                                                                                           <thead class="table-light">
                                                                                               <tr>
-                                                                                                  <th scope="col" class="text-center" style="width: 33%">PRICE</th>
-                                                                                                  <th scope="col" class="text-center" style="width: 33%">QUANTITY (per kg)</th>
+                                                                                                  <th scope="col" class="text-center" style="width: 33%">PRICE (&#8377;)</th>
+                                                                                                  <th scope="col" class="text-center" style="width: 33%">QUANTITY (kg)</th>
                                                                                               </tr>
                                                                                           </thead>
                                                                                       </table>
@@ -3756,7 +3790,7 @@
                                                                                         <tbody>
                                                                                             <tr>
                                                                                               <td style="width: 33%">
-                                                                                                  <input class="form-control" disabled readonly value="&#8377; 60">
+                                                                                                  <input class="form-control" disabled readonly value="60">
                                                                                               </td>
                                                                                                 <td style="width: 33%">
                                                                                                     <select data-price="60" onchange="amount_change_handler()" class="quantity_price form-control" name="parcel_paper_10" id="parcel_paper_10">
@@ -3780,7 +3814,7 @@
                                                                                           <tbody>
                                                                                               <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <input class="form-control" disabled readonly value="&#8377; 60">
+                                                                                                    <input class="form-control" disabled readonly value="60">
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
                                                                                                       <select data-price="60" onchange="amount_change_handler()" class="quantity_price form-control" name="parcel_paper_12" id="parcel_paper_12">
@@ -3804,7 +3838,7 @@
                                                                                           <tbody>
                                                                                               <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <input class="form-control" disabled readonly value="&#8377; 60">
+                                                                                                    <input class="form-control" disabled readonly value="60">
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
                                                                                                       <select data-price="60" onchange="amount_change_handler()" class="quantity_price form-control" name="parcel_paper_14" id="parcel_paper_14">

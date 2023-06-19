@@ -2135,7 +2135,7 @@
                                                                                             <thead class="table-light">
                                                                                                 <tr>
                                                                                                     <th scope="col" class="text-center" style="width: 33%">PRICE (&#8377;)</th>
-                                                                                                    <th scope="col" class="text-center" style="width: 33%">QUANTITY (10000 pcs / box)</th>
+                                                                                                    <th scope="col" class="text-center" style="width: 33%">QUANTITY <br>(10000 pcs / box)</th>
                                                                                                 </tr>
                                                                                             </thead>
                                                                                         </table>
@@ -2839,7 +2839,7 @@
                                                                                             <thead class="table-light">
                                                                                                 <tr>
                                                                                                     <th scope="col" class="text-center" style="width: 33%">PRICE (&#8377; )</th>
-                                                                                                    <th scope="col" class="text-center" style="width: 33%">QUANTITY (Bags)</th>
+                                                                                                    <th scope="col" class="text-center" style="width: 33%">QUANTITY <br>(Bags)</th>
                                                                                                 </tr>
                                                                                             </thead>
                                                                                         </table>

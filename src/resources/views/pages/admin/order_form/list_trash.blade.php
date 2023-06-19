@@ -67,6 +67,7 @@
                                             <th class="sort" data-sort="customer_name">Phone</th>
                                             <th class="sort" data-sort="customer_name">Designation</th>
                                             <th class="sort" data-sort="customer_name">Staff</th>
+                                            <th class="sort" data-sort="date">Total Amount</th>
                                             <th class="sort" data-sort="date">Created Date</th>
                                             <th class="sort" data-sort="action">Action</th>
                                             </tr>
@@ -79,6 +80,7 @@
                                             <td class="customer_name">{{$item->phone}}</td>
                                             <td class="customer_name">{{$item->designation}}</td>
                                             <td class="customer_name">{{$item->staff->name}}</td>
+                                            <td class="date">{{$item->amount}}</td>
                                             <td class="date">{{$item->created_at}}</td>
                                             <td>
                                                 <div class="d-flex gap-2">

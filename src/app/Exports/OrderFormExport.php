@@ -288,10 +288,10 @@ class OrderFormExport implements FromCollection,WithHeadings,WithMapping
             $data->cuttlery_140_fork,
             $data->cuttlery_160_fork,
 
-            $data->paper_cup_90ml,
-            $data->paper_cup_100ml,
-            $data->paper_cup_110ml,
-            $data->paper_cup_210ml,
+            $data->paper_cup_90,
+            $data->paper_cup_100,
+            $data->paper_cup_110,
+            $data->paper_cup_210,
 
             $data->al_pouch_4_6,
             $data->al_pouch_5_7,

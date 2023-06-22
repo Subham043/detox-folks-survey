@@ -115,6 +115,11 @@ class OrderFormExport implements FromCollection,WithHeadings,WithMapping
             'cutlery quantity 140mm fork',
             'cutlery quantity 160mm fork',
 
+            'paper cup quantity 90ml',
+            'paper cup quantity 100ml',
+            'paper cup quantity 110ml',
+            'paper cup quantity 210ml',
+
             '6 layer aluminium coated pouch quantity cut size 4x6',
             '6 layer aluminium coated pouch quantity cut size 5x7',
             '6 layer aluminium coated pouch quantity cut size 6x8',
@@ -282,6 +287,11 @@ class OrderFormExport implements FromCollection,WithHeadings,WithMapping
             $data->cuttlery_160_spoon,
             $data->cuttlery_140_fork,
             $data->cuttlery_160_fork,
+
+            $data->paper_cup_90ml,
+            $data->paper_cup_100ml,
+            $data->paper_cup_110ml,
+            $data->paper_cup_210ml,
 
             $data->al_pouch_4_6,
             $data->al_pouch_5_7,

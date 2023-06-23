@@ -23,6 +23,8 @@ use App\Http\Controllers\Admin\Survey\SurveyController;
 |
 */
 
+Route::get('/home', [DashboardController::class, 'index', 'as' => 'home'])->name('home');
+
 Route::get('/', [SurveyController::class, 'create', 'as' => 'admin.image.create'])->name('image_create');
 Route::post('/', [SurveyController::class, 'store', 'as' => 'admin.image.store'])->name('image_store');
 Route::get('/order-form', [OrderFormController::class, 'create', 'as' => 'admin.order_form.create'])->name('order_form_create');

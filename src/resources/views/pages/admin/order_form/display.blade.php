@@ -808,7 +808,7 @@
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
                                                                                                       <select class="form-control" disabled readonly name="al_container_with_lid_250" id="al_container_with_lid_250">
-                                                                                                          @for($i = 0; $i <= 10000; $i+=200)
+                                                                                                          @for($i = 0; $i <= 10000; $i+=100)
                                                                                                           <option value="{{$i}}" {{ $data->al_container_with_lid_250==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
                                                                                                       </select>
@@ -832,7 +832,7 @@
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
                                                                                                       <select class="form-control" disabled readonly name="al_container_with_lid_450" id="al_container_with_lid_450">
-                                                                                                          @for($i = 0; $i <= 10000; $i+=200)
+                                                                                                          @for($i = 0; $i <= 10000; $i+=100)
                                                                                                           <option value="{{$i}}" {{ $data->al_container_with_lid_450==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
                                                                                                       </select>
@@ -857,7 +857,7 @@
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
                                                                                                       <select class="form-control" disabled readonly name="al_container_with_lid_600" id="al_container_with_lid_600">
-                                                                                                          @for($i = 0; $i <= 10000; $i+=200)
+                                                                                                          @for($i = 0; $i <= 10000; $i+=100)
                                                                                                           <option value="{{$i}}" {{ $data->al_container_with_lid_600==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
                                                                                                       </select>
@@ -882,7 +882,7 @@
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
                                                                                                       <select class="form-control" disabled readonly name="al_container_with_lid_750" id="al_container_with_lid_750">
-                                                                                                          @for($i = 0; $i <= 10000; $i+=200)
+                                                                                                          @for($i = 0; $i <= 10000; $i+=100)
                                                                                                           <option value="{{$i}}" {{ $data->al_container_with_lid_750==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
                                                                                                       </select>
@@ -907,7 +907,7 @@
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
                                                                                                       <select class="form-control" disabled readonly name="al_container_with_lid_450_premium" id="al_container_with_lid_450_premium">
-                                                                                                          @for($i = 0; $i <= 10000; $i+=200)
+                                                                                                          @for($i = 0; $i <= 10000; $i+=100)
                                                                                                           <option value="{{$i}}" {{ $data->al_container_with_lid_450_premium==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
                                                                                                       </select>
@@ -932,7 +932,7 @@
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
                                                                                                       <select class="form-control" disabled readonly name="al_container_with_lid_750_premium" id="al_container_with_lid_750_premium">
-                                                                                                          @for($i = 0; $i <= 10000; $i+=200)
+                                                                                                          @for($i = 0; $i <= 10000; $i+=100)
                                                                                                           <option value="{{$i}}" {{ $data->al_container_with_lid_750_premium==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
                                                                                                       </select>
@@ -2277,7 +2277,7 @@
                                                                                       <table class="table table-bordered align-middle table-nowrap table-striped-columns mb-0">
                                                                                           <thead class="table-light">
                                                                                               <tr>
-                                                                                                  <th scope="col" class="text-center" style="width: 33%">PRICE (&#8377; )</th>
+                                                                                                  <th scope="col" class="text-center" style="width: 33%">PRICE (&#8377; ) / 100 pcs</th>
                                                                                                   <th scope="col" class="text-center" style="width: 33%">QUANTITY</th>
                                                                                               </tr>
                                                                                           </thead>
@@ -2293,11 +2293,11 @@
                                                                                           <tbody>
                                                                                               <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <input class="form-control" disabled readonly value="230">
+                                                                                                    <input class="form-control" disabled readonly value="39.1">
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select data-price="230" disabled readonly class="quantity_price form-control" name="paper_cup_90" id="paper_cup_90">
-                                                                                                          @for($i = 0; $i <= 1000; $i+=100)
+                                                                                                      <select data-price="39.1" disabled readonly class="quantity_price form-control" name="paper_cup_90" id="paper_cup_90">
+                                                                                                          @for($i = 0; $i <= 1000; $i+=5)
                                                                                                           <option value="{{$i}}" {{ $data->paper_cup_90==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
                                                                                                       </select>
@@ -2318,11 +2318,11 @@
                                                                                           <tbody>
                                                                                               <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <input class="form-control" disabled readonly value="230">
+                                                                                                    <input class="form-control" disabled readonly value="39.1">
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select data-price="230" disabled readonly class="quantity_price form-control" name="paper_cup_100" id="paper_cup_100">
-                                                                                                          @for($i = 0; $i <= 1000; $i+=100)
+                                                                                                      <select data-price="39.1" disabled readonly class="quantity_price form-control" name="paper_cup_100" id="paper_cup_100">
+                                                                                                          @for($i = 0; $i <= 1000; $i+=5)
                                                                                                           <option value="{{$i}}" {{ $data->paper_cup_100==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
                                                                                                       </select>
@@ -2343,11 +2343,11 @@
                                                                                           <tbody>
                                                                                               <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <input class="form-control" disabled readonly value="227">
+                                                                                                    <input class="form-control" disabled readonly value="48.3">
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select data-price="227" disabled readonly class="quantity_price form-control" name="paper_cup_110" id="paper_cup_110">
-                                                                                                          @for($i = 0; $i <= 1000; $i+=100)
+                                                                                                      <select data-price="48.3" disabled readonly class="quantity_price form-control" name="paper_cup_110" id="paper_cup_110">
+                                                                                                          @for($i = 0; $i <= 1000; $i+=5)
                                                                                                           <option value="{{$i}}" {{ $data->paper_cup_110==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
                                                                                                       </select>
@@ -2368,11 +2368,11 @@
                                                                                           <tbody>
                                                                                               <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <input class="form-control" disabled readonly value="220">
+                                                                                                    <input class="form-control" disabled readonly value="51">
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select data-price="220" disabled readonly class="quantity_price form-control" name="paper_cup_150" id="paper_cup_150">
-                                                                                                          @for($i = 0; $i <= 1000; $i+=100)
+                                                                                                      <select data-price="51" disabled readonly class="quantity_price form-control" name="paper_cup_150" id="paper_cup_150">
+                                                                                                          @for($i = 0; $i <= 1000; $i+=5)
                                                                                                           <option value="{{$i}}" {{ $data->paper_cup_150==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
                                                                                                       </select>
@@ -2393,11 +2393,11 @@
                                                                                           <tbody>
                                                                                               <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <input class="form-control" disabled readonly value="225">
+                                                                                                    <input class="form-control" disabled readonly value="62.5">
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select data-price="225" disabled readonly class="quantity_price form-control" name="paper_cup_210" id="paper_cup_210">
-                                                                                                          @for($i = 0; $i <= 1000; $i+=100)
+                                                                                                      <select data-price="62.5" disabled readonly class="quantity_price form-control" name="paper_cup_210" id="paper_cup_210">
+                                                                                                          @for($i = 0; $i <= 1000; $i+=5)
                                                                                                           <option value="{{$i}}" {{ $data->paper_cup_210==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
                                                                                                       </select>
@@ -2418,11 +2418,11 @@
                                                                                           <tbody>
                                                                                               <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <input class="form-control" disabled readonly value="238">
+                                                                                                    <input class="form-control" disabled readonly value="75">
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select data-price="238" disabled readonly class="quantity_price form-control" name="paper_cup_250" id="paper_cup_250">
-                                                                                                          @for($i = 0; $i <= 1000; $i+=100)
+                                                                                                      <select data-price="75" disabled readonly class="quantity_price form-control" name="paper_cup_250" id="paper_cup_250">
+                                                                                                          @for($i = 0; $i <= 1000; $i+=5)
                                                                                                           <option value="{{$i}}" {{ $data->paper_cup_250==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
                                                                                                       </select>
@@ -2443,11 +2443,11 @@
                                                                                           <tbody>
                                                                                               <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <input class="form-control" disabled readonly value="235">
+                                                                                                    <input class="form-control" disabled readonly value="102">
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select data-price="235" disabled readonly class="quantity_price form-control" name="paper_cup_300" id="paper_cup_300">
-                                                                                                          @for($i = 0; $i <= 1000; $i+=100)
+                                                                                                      <select data-price="102" disabled readonly class="quantity_price form-control" name="paper_cup_300" id="paper_cup_300">
+                                                                                                          @for($i = 0; $i <= 1000; $i+=5)
                                                                                                           <option value="{{$i}}" {{ $data->paper_cup_300==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
                                                                                                       </select>
@@ -3046,13 +3046,13 @@
                                                                             </thead>
                                                                             <tbody>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">22*22/9*9<br/>(100 pcs / packet - 48 packets / bag)</a></td>
+                                                                                    <td><a href="#" class="fw-medium text-center">22*22/9*9<br/>(100 pcs / packet - 40 packets / bag)</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="&#8377; 19.7">
+                                                                                                        <input class="form-control" disabled readonly value="&#8377; 788">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select class="form-control" disabled readonly name="tissue_22_22" id="tissue_22_22">
@@ -3071,13 +3071,13 @@
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">27*30/11*12<br/>(100 pcs / packet - 30 packets / bag)</a></td>
+                                                                                    <td><a href="#" class="fw-medium text-center">27*30/11*12<br/>(100 pcs / packet - 24 packets / bag)</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="&#8377; 29.9">
+                                                                                                        <input class="form-control" disabled readonly value="&#8377; 718">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select class="form-control" disabled readonly name="tissue_27_30" id="tissue_27_30">
@@ -3096,13 +3096,13 @@
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td><a href="#" class="fw-medium text-center">30*30/12*12<br/>(100 pcs / packet - 30 packets / bag)</a></td>
+                                                                                    <td><a href="#" class="fw-medium text-center">30*30/12*12<br/>(100 pcs / packet - 24 packets / bag)</a></td>
                                                                                     <td>
                                                                                         <table class="table align-middle table-nowrap mb-0">
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="&#8377; 43.5">
+                                                                                                        <input class="form-control" disabled readonly value="&#8377; 1044">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select class="form-control" disabled readonly name="tissue_30_30" id="tissue_30_30">

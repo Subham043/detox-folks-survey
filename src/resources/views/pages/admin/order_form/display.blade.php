@@ -2763,7 +2763,7 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="&#8377; 21.9">
+                                                                                                        <input class="form-control" disabled readonly value="&#8377; 23.43">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
                                                                                                         <select class="form-control" disabled readonly name="al_pouch_4_6_full" id="al_pouch_4_6_full">
@@ -3374,7 +3374,7 @@
                                                                                           <tbody>
                                                                                               <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <input class="form-control" disabled readonly value="24.8">
+                                                                                                    <input class="form-control" disabled readonly value="12.40">
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
                                                                                                     <select disabled readonly class="form-control" name="bopp_tape_1_color" id="bopp_tape_1_color">

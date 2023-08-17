@@ -2779,10 +2779,10 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="width: 33%">
-                                                                                                        <input class="form-control" disabled readonly value="21.9">
+                                                                                                        <input class="form-control" disabled readonly value="23.43">
                                                                                                     </td>
                                                                                                     <td style="width: 33%">
-                                                                                                        <select data-price="21.9" onchange="amount_change_handler()" class="quantity_price form-control" name="al_pouch_4_6_full" id="al_pouch_4_6_full">
+                                                                                                        <select data-price="23.43" onchange="amount_change_handler()" class="quantity_price form-control" name="al_pouch_4_6_full" id="al_pouch_4_6_full">
                                                                                                             @for($i = 0; $i <= 1000; $i+=10)
                                                                                                             <option value="{{$i}}" {{ old('al_pouch_4_6_full')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                             @endfor
@@ -3390,7 +3390,7 @@
                                                                                           <tbody>
                                                                                               <tr>
                                                                                                 <td style="width: 33%">
-                                                                                                    <input class="form-control" disabled readonly value="24.8">
+                                                                                                    <input class="form-control" disabled readonly value="12.40">
                                                                                                 </td>
                                                                                                 <td style="width: 33%">
                                                                                                     <select class="form-control" name="bopp_tape_1_color" id="bopp_tape_1_color">
@@ -3402,7 +3402,7 @@
                                                                                                     @enderror
                                                                                                 </td>
                                                                                                   <td style="width: 33%">
-                                                                                                      <select data-price="24.8" onchange="amount_change_handler()" class="quantity_price form-control" name="bopp_tape_1" id="bopp_tape_1">
+                                                                                                      <select data-price="12.40" onchange="amount_change_handler()" class="quantity_price form-control" name="bopp_tape_1" id="bopp_tape_1">
                                                                                                           @for($i = 0; $i <= 5; $i+=1)
                                                                                                           <option value="{{$i}}" {{ old('bopp_tape_1')==$i ? 'selected' : '' }}>{{$i}}</option>
                                                                                                           @endfor
